@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>{% block title %}{% endblock %} | Base Video Arte</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/general.css" />
+  </head>
+ 
+  <body>
+    <div id="web">
+      <h1>Video Arte Latinoamericano</h1>
+ 
+      <div id="menu">
+        <ul>
+        <li><a href="{{ app.url_generator.generate('inicio') }}">Inicio</a></li>
+        <li><a href="{{ app.url_generator.generate('obras') }}">Obras</a></li>
+        <li><a href="{{ app.url_generator.generate('artistas') }}">Artistas</a></li>
+        <li><a href="{{ app.url_generator.generate('busqueda') }}">Buscador Avanzado</a></li>
+        <li><a href="{{ app.url_generator.generate('proyecto') }}">Sobre el Proyecto</a></li>
+        <li><a href="{{ app.url_generator.generate('contacto') }}">Contacto</a></li>
+{#           <li><a href="{{ app.url_generator.generate('inicio') }}">Inicio</a></li>#}
+{#           <li><a href="{{ app.url_generator.generate('imagenes') }}">Imágenes</a></li>#}
+{#           <li><a href="{{ app.url_generator.generate('texto') }}">Texto</a></li>#}
+        </ul>
+      </div>
+ 
+      <h2>{% block tituloSeccion %}{% endblock %}</h2>
+ 
+      <div id="contenido">
+        {% block contenido %}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -12,7 +12,7 @@ class Artista {
      */
     private $id;
 
-    /** @Column(type="text") */
+    /** @Column(type="string") */
     private $nombre;
 
     /**

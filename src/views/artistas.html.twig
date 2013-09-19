@@ -4,5 +4,10 @@
 
 {% block contenido %}
     Listado de artistas
+    <ul>
+        {% for artista in lista_artistas %}
+        <li>{{ artista.nombre|e }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}
 

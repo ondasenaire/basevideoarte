@@ -26,7 +26,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options'    => array(
     'driver'        => 'pdo_mysql',
     'host'          => 'localhost',
-    'dbname'        => 'test_framework',
+    'dbname'        => 'videoartedb',
     'user'          => 'jose',
     'password'      => 'jose',
     'charset'       => 'utf8',

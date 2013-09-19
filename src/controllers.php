@@ -31,7 +31,16 @@ $app->get('/obras/{id}', function ($id) use ($app) {
 //ARTISTAS
 
 $app->get('/artistas', function () use ($app) {
-    return $app['twig']->render('/artistas.html.twig', array());
+	
+
+
+$repositorioArtistas = $app['db.orm.em']->getRepository('BaseVideoArte\Entidades\Artista');
+$artistas = $repositorioArtistas->findAll();
+
+
+
+
+    return $app['twig']->render('/artistas.html.twig', array('lista_artistas' => $artistas));
 })
 ->bind('artistas')
 ;

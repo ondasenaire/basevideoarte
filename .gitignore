@@ -2,5 +2,4 @@
 composer.lock
 .project
 *.php~
-/config/config.db
-
+config/config.db

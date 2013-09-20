@@ -1,0 +1,27 @@
+<?php
+
+class Config {
+
+	
+	private $host = "localhost";
+	private $bd = "videoartedb";
+	private $usuario = "uv022986_jose";
+	private $pass = "joseuntref";
+
+
+	public function getHost(){
+		return $this->host;
+	}
+	public function getBD(){
+		return $this->bd;
+	}
+	
+	public function getUsuario(){
+		return $this->usuario;
+	}
+	
+	public function getPass(){
+		return $this->pass;
+	}
+
+}

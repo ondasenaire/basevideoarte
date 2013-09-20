@@ -33,21 +33,20 @@ $app->get('/obras/{id}', function ($id) use ($app) {
 $app->get('/artistas', function () use ($app) {
 	
 
-
 $repositorioArtistas = $app['db.orm.em']->getRepository('BaseVideoArte\Entidades\Artista');
 $artistas = $repositorioArtistas->findAll();
 
-
-
-
-    return $app['twig']->render('/artistas.html.twig', array('lista_artistas' => $artistas));
+return $app['twig']->render('/artistas.html.twig', array('lista_artistas' => $artistas));
 })
 ->bind('artistas')
 ;
 
 //---
 $app->get('/artistas/{id}', function ($id) use ($app) {
-    return $app['twig']->render('/artista.html.twig', array('id'=> $id));
+	$repositorioArtistas = $app['db.orm.em']->getRepository('BaseVideoArte\Entidades\Artista');
+	$artista = $repositorioArtistas->findOneById($id);
+    return $app['twig']->render('/artista.html.twig', array('artista'=> $artista));
+	
 })
 ->bind('artista')
 ;

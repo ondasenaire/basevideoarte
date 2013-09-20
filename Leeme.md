@@ -1,2 +1,4 @@
-Base de Video Arte
+# Base de Video Arte
+
+- Requerimientos:
 

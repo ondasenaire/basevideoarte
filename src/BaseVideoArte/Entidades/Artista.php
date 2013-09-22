@@ -3,6 +3,7 @@
 namespace BaseVideoArte\Entidades;
 /**
  * @Entity
+ * @Table(name="artistas")
  */
 class Artista {
 
@@ -14,6 +15,16 @@ class Artista {
 
     /** @Column(type="string") */
     private $nombre;
+	private $info;
+	private $inicio;
+	private $web;
+
+
+	//
+
+	private $pais;
+	
+	
 
     /**
      * Get id

@@ -5,7 +5,7 @@ use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Silex\Provider\ValidatorServiceProvider;
 use Silex\Provider\ServiceControllerServiceProvider;
-require_once '../config/config.db';
+require_once __DIR__.'/../config/config.db';
 //DOCTRINE
 use \Doctrine\Common\Cache\ApcCache;
 use \Doctrine\Common\Cache\ArrayCache;

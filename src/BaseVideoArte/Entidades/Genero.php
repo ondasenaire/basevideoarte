@@ -17,4 +17,14 @@ class Genero {
 	 * Column(type="string")
 	 */
 	private $genero;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 }

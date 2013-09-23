@@ -5,6 +5,13 @@ namespace BaseVideoArte\Entidades;
  * @Table(name="formatos")
  */
 class Formato {
+	 /** 
+     * @Id @Column(type="integer")
+     * @GeneratedValue
+     */
 	private $id;
+	/**
+	 * @Column(type="string")
+	 */
 	private $formato;
 }

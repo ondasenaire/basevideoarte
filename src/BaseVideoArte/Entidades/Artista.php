@@ -15,13 +15,19 @@ class Artista {
 
     /** @Column(type="string") */
     private $nombre;
+	
+	/** @Column(type="text") */
 	private $info;
+	/** @Column(type="string") */
 	private $inicio;
+	/** @Column(type="string") */
 	private $web;
 
-
-	//
-
+	/**
+	 *    
+     * @OneToOne(targetEntity="Pais")
+     * @JoinColumn(name="pais_id", referencedColumnName="id")
+     */	 
 	private $pais;
 	
 	

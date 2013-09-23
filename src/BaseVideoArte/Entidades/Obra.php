@@ -8,6 +8,7 @@ class Obra {
 	/**
 	 * @Id
 	 * @Column(type="integer")
+	 * @GeneratedValue
 	 */
 	private $id;
 	
@@ -30,7 +31,7 @@ class Obra {
 	 */
 	private $duracion;
 	
-	//--------------
+	//---CAMPOS RELACIONADOS
 	/**
 	 * @OneToOne(targetEntity="Genero")
      * @JoinColumn(name="genero_id", referencedColumnName="id")
@@ -43,8 +44,22 @@ class Obra {
 	 */
 	private $formato;
 	
+	/**
+	 * @ManyToMany(targetEntity="Artista", mappedBy="obras")
+	 */	
+	private $artistas;
 	
-	
+	/**
+	 * @ManyToMany(targetEntity="Evento", mappedBy="obras")
+	 */
+	private $eventos;
+
+//-----FUNCIONES
+
+	public function __construct(){
+		$this->artistas = new \Doctrine\Common\Collections\ArrayCollection();
+		$this->eventos = new \Doctrine\Common\Collections\ArrayCollection();
+	}
 
     /**
      * Set id
@@ -205,5 +220,71 @@ class Obra {
     public function getFormato()
     {
         return $this->formato;
+    }
+
+    /**
+     * Add artistas
+     *
+     * @param \BaseVideoArte\Entidades\Artista $artistas
+     * @return Obra
+     */
+    public function addArtista(\BaseVideoArte\Entidades\Artista $artistas)
+    {
+        $this->artistas[] = $artistas;
+    
+        return $this;
+    }
+
+    /**
+     * Remove artistas
+     *
+     * @param \BaseVideoArte\Entidades\Artista $artistas
+     */
+    public function removeArtista(\BaseVideoArte\Entidades\Artista $artistas)
+    {
+        $this->artistas->removeElement($artistas);
+    }
+
+    /**
+     * Get artistas
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getArtistas()
+    {
+        return $this->artistas;
+    }
+
+    /**
+     * Add eventos
+     *
+     * @param \BaseVideoArte\Entidades\Evento $eventos
+     * @return Obra
+     */
+    public function addEvento(\BaseVideoArte\Entidades\Evento $eventos)
+    {
+        $this->eventos[] = $eventos;
+    
+        return $this;
+    }
+
+    /**
+     * Remove eventos
+     *
+     * @param \BaseVideoArte\Entidades\Evento $eventos
+     */
+    public function removeEvento(\BaseVideoArte\Entidades\Evento $eventos)
+    {
+        $this->eventos->removeElement($eventos);
+    }
+
+    /**
+     * Get eventos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getEventos()
+    {
+        return $this->eventos;
     }
 }

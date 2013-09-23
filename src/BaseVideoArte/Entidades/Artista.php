@@ -7,6 +7,9 @@ namespace BaseVideoArte\Entidades;
  */
 class Artista {
 
+
+	
+
     /** 
      * @Id @Column(type="integer")
      * @GeneratedValue
@@ -30,8 +33,17 @@ class Artista {
      */	 
 	private $pais;
 	
+	/**
+	 * @ManyToMany(targetEntity="Obra", inversedBy="artistas")
+	 * @JoinTable(name="obras_x_artista")
+	 */
+	private $obras;
 	
+	//------------------------
 
+	public function __construct(){
+		$this->obras = new \Doctrine\Common\Collections\ArrayCollection();
+	}
     /**
      * Get id
      *
@@ -155,5 +167,38 @@ class Artista {
     public function getPais()
     {
         return $this->pais;
+    }
+
+    /**
+     * Add obras
+     *
+     * @param \BaseVideoArte\Entidades\Obra $obras
+     * @return Artista
+     */
+    public function addObra(\BaseVideoArte\Entidades\Obra $obras)
+    {
+        $this->obras[] = $obras;
+    
+        return $this;
+    }
+
+    /**
+     * Remove obras
+     *
+     * @param \BaseVideoArte\Entidades\Obra $obras
+     */
+    public function removeObra(\BaseVideoArte\Entidades\Obra $obras)
+    {
+        $this->obras->removeElement($obras);
+    }
+
+    /**
+     * Get obras
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getObras()
+    {
+        return $this->obras;
     }
 }

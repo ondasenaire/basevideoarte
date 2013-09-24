@@ -14,7 +14,7 @@ class Genero {
 	private $id;
 	
 	/**
-	 * Column(type="string")
+	 * @Column(type="string")
 	 */
 	private $genero;
 
@@ -26,5 +26,28 @@ class Genero {
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set genero
+     *
+     * @param string $genero
+     * @return Genero
+     */
+    public function setGenero($genero)
+    {
+        $this->genero = $genero;
+    
+        return $this;
+    }
+
+    /**
+     * Get genero
+     *
+     * @return string 
+     */
+    public function getGenero()
+    {
+        return $this->genero;
     }
 }

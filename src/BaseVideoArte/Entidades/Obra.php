@@ -33,13 +33,13 @@ class Obra {
 	
 	//---CAMPOS RELACIONADOS
 	/**
-	 * @OneToOne(targetEntity="Genero")
+	 * @ManyToOne(targetEntity="Genero")
      * @JoinColumn(name="genero_id", referencedColumnName="id")
 	 */
 	private $genero;
 	
 	/**
-	 * @OneToOne(targetEntity="Formato")
+	 * @ManyToOne(targetEntity="Formato")
      * @JoinColumn(name="formato_id", referencedColumnName="id")
 	 */
 	private $formato;
@@ -53,12 +53,24 @@ class Obra {
 	 * @ManyToMany(targetEntity="Evento", mappedBy="obras")
 	 */
 	private $eventos;
+	
+	
+	/**
+	 * @ManyToMany(targetEntity="Medio")
+	 * @JoinTable(name="medios_x_obra", 
+	 * 		joinColumns={@JoinColumn(name="obra_id", referencedColumnName="id")},
+	 * 		inverseJoinColumns={@JoinColumn(name="medio_id",referencedColumnName="id",
+	 * 		unique=true)}
+	 * 		)
+	 */
+	private $medios; //imagenes, videos, etc
 
 //-----FUNCIONES
 
 	public function __construct(){
 		$this->artistas = new \Doctrine\Common\Collections\ArrayCollection();
 		$this->eventos = new \Doctrine\Common\Collections\ArrayCollection();
+		$this->medios = new \Doctrine\Common\Collections\ArrayCollection();
 	}
 
     /**
@@ -286,5 +298,38 @@ class Obra {
     public function getEventos()
     {
         return $this->eventos;
+    }
+
+    /**
+     * Add medios
+     *
+     * @param \BaseVideoArte\Entidades\Medio $medios
+     * @return Obra
+     */
+    public function addMedio(\BaseVideoArte\Entidades\Medio $medios)
+    {
+        $this->medios[] = $medios;
+    
+        return $this;
+    }
+
+    /**
+     * Remove medios
+     *
+     * @param \BaseVideoArte\Entidades\Medio $medios
+     */
+    public function removeMedio(\BaseVideoArte\Entidades\Medio $medios)
+    {
+        $this->medios->removeElement($medios);
+    }
+
+    /**
+     * Get medios
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getMedios()
+    {
+        return $this->medios;
     }
 }

@@ -32,7 +32,7 @@ class Evento {
 	private $lugar;
 	
 	/**
-	 * @OneToOne(targetEntity="Pais")
+	 * @ManyToOne(targetEntity="Pais")
 	 * @JoinColumn(name="pais_id", referencedColumnName="id")
 	 */
 	private $pais;

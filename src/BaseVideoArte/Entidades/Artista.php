@@ -7,9 +7,6 @@ namespace BaseVideoArte\Entidades;
  */
 class Artista {
 
-
-	
-
     /** 
      * @Id @Column(type="integer")
      * @GeneratedValue
@@ -26,9 +23,10 @@ class Artista {
 	/** @Column(type="string") */
 	private $web;
 
+	//Many-To-One, Unidirectional
 	/**
 	 *    
-     * @OneToOne(targetEntity="Pais")
+     * @ManyToOne(targetEntity="Pais")
      * @JoinColumn(name="pais_id", referencedColumnName="id")
      */	 
 	private $pais;

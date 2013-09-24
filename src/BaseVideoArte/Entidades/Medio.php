@@ -17,8 +17,8 @@ class Medio {
 	 * @Column(type="string")
 	 */
 		private $archivo; // ruta al archivo
-	/*
-	 * @OneToOne(targetEntity="TipoDeMedio")
+	/**
+	 * @ManyToOne(targetEntity="TipoDeMedio")
 	 * @JoinColumn(name="tipo_medio_id", referencedColumnName="id")
 	 */
 	private $tipo;
@@ -54,5 +54,28 @@ class Medio {
     public function getArchivo()
     {
         return $this->archivo;
+    }
+
+    /**
+     * Set tipo
+     *
+     * @param \BaseVideoArte\Entidades\TipoDeMedio $tipo
+     * @return Medio
+     */
+    public function setTipo(\BaseVideoArte\Entidades\TipoDeMedio $tipo = null)
+    {
+        $this->tipo = $tipo;
+    
+        return $this;
+    }
+
+    /**
+     * Get tipo
+     *
+     * @return \BaseVideoArte\Entidades\TipoDeMedio 
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
     }
 }

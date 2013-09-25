@@ -1,47 +1,61 @@
 <?php
-// src/MyWebsite/Entity/Article.php
 namespace BaseVideoArte\Entidades;
 /**
  * @Entity
- * @Table(name="artistas")
+ * @Table(name="eventos")
  */
-class Artista {
-
-    /** 
-     * @Id @Column(type="integer")
-     * @GeneratedValue
-     */
-    private $id;
-
-    /** @Column(type="string") */
-    private $nombre;
-	
-	/** @Column(type="text") */
-	private $info;
-	/** @Column(type="string") */
-	private $inicio;
-	/** @Column(type="string") */
-	private $web;
-
-	//Many-To-One, Unidirectional
+class Evento {
 	/**
-	 *    
-     * @ManyToOne(targetEntity="Pais")
-     * @JoinColumn(name="pais_id", referencedColumnName="id")
-     */	 
+	 * @Id
+	 * @Column(type="integer")
+	 * @GeneratedValue
+	 */
+	private $id;
+	/**
+	 * @Column(type="string")
+	 */		
+	private $nombre;
+	/**
+	 * @Column(type="date")
+	 */	
+	private $fecha;
+	//
+	//private $curadores;
+	/**
+	 * @Column(type="text")
+	 */	
+	private $info;
+	
+	/**
+	 * @Column(type="string")
+	 */
+	private $lugar;
+	
+	/**
+	 * @ManyToOne(targetEntity="Pais")
+	 * @JoinColumn(name="pais_id", referencedColumnName="id")
+	 */
 	private $pais;
 	
+	//--CAMPOS RELACIONADOS
+	
 	/**
-	 * @ManyToMany(targetEntity="Obra", inversedBy="artistas")
-	 * @JoinTable(name="obras_x_artista")
+	 * @ManyToMany(targetEntity="Obra", inversedBy="eventos")
+	 * @JoinTable(name="obras_x_evento")
 	 */
 	private $obras;
 	
-	//------------------------
+	
+	//--------------------
+	    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->obras = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
-	public function __construct(){
-		$this->obras = new \Doctrine\Common\Collections\ArrayCollection();
-	}
+
     /**
      * Get id
      *
@@ -56,7 +70,7 @@ class Artista {
      * Set nombre
      *
      * @param string $nombre
-     * @return Artista
+     * @return Evento
      */
     public function setNombre($nombre)
     {
@@ -76,10 +90,33 @@ class Artista {
     }
 
     /**
+     * Set fecha
+     *
+     * @param \DateTime $fecha
+     * @return Evento
+     */
+    public function setFecha($fecha)
+    {
+        $this->fecha = $fecha;
+    
+        return $this;
+    }
+
+    /**
+     * Get fecha
+     *
+     * @return \DateTime 
+     */
+    public function getFecha()
+    {
+        return $this->fecha;
+    }
+
+    /**
      * Set info
      *
      * @param string $info
-     * @return Artista
+     * @return Evento
      */
     public function setInfo($info)
     {
@@ -99,56 +136,34 @@ class Artista {
     }
 
     /**
-     * Set inicio
+     * Set lugar
      *
-     * @param string $inicio
-     * @return Artista
+     * @param string $lugar
+     * @return Evento
      */
-    public function setInicio($inicio)
+    public function setLugar($lugar)
     {
-        $this->inicio = $inicio;
+        $this->lugar = $lugar;
     
         return $this;
     }
 
     /**
-     * Get inicio
+     * Get lugar
      *
      * @return string 
      */
-    public function getInicio()
+    public function getLugar()
     {
-        return $this->inicio;
+        return $this->lugar;
     }
 
-    /**
-     * Set web
-     *
-     * @param string $web
-     * @return Artista
-     */
-    public function setWeb($web)
-    {
-        $this->web = $web;
     
-        return $this;
-    }
-
-    /**
-     * Get web
-     *
-     * @return string 
-     */
-    public function getWeb()
-    {
-        return $this->web;
-    }
-
     /**
      * Set pais
      *
      * @param \BaseVideoArte\Entidades\Pais $pais
-     * @return Artista
+     * @return Evento
      */
     public function setPais(\BaseVideoArte\Entidades\Pais $pais = null)
     {
@@ -171,7 +186,7 @@ class Artista {
      * Add obras
      *
      * @param \BaseVideoArte\Entidades\Obra $obras
-     * @return Artista
+     * @return Evento
      */
     public function addObra(\BaseVideoArte\Entidades\Obra $obras)
     {

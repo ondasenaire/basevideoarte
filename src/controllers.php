@@ -14,22 +14,25 @@ $app->get('/', function () use ($app) {
 
 
 $app->get('/hola/{h}', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
+
+$app->get('/obras',    'BaseVideoArte\Controller\VideoArteController::listarObrasAction')->bind('obras');
+$app->get('/obras/{obra}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('obra');
 // $app->get('/hola', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
 
 //OBRAS
 
-$app->get('/obras', function () use ($app) {
-    return $app['twig']->render('/obras.html.twig', array());
-})
-->bind('obras')
-;
-
-//---
-$app->get('/obras/{id}', function ($id) use ($app) {
-    return $app['twig']->render('/obra.html.twig', array('id'=> $id));
-})
-->bind('obra')
-;
+// $app->get('/obras', function () use ($app) {
+    // return $app['twig']->render('/obras.html.twig', array());
+// })
+// ->bind('obras')
+// ;
+// 
+// //---
+// $app->get('/obras/{id}', function ($id) use ($app) {
+    // return $app['twig']->render('/obra.html.twig', array('id'=> $id));
+// })
+// ->bind('obra')
+// ;
 
 
 //ARTISTAS

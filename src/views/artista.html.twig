@@ -4,4 +4,11 @@
 
 {% block contenido %}
     Artista: {{ artista.nombre }} 
+    
+    <h3>Obras Realizadas</h3>
+    <ul>
+    {% for obra in artista.obras %}
+        	<li>{{obra.titulo}}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}

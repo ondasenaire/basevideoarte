@@ -3,6 +3,17 @@
 {% block title %}Obras{% endblock %}
 
 {% block contenido %}
-    Obras Catalogadas 
+         Listado de obras
+     
+    <ul>
+        {% for obra in lista_obras %}
+        <li> <a href="{{path('obra',{obra: obra.id}) }}" >{{ obra.titulo|e }}</a>, 
+        {% for artista in obra.artistas%}
+        <a href="{{path('artista',{id: artista.id}) }}" >{{artista.nombre}}</a>
+    	 {% endfor %}
+        </li>
+        
+    {% endfor %}
+    </ul>
 {% endblock %}
 

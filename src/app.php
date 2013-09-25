@@ -9,6 +9,8 @@ require_once '../config/config.db';
 //DOCTRINE
 use \Doctrine\Common\Cache\ApcCache;
 use \Doctrine\Common\Cache\ArrayCache;
+use BaseVideoArte\Controller\VideoArteController;
+//use BaseVideoArte\Controller\VideoArteController; 
 
 
 $db = new Config();
@@ -19,6 +21,16 @@ $app->register(new UrlGeneratorServiceProvider());
 $app->register(new ValidatorServiceProvider());
 $app->register(new ServiceControllerServiceProvider());
 
+//registro controlador
+// $app['video-arte.controller'] = $app->share( function (){
+	// return new VideoArteController($app);
+// }
+// );
+
+$app['videoarte.controller'] = $app->share( function (){
+	return new VideoArteController($app);
+}
+);
 
 
 // Register Doctrine DBAL

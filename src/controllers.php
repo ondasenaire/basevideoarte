@@ -12,6 +12,10 @@ $app->get('/', function () use ($app) {
 ->bind('inicio')
 ;
 
+
+$app->get('/hola/{h}', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
+// $app->get('/hola', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
+
 //OBRAS
 
 $app->get('/obras', function () use ($app) {

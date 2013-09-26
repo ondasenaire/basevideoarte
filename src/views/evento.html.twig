@@ -3,5 +3,16 @@
 {% block title %}Eventos{% endblock %}
 
 {% block contenido %}
-    <h2>evento</h2>
+    <h2>{{evento.nombre}}</h2>
+    <p>{{evento.info}}</p>
+    
+    <ul>
+    {% for obra in evento.obras %}
+    <li>{{ obra.titulo}} 
+    
+     de 
+    </li>
+    {% endfor %}
+    </ul>
+    
 {% endblock %}

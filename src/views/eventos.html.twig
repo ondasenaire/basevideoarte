@@ -4,4 +4,12 @@
 
 {% block contenido %}
     <h2>eventos</h2>
+	<ul>   
+    {% for evento in eventos %}
+    	<li>
+    		<h3>{{evento.nombre}}</h3>
+    		<p> {{evento.info}} </p>
+    	</li>
+    {% endfor %}
+    </ul>
 {% endblock %}

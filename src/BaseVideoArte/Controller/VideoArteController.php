@@ -9,6 +9,8 @@ class VideoArteController {
 		//return $app['twig']->render('/inicio.html.twig', array());
 		return new Response('<html><body>Hello ' . $h . '!</body></html>');
 	}
+	// ARTISTAS
+
 
 	//OBRAS
 	public function listarObrasAction(Application $app) {
@@ -27,11 +29,17 @@ class VideoArteController {
 
 	//EVENTOS
 	public function listarEventosAction(Application $app) {
-		return $app['twig'] -> render('/eventos.html.twig', array());
+		
+		$repoEventos = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Evento');
+		$eventos = $repoEventos->findAll();
+		return $app['twig'] -> render('/eventos.html.twig', array('eventos' => $eventos ));
 	}
 
-	public function mostrarEventoAction(Application $app) {
-		return $app['twig'] -> render('/evento.html.twig', array());
+	public function mostrarEventoAction(Application $app, $evento) {
+		$repoEventos = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Evento');
+		$evento = $repoEventos->findOneById($evento);
+		
+		return $app['twig'] -> render('/evento.html.twig', array('evento' => $evento));
 	}
 
 }

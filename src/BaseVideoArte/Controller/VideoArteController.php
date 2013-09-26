@@ -10,6 +10,7 @@ class VideoArteController {
 		return new Response('<html><body>Hello ' . $h . '!</body></html>');
 	}
 
+	//OBRAS
 	public function listarObrasAction(Application $app) {
 		$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
 		$obras = $repositorioObras -> findAll();
@@ -22,6 +23,15 @@ class VideoArteController {
 		$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
 		$obra = $repositorioObras -> findOneById($obra);
 		return $app['twig'] -> render('/obra.html.twig', array('obra' => $obra));
+	}
+
+	//EVENTOS
+	public function listarEventosAction(Application $app) {
+		return $app['twig'] -> render('/eventos.html.twig', array());
+	}
+
+	public function mostrarEventoAction(Application $app) {
+		return $app['twig'] -> render('/evento.html.twig', array());
 	}
 
 }

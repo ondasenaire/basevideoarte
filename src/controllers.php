@@ -12,11 +12,18 @@ $app->get('/', function () use ($app) {
 ->bind('inicio')
 ;
 
+/*
+ * RUTAS
+ */
+
 
 $app->get('/hola/{h}', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
 
 $app->get('/obras',    'BaseVideoArte\Controller\VideoArteController::listarObrasAction')->bind('obras');
 $app->get('/obras/{obra}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('obra');
+
+$app->get('/eventos','BaseVideoArte\Controller\VideoArteController::listarEventosAction')->bind('eventos');
+$app->get('/eventos/{evento}','BaseVideoArte\Controller\VideoArteController::mostrarEventoAction')->bind('evento');
 // $app->get('/hola', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
 
 //OBRAS

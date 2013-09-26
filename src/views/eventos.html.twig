@@ -7,7 +7,7 @@
 	<ul>   
     {% for evento in eventos %}
     	<li>
-    		<h3>{{evento.nombre}}</h3>
+    		<h3> <a href="{{path('evento',{evento: evento.id}) }}"> {{evento.nombre}} </a> </h3>
     		<p> {{evento.info}} </p>
     	</li>
     {% endfor %}

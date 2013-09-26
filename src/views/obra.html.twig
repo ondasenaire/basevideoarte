@@ -3,5 +3,16 @@
 {% block title %}Obras{% endblock %}
 
 {% block contenido %}
-    obra: {{ obra.titulo }} 
+   <li>
+        <h3>{{obra.titulo}} , ({{obra.anho}})</h3>
+        <p>{{obra.descripcion}}</p>
+        <p>
+        	{% for artista in obra.artistas%}
+        	 <a href="{{path('artista',{id: artista.id}) }}" >{{artista.nombre}}</a>
+        	{% endfor %}
+        </p>
+  </li>
+  
+  
+  
 {% endblock %}

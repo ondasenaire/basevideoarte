@@ -8,7 +8,11 @@
     <h3>Obras Realizadas</h3>
     <ul>
     {% for obra in artista.obras %}
-        	<li>{{obra.titulo}}</li>
+        	<li>
+        		<h4>{{obra.titulo}}</h4>
+        		<p>{{obra.descripcion}}</p>
+        		<a href="{{path('obra',{obra: obra.id}) }}"> ver mas</a>
+        	</li>
     {% endfor %}
     </ul>
 {% endblock %}

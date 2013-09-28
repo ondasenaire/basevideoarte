@@ -31,13 +31,21 @@ class Evento {
 	 */
 	private $lugar;
 	
+	
+	/**
+	 * 
+	 */
+	private $curador;
+	
+	//--CAMPOS RELACIONADOS
+	
 	/**
 	 * @ManyToOne(targetEntity="Pais")
 	 * @JoinColumn(name="pais_id", referencedColumnName="id")
 	 */
 	private $pais;
 	
-	//--CAMPOS RELACIONADOS
+	
 	
 	/**
 	 * @ManyToMany(targetEntity="Obra", inversedBy="eventos")

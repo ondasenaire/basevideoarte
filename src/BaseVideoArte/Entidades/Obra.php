@@ -16,15 +16,11 @@ class Obra {
 	 * @Column(type="string")
 	 */
 	private $titulo;
+		
+	/**  @Column(type="text")*/
+	private $sinopsis;
 	
-	/**
-	 * @Column(type="text")
-	 */
-	private $descripcion;
-	
-	/**
-	 * @Column(type="string")
-	 */
+	/** @Column(type="string") */
 	private $anho;
 	/**
 	 * @Column(type="string")
@@ -64,6 +60,11 @@ class Obra {
 	 * 		)
 	 */
 	private $medios; //imagenes, videos, etc
+	
+	
+	
+	
+	private $palabrasClave;
 
 //-----FUNCIONES
 
@@ -71,6 +72,7 @@ class Obra {
 		$this->artistas = new \Doctrine\Common\Collections\ArrayCollection();
 		$this->eventos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this->medios = new \Doctrine\Common\Collections\ArrayCollection();
+		$this->palabrasClave = new \Doctrine\Common\Collections\ArrayCollection();
 	}
 
     /**

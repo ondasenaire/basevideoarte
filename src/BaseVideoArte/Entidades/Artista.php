@@ -15,13 +15,20 @@ class Artista {
 
     /** @Column(type="string") */
     private $nombre;
+	    /** @Column(type="string") */
+    private $apellido;	
 	
 	/** @Column(type="text") */
-	private $info;
+	private $data;
 	/** @Column(type="string") */
 	private $inicio;
 	/** @Column(type="string") */
 	private $web;
+	/**  @Column(type="string") */
+	private $sexo;
+	/** @Column(type="char")*/ 
+	private $tipo;
+
 
 	//Many-To-One, Unidirectional
 	/**

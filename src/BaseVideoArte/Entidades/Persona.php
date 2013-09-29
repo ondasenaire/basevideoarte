@@ -25,7 +25,7 @@ class Persona{
 	private $web;
 	/**  @Column(type="string") */
 	private $sexo;
-	/**@Column(type="boolean")*/
+	/** @Column(type="boolean")*/
 	private $mostrar;
 	
 		
@@ -369,5 +369,28 @@ class Persona{
     public function getMedios()
     {
         return $this->medios;
+    }
+
+    /**
+     * Set mostrar
+     *
+     * @param boolean $mostrar
+     * @return Persona
+     */
+    public function setMostrar($mostrar)
+    {
+        $this->mostrar = $mostrar;
+    
+        return $this;
+    }
+
+    /**
+     * Get mostrar
+     *
+     * @return boolean 
+     */
+    public function getMostrar()
+    {
+        return $this->mostrar;
     }
 }

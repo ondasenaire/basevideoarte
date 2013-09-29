@@ -34,9 +34,9 @@ class Evento {
 	
 	
 	//--CAMPOS RELACIONADOS
-	/**
-     * @ManyToMany(targetEntity="Persona", mappedBy="eventos")
-	 * @JoinTable(name="curadores_x_evento")
+    /**
+     * @ManyToMany(targetEntity="Persona", inversedBy="curadores")
+     * @JoinTable(name="curadores_x_evento")
      **/
 	private $curadores;
 	/**
@@ -231,5 +231,71 @@ class Evento {
     public function getObras()
     {
         return $this->obras;
+    }
+
+    /**
+     * Add curadores
+     *
+     * @param \BaseVideoArte\Entidades\Persona $curadores
+     * @return Evento
+     */
+    public function addCuradore(\BaseVideoArte\Entidades\Persona $curadores)
+    {
+        $this->curadores[] = $curadores;
+    
+        return $this;
+    }
+
+    /**
+     * Remove curadores
+     *
+     * @param \BaseVideoArte\Entidades\Persona $curadores
+     */
+    public function removeCuradore(\BaseVideoArte\Entidades\Persona $curadores)
+    {
+        $this->curadores->removeElement($curadores);
+    }
+
+    /**
+     * Get curadores
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCuradores()
+    {
+        return $this->curadores;
+    }
+
+    /**
+     * Add medios
+     *
+     * @param \BaseVideoArte\Entidades\Medio $medios
+     * @return Evento
+     */
+    public function addMedio(\BaseVideoArte\Entidades\Medio $medios)
+    {
+        $this->medios[] = $medios;
+    
+        return $this;
+    }
+
+    /**
+     * Remove medios
+     *
+     * @param \BaseVideoArte\Entidades\Medio $medios
+     */
+    public function removeMedio(\BaseVideoArte\Entidades\Medio $medios)
+    {
+        $this->medios->removeElement($medios);
+    }
+
+    /**
+     * Get medios
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getMedios()
+    {
+        return $this->medios;
     }
 }

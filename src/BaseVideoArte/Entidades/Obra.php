@@ -354,4 +354,106 @@ class Obra {
     {
         return $this->medios;
     }
+
+    /**
+     * Set sinopsis
+     *
+     * @param string $sinopsis
+     * @return Obra
+     */
+    public function setSinopsis($sinopsis)
+    {
+        $this->sinopsis = $sinopsis;
+    
+        return $this;
+    }
+
+    /**
+     * Get sinopsis
+     *
+     * @return string 
+     */
+    public function getSinopsis()
+    {
+        return $this->sinopsis;
+    }
+
+    /**
+     * Add genero
+     *
+     * @param \BaseVideoArte\Entidades\Genero $genero
+     * @return Obra
+     */
+    public function addGenero(\BaseVideoArte\Entidades\Genero $genero)
+    {
+        $this->genero[] = $genero;
+    
+        return $this;
+    }
+
+    /**
+     * Remove genero
+     *
+     * @param \BaseVideoArte\Entidades\Genero $genero
+     */
+    public function removeGenero(\BaseVideoArte\Entidades\Genero $genero)
+    {
+        $this->genero->removeElement($genero);
+    }
+
+    /**
+     * Add formato
+     *
+     * @param \BaseVideoArte\Entidades\Formato $formato
+     * @return Obra
+     */
+    public function addFormato(\BaseVideoArte\Entidades\Formato $formato)
+    {
+        $this->formato[] = $formato;
+    
+        return $this;
+    }
+
+    /**
+     * Remove formato
+     *
+     * @param \BaseVideoArte\Entidades\Formato $formato
+     */
+    public function removeFormato(\BaseVideoArte\Entidades\Formato $formato)
+    {
+        $this->formato->removeElement($formato);
+    }
+
+    /**
+     * Add palabrasClave
+     *
+     * @param \BaseVideoArte\Entidades\PalabraClave $palabrasClave
+     * @return Obra
+     */
+    public function addPalabrasClave(\BaseVideoArte\Entidades\PalabraClave $palabrasClave)
+    {
+        $this->palabrasClave[] = $palabrasClave;
+    
+        return $this;
+    }
+
+    /**
+     * Remove palabrasClave
+     *
+     * @param \BaseVideoArte\Entidades\PalabraClave $palabrasClave
+     */
+    public function removePalabrasClave(\BaseVideoArte\Entidades\PalabraClave $palabrasClave)
+    {
+        $this->palabrasClave->removeElement($palabrasClave);
+    }
+
+    /**
+     * Get palabrasClave
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPalabrasClave()
+    {
+        return $this->palabrasClave;
+    }
 }

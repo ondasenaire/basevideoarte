@@ -19,8 +19,8 @@ class Evento {
 	 * @Column(type="date")
 	 */	
 	private $fecha;
-	//
-	//private $curadores;
+	
+	
 	/**
 	 * @Column(type="text")
 	 */	
@@ -32,21 +32,18 @@ class Evento {
 	private $lugar;
 	
 	
-	/**
-	 * 
-	 */
-	private $curador;
 	
 	//--CAMPOS RELACIONADOS
-	
+	/**
+     * @ManyToMany(targetEntity="Persona", mappedBy="eventos")
+	 * @JoinTable(name="curadores_x_evento")
+     **/
+	private $curadores;
 	/**
 	 * @ManyToOne(targetEntity="Pais")
 	 * @JoinColumn(name="pais_id", referencedColumnName="id")
 	 */
 	private $pais;
-	
-	
-	
 	/**
 	 * @ManyToMany(targetEntity="Obra", inversedBy="eventos")
 	 * @JoinTable(name="obras_x_evento")
@@ -54,13 +51,26 @@ class Evento {
 	private $obras;
 	
 	
+		/**
+	 * 
+	 * muchos a muchos unidireccional
+	 * @ManyToMany(targetEntity="Medio")
+	 * @JoinTable(name="medios_x_evento", 
+	 * 		joinColumns={@JoinColumn(name="evento_id", referencedColumnName="id")},
+	 * 		inverseJoinColumns={@JoinColumn(name="medio_id",referencedColumnName="id",
+	 * 		unique=true)}
+	 * 		)
+	 */
+	private $medios; //imagenes, videos,links ,etc
+	
 	//--------------------
-	    /**
+	 /**
      * Constructor
      */
     public function __construct()
     {
         $this->obras = new \Doctrine\Common\Collections\ArrayCollection();
+		$this->curadores = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
 

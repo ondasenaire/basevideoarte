@@ -29,19 +29,31 @@ class Obra {
 	
 	//---CAMPOS RELACIONADOS
 	/**
-	 * @ManyToOne(targetEntity="Genero")
-     * @JoinColumn(name="genero_id", referencedColumnName="id")
+	 * 
+	 * muchos a muchos unidireccional
+	 * @ManyToMany(targetEntity="Genero")
+	 * @JoinTable(name="generos_x_obra", 
+	 * 		joinColumns={@JoinColumn(name="obra_id", referencedColumnName="id")},
+	 * 		inverseJoinColumns={@JoinColumn(name="genero_id",referencedColumnName="id",
+	 * 		unique=true)}
+	 * 		)
 	 */
 	private $genero;
 	
 	/**
-	 * @ManyToOne(targetEntity="Formato")
-     * @JoinColumn(name="formato_id", referencedColumnName="id")
+	 * 
+	 * muchos a muchos unidireccional
+	 * @ManyToMany(targetEntity="Formato")
+	 * @JoinTable(name="formatos_x_obra", 
+	 * 		joinColumns={@JoinColumn(name="obra_id", referencedColumnName="id")},
+	 * 		inverseJoinColumns={@JoinColumn(name="formato_id",referencedColumnName="id",
+	 * 		unique=true)}
+	 * 		)
 	 */
 	private $formato;
 	
 	/**
-	 * @ManyToMany(targetEntity="Artista", mappedBy="obras")
+	 * @ManyToMany(targetEntity="Persona", mappedBy="obras")
 	 */	
 	private $artistas;
 	
@@ -52,6 +64,8 @@ class Obra {
 	
 	
 	/**
+	 * 
+	 * muchos a muchos unidireccional
 	 * @ManyToMany(targetEntity="Medio")
 	 * @JoinTable(name="medios_x_obra", 
 	 * 		joinColumns={@JoinColumn(name="obra_id", referencedColumnName="id")},
@@ -59,11 +73,17 @@ class Obra {
 	 * 		unique=true)}
 	 * 		)
 	 */
-	private $medios; //imagenes, videos, etc
-	
-	
-	
-	
+	private $medios; //imagenes, videos,links ,etc
+	/**
+	 * 
+	 * muchos a muchos unidireccional
+	 * @ManyToMany(targetEntity="PalabraClave")
+	 * @JoinTable(name="palabras_x_obra", 
+	 * 		joinColumns={@JoinColumn(name="obra_id", referencedColumnName="id")},
+	 * 		inverseJoinColumns={@JoinColumn(name="palabra_id",referencedColumnName="id",
+	 * 		unique=true)}
+	 * 		)
+	 */
 	private $palabrasClave;
 
 //-----FUNCIONES

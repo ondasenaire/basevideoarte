@@ -9,8 +9,26 @@ class VideoArteController {
 		//return $app['twig']->render('/inicio.html.twig', array());
 		return new Response('<html><body>Hello ' . $h . '!</body></html>');
 	}
-	// ARTISTAS
+	// PERSONAS
+	public function listarPersonasAction(Application $app){
+		$qb = $app['db.orm.em']->createQueryBuilder();
+		
+		
+		$qb->select('p.id','p.nombre','p.apellido')
+		   ->from('BaseVideoArte\Entidades\Persona','p');
+		   
+		 $consulta = $qb->getQuery();
+		 $personas = $consulta->getResult();
+		 
+		//$repoPersonas = $app['db.orm.em']->getRepository('BaseVideoArte\Entidades\Persona');
+		//$personas = $repoPersonas->findAll();
+		
+		return $app['twig'] -> render('/personas.html.twig', array('lista_personas' => $personas));
+	} 
 
+	public function mostrarPersonaAction(Application $app){
+		
+	} 
 
 	//OBRAS
 	public function listarObrasAction(Application $app) {

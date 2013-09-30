@@ -26,8 +26,10 @@ class VideoArteController {
 		return $app['twig'] -> render('/personas.html.twig', array('lista_personas' => $personas));
 	} 
 
-	public function mostrarPersonaAction(Application $app){
-		
+	public function mostrarPersonaAction(Application $app, $persona){
+		$repoPersonas = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Persona');
+		$persona = $repoPersonas->findOneById($persona);
+		return $app['twig'] -> render('/persona.html.twig', array('persona' => $persona));
 	} 
 
 	//OBRAS

@@ -18,7 +18,7 @@ $app->get('/', function () use ($app) {
 // PERSONAS
 
 $app->get('/personas',    'BaseVideoArte\Controller\VideoArteController::listarPersonasAction')->bind('personas');
-$app->get('/persona/{persona}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('persona');
+$app->get('/persona/{persona}',    'BaseVideoArte\Controller\VideoArteController::mostrarPersonaAction')->bind('persona');
 
 //$app->get('/hola/{h}', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
 

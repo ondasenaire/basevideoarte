@@ -6,7 +6,7 @@
     Listado de personas
     <ul>
         {% for persona in lista_personas %}
-        <li><a href="{{path('artista',{id: persona.id}) }}" >{{ persona.nombre|e }} {{ persona.apellido|e }}</a></li>
+        <li><a href="{{path('persona',{persona: persona.id}) }}" >{{ persona.nombre|e }} {{ persona.apellido|e }}</a></li>
     {% endfor %}
     </ul>
 {% endblock %}

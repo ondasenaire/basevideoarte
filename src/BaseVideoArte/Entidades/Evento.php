@@ -325,4 +325,27 @@ class Evento {
     {
         return $this->anho;
     }
+
+    /**
+     * Set web
+     *
+     * @param string $web
+     * @return Evento
+     */
+    public function setWeb($web)
+    {
+        $this->web = $web;
+    
+        return $this;
+    }
+
+    /**
+     * Get web
+     *
+     * @return string 
+     */
+    public function getWeb()
+    {
+        return $this->web;
+    }
 }

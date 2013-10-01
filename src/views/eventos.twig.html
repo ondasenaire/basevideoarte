@@ -1,4 +1,4 @@
- {% extends 'layout.html.twig' %}
+{% extends 'layout.html.twig' %}
 
 {% block title %}Eventos{% endblock %}
 
@@ -7,8 +7,8 @@
 	<ul>   
     {% for evento in eventos %}
     	<li>
-    		<h3> <a href="{{path('evento',{evento: evento.id}) }}"> {{evento.nombre}} </a> </h3>
-    		<p> {{evento.info}} </p>
+    		<h3> <a href="{{path('evento',{evento: evento.id}) }}"> {{evento.nombre}}, {{evento.anho}} </a> </h3>
+    		<p> {{evento.info}}... </p>
     	</li>
     {% endfor %}
     </ul>

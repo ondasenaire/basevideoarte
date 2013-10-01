@@ -16,9 +16,9 @@ class Evento {
 	 */		
 	private $nombre;
 	/**
-	 * @Column(type="date")
+	 * @Column(type="string")
 	 */	
-	private $fecha;
+	private $anho;
 	
 	
 	/**

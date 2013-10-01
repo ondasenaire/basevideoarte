@@ -8,8 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @Entity
  * @Table(name="palabras_clave")
  */
-class PalabraClave
-{
+class PalabraClave {
 	/**
 	 * @Id
 	 * @Column(type="integer")
@@ -20,40 +19,45 @@ class PalabraClave
 	 * @Column(type="string")
 	 */
 	private $palabra;
-	
-	
 
+	/**
+	 * @ManyToMany(targetEntity="Obras", mappedBy="palabrasClave")
+	 */
+	private $obras;
+	//---------------------------------------
 
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
+	public function __construct() {
+		$this -> obras = new \Doctrine\Common\Collections\ArrayCollection();
+	}
 
-    /**
-     * Set palabra
-     *
-     * @param string $palabra
-     * @return PalabraClave
-     */
-    public function setPalabra($palabra)
-    {
-        $this->palabra = $palabra;
-    
-        return $this;
-    }
+	/**
+	 * Get id
+	 *
+	 * @return integer
+	 */
+	public function getId() {
+		return $this -> id;
+	}
 
-    /**
-     * Get palabra
-     *
-     * @return string 
-     */
-    public function getPalabra()
-    {
-        return $this->palabra;
-    }
+	/**
+	 * Set palabra
+	 *
+	 * @param string $palabra
+	 * @return PalabraClave
+	 */
+	public function setPalabra($palabra) {
+		$this -> palabra = $palabra;
+
+		return $this;
+	}
+
+	/**
+	 * Get palabra
+	 *
+	 * @return string
+	 */
+	public function getPalabra() {
+		return $this -> palabra;
+	}
+
 }

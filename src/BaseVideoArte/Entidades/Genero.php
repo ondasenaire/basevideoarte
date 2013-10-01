@@ -18,6 +18,17 @@ class Genero {
 	 */
 	private $genero;
 
+	/**
+	 * @ManyToMany(targetEntity="Obras", mappedBy="generos")
+	 */
+
+	private $obras;
+
+//------------------------------------------------------------
+	public function __construct(){
+		$this->obras = new \Doctrine\Common\Collections\ArrayCollection();
+	}
+
     /**
      * Get id
      *

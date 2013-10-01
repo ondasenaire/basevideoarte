@@ -23,6 +23,23 @@ class Medio {
 	 */
 	private $tipo;
 
+
+	/**
+	 * @ManyToMany(targetEntity="Obras", mappedBy="medios")
+	 */
+	private $obras;
+	
+	
+	
+	
+//---------------------------------------
+
+
+
+	public function __construct(){
+		$this->obras = new \Doctrine\Common\Collections\ArrayCollection();
+	}
+
     /**
      * Get id
      *

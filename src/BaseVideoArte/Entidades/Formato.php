@@ -14,7 +14,20 @@ class Formato {
 	 * @Column(type="string")
 	 */
 	private $formato;
+	
+	/**
+	 * @ManyToMany(targetEntity="Obras", mappedBy="formatos")
+	 */
+	private $obras;
 
+
+//---------------------------------------
+
+
+
+	public function __construct(){
+		$this->obras = new \Doctrine\Common\Collections\ArrayCollection();
+	}
     /**
      * Get id
      *

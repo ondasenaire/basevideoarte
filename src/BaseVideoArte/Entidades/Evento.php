@@ -20,7 +20,11 @@ class Evento {
 	 */	
 	private $anho;
 	
-	
+	/**
+	 * @Column(type="string")
+	 */
+	private $web;
+	 
 	/**
 	 * @Column(type="text")
 	 */	

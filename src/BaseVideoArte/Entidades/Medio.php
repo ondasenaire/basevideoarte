@@ -25,7 +25,7 @@ class Medio {
 
 
 	/**
-	 * @ManyToMany(targetEntity="Obras", mappedBy="medios")
+	 * @ManyToMany(targetEntity="Obra", mappedBy="medios")
 	 */
 	private $obras;
 	
@@ -94,5 +94,38 @@ class Medio {
     public function getTipo()
     {
         return $this->tipo;
+    }
+
+    /**
+     * Add obras
+     *
+     * @param \BaseVideoArte\Entidades\Obras $obras
+     * @return Medio
+     */
+    public function addObra(\BaseVideoArte\Entidades\Obras $obras)
+    {
+        $this->obras[] = $obras;
+    
+        return $this;
+    }
+
+    /**
+     * Remove obras
+     *
+     * @param \BaseVideoArte\Entidades\Obras $obras
+     */
+    public function removeObra(\BaseVideoArte\Entidades\Obras $obras)
+    {
+        $this->obras->removeElement($obras);
+    }
+
+    /**
+     * Get obras
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getObras()
+    {
+        return $this->obras;
     }
 }

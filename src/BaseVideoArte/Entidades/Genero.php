@@ -19,7 +19,7 @@ class Genero {
 	private $genero;
 
 	/**
-	 * @ManyToMany(targetEntity="Obras", mappedBy="generos")
+	 * @ManyToMany(targetEntity="Obra", mappedBy="generos")
 	 */
 
 	private $obras;
@@ -60,5 +60,38 @@ class Genero {
     public function getGenero()
     {
         return $this->genero;
+    }
+
+    /**
+     * Add obras
+     *
+     * @param \BaseVideoArte\Entidades\Obras $obras
+     * @return Genero
+     */
+    public function addObra(\BaseVideoArte\Entidades\Obras $obras)
+    {
+        $this->obras[] = $obras;
+    
+        return $this;
+    }
+
+    /**
+     * Remove obras
+     *
+     * @param \BaseVideoArte\Entidades\Obras $obras
+     */
+    public function removeObra(\BaseVideoArte\Entidades\Obras $obras)
+    {
+        $this->obras->removeElement($obras);
+    }
+
+    /**
+     * Get obras
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getObras()
+    {
+        return $this->obras;
     }
 }

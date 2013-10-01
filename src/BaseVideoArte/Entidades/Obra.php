@@ -404,4 +404,24 @@ class Obra {
 		return $this -> palabrasClave;
 	}
 
+
+    /**
+     * Get generos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getGeneros()
+    {
+        return $this->generos;
+    }
+
+    /**
+     * Get formatos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getFormatos()
+    {
+        return $this->formatos;
+    }
 }

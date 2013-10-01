@@ -16,7 +16,7 @@ class Formato {
 	private $formato;
 	
 	/**
-	 * @ManyToMany(targetEntity="Obras", mappedBy="formatos")
+	 * @ManyToMany(targetEntity="Obra", mappedBy="formatos")
 	 */
 	private $obras;
 
@@ -59,5 +59,38 @@ class Formato {
     public function getFormato()
     {
         return $this->formato;
+    }
+
+    /**
+     * Add obras
+     *
+     * @param \BaseVideoArte\Entidades\Obras $obras
+     * @return Formato
+     */
+    public function addObra(\BaseVideoArte\Entidades\Obras $obras)
+    {
+        $this->obras[] = $obras;
+    
+        return $this;
+    }
+
+    /**
+     * Remove obras
+     *
+     * @param \BaseVideoArte\Entidades\Obras $obras
+     */
+    public function removeObra(\BaseVideoArte\Entidades\Obras $obras)
+    {
+        $this->obras->removeElement($obras);
+    }
+
+    /**
+     * Get obras
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getObras()
+    {
+        return $this->obras;
     }
 }

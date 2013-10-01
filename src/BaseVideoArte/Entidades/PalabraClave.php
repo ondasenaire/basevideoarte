@@ -21,7 +21,7 @@ class PalabraClave {
 	private $palabra;
 
 	/**
-	 * @ManyToMany(targetEntity="Obras", mappedBy="palabrasClave")
+	 * @ManyToMany(targetEntity="Obra", mappedBy="palabrasClave")
 	 */
 	private $obras;
 	//---------------------------------------
@@ -60,4 +60,37 @@ class PalabraClave {
 		return $this -> palabra;
 	}
 
+
+    /**
+     * Add obras
+     *
+     * @param \BaseVideoArte\Entidades\Obras $obras
+     * @return PalabraClave
+     */
+    public function addObra(\BaseVideoArte\Entidades\Obras $obras)
+    {
+        $this->obras[] = $obras;
+    
+        return $this;
+    }
+
+    /**
+     * Remove obras
+     *
+     * @param \BaseVideoArte\Entidades\Obras $obras
+     */
+    public function removeObra(\BaseVideoArte\Entidades\Obras $obras)
+    {
+        $this->obras->removeElement($obras);
+    }
+
+    /**
+     * Get obras
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getObras()
+    {
+        return $this->obras;
+    }
 }

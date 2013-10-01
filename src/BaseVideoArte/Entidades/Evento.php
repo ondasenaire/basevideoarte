@@ -298,4 +298,27 @@ class Evento {
     {
         return $this->medios;
     }
+
+    /**
+     * Set anho
+     *
+     * @param string $anho
+     * @return Evento
+     */
+    public function setAnho($anho)
+    {
+        $this->anho = $anho;
+    
+        return $this;
+    }
+
+    /**
+     * Get anho
+     *
+     * @return string 
+     */
+    public function getAnho()
+    {
+        return $this->anho;
+    }
 }

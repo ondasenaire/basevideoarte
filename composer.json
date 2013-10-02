@@ -20,7 +20,10 @@
 		"symfony/translation": "~2.2",
 		"symfony/twig-bridge": "~2.2",
 		"symfony/validator": "~2.2",
-         "taluu/doctrine-orm-provider": "1.0.*@dev"
+         "taluu/doctrine-orm-provider": "1.0.*@dev",
+         
+         "symfony/doctrine-bridge": "2.*"
+         
 
 	},
 	"autoload": {

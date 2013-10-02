@@ -16,30 +16,21 @@ $app->get('/', function () use ($app) {
  * RUTAS
  */
 // PERSONAS
-
 $app->get('/personas',    'BaseVideoArte\Controller\VideoArteController::listarPersonasAction')->bind('personas');
 $app->get('/persona/{persona}',    'BaseVideoArte\Controller\VideoArteController::mostrarPersonaAction')->bind('persona');
-
-//$app->get('/hola/{h}', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
-
+// OBRAS
 $app->get('/obras',    'BaseVideoArte\Controller\VideoArteController::listarObrasAction')->bind('obras');
 $app->get('/obras/{obra}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('obra');
-
+// EVENTOS
 $app->get('/eventos','BaseVideoArte\Controller\VideoArteController::listarEventosAction')->bind('eventos');
 $app->get('/eventos/{evento}','BaseVideoArte\Controller\VideoArteController::mostrarEventoAction')->bind('evento');
-// $app->get('/hola', 'BaseVideoArte\Controller\VideoArteController::indexAction')->bind('hola');
 
+//--------------------------------------------------------
+// BACK-END TEMPORAL, SIN SECURITY
 
-
-//---
-$app->get('/artistas/{id}', function ($id) use ($app) {
-	$repositorioArtistas = $app['db.orm.em']->getRepository('BaseVideoArte\Entidades\Artista');
-	$artista = $repositorioArtistas->findOneById($id);
-    return $app['twig']->render('/artista.html.twig', array('artista'=> $artista));
-	
-})
-->bind('artista')
-;
+$app->get('/admin', 'BaseVideoArte\Controller\AdminController::indexAction')->bind('admin');
+$app->get('/admin/personas', 'BaseVideoArte\Controller\AdminController::editarPersonasAction')->bind('admin_personas');
+$app->get('/admin/nueva_persona', 'BaseVideoArte\Controller\AdminController::nuevaPersonaAction')->bind('admin_nueva_persona');
 
 //BUSCADOR
 $app->get('/busqueda', function () use ($app) {

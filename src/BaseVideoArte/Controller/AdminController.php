@@ -8,6 +8,9 @@ use Symfony\Component\HttpFoundation\Request;
 use BaseVideoArte\Entidades\Persona;
 use BaseVideoArte\Form\Admin\PersonaType;
 
+
+
+
 class AdminController {
 	public function indexAction(Application $app) {
 		//return $app['twig']->render('/inicio.html.twig', array());
@@ -18,10 +21,10 @@ class AdminController {
 	public function listarPersonasAction() {
 	}
 
-	public function nuevaPersonaAction(Application $app) {
+	public function nuevaPersonaAction(Application $app,Request $request) {
 
 		$persona = new Persona();
-		$form = $app["form.factory"] -> create(new PersonaType());
+		$form = $app["form.factory"] -> create(new PersonaType(),$persona);
 
 		$consulta = $app['db.orm.em'] -> createQuery('SELECT p FROM BaseVideoArte\Entidades\Pais p');
 		$paises = $consulta -> getResult(\Doctrine\ORM\Query::HYDRATE_ARRAY);
@@ -31,6 +34,12 @@ class AdminController {
 		}
 
 		$form -> add('pais', 'choice', array('choices' => $p, 'required' => false, ));
+		
+		//...PROCESAR PETICION
+		if($request->isMethod('POST') ){
+			echo 'hola amigo';
+		}
+		
 
 		return $app['twig'] -> render('/Admin/nueva_persona.twig.html', array('form' => $form -> createView()));
 	}

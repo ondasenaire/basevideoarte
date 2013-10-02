@@ -5,7 +5,7 @@ namespace BaseVideoArte\Form\Admin;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+
 
 
 class PersonaType extends AbstractType {
@@ -25,6 +25,7 @@ class PersonaType extends AbstractType {
 		
 		));
 		$builder ->add('web','text');
+		// en symfony2 usar
 		// $builder ->add('pais','entity', array(
 			// 'class' => 'BaseVideoArte\Entidades\Pais',
 			// 'property' => 'pais'

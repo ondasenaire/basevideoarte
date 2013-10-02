@@ -5,12 +5,12 @@ namespace BaseVideoArte\Form\Admin;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
 
 class PersonaType extends AbstractType {
 	public function buildForm(FormBuilderInterface $builder, array $options) {
-		//$builder -> add("nombre", "text");
+		$builder -> add("nombre", "text");
 		$builder ->add('apellido','text');
 		$builder ->add('data','textarea');
 		$builder ->add('inicio','text');
@@ -32,6 +32,7 @@ class PersonaType extends AbstractType {
 		
 		
 	}
+
 
 
 

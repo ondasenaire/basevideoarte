@@ -22,7 +22,7 @@
 		"symfony/validator": "~2.2",
          "taluu/doctrine-orm-provider": "1.0.*@dev",
          
-         "symfony/doctrine-bridge": "2.*"
+         
          
 
 	},

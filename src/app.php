@@ -53,7 +53,7 @@ $app -> register(new Nutwerk\Provider\DoctrineORMServiceProvider(), array('db.or
 //
 // ));
 
-$app -> register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__ . '/../src/views', 'twig.class_path' => __DIR__ . '/../vendor/twig/lib', ));
+$app -> register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__ . '/../src/BaseVideoArte/Vistas', 'twig.class_path' => __DIR__ . '/../vendor/twig/lib', ));
 $app['twig'] = $app -> share($app -> extend('twig', function($twig, $app) {
 	// add custom globals, filters, tags, ...
 

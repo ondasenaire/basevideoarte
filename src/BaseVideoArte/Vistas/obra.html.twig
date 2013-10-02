@@ -1,0 +1,17 @@
+ {% extends 'layout.html.twig' %}
+
+{% block title %}Obras{% endblock %}
+
+{% block contenido %}
+   <li>
+        <h3>{{obra.titulo}} , ({{obra.anho}})</h3>
+        <p>{{obra.sinopsis}}</p>
+        <p>
+        	{% for artista in obra.artistas%}
+        	 <a href="{{path('persona',{persona: artista.id}) }}" >{{artista.nombre}}</a>
+        	{% endfor %}
+        </p>
+  </li>
+  
+  
+{% endblock %}

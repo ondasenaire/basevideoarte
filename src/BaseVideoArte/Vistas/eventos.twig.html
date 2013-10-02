@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Eventos{% endblock %}
+
+{% block contenido %}
+    <h2>eventos</h2>
+	<ul>   
+    {% for evento in eventos %}
+    	<li>
+    		<h3> <a href="{{path('evento',{evento: evento.id}) }}"> {{evento.nombre}}, {{evento.anho}} </a> </h3>
+    		<p> {{evento.info}}... </p>
+    	</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

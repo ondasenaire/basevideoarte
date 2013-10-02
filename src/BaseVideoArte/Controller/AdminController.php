@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 class AdminController {
 	public function indexAction( Application $app) {
 		//return $app['twig']->render('/inicio.html.twig', array());
-		return $app['twig'] -> render('/admin.twig.html');
+		return $app['twig'] -> render('/Admin/admin.twig.html');
 	}
 	
 	public function listarPersonasAction(){}

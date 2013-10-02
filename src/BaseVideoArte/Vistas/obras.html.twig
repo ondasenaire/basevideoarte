@@ -1,0 +1,31 @@
+ {% extends 'layout.html.twig' %}
+
+{% block title %}Obras{% endblock %}
+
+{% block contenido %}
+         Listado de obras
+     
+    <ul>
+        {% for obra in lista_obras %}
+        <li> <a href="{{path('obra',{obra: obra.id}) }}" >{{ obra.titulo|e }}</a>, ( {{obra.anho}} ) , 
+        
+        
+        Genero: 
+        {% for genero in obra.generos %}
+        {{ genero.genero}}
+        {% endfor %}
+        
+        Formato: 
+        {% for formato in obra.formatos %}
+        {{ formato.formato}}
+        {% endfor %}
+        
+        {% for artista in obra.artistas%}
+        <a href="{{path('persona',{persona: artista.id}) }}" >{{artista.nombre}} {{artista.apellido}}</a>
+    	 {% endfor %}
+        </li>
+        
+    {% endfor %}
+    </ul>
+{% endblock %}
+

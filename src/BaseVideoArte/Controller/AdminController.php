@@ -30,7 +30,6 @@ class AdminController {
 			$p[$pais['id']] = $pais['pais'];
 		}
 
-		
 		$form -> add('pais', 'choice', array('choices' => $p, 'required' => false, ));
 
 		return $app['twig'] -> render('/Admin/nueva_persona.twig.html', array('form' => $form -> createView()));

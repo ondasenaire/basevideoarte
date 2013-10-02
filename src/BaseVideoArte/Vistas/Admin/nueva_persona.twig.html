@@ -1,8 +1,9 @@
-<html>
-<body>
+ {% extends 'Admin/admin_layout.twig.html' %}
+ {% block title %}Inicio{% endblock %}
+ 
+ {% block contenido %}
 <form action="{{ path('admin_nueva_persona') }}" method="post" >
 	{{form_widget(form) }}
+	<input type="submit" />
 </form>
-</body>
-</html>
-hola
+{% endblock %}

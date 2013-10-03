@@ -9,6 +9,9 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 
 class PersonaType extends AbstractType {
+	
+	private $opcionesPais;
+	
 	public function buildForm(FormBuilderInterface $builder, array $options) {
 		$builder -> add("nombre", "text");
 		$builder ->add('apellido','text');
@@ -25,6 +28,7 @@ class PersonaType extends AbstractType {
 		
 		));
 		$builder ->add('web','text');
+		$builder->add('pais','choice',array('choices' => $this->opcionesPais, 'required' => 'true', ));
 		// en symfony2 usar
 		// $builder ->add('pais','entity', array(
 			// 'class' => 'BaseVideoArte\Entidades\Pais',
@@ -34,8 +38,12 @@ class PersonaType extends AbstractType {
 		
 	}
 
+	public function setOpcionesPais( $op){
+		$this->opcionesPais = $op;
+		
+	}
 
-
+	
 
 	public function getName() {
 		return "nueva_persona";

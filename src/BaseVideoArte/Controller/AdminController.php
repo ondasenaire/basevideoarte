@@ -23,21 +23,52 @@ class AdminController {
 
 	public function nuevaPersonaAction(Application $app,Request $request) {
 
-		$persona = new Persona();
-		$form = $app["form.factory"] -> create(new PersonaType(),$persona);
-
+	//	$persona = new Persona();
+		/*
+		 * ESTO ES POCO PRACTICO PERO .... con Silex esta complicado
+		 */	 
+		$persona = array (
+			'nombre' => 'introduzca los nombres',
+			'apellido' => 'apellido de la persona',
+			'pais' => '',
+			'data' => '',
+			'inicio' => '',
+			'sexo' => '',
+			'web' => ''		
+		); 		
+		
 		$consulta = $app['db.orm.em'] -> createQuery('SELECT p FROM BaseVideoArte\Entidades\Pais p');
 		$paises = $consulta -> getResult(\Doctrine\ORM\Query::HYDRATE_ARRAY);
+		
 		foreach ($paises as $pais) {
-			//echo $pais['pais'] . ' '.$pais['id']. '<br>';
 			$p[$pais['id']] = $pais['pais'];
 		}
+		
+		//print_r($p) ;
+		//$a = array('1' => 'jaja' );		
+		
+		$fp = new PersonaType();
+		$fp->setOpcionesPais($p);
+		$form = $app["form.factory"] -> create($fp,$persona);
+		
+	//	$form-> add('pais', 'choice', array('choices' => $p, 'required' => false, ));
 
-		$form -> add('pais', 'choice', array('choices' => $p, 'required' => false, ));
 		
 		//...PROCESAR PETICION
 		if($request->isMethod('POST') ){
-			echo 'hola amigo';
+					
+			$form->bind($request);
+			
+			
+			
+			
+			if($form->isValid( )){
+				echo 'SOY VALIDO';
+				$d = $form->getData();
+				var_dump($d);
+			}else{
+				echo 'No Valido ';
+			}
 		}
 		
 

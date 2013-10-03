@@ -84,8 +84,8 @@ class AdminController {
 				//	
 				
 				//mañana hacer esto
-				$nuevaPersona->setTipo(  $app['db.orm.em'] ->getRepository('BaseVideoArte\Entidades\TipoDePersona')->findOneById(1) );
-				$nuevaPersona->setMostrar(TRUE);
+				$nuevaPersona->setTipo(  $app['db.orm.em'] ->getRepository('BaseVideoArte\Entidades\TipoDePersona')->findOneById($persona['tipo']) );
+				$nuevaPersona->setMostrar($persona['mostrar']);
 							
 				//echo  $nuevaPersona->getPais()->getPais();
 				$app['db.orm.em'] ->persist($nuevaPersona);

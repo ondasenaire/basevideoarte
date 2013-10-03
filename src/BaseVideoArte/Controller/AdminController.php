@@ -37,6 +37,8 @@ class AdminController {
 			'web' => ''		
 		); 		
 		
+		
+		
 		$consulta = $app['db.orm.em'] -> createQuery('SELECT p FROM BaseVideoArte\Entidades\Pais p');
 		$paises = $consulta -> getResult(\Doctrine\ORM\Query::HYDRATE_ARRAY);
 		
@@ -51,21 +53,39 @@ class AdminController {
 		$fp->setOpcionesPais($p);
 		$form = $app["form.factory"] -> create($fp,$persona);
 		
-	//	$form-> add('pais', 'choice', array('choices' => $p, 'required' => false, ));
-
+			
 		
 		//...PROCESAR PETICION
 		if($request->isMethod('POST') ){
 					
 			$form->bind($request);
 			
-			
-			
-			
 			if($form->isValid( )){
-				echo 'SOY VALIDO';
-				$d = $form->getData();
-				var_dump($d);
+				$persona = $form->getData();
+				/***/
+				
+				$nuevaPersona = new Persona();
+				
+				$nuevaPersona->setNombre($persona['nombre']);
+				$nuevaPersona->setApellido($persona['apellido']);
+				$nuevaPersona->setData($persona['data']);
+				$nuevaPersona->setInicio($persona['inicio']);
+				$nuevaPersona->setSexo($persona['sexo']);
+				$nuevaPersona->setWeb($persona['web']);
+				
+				//pais				
+				$nuevaPersona->setPais($app['db.orm.em'] ->getRepository('BaseVideoArte\Entidades\Pais')->findOneById($persona['pais']));
+					
+				//	
+				
+				//mañana hacer esto
+				$nuevaPersona->setTipo(  $app['db.orm.em'] ->getRepository('BaseVideoArte\Entidades\TipoDePersona')->findOneById(1) );
+				$nuevaPersona->setMostrar(TRUE);
+							
+				//echo  $nuevaPersona->getPais()->getPais();
+				$app['db.orm.em'] ->persist($nuevaPersona);
+				$app['db.orm.em'] ->flush();
+
 			}else{
 				echo 'No Valido ';
 			}

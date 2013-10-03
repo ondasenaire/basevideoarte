@@ -24,8 +24,6 @@ class PersonaType extends AbstractType {
 				'o' => 'otro'
 			),
 			'required' => 'false',
-			
-		
 		));
 		$builder ->add('web','text');
 		$builder->add('pais','choice',array('choices' => $this->opcionesPais, 'required' => 'true', ));
@@ -34,9 +32,7 @@ class PersonaType extends AbstractType {
 			// 'class' => 'BaseVideoArte\Entidades\Pais',
 			// 'property' => 'pais'
 		// ));
-		
-		
-	}
+		}
 
 	public function setOpcionesPais( $op){
 		$this->opcionesPais = $op;

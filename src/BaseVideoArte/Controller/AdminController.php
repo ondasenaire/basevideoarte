@@ -34,27 +34,35 @@ class AdminController {
 			'data' => '',
 			'inicio' => '',
 			'sexo' => '',
-			'web' => ''		
+			'web' => ''	,
+			'tipo' => '',
+			'mostrar' => true
+				
 		); 		
 		
-		
+		/* Campos 'entity' */
 		
 		$consulta = $app['db.orm.em'] -> createQuery('SELECT p FROM BaseVideoArte\Entidades\Pais p');
 		$paises = $consulta -> getResult(\Doctrine\ORM\Query::HYDRATE_ARRAY);
+		
+		$con = $app['db.orm.em'] -> createQuery('SELECT t FROM BaseVideoArte\Entidades\TipoDePersona t');
+		$tipos = $con-> getResult(\Doctrine\ORM\Query::HYDRATE_ARRAY);
 		
 		foreach ($paises as $pais) {
 			$p[$pais['id']] = $pais['pais'];
 		}
 		
-		//print_r($p) ;
-		//$a = array('1' => 'jaja' );		
+		foreach ($tipos as $tipo) {
+			$t[$tipo['id']] = $tipo['tipo'];
+		}
 		
 		$fp = new PersonaType();
+		$fp->setOpcionesTipo($t);
 		$fp->setOpcionesPais($p);
+		
+		
 		$form = $app["form.factory"] -> create($fp,$persona);
-		
 			
-		
 		//...PROCESAR PETICION
 		if($request->isMethod('POST') ){
 					
@@ -65,17 +73,14 @@ class AdminController {
 				/***/
 				
 				$nuevaPersona = new Persona();
-				
 				$nuevaPersona->setNombre($persona['nombre']);
 				$nuevaPersona->setApellido($persona['apellido']);
 				$nuevaPersona->setData($persona['data']);
 				$nuevaPersona->setInicio($persona['inicio']);
 				$nuevaPersona->setSexo($persona['sexo']);
 				$nuevaPersona->setWeb($persona['web']);
-				
 				//pais				
 				$nuevaPersona->setPais($app['db.orm.em'] ->getRepository('BaseVideoArte\Entidades\Pais')->findOneById($persona['pais']));
-					
 				//	
 				
 				//mañana hacer esto

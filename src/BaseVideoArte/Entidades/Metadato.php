@@ -16,15 +16,17 @@ class Metadato{
 	 */
 	private $metadato;
 	
-
+	/**
+	 * @Column(type="integer")
+	 */
 	private $tipo;
+	
+	private $tipos; // array con las categorias
 	
 	
 	//-------------------
-	
-	//porobando pra reducir cantidad de entidades
-	public function getTipos(){
-		$tipos = array(
+	public function __construct(){
+		$this->tipos =array(
 			'1' => 'nombre',
 			'2' => 'apellido',
 			'3' => 'pais',
@@ -34,9 +36,13 @@ class Metadato{
 			'7' => 'titulo',
 		
 		);
+	}
+	//porobando pra reducir cantidad de entidades
+	public function getTipos(){
+		return $this->tipos; 
 	}	
-	public function setTipo(){
-		
+	public function setTipo($t){
+		$this->tipo = $t;
 	}	
 			
 	

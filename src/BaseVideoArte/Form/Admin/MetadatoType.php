@@ -5,6 +5,7 @@ namespace BaseVideoArte\Form\Admin;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 
 
@@ -24,6 +25,13 @@ class MetadatoType extends AbstractType {
 		
 	}
 		
+		
+    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+        $resolver->setDefaults(array(
+            'data_class' => 'BaseVideoArte\Entidades\Metadato',
+        ));
+    }		
 
 	public function getName() {
 		return "metadato";

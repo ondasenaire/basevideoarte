@@ -12,7 +12,7 @@ use BaseVideoArte\Form\Admin\PersonaType;
 use BaseVideoArte\Entidades\Metadato;
 use BaseVideoArte\Form\Admin\MetadatoType;
 
-
+use BaseVideoArte\Form\Admin\MultipleType;
 
 class AdminController {
 	public function indexAction(Application $app) {
@@ -112,14 +112,28 @@ class AdminController {
 
 	public function metadatoAction( Application $app ){
 		
+		$coll = array('metadatos' => array());
+		
 		$m = new Metadato();
+		$m2 = new Metadato();
+		
+		$m->setMetadato(" estra");
+		$m2->setMetadato(" estra2");
+		
+		//$coll = array( 'metadatos' => array('1'=>'csaacsd','1'=>'ceddrtd') );
+		
+		//$coll['metadatos'][] = $m;
+	//	$coll['metadatos'][] = $m2;
 				
 		$mt = new MetadatoType();
+		
+		
 		$mt->setOpcionesTipo($m->getTipos());
 		
+		$multiple = new MultipleType();
+		$multiple->setOpciones($mt);
 		
-		
-		$form = $app["form.factory"] -> create($mt,$m);
+		$form = $app["form.factory"] -> create($multiple,$coll);
 		
 		return $app['twig'] -> render('/Admin/pruebas.twig.html', array('meta' => $m ,
 																		'form' => $form->createView()					

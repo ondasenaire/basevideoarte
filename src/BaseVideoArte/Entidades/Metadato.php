@@ -26,7 +26,7 @@ class Metadato{
 	
 	//-------------------
 	public function __construct(){
-		$this->tipos =array(
+		$this->tipos = array(
 			'1' => 'nombre',
 			'2' => 'apellido',
 			'3' => 'pais',
@@ -38,14 +38,21 @@ class Metadato{
 		);
 	}
 	//porobando pra reducir cantidad de entidades
-	public function getTipos(){
+	public function getTipos(){ // retorno array para opciones
 		return $this->tipos; 
 	}	
 	public function setTipo($t){
 		$this->tipo = $t;
 	}	
-			
-	
+	/* VER ESTO*/		
+	public function getSTipo(){
+		$s = "";	
+		if (isset($this->tipo) ){
+			$s = $this->tipo; 
+		}
+		
+		return $s;
+	}
 	
 	
 }

@@ -17,7 +17,7 @@ class MultipleType extends AbstractType {
 	public function buildForm(FormBuilderInterface $builder, array $options) {
 		
 		
-		
+		$builder ->add('titulo','text');
 		$builder -> add("metadatos", "collection",array(
 			'type' => $this->meta,
 			'allow_add' => true,

@@ -112,7 +112,8 @@ class AdminController {
 
 	public function metadatoAction( Application $app ){
 		
-		$coll = array('metadatos' => array());
+		$coll = array('metadatos' => array(),
+				      'titulo'=>'gf');
 		
 		$m = new Metadato();
 		$m2 = new Metadato();
@@ -133,8 +134,7 @@ class AdminController {
 		$multiple = new MultipleType();
 		$multiple->setOpciones($mt);
 		
-		$form = $app["form.factory"] -> create($multiple,$coll);
-		
+		$form = $app["form.factory"] -> create($multiple,$coll);		
 		return $app['twig'] -> render('/Admin/pruebas.twig.html', array('meta' => $m ,
 																		'form' => $form->createView()					
 		));

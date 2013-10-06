@@ -10,6 +10,7 @@ use BaseVideoArte\Form\Admin\PersonaType;
 
 
 use BaseVideoArte\Entidades\Metadato;
+use BaseVideoArte\Form\Admin\MetadatoType;
 
 
 
@@ -110,8 +111,19 @@ class AdminController {
 
 
 	public function metadatoAction( Application $app ){
+		
 		$m = new Metadato();
-		return $app['twig'] -> render('/Admin/pruebas.twig.html', array('meta' => $m ));
+				
+		$mt = new MetadatoType();
+		$mt->setOpcionesTipo($m->getTipos());
+		
+		
+		
+		$form = $app["form.factory"] -> create($mt,$m);
+		
+		return $app['twig'] -> render('/Admin/pruebas.twig.html', array('meta' => $m ,
+																		'form' => $form->createView()					
+		));
 		
 	}
 }

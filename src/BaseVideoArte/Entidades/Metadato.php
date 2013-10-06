@@ -48,11 +48,54 @@ class Metadato{
 	public function getSTipo(){
 		$s = "";	
 		if (isset($this->tipo) ){
-			$s = $this->tipo; 
+			$s = $this->tipos[$this->tipo]; 
 		}
 		
 		return $s;
 	}
 	
 	
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set metadato
+     *
+     * @param string $metadato
+     * @return Metadato
+     */
+    public function setMetadato($metadato)
+    {
+        $this->metadato = $metadato;
+    
+        return $this;
+    }
+
+    /**
+     * Get metadato
+     *
+     * @return string 
+     */
+    public function getMetadato()
+    {
+        return $this->metadato;
+    }
+
+    /**
+     * Get tipo
+     *
+     * @return integer 
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
 }

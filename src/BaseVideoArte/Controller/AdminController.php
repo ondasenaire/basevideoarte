@@ -9,6 +9,8 @@ use BaseVideoArte\Entidades\Persona;
 use BaseVideoArte\Form\Admin\PersonaType;
 
 
+use BaseVideoArte\Entidades\Metadato;
+
 
 
 class AdminController {
@@ -106,4 +108,10 @@ class AdminController {
 	public function editarPersonasAction() {
 	}
 
+
+	public function metadatoAction( Application $app ){
+		$m = new Metadato();
+		return $app['twig'] -> render('/Admin/pruebas.twig.html', array('meta' => $m ));
+		
+	}
 }

@@ -107,7 +107,7 @@ class AdminController {
 		//$coll['metadatos'][] = $m2;
 
 		$mt = new MetadatoType();
-		$mt -> setOpcionesTipo($m -> getTipos());
+		$mt -> setOpcionesTipo($m -> getTipos('persona'));
 		$multiple = new MultipleType();
 		$multiple -> setOpciones($mt);
 		$form = $app["form.factory"] -> create($multiple, $coll);
@@ -119,10 +119,10 @@ class AdminController {
 				$coll = $form -> getData();
 
 				//echo $coll['metadatos']['meta2'] -> getMetadato();
-				//print_r($coll);
+				print_r($coll);
 
 				foreach ( $coll['metadatos'] as $meta) {
-					echo ' '.$meta->getMetadato();
+				//	echo ' '.$meta->getMetadato();
 				}
 			}
 		}

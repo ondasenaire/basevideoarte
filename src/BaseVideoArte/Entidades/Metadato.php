@@ -23,12 +23,18 @@ class Metadato {
 	
 	
 
-	//private $tipos; // array con las categorias
+	/**
+	 * @ManyToMany(targetEntity="Persona", mappedBy="metadatos")
+	 */
+	private $personas;
+	
+	
+	
 
 	//-------------------
-	// public function __construct(){
-	// $this->tipos =
-	// }
+	 public function __construct(){
+		$this->personas = new \Doctrine\Common\Collections\ArrayCollection();
+	 }
 	//porobando pra reducir cantidad de entidades
 	public function getTipos($cat) {// retorno array para opciones
 

@@ -123,8 +123,8 @@ class AdminController {
 		
 		//$coll = array( 'metadatos' => array('1'=>'csaacsd','1'=>'ceddrtd') );
 		
-		//$coll['metadatos'][] = $m;
-	//	$coll['metadatos'][] = $m2;
+		$coll['metadatos'][] = $m;
+		$coll['metadatos'][] = $m2;
 				
 		$mt = new MetadatoType();
 		

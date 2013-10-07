@@ -22,7 +22,7 @@ class MultipleType extends AbstractType {
 			'type' => $this->meta,
 			'allow_add' => true,
             'allow_delete' => true,
-
+			'by_reference' => false,
             'prototype' => true,
             'prototype_name' => 'meta__name__'
 		

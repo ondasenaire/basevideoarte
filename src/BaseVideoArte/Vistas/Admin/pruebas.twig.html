@@ -1,9 +1,36 @@
+ {% extends 'Admin/admin_layout.twig.html' %}
+
+{% block title %}Admin{% endblock %}
+
+{% block contenido %}
 
 {{meta.setTipo(3)}}
 
 {{meta.getSTipo()}}
 
-<form>
-	{{form_widget(form)}}
-	
+<form action="#" method="POST" {{ form_enctype(form) }}>
+    {# reproduce únicamente los campos task: descripción #}
+    {{ form_row(form.titulo) }}
+
+    <h3>metadatos</h3>
+    <ul class="metadatos" data-prototype="{{ form_widget(form.metadatos.vars.prototype)|e }}">
+        {# itera sobre cada etiqueta existente y reproduce su único campo: name #}
+        {% for meta in form.metadatos %}
+            <li>{{ form_row(meta.tipo) }}</li>
+            <li>{{ form_row(meta.metadato) }}</li>
+        {% endfor %}
+    </ul>
+
+    {{ form_rest(form) }}
+    {# ... #}
 </form>
+
+ <a href="#" class="nuevo">
+Add a tag
+</a>
+
+
+
+
+{% endblock %}
+

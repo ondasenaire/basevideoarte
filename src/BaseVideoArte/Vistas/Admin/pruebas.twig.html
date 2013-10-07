@@ -8,7 +8,7 @@
 
 {{meta.getSTipo()}}
 
-<form action="#" method="POST" {{ form_enctype(form) }}>
+<form action="{{path('pruebas')}}" method="POST" {{ form_enctype(form) }}>
     {# reproduce únicamente los campos task: descripción #}
     {{ form_row(form.titulo) }}
 
@@ -23,10 +23,11 @@
 
     {{ form_rest(form) }}
     {# ... #}
+    <input type="submit" />
 </form>
 
  <a href="#" class="nuevo">
-Add a tag
+agregar metadato
 </a>
 
 

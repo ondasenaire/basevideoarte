@@ -63,9 +63,14 @@ class Obra {
 	 */
 	private $palabrasClave;
 
+    /**
+     * @OneToMany(targetEntity="Metadato", mappedBy="obra")
+     **/
+	private $metadatos;
 	//-----FUNCIONES
 
 	public function __construct() {
+		$this -> metadatos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> formatos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> generos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> artistas = new \Doctrine\Common\Collections\ArrayCollection();

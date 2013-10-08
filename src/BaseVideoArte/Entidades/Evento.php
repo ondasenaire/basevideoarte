@@ -67,14 +67,21 @@ class Evento {
 	 */
 	private $medios; //imagenes, videos,links ,etc
 	
+	 /**
+     * @OneToMany(targetEntity="Metadato", mappedBy="evento")
+     **/
+	private $metadatos;
+	
 	//--------------------
 	 /**
      * Constructor
      */
     public function __construct()
     {
+    	$this->metadatos = new \Doctrine\Common\Collections\ArrayCollection();
         $this->obras = new \Doctrine\Common\Collections\ArrayCollection();
 		$this->curadores = new \Doctrine\Common\Collections\ArrayCollection();
+		$this -> medios = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
 

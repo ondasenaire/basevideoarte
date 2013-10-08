@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use BaseVideoArte\Entidades\Persona;
 use BaseVideoArte\Form\Admin\PersonaType;
 
-use BaseVideoArte\Entidades\Metadato;
+use BaseVideoArte\Entidades\MetadatoPersona;
 use BaseVideoArte\Form\Admin\MetadatoType;
 
 use BaseVideoArte\Form\Admin\MultipleType;
@@ -95,15 +95,19 @@ class AdminController {
 	public function editarPersonasAction() {
 	}
 
+	public function recuperarMetadataAction(){
+	
+	}
+	
 	public function pruebasMetadatosAction(Application $app) {
 			
-		$m = new Metadato();
-		$m->setCategoria('1');
+		$m = new MetadatoPersona();
+		//$m->setCategoria('1');
 		$m->setTipo('2');
-		$m->setMetadato('dada');
+		$m->setMetadato('dacdfgdfvsfvsfthsf gbt hhdda');
 		
 		$p = new Persona();
-		$p->setNombre('j');
+		$p->setNombre('jose');
 		$p->setApellido('a');
 		$p->setData('aa');
 		$p->setInicio('23');

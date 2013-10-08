@@ -67,10 +67,9 @@ class Persona {
 	 */
 	private $medios;
 
-	/**
-	 * @ManyToMany(targetEntity="Metadato", inversedBy="personas")
-	 * @JoinTable(name="metadatos_x_persona")
-	 */
+    /**
+     * @OneToMany(targetEntity="Metadato", mappedBy="persona")
+     **/
 	private $metadatos;
 	//--------CONSTRUCTOR-------
 	public function __construct() {

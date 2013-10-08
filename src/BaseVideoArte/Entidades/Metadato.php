@@ -22,18 +22,36 @@ class Metadato {
 	private $tipo;
 	
 	
-
 	/**
-	 * @ManyToMany(targetEntity="Persona", mappedBy="metadatos")
+	 * @Column(type="integer")
 	 */
+	private $categoria;
+	
+
+//-------------------------------------------
+
+    /**
+     * @ManyToOne(targetEntity="Persona", inversedBy="metadatos")
+     * @JoinColumn(name="entidad_id", referencedColumnName="id")
+     **/
 	private $personas;
+    /**
+     * @ManyToOne(targetEntity="Obra", inversedBy="metadatos")
+     * @JoinColumn(name="entidad_id", referencedColumnName="id")
+     **/
+	private $obras;
+    /**
+     * @ManyToOne(targetEntity="Evento", inversedBy="metadatos")
+     * @JoinColumn(name="entidad_id", referencedColumnName="id")
+     **/
+	private $eventos;
 	
 	
 	
 
 	//-------------------
 	 public function __construct(){
-		$this->personas = new \Doctrine\Common\Collections\ArrayCollection();
+		
 	 }
 	//porobando pra reducir cantidad de entidades
 	public function getTipos($cat) {// retorno array para opciones

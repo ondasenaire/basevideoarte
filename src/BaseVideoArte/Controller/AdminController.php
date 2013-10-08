@@ -95,6 +95,38 @@ class AdminController {
 	public function editarPersonasAction() {
 	}
 
+	public function pruebasMetadatosAction(Application $app) {
+			
+		$m = new Metadato();
+		$m->setCategoria('1');
+		$m->setTipo('2');
+		$m->setMetadato('dada');
+		
+		$p = new Persona();
+		$p->setNombre('j');
+		$p->setApellido('a');
+		$p->setData('aa');
+		$p->setInicio('23');
+		$p->setMostrar(true);
+		$p->setSexo('m');
+		$p->setWeb('s');
+		
+		
+	
+		
+		
+		$p->addMetadato($m);
+		$m->setPersona($p);
+		
+		$app['db.orm.em'] -> persist($m);
+		$app['db.orm.em'] -> persist($p);
+		$app['db.orm.em'] -> flush();
+		
+		return new Response('hola');
+	}
+
+	
+
 	public function metadatoAction(Application $app, Request $request) {
 
 		$coll = array('metadatos' => array(), 'titulo' => 'gf');

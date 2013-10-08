@@ -35,17 +35,12 @@ class Metadato {
      * @JoinColumn(name="entidad_id", referencedColumnName="id")
      **/
 	private $persona;
-    /**
+
+	/**
      * @ManyToOne(targetEntity="Obra", inversedBy="metadatos")
      * @JoinColumn(name="entidad_id", referencedColumnName="id")
      **/
 	private $obra;
-    /**
-     * @ManyToOne(targetEntity="Evento", inversedBy="metadatos")
-     * @JoinColumn(name="entidad_id", referencedColumnName="id")
-     **/
-	private $evento;
-	
 	
 	
 

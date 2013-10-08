@@ -45,6 +45,10 @@ class MetadatoPersona extends Metadato{
      **/
 	private $persona;
 	
+	
+	public function __construct(){
+		$this -> persona = new \Doctrine\Common\Collections\ArrayCollection();
+	}
 	public function getTipos(){
 		return array(
 					'1' => 'nombre',
@@ -79,6 +83,10 @@ class MetadatoObra extends Metadato{
      * @JoinColumn(name="entidad_id", referencedColumnName="id")
      **/
 	private $obra;
+	
+	public function __construct(){
+		$this -> obra = new \Doctrine\Common\Collections\ArrayCollection();
+	}
 	
 	public function getTipos(){
 		return array(

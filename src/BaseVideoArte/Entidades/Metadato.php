@@ -2,7 +2,7 @@
 namespace BaseVideoArte\Entidades;
 /**
  * @Entity
- * @Table(name="tipo_de_metadato")
+ * @Table(name="metadatos")
  */
 class Metadato {
 	/**
@@ -127,4 +127,96 @@ class Metadato {
 		return $this -> tipo;
 	}
 
+
+    /**
+     * Set categoria
+     *
+     * @param integer $categoria
+     * @return Metadato
+     */
+    public function setCategoria($categoria)
+    {
+        $this->categoria = $categoria;
+    
+        return $this;
+    }
+
+    /**
+     * Get categoria
+     *
+     * @return integer 
+     */
+    public function getCategoria()
+    {
+        return $this->categoria;
+    }
+
+    /**
+     * Set persona
+     *
+     * @param \BaseVideoArte\Entidades\Persona $persona
+     * @return Metadato
+     */
+    public function setPersona(\BaseVideoArte\Entidades\Persona $persona = null)
+    {
+        $this->persona = $persona;
+    
+        return $this;
+    }
+
+    /**
+     * Get persona
+     *
+     * @return \BaseVideoArte\Entidades\Persona 
+     */
+    public function getPersona()
+    {
+        return $this->persona;
+    }
+
+    /**
+     * Set obra
+     *
+     * @param \BaseVideoArte\Entidades\Obra $obra
+     * @return Metadato
+     */
+    public function setObra(\BaseVideoArte\Entidades\Obra $obra = null)
+    {
+        $this->obra = $obra;
+    
+        return $this;
+    }
+
+    /**
+     * Get obra
+     *
+     * @return \BaseVideoArte\Entidades\Obra 
+     */
+    public function getObra()
+    {
+        return $this->obra;
+    }
+
+    /**
+     * Set evento
+     *
+     * @param \BaseVideoArte\Entidades\Evento $evento
+     * @return Metadato
+     */
+    public function setEvento(\BaseVideoArte\Entidades\Evento $evento = null)
+    {
+        $this->evento = $evento;
+    
+        return $this;
+    }
+
+    /**
+     * Get evento
+     *
+     * @return \BaseVideoArte\Entidades\Evento 
+     */
+    public function getEvento()
+    {
+        return $this->evento;
+    }
 }

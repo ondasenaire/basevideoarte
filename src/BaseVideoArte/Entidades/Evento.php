@@ -355,4 +355,37 @@ class Evento {
     {
         return $this->web;
     }
+
+    /**
+     * Add metadatos
+     *
+     * @param \BaseVideoArte\Entidades\Metadato $metadatos
+     * @return Evento
+     */
+    public function addMetadato(\BaseVideoArte\Entidades\Metadato $metadatos)
+    {
+        $this->metadatos[] = $metadatos;
+    
+        return $this;
+    }
+
+    /**
+     * Remove metadatos
+     *
+     * @param \BaseVideoArte\Entidades\Metadato $metadatos
+     */
+    public function removeMetadato(\BaseVideoArte\Entidades\Metadato $metadatos)
+    {
+        $this->metadatos->removeElement($metadatos);
+    }
+
+    /**
+     * Get metadatos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getMetadatos()
+    {
+        return $this->metadatos;
+    }
 }

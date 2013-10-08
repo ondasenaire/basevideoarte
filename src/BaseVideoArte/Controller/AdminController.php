@@ -95,8 +95,15 @@ class AdminController {
 	public function editarPersonasAction() {
 	}
 
-	public function recuperarMetadataAction(){
-	
+	public function recuperarMetadataAction(Application $app){
+		$p = $app['db.orm.em'] ->find('BaseVideoArte\Entidades\Persona',2);
+		$met = $p->getMetadatos();
+		foreach ($met as $m) {
+			$arr [] = $m->getMetadato();
+		}
+		
+		echo print_r($arr);
+		return new Response();
 	}
 	
 	public function pruebasMetadatosAction(Application $app) {

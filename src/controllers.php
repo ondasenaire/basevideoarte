@@ -33,7 +33,7 @@ $app->get('/admin/personas', 'BaseVideoArte\Controller\AdminController::editarPe
 $app->match('/admin/nueva_persona', 'BaseVideoArte\Controller\AdminController::nuevaPersonaAction')->bind('admin_nueva_persona');
 $app->match('/admin/pruebas', 'BaseVideoArte\Controller\AdminController::metadatoAction')->bind('pruebas');
 $app->match('/admin/pruebas_metadatos', 'BaseVideoArte\Controller\AdminController::pruebasMetadatosAction')->bind('pruebas_metadatos');
-
+$app->match('/admin/pruebas_get_metadatos', 'BaseVideoArte\Controller\AdminController::recuperarMetadataAction')->bind('get_metadatos');
 //BUSCADOR
 $app->get('/busqueda', function () use ($app) {
     return $app['twig']->render('/busqueda.html.twig', array());

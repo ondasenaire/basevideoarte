@@ -68,7 +68,7 @@ class Persona {
 	private $medios;
 
     /**
-     * @OneToMany(targetEntity="Metadato", mappedBy="persona")
+     * @OneToMany(targetEntity="MetadatoPersona", mappedBy="persona")
      **/
 	private $metadatos;
 	//--------CONSTRUCTOR-------

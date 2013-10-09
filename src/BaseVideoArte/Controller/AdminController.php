@@ -61,22 +61,14 @@ class AdminController {
 			if ($form -> isValid()) {
 				$persona = $form -> getData();
 				/***/
-
-				$nuevaPersona = new Persona();
-				$nuevaPersona -> setNombre($persona['nombre']);
-				$nuevaPersona -> setApellido($persona['apellido']);
-				$nuevaPersona -> setData($persona['data']);
-				$nuevaPersona -> setInicio($persona['inicio']);
-				$nuevaPersona -> setSexo($persona['sexo']);
-				$nuevaPersona -> setWeb($persona['web']);
+//$nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) 
+				$nuevaPersona = new Persona($persona['nombre'], $persona['apellido'],$persona['data'], $persona['inicio'], $persona['web'],$persona['sexo'],true );
+	
 				//pais
 				$nuevaPersona -> setPais($app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Pais') -> findOneById($persona['pais']));
 				//
-
-				//mañana hacer esto
 				$nuevaPersona -> setTipo($app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\TipoDePersona') -> findOneById($persona['tipo']));
-				$nuevaPersona -> setMostrar($persona['mostrar']);
-
+			
 				//echo  $nuevaPersona->getPais()->getPais();
 				$app['db.orm.em'] -> persist($nuevaPersona);
 				$app['db.orm.em'] -> flush();
@@ -96,7 +88,7 @@ class AdminController {
 	}
 
 	public function recuperarMetadataAction(Application $app){
-		$p = $app['db.orm.em'] ->find('BaseVideoArte\Entidades\Persona',2);
+		$p = $app['db.orm.em'] ->find('BaseVideoArte\Entidades\Persona',5);
 		$met = $p->getMetadatos();
 		foreach ($met as $m) {
 			$arr [] = $m->getMetadato();
@@ -107,25 +99,15 @@ class AdminController {
 	}
 	
 	public function pruebasMetadatosAction(Application $app) {
-			
+	//$nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) 		
 		$m = new MetadatoPersona();
 		//$m->setCategoria('1');
 		$m->setTipo('2');
-		$m->setMetadato('dacdfgdfvsfvsfthsf gbt hhdda');
+		$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');
 		
-		$p = new Persona();
-		$p->setNombre('jose');
-		$p->setApellido('a');
-		$p->setData('aa');
-		$p->setInicio('23');
-		$p->setMostrar(true);
-		$p->setSexo('m');
-		$p->setWeb('s');
-		
-		
-	
-		
-		
+		//$p = new Persona('jose','sari','asdgd','2003','www','m',true);
+		$p = new Persona('','','','','','',true);
+
 		$p->addMetadato($m);
 		$m->setPersona($p);
 		

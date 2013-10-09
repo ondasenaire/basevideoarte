@@ -72,7 +72,15 @@ class Persona {
      **/
 	private $metadatos;
 	//--------CONSTRUCTOR-------
-	public function __construct() {
+	public function __construct($nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) {
+		$this->nombre = $nombre;
+		$this->apellido = $apellido;
+		$this->data = $data;
+		$this->inicio = $inicio;
+		$this->web = $web;
+		$this->sexo = $sexo;
+		$this->mostrar = $mostrar;
+		
 		$this -> metadatos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> obras = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> eventos = new \Doctrine\Common\Collections\ArrayCollection();

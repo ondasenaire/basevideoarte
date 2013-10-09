@@ -106,15 +106,21 @@ class AdminController {
 	
 	public function pruebasMetadatosAction(Application $app) {
 	//$nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) 		
+	
+		$hd = new Formato('hd');
+	
 		$m = new MetadatoPersona();
 		//$m->setCategoria('1');
 		$m->setTipo('2');
 		$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');
 		
-		$p = new Persona('juan','lennon','asdgd','2003','www','m',true);
+		$p = new Persona('mingo','lennon','asdgd','2003','www','m',true);
 		//$p = new Persona('','','','','','',true);
-		$obra1 = new Obra('miaz','dewjb j ',' 2010','1.20');
-
+		$obra1 = new Obra('range','dewjb j ',' 2010','1.20');
+		$obra1->addFormato($hd);
+		$hd->addObra($obra1);
+		
+		
 		
 		$p->addMetadato($m);
 		$p->addObra($obra1);
@@ -123,7 +129,7 @@ class AdminController {
 		
 		
 		
-		
+		$app['db.orm.em'] -> persist($hd);
 		$app['db.orm.em'] -> persist($m);
 		$app['db.orm.em'] -> persist($obra1);
 		$app['db.orm.em'] -> persist($p);

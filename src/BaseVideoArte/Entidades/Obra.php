@@ -35,7 +35,7 @@ class Obra {
 	private $generos;
 
 	/**
-	 * @ManyToMany(targetEntity="Formato", inversedBy="obras")
+	 * @ManyToMany(targetEntity="Formato", inversedBy="obras",cascade={"persist", "remove"})
 	 * @JoinTable(name="formatos_x_obra")
 	 */
 	private $formatos;

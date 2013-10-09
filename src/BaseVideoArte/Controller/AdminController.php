@@ -108,21 +108,21 @@ class AdminController {
 	//$nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) 		
 	
 		$hd = new Formato('hd');
+		$documental = new Genero('documental');
 		$app['db.orm.em'] -> persist($hd);
 		$m = new MetadatoPersona();
 		//$m->setCategoria('1');
 		$m->setTipo('2');
 		$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');
 		
-		$p = new Persona('reb','lennon','asdgd','2003','www','m',true);
+		$p = new Persona('ric','mennon','asdgd','2003','www','m',true);
 		//$p = new Persona('','','','','','',true);
-		$obra1 = new Obra('ase','dewjb j ',' 2010','1.20');
+		$obra1 = new Obra('eden','dewjb j ',' 2010','1.20');
 		
 		$hd->addObra($obra1);
+		$documental->addObra($obra1);
 		$obra1->addFormato($hd);
-		
-		
-		
+		$obra1->addGenero($documental);
 		
 		$p->addMetadato($m);
 		$p->addObra($obra1);
@@ -131,7 +131,7 @@ class AdminController {
 		
 		
 		
-		
+		$app['db.orm.em'] -> persist($documental);
 		$app['db.orm.em'] -> persist($m);
 		$app['db.orm.em'] -> persist($obra1);
 		$app['db.orm.em'] -> persist($p);

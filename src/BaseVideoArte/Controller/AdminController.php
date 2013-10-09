@@ -13,6 +13,12 @@ use BaseVideoArte\Form\Admin\MetadatoType;
 
 use BaseVideoArte\Form\Admin\MultipleType;
 
+
+use BaseVideoArte\Entidades\Obra;
+use BaseVideoArte\Entidades\Genero;
+use BaseVideoArte\Entidades\Formato;
+use BaseVideoArte\Entidades\PalabraClave;
+
 class AdminController {
 	public function indexAction(Application $app) {
 		//return $app['twig']->render('/inicio.html.twig', array());
@@ -105,13 +111,21 @@ class AdminController {
 		$m->setTipo('2');
 		$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');
 		
-		//$p = new Persona('jose','sari','asdgd','2003','www','m',true);
-		$p = new Persona('','','','','','',true);
+		$p = new Persona('juan','lennon','asdgd','2003','www','m',true);
+		//$p = new Persona('','','','','','',true);
+		$obra1 = new Obra('miaz','dewjb j ',' 2010','1.20');
 
+		
 		$p->addMetadato($m);
+		$p->addObra($obra1);
 		$m->setPersona($p);
 		
+		
+		
+		
+		
 		$app['db.orm.em'] -> persist($m);
+		$app['db.orm.em'] -> persist($obra1);
 		$app['db.orm.em'] -> persist($p);
 		$app['db.orm.em'] -> flush();
 		

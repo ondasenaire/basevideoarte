@@ -19,7 +19,8 @@ class MetadatoObra extends Metadato {
 		parent::__construct();
 		$this -> metadato = $metadato;
 		if (gettype($tipo) == 'string') {
-			array_search($tipo, $this -> getTipos());
+			$ind = array_search($tipo, $this -> getTipos());
+			$this->tipo = $ind;
 		} else {
 			$this -> tipo = $tipo;
 		}

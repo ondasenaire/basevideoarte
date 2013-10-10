@@ -125,14 +125,16 @@ class AdminController {
 		$app['db.orm.em'] -> persist($documental);
 		
 		
-		$m = new MetadatoPersona();
-		//$mo = new MetadatoObra('');
+		$m = new MetadatoPersona('derian','nombre');
+		$mo = new MetadatoObra('sertao','titulo');
+		$app['db.orm.em'] -> persist($m);
+		$app['db.orm.em'] -> persist($mo);
 		//$me = new MetadatoEvento();
 		//$m->setCategoria('1');
-		$m->setTipo('2');
-		$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');
+		//$m->setTipo('2');
+		//$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');
 		
-		$p = new Persona('ric','mennon','asdgd','2003','www','m',true);
+		$p = new Persona('carlos','mennon','asdgd','2003','www','m',true);
 		//$p = new Persona('','','','','','',true);
 		$obra1 = new Obra('eden','dewjb j ',' 2010','1.20');
 		$obra2 = new Obra('time','fds  fvd  fdjb j ',' 2000','1.20');
@@ -149,6 +151,8 @@ class AdminController {
 		$super8->addObra($obra2);
 		$obra2->addFormato($super8);
 		$obra2->addGenero($experimental);
+		$obra2->addMetadato($mo);
+		$mo->setObra($obra2);
 		
 		
 		
@@ -164,7 +168,8 @@ class AdminController {
 		
 		
 		
-		$app['db.orm.em'] -> persist($m);
+		
+		
 		$app['db.orm.em'] -> persist($evento);
 		$app['db.orm.em'] -> persist($obra1);
 		$app['db.orm.em'] -> persist($obra2);

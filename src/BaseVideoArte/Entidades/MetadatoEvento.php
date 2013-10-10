@@ -46,5 +46,98 @@ class MetadatoEvento extends Metadato{
 	}
 
 	
-}
+    /**
+     * @var integer
+     */
+    protected $id;
 
+    /**
+     * @var string
+     */
+    protected $metadato;
+
+    /**
+     * @var integer
+     */
+    protected $tipo;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set metadato
+     *
+     * @param string $metadato
+     * @return MetadatoEvento
+     */
+    public function setMetadato($metadato)
+    {
+        $this->metadato = $metadato;
+    
+        return $this;
+    }
+
+    /**
+     * Get metadato
+     *
+     * @return string 
+     */
+    public function getMetadato()
+    {
+        return $this->metadato;
+    }
+
+    /**
+     * Set tipo
+     *
+     * @param integer $tipo
+     * @return MetadatoEvento
+     */
+    public function setTipo($tipo)
+    {
+        $this->tipo = $tipo;
+    
+        return $this;
+    }
+
+    /**
+     * Get tipo
+     *
+     * @return integer 
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+    /**
+     * Set evento
+     *
+     * @param \BaseVideoArte\Entidades\Evento $evento
+     * @return MetadatoEvento
+     */
+    public function setEvento(\BaseVideoArte\Entidades\Evento $evento = null)
+    {
+        $this->evento = $evento;
+    
+        return $this;
+    }
+
+    /**
+     * Get evento
+     *
+     * @return \BaseVideoArte\Entidades\Evento 
+     */
+    public function getEvento()
+    {
+        return $this->evento;
+    }
+}

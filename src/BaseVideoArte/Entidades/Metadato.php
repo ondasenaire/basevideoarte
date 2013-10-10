@@ -5,7 +5,7 @@ namespace BaseVideoArte\Entidades;
  * Table(name="metadatos")
  * @InheritanceType("SINGLE_TABLE")
  * @DiscriminatorColumn(name="discr", type="string")
- * @DiscriminatorMap({"per" = "MetadatoPersona", "obr" = "MetadatoObra", "ev" = MetadatoEvento})
+ * @DiscriminatorMap({"per" = "MetadatoPersona", "obr" = "MetadatoObra", "ev" = "MetadatoEvento"})
  */
 abstract class Metadato {
 	/**

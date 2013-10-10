@@ -105,7 +105,7 @@ class AdminController {
 		return new Response();
 	}
 	
-	public function pruebasMetadatosAction(Application $app) {
+	public function ingresarDatosAction(Application $app) {
 	//$nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) 		
 	
 		$evento = new Evento('san pablo','2010','www','videos','sampa');
@@ -151,11 +151,15 @@ class AdminController {
 		$p->addObra($obra2);
 		$m->setPersona($p);
 		
+		//evento
 		
+		$evento->addObra($obra1);
+		$evento->addObra($obra2);
 		
 		
 		
 		$app['db.orm.em'] -> persist($m);
+		$app['db.orm.em'] -> persist($evento);
 		$app['db.orm.em'] -> persist($obra1);
 		$app['db.orm.em'] -> persist($obra2);
 		$app['db.orm.em'] -> persist($p);

@@ -11,7 +11,7 @@
     <li><a href="{{path('obra',{obra: obra.id}) }}"> {{ obra.titulo}} </a> 
     		
      de {% for artista in obra.artistas %}
-     	<a href="{{path('artista',{id: artista.id})}}">{{artista.nombre}}</a>
+     	<a href="{{path('persona',{persona: artista.id})}}">{{artista.nombre}}</a>
     	{% endfor %}
     </li>
     {% endfor %}

@@ -32,7 +32,7 @@ $app->get('/admin', 'BaseVideoArte\Controller\AdminController::indexAction')->bi
 $app->get('/admin/personas', 'BaseVideoArte\Controller\AdminController::editarPersonasAction')->bind('admin_personas');
 $app->match('/admin/nueva_persona', 'BaseVideoArte\Controller\AdminController::nuevaPersonaAction')->bind('admin_nueva_persona');
 $app->match('/admin/pruebas', 'BaseVideoArte\Controller\AdminController::metadatoAction')->bind('pruebas');
-$app->match('/admin/pruebas_metadatos', 'BaseVideoArte\Controller\AdminController::pruebasMetadatosAction')->bind('pruebas_metadatos');
+$app->match('/admin/reset', 'BaseVideoArte\Controller\AdminController::ingresarDatosAction')->bind('reset');
 $app->match('/admin/pruebas_get_metadatos', 'BaseVideoArte\Controller\AdminController::recuperarMetadataAction')->bind('get_metadatos');
 //BUSCADOR
 $app->get('/busqueda', function () use ($app) {

@@ -8,10 +8,21 @@ use Symfony\Component\HttpFoundation\Request;
 use BaseVideoArte\Entidades\Persona;
 use BaseVideoArte\Form\Admin\PersonaType;
 
-use BaseVideoArte\Entidades\Metadato;
+use BaseVideoArte\Entidades\MetadatoPersona;
+use BaseVideoArte\Entidades\MetadatoEvento;
+use BaseVideoArte\Entidades\MetadatoObra;
+
+
 use BaseVideoArte\Form\Admin\MetadatoType;
 
 use BaseVideoArte\Form\Admin\MultipleType;
+
+
+use BaseVideoArte\Entidades\Obra;
+use BaseVideoArte\Entidades\Genero;
+use BaseVideoArte\Entidades\Formato;
+use BaseVideoArte\Entidades\PalabraClave;
+use BaseVideoArte\Entidades\Evento;
 
 class AdminController {
 	public function indexAction(Application $app) {
@@ -61,22 +72,14 @@ class AdminController {
 			if ($form -> isValid()) {
 				$persona = $form -> getData();
 				/***/
-
-				$nuevaPersona = new Persona();
-				$nuevaPersona -> setNombre($persona['nombre']);
-				$nuevaPersona -> setApellido($persona['apellido']);
-				$nuevaPersona -> setData($persona['data']);
-				$nuevaPersona -> setInicio($persona['inicio']);
-				$nuevaPersona -> setSexo($persona['sexo']);
-				$nuevaPersona -> setWeb($persona['web']);
+//$nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) 
+				$nuevaPersona = new Persona($persona['nombre'], $persona['apellido'],$persona['data'], $persona['inicio'], $persona['web'],$persona['sexo'],true );
+	
 				//pais
 				$nuevaPersona -> setPais($app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Pais') -> findOneById($persona['pais']));
 				//
-
-				//mañana hacer esto
 				$nuevaPersona -> setTipo($app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\TipoDePersona') -> findOneById($persona['tipo']));
-				$nuevaPersona -> setMostrar($persona['mostrar']);
-
+			
 				//echo  $nuevaPersona->getPais()->getPais();
 				$app['db.orm.em'] -> persist($nuevaPersona);
 				$app['db.orm.em'] -> flush();
@@ -94,6 +97,89 @@ class AdminController {
 
 	public function editarPersonasAction() {
 	}
+
+	public function recuperarMetadataAction(Application $app){
+		$p = $app['db.orm.em'] ->find('BaseVideoArte\Entidades\Persona',5);
+		$met = $p->getMetadatos();
+		foreach ($met as $m) {
+			$arr [] = $m->getMetadato();
+		}
+		
+		echo print_r($arr);
+		return new Response();
+	}
+	
+	public function ingresarDatosAction(Application $app) {
+	//$nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) 		
+	
+		$evento = new Evento('san pablo','2010','www','videos','sampa');
+	
+		$hd = new Formato('hd');
+		$super8 = new Formato('super8');
+		$app['db.orm.em'] -> persist($hd);
+		$app['db.orm.em'] -> persist($super8);
+		
+		$experimental = new Genero('experimental');
+		$documental = new Genero('documental');
+		$app['db.orm.em'] -> persist($experimental);
+		$app['db.orm.em'] -> persist($documental);
+		
+		
+		$m = new MetadatoPersona('derian','nombre');
+		$mo = new MetadatoObra('sertao','titulo');
+		$app['db.orm.em'] -> persist($m);
+		$app['db.orm.em'] -> persist($mo);
+		//$me = new MetadatoEvento();
+		//$m->setCategoria('1');
+		//$m->setTipo('2');
+		//$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');
+		
+		$p = new Persona('carlos','mennon','asdgd','2003','www','m',true);
+		//$p = new Persona('','','','','','',true);
+		$obra1 = new Obra('eden','dewjb j ',' 2010','1.20');
+		$obra2 = new Obra('time','fds  fvd  fdjb j ',' 2000','1.20');
+		
+		
+		//obra1		
+		$hd->addObra($obra1);
+		$documental->addObra($obra1);
+		$obra1->addFormato($hd);
+		$obra1->addGenero($documental);
+		//obra 2
+		
+		$experimental->addObra($obra2);
+		$super8->addObra($obra2);
+		$obra2->addFormato($super8);
+		$obra2->addGenero($experimental);
+		$obra2->addMetadato($mo);
+		$mo->setObra($obra2);
+		
+		
+		
+		$p->addMetadato($m);
+		$p->addObra($obra1);
+		$p->addObra($obra2);
+		$m->setPersona($p);
+		
+		//evento
+		
+		$evento->addObra($obra1);
+		$evento->addObra($obra2);
+		
+		
+		
+		
+		
+		$app['db.orm.em'] -> persist($evento);
+		$app['db.orm.em'] -> persist($obra1);
+		$app['db.orm.em'] -> persist($obra2);
+		$app['db.orm.em'] -> persist($p);
+		$app['db.orm.em'] -> flush();
+		
+		return new Response('hola');
+	}
+
+	
 
 	public function metadatoAction(Application $app, Request $request) {
 

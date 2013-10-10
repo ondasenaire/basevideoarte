@@ -67,15 +67,29 @@ class Evento {
 	 */
 	private $medios; //imagenes, videos,links ,etc
 	
+	 /**
+     * @OneToMany(targetEntity="Metadato", mappedBy="evento")
+     **/
+	private $metadatos;
+	
 	//--------------------
 	 /**
      * Constructor
      */
-    public function __construct()
-    {
+    public function __construct( $nombre,$anho,$web,$info,$lugar)    {
+    	
+		$this->nombre = $nombre;
+		$this->anho = $anho;
+		$this->web = $web;
+		$this->info = $info;
+		$this->lugar = $lugar;
+		
+    	$this->metadatos = new \Doctrine\Common\Collections\ArrayCollection();
         $this->obras = new \Doctrine\Common\Collections\ArrayCollection();
 		$this->curadores = new \Doctrine\Common\Collections\ArrayCollection();
+		$this -> medios = new \Doctrine\Common\Collections\ArrayCollection();
     }
+
 
 
     /**
@@ -112,26 +126,49 @@ class Evento {
     }
 
     /**
-     * Set fecha
+     * Set anho
      *
-     * @param \DateTime $fecha
+     * @param string $anho
      * @return Evento
      */
-    public function setFecha($fecha)
+    public function setAnho($anho)
     {
-        $this->fecha = $fecha;
+        $this->anho = $anho;
     
         return $this;
     }
 
     /**
-     * Get fecha
+     * Get anho
      *
-     * @return \DateTime 
+     * @return string 
      */
-    public function getFecha()
+    public function getAnho()
     {
-        return $this->fecha;
+        return $this->anho;
+    }
+
+    /**
+     * Set web
+     *
+     * @param string $web
+     * @return Evento
+     */
+    public function setWeb($web)
+    {
+        $this->web = $web;
+    
+        return $this;
+    }
+
+    /**
+     * Get web
+     *
+     * @return string 
+     */
+    public function getWeb()
+    {
+        return $this->web;
     }
 
     /**
@@ -180,7 +217,39 @@ class Evento {
         return $this->lugar;
     }
 
+    /**
+     * Add curadores
+     *
+     * @param \BaseVideoArte\Entidades\Persona $curadores
+     * @return Evento
+     */
+    public function addCuradore(\BaseVideoArte\Entidades\Persona $curadores)
+    {
+        $this->curadores[] = $curadores;
     
+        return $this;
+    }
+
+    /**
+     * Remove curadores
+     *
+     * @param \BaseVideoArte\Entidades\Persona $curadores
+     */
+    public function removeCuradore(\BaseVideoArte\Entidades\Persona $curadores)
+    {
+        $this->curadores->removeElement($curadores);
+    }
+
+    /**
+     * Get curadores
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCuradores()
+    {
+        return $this->curadores;
+    }
+
     /**
      * Set pais
      *
@@ -238,39 +307,6 @@ class Evento {
     }
 
     /**
-     * Add curadores
-     *
-     * @param \BaseVideoArte\Entidades\Persona $curadores
-     * @return Evento
-     */
-    public function addCuradore(\BaseVideoArte\Entidades\Persona $curadores)
-    {
-        $this->curadores[] = $curadores;
-    
-        return $this;
-    }
-
-    /**
-     * Remove curadores
-     *
-     * @param \BaseVideoArte\Entidades\Persona $curadores
-     */
-    public function removeCuradore(\BaseVideoArte\Entidades\Persona $curadores)
-    {
-        $this->curadores->removeElement($curadores);
-    }
-
-    /**
-     * Get curadores
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getCuradores()
-    {
-        return $this->curadores;
-    }
-
-    /**
      * Add medios
      *
      * @param \BaseVideoArte\Entidades\Medio $medios
@@ -304,48 +340,35 @@ class Evento {
     }
 
     /**
-     * Set anho
+     * Add metadatos
      *
-     * @param string $anho
+     * @param \BaseVideoArte\Entidades\Metadato $metadatos
      * @return Evento
      */
-    public function setAnho($anho)
+    public function addMetadato(\BaseVideoArte\Entidades\Metadato $metadatos)
     {
-        $this->anho = $anho;
+        $this->metadatos[] = $metadatos;
     
         return $this;
     }
 
     /**
-     * Get anho
+     * Remove metadatos
      *
-     * @return string 
+     * @param \BaseVideoArte\Entidades\Metadato $metadatos
      */
-    public function getAnho()
+    public function removeMetadato(\BaseVideoArte\Entidades\Metadato $metadatos)
     {
-        return $this->anho;
+        $this->metadatos->removeElement($metadatos);
     }
 
     /**
-     * Set web
+     * Get metadatos
      *
-     * @param string $web
-     * @return Evento
+     * @return \Doctrine\Common\Collections\Collection 
      */
-    public function setWeb($web)
+    public function getMetadatos()
     {
-        $this->web = $web;
-    
-        return $this;
-    }
-
-    /**
-     * Get web
-     *
-     * @return string 
-     */
-    public function getWeb()
-    {
-        return $this->web;
+        return $this->metadatos;
     }
 }

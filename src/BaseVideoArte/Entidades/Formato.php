@@ -16,7 +16,7 @@ class Formato {
 	private $formato;
 	
 	/**
-	 * @ManyToMany(targetEntity="Obra", mappedBy="formatos")
+	 * @ManyToMany(targetEntity="Obra", mappedBy="obras")
 	 */
 	private $obras;
 
@@ -25,9 +25,12 @@ class Formato {
 
 
 
-	public function __construct(){
+	public function __construct($formato){
+		$this->formato = $formato;
 		$this->obras = new \Doctrine\Common\Collections\ArrayCollection();
 	}
+  
+
     /**
      * Get id
      *
@@ -64,10 +67,10 @@ class Formato {
     /**
      * Add obras
      *
-     * @param \BaseVideoArte\Entidades\Obras $obras
+     * @param \BaseVideoArte\Entidades\Obra $obras
      * @return Formato
      */
-    public function addObra(\BaseVideoArte\Entidades\Obras $obras)
+    public function addObra(\BaseVideoArte\Entidades\Obra $obras)
     {
         $this->obras[] = $obras;
     
@@ -77,9 +80,9 @@ class Formato {
     /**
      * Remove obras
      *
-     * @param \BaseVideoArte\Entidades\Obras $obras
+     * @param \BaseVideoArte\Entidades\Obra $obras
      */
-    public function removeObra(\BaseVideoArte\Entidades\Obras $obras)
+    public function removeObra(\BaseVideoArte\Entidades\Obra $obras)
     {
         $this->obras->removeElement($obras);
     }

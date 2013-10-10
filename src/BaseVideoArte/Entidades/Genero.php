@@ -25,9 +25,12 @@ class Genero {
 	private $obras;
 
 //------------------------------------------------------------
-	public function __construct(){
+	public function __construct($genero ){
+		$this->genero = $genero;
 		$this->obras = new \Doctrine\Common\Collections\ArrayCollection();
 	}
+
+   
 
     /**
      * Get id
@@ -65,10 +68,10 @@ class Genero {
     /**
      * Add obras
      *
-     * @param \BaseVideoArte\Entidades\Obras $obras
+     * @param \BaseVideoArte\Entidades\Obra $obras
      * @return Genero
      */
-    public function addObra(\BaseVideoArte\Entidades\Obras $obras)
+    public function addObra(\BaseVideoArte\Entidades\Obra $obras)
     {
         $this->obras[] = $obras;
     
@@ -78,9 +81,9 @@ class Genero {
     /**
      * Remove obras
      *
-     * @param \BaseVideoArte\Entidades\Obras $obras
+     * @param \BaseVideoArte\Entidades\Obra $obras
      */
-    public function removeObra(\BaseVideoArte\Entidades\Obras $obras)
+    public function removeObra(\BaseVideoArte\Entidades\Obra $obras)
     {
         $this->obras->removeElement($obras);
     }

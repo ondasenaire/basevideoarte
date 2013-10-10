@@ -2,105 +2,87 @@
 namespace BaseVideoArte\Entidades;
 /**
  * @Entity
- * @Table(name="tipo_de_metadato")
+ * Table(name="metadatos")
+ * @InheritanceType("SINGLE_TABLE")
+ * @DiscriminatorColumn(name="discr", type="string")
+ * @DiscriminatorMap({"per" = "MetadatoPersona", "obr" = "MetadatoObra"})
  */
-class Metadato {
+abstract class Metadato {
 	/**
 	 * @Id
 	 * @Column(type="integer")
-	 * @GeneratedValue
+	 * @GeneratedValue(strategy="AUTO")
 	 */
-	private $id;
+	protected $id;
 	/**
 	 * @Column(type="string")
 	 */
-	private $metadato;
-
+	protected $metadato;
 	/**
 	 * @Column(type="integer")
 	 */
-	private $tipo;
-	
-	
+	protected $tipo;	
 
-	//private $tipos; // array con las categorias
+//-------------------------------------------
+//-------------------
+	 public function __construct(){
 
-	//-------------------
-	// public function __construct(){
-	// $this->tipos =
-	// }
-	//porobando pra reducir cantidad de entidades
-	public function getTipos($cat) {// retorno array para opciones
+	 }
 
-		$tipos = array(
-			'evento' => array(), 
-			'obra' => array(), 
-			'persona' => array(
-					'1' => 'nombre',
-					'2' => 'apellido', 
-					'3' => 'pais', 
-					'4' => 'web', 
-					'5' => 'inicio', 
-					'6' => 'formato', 
-					'7' => 'titulo', 
-					),
-			);
 
-		return $tipos[$cat];
-	}
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
-	public function setTipo($t) {
-		$this -> tipo = $t;
-	}
+    /**
+     * Set metadato
+     *
+     * @param string $metadato
+     * @return Metadato
+     */
+    public function setMetadato($metadato)
+    {
+        $this->metadato = $metadato;
+    
+        return $this;
+    }
 
-	/* VER ESTO*/
-	public function getSTipo($cat) {
-		$s = "";
-		if (isset($this -> tipo)) {
-			$s = $this -> getTipos($cat);
-			$s = $s[$this -> tipo];
-		}
+    /**
+     * Get metadato
+     *
+     * @return string 
+     */
+    public function getMetadato()
+    {
+        return $this->metadato;
+    }
 
-		return $s;
-	}
+    /**
+     * Set tipo
+     *
+     * @param integer $tipo
+     * @return Metadato
+     */
+    public function setTipo($tipo)
+    {
+        $this->tipo = $tipo;
+    
+        return $this;
+    }
 
-	/**
-	 * Get id
-	 *
-	 * @return integer
-	 */
-	public function getId() {
-		return $this -> id;
-	}
-
-	/**
-	 * Set metadato
-	 *
-	 * @param string $metadato
-	 * @return Metadato
-	 */
-	public function setMetadato($metadato) {
-		$this -> metadato = $metadato;
-
-		return $this;
-	}
-
-	/**
-	 * Get metadato
-	 *
-	 * @return string
-	 */
-	public function getMetadato() {
-		return $this -> metadato;
-	}
-
-	/**
-	 * Get tipo
-	 *
-	 * @return integer
-	 */
-	public function getTipo() {
-		return $this -> tipo;
-	}
-
+    /**
+     * Get tipo
+     *
+     * @return integer 
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
 }

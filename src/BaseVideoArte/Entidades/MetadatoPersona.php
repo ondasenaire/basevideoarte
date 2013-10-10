@@ -16,7 +16,8 @@ class MetadatoPersona extends Metadato
 	private $persona;
 	
 	
-	public function __construct(){
+	public function __construct($metadato,$tipo){
+		parent::__construct($metadato,$tipo);
 		$this -> persona = new \Doctrine\Common\Collections\ArrayCollection();
 	}
 	public function getTipos(){

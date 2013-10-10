@@ -16,7 +16,9 @@ class MetadatoObra extends Metadato
      **/
 	private $obra;
 	
-	public function __construct(){
+	public function __construct(  $metadato,$tipo){
+
+		parent::__construct($metadato,$tipo);
 		$this -> obra = new \Doctrine\Common\Collections\ArrayCollection();
 	}
 	

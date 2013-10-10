@@ -12,66 +12,28 @@ class Metadato {
 	 * @Column(type="integer")
 	 * @GeneratedValue
 	 */
-	private $id;
+	protected $id;
 	/**
 	 * @Column(type="string")
 	 */
-	private $metadato;
+	protected $metadato;
 	/**
 	 * @Column(type="integer")
 	 */
-	private $tipo;	
+	protected $tipo;	
 
 //-------------------------------------------
 //-------------------
-	 public function __construct(){
-		
+	 public function __construct($metadato,$tipo){
+		$this->metadato = $metadato;
+		if( gettype($tipo) == 'string' ){
+			array_search($tipo, $this->getTipos());
+		}else{
+			$this->tipo = $tipo;
+		}
 	 }
 
-	public function setTipo($t) {
-		$this -> tipo = $t;
-	}
+	abstract protected function getTipos();
+	abstract protected function getSTipo();
 
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set metadato
-     *
-     * @param string $metadato
-     * @return Metadato
-     */
-    public function setMetadato($metadato)
-    {
-        $this->metadato = $metadato;
-    
-        return $this;
-    }
-
-    /**
-     * Get metadato
-     *
-     * @return string 
-     */
-    public function getMetadato()
-    {
-        return $this->metadato;
-    }
-
-    /**
-     * Get tipo
-     *
-     * @return integer 
-     */
-    public function getTipo()
-    {
-        return $this->tipo;
-    }
 }

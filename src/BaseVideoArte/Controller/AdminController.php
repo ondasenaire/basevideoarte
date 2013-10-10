@@ -18,6 +18,7 @@ use BaseVideoArte\Entidades\Obra;
 use BaseVideoArte\Entidades\Genero;
 use BaseVideoArte\Entidades\Formato;
 use BaseVideoArte\Entidades\PalabraClave;
+use BaseVideoArte\Entidades\Evento;
 
 class AdminController {
 	public function indexAction(Application $app) {
@@ -107,9 +108,19 @@ class AdminController {
 	public function pruebasMetadatosAction(Application $app) {
 	//$nombre,$apellido,$data,$inicio,$web,$sexo,$mostrar) 		
 	
+		$evento = new Evento('san pablo','2010','www','videos','sampa');
+	
 		$hd = new Formato('hd');
-		$documental = new Genero('documental');
+		$super8 = new Formato('super8');
 		$app['db.orm.em'] -> persist($hd);
+		$app['db.orm.em'] -> persist($super8);
+		
+		$experimental = new Genero('experimental');
+		$documental = new Genero('documental');
+		$app['db.orm.em'] -> persist($experimental);
+		$app['db.orm.em'] -> persist($documental);
+		
+		
 		$m = new MetadatoPersona();
 		//$m->setCategoria('1');
 		$m->setTipo('2');
@@ -118,22 +129,35 @@ class AdminController {
 		$p = new Persona('ric','mennon','asdgd','2003','www','m',true);
 		//$p = new Persona('','','','','','',true);
 		$obra1 = new Obra('eden','dewjb j ',' 2010','1.20');
+		$obra2 = new Obra('time','fds  fvd  fdjb j ',' 2000','1.20');
 		
+		
+		//obra1		
 		$hd->addObra($obra1);
 		$documental->addObra($obra1);
 		$obra1->addFormato($hd);
 		$obra1->addGenero($documental);
+		//obra 2
+		
+		$experimental->addObra($obra2);
+		$super8->addObra($obra2);
+		$obra2->addFormato($super8);
+		$obra2->addGenero($experimental);
+		
+		
 		
 		$p->addMetadato($m);
 		$p->addObra($obra1);
+		$p->addObra($obra2);
 		$m->setPersona($p);
 		
 		
 		
 		
-		$app['db.orm.em'] -> persist($documental);
+		
 		$app['db.orm.em'] -> persist($m);
 		$app['db.orm.em'] -> persist($obra1);
+		$app['db.orm.em'] -> persist($obra2);
 		$app['db.orm.em'] -> persist($p);
 		$app['db.orm.em'] -> flush();
 		

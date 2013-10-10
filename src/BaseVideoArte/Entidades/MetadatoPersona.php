@@ -40,5 +40,4 @@ class MetadatoPersona extends Metadato {
 	}
 
 
-
 }

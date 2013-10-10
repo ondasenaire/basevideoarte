@@ -7,7 +7,7 @@ namespace BaseVideoArte\Entidades;
  * @Entity
  */
 class MetadatoObra extends Metadato {
-
+	
 	/**
 	 * @ManyToOne(targetEntity="Obra", inversedBy="metadatos")
 	 * @JoinColumn(name="obra_id", referencedColumnName="id")
@@ -39,6 +39,7 @@ class MetadatoObra extends Metadato {
 
 		return $s;
 	}
+
 
 
 

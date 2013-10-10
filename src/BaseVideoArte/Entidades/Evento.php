@@ -67,8 +67,8 @@ class Evento {
 	 */
 	private $medios; //imagenes, videos,links ,etc
 	
-	 /**
-     * @OneToMany(targetEntity="Metadato", mappedBy="evento")
+    /**
+     * @OneToMany(targetEntity="MetadatoEvento", mappedBy="evento")
      **/
 	private $metadatos;
 	

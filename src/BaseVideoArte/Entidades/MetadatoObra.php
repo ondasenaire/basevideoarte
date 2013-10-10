@@ -22,13 +22,14 @@ class MetadatoObra extends Metadato
 	
 	public function getTipos(){
 		return array(
-					'1' => 'nombre',
-					'2' => 'apellido', 
-					'3' => 'pais', 
-					'4' => 'web', 
-					'5' => 'inicio', 
+					'1' => 'titulo',
+					'2' => 'sinopsis', 
+					'3' => 'anho', 
+					'4' => 'duracion', 
+					'5' => 'genero', 
 					'6' => 'formato', 
-					'7' => 'titulo', 
+					'7' => 'artistas', 
+					'8' => 'eventos'
 					);
 	}
 	public function getSTipo(){

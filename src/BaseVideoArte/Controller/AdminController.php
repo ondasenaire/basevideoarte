@@ -9,6 +9,10 @@ use BaseVideoArte\Entidades\Persona;
 use BaseVideoArte\Form\Admin\PersonaType;
 
 use BaseVideoArte\Entidades\MetadatoPersona;
+use BaseVideoArte\Entidades\MetadatoEvento;
+use BaseVideoArte\Entidades\MetadatoObra;
+
+
 use BaseVideoArte\Form\Admin\MetadatoType;
 
 use BaseVideoArte\Form\Admin\MultipleType;
@@ -122,6 +126,8 @@ class AdminController {
 		
 		
 		$m = new MetadatoPersona();
+		//$mo = new MetadatoObra('');
+		//$me = new MetadatoEvento();
 		//$m->setCategoria('1');
 		$m->setTipo('2');
 		$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');

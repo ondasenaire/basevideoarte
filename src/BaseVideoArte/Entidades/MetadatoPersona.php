@@ -26,8 +26,8 @@ class MetadatoPersona extends Metadato
 					'3' => 'pais', 
 					'4' => 'web', 
 					'5' => 'inicio', 
-					'6' => 'formato', 
-					'7' => 'titulo', 
+					'6' => 'obras',
+					'7' => 'eventos'
 					);
 	}
 	public function getSTipo(){

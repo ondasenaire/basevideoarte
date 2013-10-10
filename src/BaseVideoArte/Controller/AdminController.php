@@ -127,8 +127,10 @@ class AdminController {
 		
 		$m = new MetadatoPersona('derian','nombre');
 		$mo = new MetadatoObra('sertao','titulo');
+		$me = new MetadatoEvento('en ingles','nombre');
 		$app['db.orm.em'] -> persist($m);
 		$app['db.orm.em'] -> persist($mo);
+		$app['db.orm.em'] -> persist($me);
 		//$me = new MetadatoEvento();
 		//$m->setCategoria('1');
 		//$m->setTipo('2');
@@ -165,6 +167,8 @@ class AdminController {
 		
 		$evento->addObra($obra1);
 		$evento->addObra($obra2);
+		$evento->addMetadato($me);
+		$me->setEvento($evento);
 		
 		
 		

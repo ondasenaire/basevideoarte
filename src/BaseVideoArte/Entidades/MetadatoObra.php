@@ -43,4 +43,98 @@ class MetadatoObra extends Metadato {
 
 
 
+    /**
+     * @var integer
+     */
+    protected $id;
+
+    /**
+     * @var string
+     */
+    protected $metadato;
+
+    /**
+     * @var integer
+     */
+    protected $tipo;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set metadato
+     *
+     * @param string $metadato
+     * @return MetadatoObra
+     */
+    public function setMetadato($metadato)
+    {
+        $this->metadato = $metadato;
+    
+        return $this;
+    }
+
+    /**
+     * Get metadato
+     *
+     * @return string 
+     */
+    public function getMetadato()
+    {
+        return $this->metadato;
+    }
+
+    /**
+     * Set tipo
+     *
+     * @param integer $tipo
+     * @return MetadatoObra
+     */
+    public function setTipo($tipo)
+    {
+        $this->tipo = $tipo;
+    
+        return $this;
+    }
+
+    /**
+     * Get tipo
+     *
+     * @return integer 
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+    /**
+     * Set obra
+     *
+     * @param \BaseVideoArte\Entidades\Obra $obra
+     * @return MetadatoObra
+     */
+    public function setObra(\BaseVideoArte\Entidades\Obra $obra = null)
+    {
+        $this->obra = $obra;
+    
+        return $this;
+    }
+
+    /**
+     * Get obra
+     *
+     * @return \BaseVideoArte\Entidades\Obra 
+     */
+    public function getObra()
+    {
+        return $this->obra;
+    }
 }

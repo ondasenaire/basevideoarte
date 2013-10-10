@@ -13,6 +13,23 @@ class MetadatoPersona extends Metadato {
 	 * @JoinColumn(name="persona_id", referencedColumnName="id")
 	 **/
 	private $persona;
+	
+	
+	    /**
+     * @var integer
+     */
+    protected $id;
+
+    /**
+     * @var string
+     */
+    protected $metadato;
+
+    /**
+     * @var integer
+     */
+    protected $tipo;
+	
 
 	public function __construct($metadato, $tipo) {
 		parent::__construct();
@@ -40,4 +57,84 @@ class MetadatoPersona extends Metadato {
 	}
 
 
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set metadato
+     *
+     * @param string $metadato
+     * @return MetadatoPersona
+     */
+    public function setMetadato($metadato)
+    {
+        $this->metadato = $metadato;
+    
+        return $this;
+    }
+
+    /**
+     * Get metadato
+     *
+     * @return string 
+     */
+    public function getMetadato()
+    {
+        return $this->metadato;
+    }
+
+    /**
+     * Set tipo
+     *
+     * @param integer $tipo
+     * @return MetadatoPersona
+     */
+    public function setTipo($tipo)
+    {
+        $this->tipo = $tipo;
+    
+        return $this;
+    }
+
+    /**
+     * Get tipo
+     *
+     * @return integer 
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+    /**
+     * Set persona
+     *
+     * @param \BaseVideoArte\Entidades\Persona $persona
+     * @return MetadatoPersona
+     */
+    public function setPersona(\BaseVideoArte\Entidades\Persona $persona = null)
+    {
+        $this->persona = $persona;
+    
+        return $this;
+    }
+
+    /**
+     * Get persona
+     *
+     * @return \BaseVideoArte\Entidades\Persona 
+     */
+    public function getPersona()
+    {
+        return $this->persona;
+    }
 }

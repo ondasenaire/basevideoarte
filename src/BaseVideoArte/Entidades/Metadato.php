@@ -6,7 +6,7 @@ namespace BaseVideoArte\Entidades;
  * @DiscriminatorColumn(name="discr", type="string")
  * @DiscriminatorMap({"per" = "MetadatoPersona", "obr" = "MetadatoObra"})
  */
-class Metadato {
+abstract class Metadato {
 	/**
 	 * @Id
 	 * @Column(type="integer")
@@ -24,16 +24,8 @@ class Metadato {
 
 //-------------------------------------------
 //-------------------
-	 public function __construct($metadato,$tipo){
-		$this->metadato = $metadato;
-		if( gettype($tipo) == 'string' ){
-			array_search($tipo, $this->getTipos());
-		}else{
-			$this->tipo = $tipo;
-		}
-	 }
+	 public function __construct(){
 
-	abstract protected function getTipos();
-	abstract protected function getSTipo();
+	 }
 
 }

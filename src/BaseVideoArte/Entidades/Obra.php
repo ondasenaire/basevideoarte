@@ -52,7 +52,7 @@ class Obra {
 	private $eventos;
 
 	/**
-	 * @ManyToMany(targetEntity="Medio", inversedBy="obras")
+	 * @ManyToMany(targetEntity="Medio", inversedBy="obras",cascade={"persist"})
 	 * @JoinTable(name="medios_x_obra")
 	 */
 	private $medios;

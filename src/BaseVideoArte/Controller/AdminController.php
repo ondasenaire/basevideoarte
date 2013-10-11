@@ -23,6 +23,9 @@ use BaseVideoArte\Entidades\Genero;
 use BaseVideoArte\Entidades\Formato;
 use BaseVideoArte\Entidades\PalabraClave;
 use BaseVideoArte\Entidades\Evento;
+use BaseVideoArte\Entidades\Medio;
+
+
 
 class AdminController {
 	public function indexAction(Application $app) {
@@ -137,6 +140,14 @@ class AdminController {
 		//$m->setMetadato('dacdfg dfvsfvsft hsf gbt hhdda');
 		
 		$p = new Persona('carlos','mennon','asdgd','2003','www','m',true);
+		
+	//	$medioPer = new Medio('carlos.jpg',' ','imagen principal');
+		$medioOb = new Medio('time.jpg','general ','imagen principal');
+	//	$medioEv = new Medio('sampa.jpg',' ','imagen principal');
+		
+		// $app['db.orm.em'] -> persist($medioPer);
+		 
+		// $app['db.orm.em'] -> persist($medioEv);
 		//$p = new Persona('','','','','','',true);
 		$obra1 = new Obra('eden','dewjb j ',' 2010','1.20');
 		$obra2 = new Obra('time','fds  fvd  fdjb j ',' 2000','1.20');
@@ -147,6 +158,9 @@ class AdminController {
 		$documental->addObra($obra1);
 		$obra1->addFormato($hd);
 		$obra1->addGenero($documental);
+		
+	//	$obra1->addMedio($medioOb);
+//		$medioOb->addObra($obra1);
 		//obra 2
 		
 		$experimental->addObra($obra2);
@@ -162,17 +176,23 @@ class AdminController {
 		$p->addObra($obra1);
 		$p->addObra($obra2);
 		$m->setPersona($p);
+	
+	//	$p->addMedio($medioPer);
+		//$medioPer->addPersona($p);
 		
 		//evento
 		
 		$evento->addObra($obra1);
 		$evento->addObra($obra2);
 		$evento->addMetadato($me);
+	
+	//	$evento->addMedio($medioEv);
+		//$medioEv->addEvento($evento);
 		$me->setEvento($evento);
 		
 		
 		
-		
+		$app['db.orm.em'] -> persist($medioOb);
 		
 		$app['db.orm.em'] -> persist($evento);
 		$app['db.orm.em'] -> persist($obra1);

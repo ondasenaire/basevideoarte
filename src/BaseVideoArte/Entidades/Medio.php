@@ -18,10 +18,10 @@ class Medio {
 	 */
 	private $archivo;
 	// ruta al archivo o url de un link
-	/**
-	 * @ManyToOne(targetEntity="TipoDeMedio")
-	 * @JoinColumn(name="tipo_medio_id", referencedColumnName="id")
-	 */
+	
+	 //* @ManyToOne(targetEntity="TipoDeMedio")
+	//@JoinColumn(name="tipo_medio_id", referencedColumnName="id")
+	 
 	private $tipo;
 
 	private $descripcion;
@@ -48,7 +48,7 @@ class Medio {
 		$this -> tipo = $tipo;
 		$this -> descripcion = $descripcion;
 
-		$this -> metadato = $metadato;
+		
 		if (gettype($tipo) == 'string') {
 			$ind = array_search($tipo, $this -> getTipos());
 			$this -> tipo = $ind;

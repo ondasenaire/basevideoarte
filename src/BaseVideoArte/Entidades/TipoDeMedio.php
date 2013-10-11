@@ -1,9 +1,6 @@
 <?php
 namespace BaseVideoArte\Entidades;
-/**
- * @Entity
- * @Table(name="tipo_de_medio")
- */
+
 class TipoDeMedio {
 	/**
 	 * @Id

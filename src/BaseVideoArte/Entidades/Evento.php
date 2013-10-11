@@ -56,7 +56,7 @@ class Evento {
 	
 	
 	 /**
-     * @ManyToMany(targetEntity="Medio", inversedBy="eventos")
+     * @ManyToMany(targetEntity="Medio", inversedBy="eventos",cascade={"persist"})
      * @JoinTable(name="medios_x_evento")
      **/
 	private $medios; //imagenes, videos,links ,etc

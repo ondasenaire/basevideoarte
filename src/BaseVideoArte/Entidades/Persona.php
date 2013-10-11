@@ -56,7 +56,7 @@ class Persona {
 	// eventos en los que la persona participo como curador
 
 	 /**
-     * @ManyToMany(targetEntity="Medio", inversedBy="eventos")
+     * @ManyToMany(targetEntity="Medio", inversedBy="eventos",cascade={"persist"})
      * @JoinTable(name="medios_x_persona")
      **/
 	private $medios;

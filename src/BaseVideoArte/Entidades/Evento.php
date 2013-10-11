@@ -86,6 +86,7 @@ class Evento {
 
 
 
+
     /**
      * Get id
      *
@@ -336,10 +337,10 @@ class Evento {
     /**
      * Add metadatos
      *
-     * @param \BaseVideoArte\Entidades\Metadato $metadatos
+     * @param \BaseVideoArte\Entidades\MetadatoEvento $metadatos
      * @return Evento
      */
-    public function addMetadato(\BaseVideoArte\Entidades\Metadato $metadatos)
+    public function addMetadato(\BaseVideoArte\Entidades\MetadatoEvento $metadatos)
     {
         $this->metadatos[] = $metadatos;
     
@@ -349,9 +350,9 @@ class Evento {
     /**
      * Remove metadatos
      *
-     * @param \BaseVideoArte\Entidades\Metadato $metadatos
+     * @param \BaseVideoArte\Entidades\MetadatoEvento $metadatos
      */
-    public function removeMetadato(\BaseVideoArte\Entidades\Metadato $metadatos)
+    public function removeMetadato(\BaseVideoArte\Entidades\MetadatoEvento $metadatos)
     {
         $this->metadatos->removeElement($metadatos);
     }

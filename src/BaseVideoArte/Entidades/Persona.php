@@ -83,302 +83,330 @@ class Persona {
 
 	//-----------------------------
 
-	/**
-	 * Get id
-	 *
-	 * @return integer
-	 */
-	public function getId() {
-		return $this -> id;
-	}
 
-	/**
-	 * Set nombre
-	 *
-	 * @param string $nombre
-	 * @return Persona
-	 */
-	public function setNombre($nombre) {
-		$this -> nombre = $nombre;
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
-		return $this;
-	}
+    /**
+     * Set nombre
+     *
+     * @param string $nombre
+     * @return Persona
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+    
+        return $this;
+    }
 
-	/**
-	 * Get nombre
-	 *
-	 * @return string
-	 */
-	public function getNombre() {
-		return $this -> nombre;
-	}
+    /**
+     * Get nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
 
-	/**
-	 * Set apellido
-	 *
-	 * @param string $apellido
-	 * @return Persona
-	 */
-	public function setApellido($apellido) {
-		$this -> apellido = $apellido;
+    /**
+     * Set apellido
+     *
+     * @param string $apellido
+     * @return Persona
+     */
+    public function setApellido($apellido)
+    {
+        $this->apellido = $apellido;
+    
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * Get apellido
+     *
+     * @return string 
+     */
+    public function getApellido()
+    {
+        return $this->apellido;
+    }
 
-	/**
-	 * Get apellido
-	 *
-	 * @return string
-	 */
-	public function getApellido() {
-		return $this -> apellido;
-	}
+    /**
+     * Set data
+     *
+     * @param string $data
+     * @return Persona
+     */
+    public function setData($data)
+    {
+        $this->data = $data;
+    
+        return $this;
+    }
 
-	/**
-	 * Set data
-	 *
-	 * @param string $data
-	 * @return Persona
-	 */
-	public function setData($data) {
-		$this -> data = $data;
+    /**
+     * Get data
+     *
+     * @return string 
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
 
-		return $this;
-	}
+    /**
+     * Set inicio
+     *
+     * @param string $inicio
+     * @return Persona
+     */
+    public function setInicio($inicio)
+    {
+        $this->inicio = $inicio;
+    
+        return $this;
+    }
 
-	/**
-	 * Get data
-	 *
-	 * @return string
-	 */
-	public function getData() {
-		return $this -> data;
-	}
+    /**
+     * Get inicio
+     *
+     * @return string 
+     */
+    public function getInicio()
+    {
+        return $this->inicio;
+    }
 
-	/**
-	 * Set inicio
-	 *
-	 * @param string $inicio
-	 * @return Persona
-	 */
-	public function setInicio($inicio) {
-		$this -> inicio = $inicio;
+    /**
+     * Set web
+     *
+     * @param string $web
+     * @return Persona
+     */
+    public function setWeb($web)
+    {
+        $this->web = $web;
+    
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * Get web
+     *
+     * @return string 
+     */
+    public function getWeb()
+    {
+        return $this->web;
+    }
 
-	/**
-	 * Get inicio
-	 *
-	 * @return string
-	 */
-	public function getInicio() {
-		return $this -> inicio;
-	}
+    /**
+     * Set sexo
+     *
+     * @param string $sexo
+     * @return Persona
+     */
+    public function setSexo($sexo)
+    {
+        $this->sexo = $sexo;
+    
+        return $this;
+    }
 
-	/**
-	 * Set web
-	 *
-	 * @param string $web
-	 * @return Persona
-	 */
-	public function setWeb($web) {
-		$this -> web = $web;
+    /**
+     * Get sexo
+     *
+     * @return string 
+     */
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
 
-		return $this;
-	}
+    /**
+     * Set mostrar
+     *
+     * @param boolean $mostrar
+     * @return Persona
+     */
+    public function setMostrar($mostrar)
+    {
+        $this->mostrar = $mostrar;
+    
+        return $this;
+    }
 
-	/**
-	 * Get web
-	 *
-	 * @return string
-	 */
-	public function getWeb() {
-		return $this -> web;
-	}
+    /**
+     * Get mostrar
+     *
+     * @return boolean 
+     */
+    public function getMostrar()
+    {
+        return $this->mostrar;
+    }
 
-	/**
-	 * Set sexo
-	 *
-	 * @param string $sexo
-	 * @return Persona
-	 */
-	public function setSexo($sexo) {
-		$this -> sexo = $sexo;
+    /**
+     * Set tipo
+     *
+     * @param \BaseVideoArte\Entidades\TipoDePersona $tipo
+     * @return Persona
+     */
+    public function setTipo(\BaseVideoArte\Entidades\TipoDePersona $tipo = null)
+    {
+        $this->tipo = $tipo;
+    
+        return $this;
+    }
 
-		return $this;
-	}
+    /**
+     * Get tipo
+     *
+     * @return \BaseVideoArte\Entidades\TipoDePersona 
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
 
-	/**
-	 * Get sexo
-	 *
-	 * @return string
-	 */
-	public function getSexo() {
-		return $this -> sexo;
-	}
+    /**
+     * Set pais
+     *
+     * @param \BaseVideoArte\Entidades\Pais $pais
+     * @return Persona
+     */
+    public function setPais(\BaseVideoArte\Entidades\Pais $pais = null)
+    {
+        $this->pais = $pais;
+    
+        return $this;
+    }
 
-	/**
-	 * Set tipo
-	 *
-	 * @param \BaseVideoArte\Entidades\TipoDePersona $tipo
-	 * @return Persona
-	 */
-	public function setTipo(\BaseVideoArte\Entidades\TipoDePersona $tipo = null) {
-		$this -> tipo = $tipo;
+    /**
+     * Get pais
+     *
+     * @return \BaseVideoArte\Entidades\Pais 
+     */
+    public function getPais()
+    {
+        return $this->pais;
+    }
 
-		return $this;
-	}
+    /**
+     * Add obras
+     *
+     * @param \BaseVideoArte\Entidades\Obra $obras
+     * @return Persona
+     */
+    public function addObra(\BaseVideoArte\Entidades\Obra $obras)
+    {
+        $this->obras[] = $obras;
+    
+        return $this;
+    }
 
-	/**
-	 * Get tipo
-	 *
-	 * @return \BaseVideoArte\Entidades\TipoDePersona
-	 */
-	public function getTipo() {
-		return $this -> tipo;
-	}
+    /**
+     * Remove obras
+     *
+     * @param \BaseVideoArte\Entidades\Obra $obras
+     */
+    public function removeObra(\BaseVideoArte\Entidades\Obra $obras)
+    {
+        $this->obras->removeElement($obras);
+    }
 
-	/**
-	 * Set pais
-	 *
-	 * @param \BaseVideoArte\Entidades\Pais $pais
-	 * @return Persona
-	 */
-	public function setPais(\BaseVideoArte\Entidades\Pais $pais = null) {
-		$this -> pais = $pais;
+    /**
+     * Get obras
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getObras()
+    {
+        return $this->obras;
+    }
 
-		return $this;
-	}
+    /**
+     * Add eventos
+     *
+     * @param \BaseVideoArte\Entidades\Evento $eventos
+     * @return Persona
+     */
+    public function addEvento(\BaseVideoArte\Entidades\Evento $eventos)
+    {
+        $this->eventos[] = $eventos;
+    
+        return $this;
+    }
 
-	/**
-	 * Get pais
-	 *
-	 * @return \BaseVideoArte\Entidades\Pais
-	 */
-	public function getPais() {
-		return $this -> pais;
-	}
+    /**
+     * Remove eventos
+     *
+     * @param \BaseVideoArte\Entidades\Evento $eventos
+     */
+    public function removeEvento(\BaseVideoArte\Entidades\Evento $eventos)
+    {
+        $this->eventos->removeElement($eventos);
+    }
 
-	/**
-	 * Add obras
-	 *
-	 * @param \BaseVideoArte\Entidades\Obra $obras
-	 * @return Persona
-	 */
-	public function addObra(\BaseVideoArte\Entidades\Obra $obras) {
-		$this -> obras[] = $obras;
+    /**
+     * Get eventos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getEventos()
+    {
+        return $this->eventos;
+    }
 
-		return $this;
-	}
+    /**
+     * Add medios
+     *
+     * @param \BaseVideoArte\Entidades\Medio $medios
+     * @return Persona
+     */
+    public function addMedio(\BaseVideoArte\Entidades\Medio $medios)
+    {
+        $this->medios[] = $medios;
+    
+        return $this;
+    }
 
-	/**
-	 * Remove obras
-	 *
-	 * @param \BaseVideoArte\Entidades\Obra $obras
-	 */
-	public function removeObra(\BaseVideoArte\Entidades\Obra $obras) {
-		$this -> obras -> removeElement($obras);
-	}
+    /**
+     * Remove medios
+     *
+     * @param \BaseVideoArte\Entidades\Medio $medios
+     */
+    public function removeMedio(\BaseVideoArte\Entidades\Medio $medios)
+    {
+        $this->medios->removeElement($medios);
+    }
 
-	/**
-	 * Get obras
-	 *
-	 * @return \Doctrine\Common\Collections\Collection
-	 */
-	public function getObras() {
-		return $this -> obras;
-	}
-
-	/**
-	 * Add eventos
-	 *
-	 * @param \BaseVideoArte\Entidades\Evento $eventos
-	 * @return Persona
-	 */
-	public function addEvento(\BaseVideoArte\Entidades\Evento $eventos) {
-		$this -> eventos[] = $eventos;
-
-		return $this;
-	}
-
-	/**
-	 * Remove eventos
-	 *
-	 * @param \BaseVideoArte\Entidades\Evento $eventos
-	 */
-	public function removeEvento(\BaseVideoArte\Entidades\Evento $eventos) {
-		$this -> eventos -> removeElement($eventos);
-	}
-
-	/**
-	 * Get eventos
-	 *
-	 * @return \Doctrine\Common\Collections\Collection
-	 */
-	public function getEventos() {
-		return $this -> eventos;
-	}
-
-	/**
-	 * Add medios
-	 *
-	 * @param \BaseVideoArte\Entidades\Medio $medios
-	 * @return Persona
-	 */
-	public function addMedio(\BaseVideoArte\Entidades\Medio $medios) {
-		$this -> medios[] = $medios;
-
-		return $this;
-	}
-
-	/**
-	 * Remove medios
-	 *
-	 * @param \BaseVideoArte\Entidades\Medio $medios
-	 */
-	public function removeMedio(\BaseVideoArte\Entidades\Medio $medios) {
-		$this -> medios -> removeElement($medios);
-	}
-
-	/**
-	 * Get medios
-	 *
-	 * @return \Doctrine\Common\Collections\Collection
-	 */
-	public function getMedios() {
-		return $this -> medios;
-	}
-
-	/**
-	 * Set mostrar
-	 *
-	 * @param boolean $mostrar
-	 * @return Persona
-	 */
-	public function setMostrar($mostrar) {
-		$this -> mostrar = $mostrar;
-
-		return $this;
-	}
-
-	/**
-	 * Get mostrar
-	 *
-	 * @return boolean
-	 */
-	public function getMostrar() {
-		return $this -> mostrar;
-	}
-
+    /**
+     * Get medios
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getMedios()
+    {
+        return $this->medios;
+    }
 
     /**
      * Add metadatos
      *
-     * @param \BaseVideoArte\Entidades\Metadato $metadatos
+     * @param \BaseVideoArte\Entidades\MetadatoPersona $metadatos
      * @return Persona
      */
-    public function addMetadato(\BaseVideoArte\Entidades\Metadato $metadatos)
+    public function addMetadato(\BaseVideoArte\Entidades\MetadatoPersona $metadatos)
     {
         $this->metadatos[] = $metadatos;
     
@@ -388,9 +416,9 @@ class Persona {
     /**
      * Remove metadatos
      *
-     * @param \BaseVideoArte\Entidades\Metadato $metadatos
+     * @param \BaseVideoArte\Entidades\MetadatoPersona $metadatos
      */
-    public function removeMetadato(\BaseVideoArte\Entidades\Metadato $metadatos)
+    public function removeMetadato(\BaseVideoArte\Entidades\MetadatoPersona $metadatos)
     {
         $this->metadatos->removeElement($metadatos);
     }

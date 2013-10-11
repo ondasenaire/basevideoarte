@@ -141,13 +141,11 @@ class AdminController {
 		
 		$p = new Persona('carlos','mennon','asdgd','2003','www','m',true);
 		
-	//	$medioPer = new Medio('carlos.jpg',' ','imagen principal');
+		$medioPer = new Medio('carlos.jpg',' ','imagen principal');
 		$medioOb = new Medio('time.jpg','general ','imagen principal');
-	//	$medioEv = new Medio('sampa.jpg',' ','imagen principal');
+		$medioEv = new Medio('sampa.jpg',' ','imagen principal');
 		
-		// $app['db.orm.em'] -> persist($medioPer);
-		 
-		// $app['db.orm.em'] -> persist($medioEv);
+
 		//$p = new Persona('','','','','','',true);
 		$obra1 = new Obra('eden','dewjb j ',' 2010','1.20');
 		$obra2 = new Obra('time','fds  fvd  fdjb j ',' 2000','1.20');
@@ -159,8 +157,8 @@ class AdminController {
 		$obra1->addFormato($hd);
 		$obra1->addGenero($documental);
 		
-	//	$obra1->addMedio($medioOb);
-//		$medioOb->addObra($obra1);
+		$obra1->addMedio($medioOb);
+		$medioOb->addObra($obra1);
 		//obra 2
 		
 		$experimental->addObra($obra2);
@@ -177,8 +175,8 @@ class AdminController {
 		$p->addObra($obra2);
 		$m->setPersona($p);
 	
-	//	$p->addMedio($medioPer);
-		//$medioPer->addPersona($p);
+		$p->addMedio($medioPer);
+		$medioPer->addPersona($p);
 		
 		//evento
 		
@@ -186,13 +184,14 @@ class AdminController {
 		$evento->addObra($obra2);
 		$evento->addMetadato($me);
 	
-	//	$evento->addMedio($medioEv);
-		//$medioEv->addEvento($evento);
+		$evento->addMedio($medioEv);
+		$medioEv->addEvento($evento);
 		$me->setEvento($evento);
 		
 		
-		
-		$app['db.orm.em'] -> persist($medioOb);
+		$app['db.orm.em'] -> persist($medioPer);
+		$app['db.orm.em'] -> persist($medioEv);
+		$app['db.orm.em'] -> persist($medioPer);
 		
 		$app['db.orm.em'] -> persist($evento);
 		$app['db.orm.em'] -> persist($obra1);

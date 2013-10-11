@@ -21,9 +21,14 @@ class Medio {
 	
 	 //* @ManyToOne(targetEntity="TipoDeMedio")
 	//@JoinColumn(name="tipo_medio_id", referencedColumnName="id")
-	 
+	 /**
+	  * @Column(type="integer")
+	  */
 	private $tipo;
 
+	/**
+	 * @Column(type="string")
+	 */
 	private $descripcion;
 
 	//-------------------------
@@ -60,7 +65,7 @@ class Medio {
 	}
 
 	public function getTipos() {
-		return array('1' => 'imagen principal', '1' => 'galeria', '1' => 'link', '1' => 'video', '1' => 'video embebido', );
+		return array('1' => 'imagen principal', '2' => 'galeria', '3' => 'link', '4' => 'video', '5' => 'video embebido', );
 	}
 
 
@@ -217,5 +222,28 @@ class Medio {
     public function getEventos()
     {
         return $this->eventos;
+    }
+
+    /**
+     * Set descripcion
+     *
+     * @param string $descripcion
+     * @return Medio
+     */
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+    
+        return $this;
+    }
+
+    /**
+     * Get descripcion
+     *
+     * @return string 
+     */
+    public function getDescripcion()
+    {
+        return $this->descripcion;
     }
 }

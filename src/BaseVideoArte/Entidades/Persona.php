@@ -55,16 +55,10 @@ class Persona {
 	private $eventos;
 	// eventos en los que la persona participo como curador
 
-	/**
-	 *
-	 * muchos a muchos unidireccional
-	 * @ManyToMany(targetEntity="Medio")
-	 * @JoinTable(name="medios_x_persona",
-	 * 		joinColumns={@JoinColumn(name="persona_id", referencedColumnName="id")},
-	 * 		inverseJoinColumns={@JoinColumn(name="medio_id",referencedColumnName="id",
-	 * 		unique=true)}
-	 * 		)
-	 */
+	 /**
+     * @ManyToMany(targetEntity="Medio", inversedBy="eventos")
+     * @JoinTable(name="medios_x_persona")
+     **/
 	private $medios;
 
     /**

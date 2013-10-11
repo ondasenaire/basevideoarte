@@ -55,16 +55,10 @@ class Evento {
 	private $obras;
 	
 	
-		/**
-	 * 
-	 * muchos a muchos unidireccional
-	 * @ManyToMany(targetEntity="Medio")
-	 * @JoinTable(name="medios_x_evento", 
-	 * 		joinColumns={@JoinColumn(name="evento_id", referencedColumnName="id")},
-	 * 		inverseJoinColumns={@JoinColumn(name="medio_id",referencedColumnName="id",
-	 * 		unique=true)}
-	 * 		)
-	 */
+	 /**
+     * @ManyToMany(targetEntity="Medio", inversedBy="eventos")
+     * @JoinTable(name="medios_x_evento")
+     **/
 	private $medios; //imagenes, videos,links ,etc
 	
     /**

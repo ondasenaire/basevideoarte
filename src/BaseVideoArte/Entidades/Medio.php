@@ -18,12 +18,12 @@ class Medio {
 	 */
 	private $archivo;
 	// ruta al archivo o url de un link
-	
-	 //* @ManyToOne(targetEntity="TipoDeMedio")
+
+	//* @ManyToOne(targetEntity="TipoDeMedio")
 	//@JoinColumn(name="tipo_medio_id", referencedColumnName="id")
-	 /**
-	  * @Column(type="integer")
-	  */
+	/**
+	 * @Column(type="integer")
+	 */
 	private $tipo;
 
 	/**
@@ -53,7 +53,6 @@ class Medio {
 		$this -> tipo = $tipo;
 		$this -> descripcion = $descripcion;
 
-		
 		if (gettype($tipo) == 'string') {
 			$ind = array_search($tipo, $this -> getTipos());
 			$this -> tipo = $ind;
@@ -68,182 +67,176 @@ class Medio {
 		return array('1' => 'imagen principal', '2' => 'galeria', '3' => 'link', '4' => 'video', '5' => 'video embebido', );
 	}
 
+	public function getSTipo() {
+		$s = "";
+		if (isset($this -> tipo)) {
+			$s = $this -> getTipos();
+			$s = $s[$this -> tipo];
+		}
 
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
+		return $s;
+	}
 
-    /**
-     * Set archivo
-     *
-     * @param string $archivo
-     * @return Medio
-     */
-    public function setArchivo($archivo)
-    {
-        $this->archivo = $archivo;
-    
-        return $this;
-    }
+	/**
+	 * Get id
+	 *
+	 * @return integer
+	 */
+	public function getId() {
+		return $this -> id;
+	}
 
-    /**
-     * Get archivo
-     *
-     * @return string 
-     */
-    public function getArchivo()
-    {
-        return $this->archivo;
-    }
+	/**
+	 * Set archivo
+	 *
+	 * @param string $archivo
+	 * @return Medio
+	 */
+	public function setArchivo($archivo) {
+		$this -> archivo = $archivo;
 
-    /**
-     * Set tipo
-     *
-     * @param \BaseVideoArte\Entidades\TipoDeMedio $tipo
-     * @return Medio
-     */
-    public function setTipo(\BaseVideoArte\Entidades\TipoDeMedio $tipo = null)
-    {
-        $this->tipo = $tipo;
-    
-        return $this;
-    }
+		return $this;
+	}
 
-    /**
-     * Get tipo
-     *
-     * @return \BaseVideoArte\Entidades\TipoDeMedio 
-     */
-    public function getTipo()
-    {
-        return $this->tipo;
-    }
+	/**
+	 * Get archivo
+	 *
+	 * @return string
+	 */
+	public function getArchivo() {
+		return $this -> archivo;
+	}
 
-    /**
-     * Add obras
-     *
-     * @param \BaseVideoArte\Entidades\Obra $obras
-     * @return Medio
-     */
-    public function addObra(\BaseVideoArte\Entidades\Obra $obras)
-    {
-        $this->obras[] = $obras;
-    
-        return $this;
-    }
+	/**
+	 * Set tipo
+	 *
+	 * @param \BaseVideoArte\Entidades\TipoDeMedio $tipo
+	 * @return Medio
+	 */
+	public function setTipo(\BaseVideoArte\Entidades\TipoDeMedio $tipo = null) {
+		$this -> tipo = $tipo;
 
-    /**
-     * Remove obras
-     *
-     * @param \BaseVideoArte\Entidades\Obra $obras
-     */
-    public function removeObra(\BaseVideoArte\Entidades\Obra $obras)
-    {
-        $this->obras->removeElement($obras);
-    }
+		return $this;
+	}
 
-    /**
-     * Get obras
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getObras()
-    {
-        return $this->obras;
-    }
+	/**
+	 * Get tipo
+	 *
+	 * @return \BaseVideoArte\Entidades\TipoDeMedio
+	 */
+	public function getTipo() {
+		return $this -> tipo;
+	}
 
-    /**
-     * Add personas
-     *
-     * @param \BaseVideoArte\Entidades\Persona $personas
-     * @return Medio
-     */
-    public function addPersona(\BaseVideoArte\Entidades\Persona $personas)
-    {
-        $this->personas[] = $personas;
-    
-        return $this;
-    }
+	/**
+	 * Add obras
+	 *
+	 * @param \BaseVideoArte\Entidades\Obra $obras
+	 * @return Medio
+	 */
+	public function addObra(\BaseVideoArte\Entidades\Obra $obras) {
+		$this -> obras[] = $obras;
 
-    /**
-     * Remove personas
-     *
-     * @param \BaseVideoArte\Entidades\Persona $personas
-     */
-    public function removePersona(\BaseVideoArte\Entidades\Persona $personas)
-    {
-        $this->personas->removeElement($personas);
-    }
+		return $this;
+	}
 
-    /**
-     * Get personas
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getPersonas()
-    {
-        return $this->personas;
-    }
+	/**
+	 * Remove obras
+	 *
+	 * @param \BaseVideoArte\Entidades\Obra $obras
+	 */
+	public function removeObra(\BaseVideoArte\Entidades\Obra $obras) {
+		$this -> obras -> removeElement($obras);
+	}
 
-    /**
-     * Add eventos
-     *
-     * @param \BaseVideoArte\Entidades\Evento $eventos
-     * @return Medio
-     */
-    public function addEvento(\BaseVideoArte\Entidades\Evento $eventos)
-    {
-        $this->eventos[] = $eventos;
-    
-        return $this;
-    }
+	/**
+	 * Get obras
+	 *
+	 * @return \Doctrine\Common\Collections\Collection
+	 */
+	public function getObras() {
+		return $this -> obras;
+	}
 
-    /**
-     * Remove eventos
-     *
-     * @param \BaseVideoArte\Entidades\Evento $eventos
-     */
-    public function removeEvento(\BaseVideoArte\Entidades\Evento $eventos)
-    {
-        $this->eventos->removeElement($eventos);
-    }
+	/**
+	 * Add personas
+	 *
+	 * @param \BaseVideoArte\Entidades\Persona $personas
+	 * @return Medio
+	 */
+	public function addPersona(\BaseVideoArte\Entidades\Persona $personas) {
+		$this -> personas[] = $personas;
 
-    /**
-     * Get eventos
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getEventos()
-    {
-        return $this->eventos;
-    }
+		return $this;
+	}
 
-    /**
-     * Set descripcion
-     *
-     * @param string $descripcion
-     * @return Medio
-     */
-    public function setDescripcion($descripcion)
-    {
-        $this->descripcion = $descripcion;
-    
-        return $this;
-    }
+	/**
+	 * Remove personas
+	 *
+	 * @param \BaseVideoArte\Entidades\Persona $personas
+	 */
+	public function removePersona(\BaseVideoArte\Entidades\Persona $personas) {
+		$this -> personas -> removeElement($personas);
+	}
 
-    /**
-     * Get descripcion
-     *
-     * @return string 
-     */
-    public function getDescripcion()
-    {
-        return $this->descripcion;
-    }
+	/**
+	 * Get personas
+	 *
+	 * @return \Doctrine\Common\Collections\Collection
+	 */
+	public function getPersonas() {
+		return $this -> personas;
+	}
+
+	/**
+	 * Add eventos
+	 *
+	 * @param \BaseVideoArte\Entidades\Evento $eventos
+	 * @return Medio
+	 */
+	public function addEvento(\BaseVideoArte\Entidades\Evento $eventos) {
+		$this -> eventos[] = $eventos;
+
+		return $this;
+	}
+
+	/**
+	 * Remove eventos
+	 *
+	 * @param \BaseVideoArte\Entidades\Evento $eventos
+	 */
+	public function removeEvento(\BaseVideoArte\Entidades\Evento $eventos) {
+		$this -> eventos -> removeElement($eventos);
+	}
+
+	/**
+	 * Get eventos
+	 *
+	 * @return \Doctrine\Common\Collections\Collection
+	 */
+	public function getEventos() {
+		return $this -> eventos;
+	}
+
+	/**
+	 * Set descripcion
+	 *
+	 * @param string $descripcion
+	 * @return Medio
+	 */
+	public function setDescripcion($descripcion) {
+		$this -> descripcion = $descripcion;
+
+		return $this;
+	}
+
+	/**
+	 * Get descripcion
+	 *
+	 * @return string
+	 */
+	public function getDescripcion() {
+		return $this -> descripcion;
+	}
+
 }

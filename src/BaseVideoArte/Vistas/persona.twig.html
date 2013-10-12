@@ -3,8 +3,20 @@
 {% block title %}Artistas{% endblock %}
 
 {% block contenido %}
-    Persona: {{ persona.nombre }} {{ persona.apellido }} 
+   
+    {#variables#}
+    {% set img_ppal = "" %}
     
+    Persona: {{ persona.nombre }} {{ persona.apellido }} 
+    {#busco los medios de la persona#}
+    {%for medio in persona.medios%}
+    	{% if medio.getStipo() == 'imagen principal'%}
+    		{% set img_ppal = medio.archivo %}
+    	{% endif %}
+    {% endfor %}
+ 
+    <img src="{{ app.request.basepath }}/medios/img/{{img_ppal}}"/>
+   
     <h3>Obras Realizadas</h3>
     <ul>
     {% for obra in persona.obras %}

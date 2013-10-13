@@ -6,6 +6,10 @@
    
     {#variables#}
     {% set img_ppal = "" %}
+    {% set enlaces = "" %}
+    {% set imagenes = "" %}
+    {% set enlaces = "" %}
+    
     
     Persona: {{ persona.nombre }} {{ persona.apellido }} 
     {#busco los medios de la persona#}
@@ -13,6 +17,16 @@
     	{% if medio.getStipo() == 'imagen principal'%}
     		{% set img_ppal = medio.archivo %}
     	{% endif %}
+    	
+    	{% if medio.getStipo() == 'enlace'%}
+    		{% set enlaces = medio.archivo %}
+    	{% endif %}
+    	
+    	{% if medio.getStipo() == 'imagen'%}
+    		{% set imagenes = medio.archivo %}
+    	{% endif %}
+   
+
     {% endfor %}
  
     <img src="{{ app.request.basepath }}/medios/img/{{img_ppal}}"/>

@@ -1,6 +1,6 @@
 <?php
 namespace BaseVideoArte\Util\Manejador;
-class ManejadorEventos implements ManejadorInterface{
+class ManejadorPersonas implements ManejadorInterface{
 	
 	private $persona;
 	

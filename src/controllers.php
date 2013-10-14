@@ -31,7 +31,9 @@ $app->get('/eventos/{evento}','BaseVideoArte\Controller\VideoArteController::mos
 $app->get('/admin', 'BaseVideoArte\Controller\AdminController::indexAction')->bind('admin');
 $app->get('/admin/personas', 'BaseVideoArte\Controller\AdminController::editarPersonasAction')->bind('admin_personas');
 $app->match('/admin/nueva_persona', 'BaseVideoArte\Controller\AdminController::nuevaPersonaAction')->bind('admin_nueva_persona');
+
 $app->match('/admin/pruebas', 'BaseVideoArte\Controller\AdminController::metadatoAction')->bind('pruebas');
+$app->match('/admin/manejador', 'BaseVideoArte\Controller\AdminController::agregarObraAction')->bind('manejador');
 $app->match('/admin/reset', 'BaseVideoArte\Controller\AdminController::ingresarDatosAction')->bind('reset');
 $app->match('/admin/pruebas_get_metadatos', 'BaseVideoArte\Controller\AdminController::recuperarMetadataAction')->bind('get_metadatos');
 //BUSCADOR

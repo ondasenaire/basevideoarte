@@ -25,7 +25,7 @@ use BaseVideoArte\Entidades\PalabraClave;
 use BaseVideoArte\Entidades\Evento;
 use BaseVideoArte\Entidades\Medio;
 
-
+use BaseVideoArte\Util\Manejador\ManejadorPersonas;
 
 class AdminController {
 	public function indexAction(Application $app) {
@@ -35,6 +35,20 @@ class AdminController {
 	}
 
 	public function listarPersonasAction() {
+	}
+
+
+	public function agregarObraAction (Application $app){
+		$p = new Persona('jose','casa','ssss','2098','222www','s',true);
+		$o = new Obra('limones','s','1123','23');
+		$mp = new ManejadorPersonas($p);
+		$mp->asociarObra($o);
+		
+		
+		$app['db.orm.em']->persist($p);
+		$app['db.orm.em']->persist($o);		
+		$app['db.orm.em']->flush();		
+		return new Response('asignada');
 	}
 
 	public function nuevaPersonaAction(Application $app, Request $request) {

@@ -218,7 +218,7 @@ class Evento {
      * @param \BaseVideoArte\Entidades\Persona $curadores
      * @return Evento
      */
-    public function addCuradore(\BaseVideoArte\Entidades\Persona $curadores)
+    public function addCurador(\BaseVideoArte\Entidades\Persona $curadores)
     {
         $this->curadores[] = $curadores;
     
@@ -230,7 +230,7 @@ class Evento {
      *
      * @param \BaseVideoArte\Entidades\Persona $curadores
      */
-    public function removeCuradore(\BaseVideoArte\Entidades\Persona $curadores)
+    public function removeCurador(\BaseVideoArte\Entidades\Persona $curadores)
     {
         $this->curadores->removeElement($curadores);
     }

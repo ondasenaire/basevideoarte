@@ -16,8 +16,11 @@ $app->get('/', function () use ($app) {
  * RUTAS
  */
 // PERSONAS
-$app->get('/personas',    'BaseVideoArte\Controller\VideoArteController::listarPersonasAction')->bind('personas');
-$app->get('/persona/{persona}',    'BaseVideoArte\Controller\VideoArteController::mostrarPersonaAction')->bind('persona');
+//$app->get('/personas',    'BaseVideoArte\Controller\VideoArteController::listarPersonasAction')->bind('personas');
+$app->get('/persona/{persona}',    'BaseVideoArte\Controller\VideoArteController::mostrarPersonaAction')->bind('persona')->assert('persona','\d+');
+$app->get('/personas/{filtro}',    'BaseVideoArte\Controller\VideoArteController::listarPersonasAction')->bind('personas')
+	->value('filtro',null)->assert('filtro','[a-z]');
+
 // OBRAS
 $app->get('/obras',    'BaseVideoArte\Controller\VideoArteController::listarObrasAction')->bind('obras');
 $app->get('/obras/{obra}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('obra');

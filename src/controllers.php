@@ -49,7 +49,11 @@ $app->get('/busqueda', function () use ($app) {
 })
 ->bind('busqueda')
 ;
+//---------------------------------------------------------------------
 
+$app->get('/admin/cargar', 'BaseVideoArte\Controller\CargaDatosController::cargarDatosAction')->bind('cargar_datos');
+
+//---------------------------------------------------------------------
 //contacto y "sobre el proyecto"
 $app->get('/contacto', function () use ($app) {
     return $app['twig']->render('/contacto.html.twig', array());

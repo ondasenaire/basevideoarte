@@ -16,6 +16,12 @@ class Pais {
 	 */
 	private $pais;
 
+
+
+	public function __construct($pais){
+		$this->pais = $pais;
+	}
+
     /**
      * Get id
      *

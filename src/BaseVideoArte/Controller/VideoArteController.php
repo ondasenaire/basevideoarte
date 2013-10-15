@@ -11,13 +11,14 @@ class VideoArteController {
 	}
 	//----------------------------------------------------------------
 	// PERSONAS
-	public function listarPersonasAction(Application $app,$filtro){
+	public function listarPersonasAction(Application $app,$filtro,$valor){
 		$qb = $app['db.orm.em']->createQueryBuilder();		
 		$qb->select('p.id','p.nombre','p.apellido')
 		   ->from('BaseVideoArte\Entidades\Persona','p');		   
 		 $consulta = $qb->getQuery();
 		 $personas = $consulta->getResult();
 		 echo $filtro;
+		 echo $valor;
 		return $app['twig'] -> render('/personas.html.twig', array('lista_personas' => $personas));
 	} 
 

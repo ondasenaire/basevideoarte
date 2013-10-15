@@ -23,7 +23,7 @@ $app->get('/personas/{filtro}/{valor}',    'BaseVideoArte\Controller\VideoArteCo
 	->value('filtro',null)
 	->value('valor',null)
 	->assert('filtro','[a-z]+')
-	->assert('valor','[a-z]+');
+	->assert('valor','[ñ a-z]+');
 $app->get('/persona/{persona}',    'BaseVideoArte\Controller\VideoArteController::mostrarPersonaAction')
 	->bind('persona')
 	->assert('persona','\d+');

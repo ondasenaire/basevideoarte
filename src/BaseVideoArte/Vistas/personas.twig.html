@@ -3,6 +3,16 @@
 {% block title %}Personas{% endblock %}
 
 {% block contenido %}
+{% set abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'] %}
+
+
+	<div id="abc">
+		{% for i in abc %}
+		<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}" >{{ i }}</a>
+		{% endfor %}
+		<a href="{{ path('personas') }}" >todos</a>
+	</div>
+
     Listado de personas
     <ul>
         {% for persona in lista_personas %}

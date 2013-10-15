@@ -18,8 +18,7 @@ class VideoArteController {
 			if ($filtro == 'abc' && $valor != null) {
 				echo 'filtra por abecedario con la letra '.$valor;
 				
-			//	$resultado =  $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Persona')
-				//								->findBy(array('apellido'=>'SUBSTRING(apellido, 1, 1) = '.$valor));
+			
 					$q =$app['db.orm.em'] -> createQueryBuilder();
        				$q ->select('p.id', 'p.nombre', 'p.apellido')
       				 ->from('BaseVideoArte\Entidades\Persona',' p')
@@ -32,15 +31,20 @@ class VideoArteController {
 				echo 'filtra por pais';
 			}
 
+		}else{
+				$qb = $app['db.orm.em'] -> createQueryBuilder();
+				$qb -> select('p.id', 'p.nombre', 'p.apellido') -> from('BaseVideoArte\Entidades\Persona', 'p');
+				$consulta = $qb -> getQuery();
+				$resultado = $consulta -> getResult();
+			
+			
 		}
 	
-	//	$qb = $app['db.orm.em'] -> createQueryBuilder();
-	//	$qb -> select('p.id', 'p.nombre', 'p.apellido') -> from('BaseVideoArte\Entidades\Persona', 'p');
-	//	$consulta = $qb -> getQuery();
-	//	$personas = $consulta -> getResult();
+	
+
 	//	echo $filtro;
 		//echo $valor;
-		return $app['twig'] -> render('/personas.html.twig', array('lista_personas' => $resultado));
+		return $app['twig'] -> render('/personas.twig.html', array('lista_personas' => $resultado));
 	}
 
 	public function mostrarPersonaAction(Application $app, $persona) {

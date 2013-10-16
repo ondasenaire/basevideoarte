@@ -47,6 +47,12 @@ class Obra {
 	private $artistas;
 
 	/**
+	 * @ManyToMany(targetEntity="Persona", mappedBy="colaboraciones")
+	 */
+	private $colaboradores;
+
+
+	/**
 	 * @ManyToMany(targetEntity="Evento", mappedBy="obras")
 	 */
 	private $eventos;

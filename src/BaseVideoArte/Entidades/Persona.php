@@ -48,6 +48,13 @@ class Persona {
 	 */
 	private $obras;
 
+
+	/**
+	 * @ManyToMany(targetEntity="Obra", inversedBy="colaboradores")
+	 * @JoinTable(name="colaboradores_x_obra")
+	 */	
+	private $colaboraciones;
+
 	/**
 	 * @ManyToMany(targetEntity="Evento", mappedBy="curadores")
 	 *

@@ -86,6 +86,7 @@ class Persona {
 		$this -> obras = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> eventos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> medios = new \Doctrine\Common\Collections\ArrayCollection();
+		$this -> colaboraciones = new \Doctrine\Common\Collections\ArrayCollection();
 	}
 
 	//-----------------------------
@@ -438,5 +439,38 @@ class Persona {
     public function getMetadatos()
     {
         return $this->metadatos;
+    }
+
+    /**
+     * Add colaboraciones
+     *
+     * @param \BaseVideoArte\Entidades\Obra $colaboraciones
+     * @return Persona
+     */
+    public function addColaboracion(\BaseVideoArte\Entidades\Obra $colaboraciones)
+    {
+        $this->colaboraciones[] = $colaboraciones;
+    
+        return $this;
+    }
+
+    /**
+     * Remove colaboraciones
+     *
+     * @param \BaseVideoArte\Entidades\Obra $colaboraciones
+     */
+    public function removeColaboracion(\BaseVideoArte\Entidades\Obra $colaboraciones)
+    {
+        $this->colaboraciones->removeElement($colaboraciones);
+    }
+
+    /**
+     * Get colaboraciones
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getColaboraciones()
+    {
+        return $this->colaboraciones;
     }
 }

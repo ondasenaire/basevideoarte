@@ -87,6 +87,7 @@ class Obra {
 		$this -> formatos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> generos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> artistas = new \Doctrine\Common\Collections\ArrayCollection();
+		$this -> colaboradores = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> eventos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> medios = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> palabrasClave = new \Doctrine\Common\Collections\ArrayCollection();
@@ -426,5 +427,38 @@ class Obra {
     public function getMetadatos()
     {
         return $this->metadatos;
+    }
+
+    /**
+     * Add colaboradores
+     *
+     * @param \BaseVideoArte\Entidades\Persona $colaboradores
+     * @return Obra
+     */
+    public function addColaborador(\BaseVideoArte\Entidades\Persona $colaboradores)
+    {
+        $this->colaboradores[] = $colaboradores;
+    
+        return $this;
+    }
+
+    /**
+     * Remove colaboradores
+     *
+     * @param \BaseVideoArte\Entidades\Persona $colaboradores
+     */
+    public function removeColaborador(\BaseVideoArte\Entidades\Persona $colaboradores)
+    {
+        $this->colaboradores->removeElement($colaboradores);
+    }
+
+    /**
+     * Get colaboradores
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getColaboradores()
+    {
+        return $this->colaboradores;
     }
 }

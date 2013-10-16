@@ -112,6 +112,46 @@ class CargaDatosController {
 		$personas[]= $aravena;	
 		
 		
+		
+		$cifuentes = new Persona('Guillermo','Cifuentes','','1990','http://revista.escaner.cl/node/192','h',true);
+		$cifuentes->setPais($paises['chile']);
+		$personas[]= $cifuentes;	
+		
+		
+		$endress = new Persona('Edgar','Endress','','1990','http://eendress.wordpress.com/','h',true);
+		$endress->setPais($paises['chile']);
+		$personas[]= $endress;	
+		
+		$ramirez = new Persona('Enrique','Ramirez','','1990','http://www.enriqueramirez.net','h',true);
+		$ramirez->setPais($paises['chile']);
+		$personas[]= $ramirez;	
+		
+		$saquel = new Persona('Carolina','Saquel','','1990','http://www.carolinasaquel.com/','m',true);
+		$saquel->setPais($paises['chile']);
+		$personas[]= $saquel;	
+		
+		//----PARAGUAY
+		
+			
+		$casco = new Persona('Fredi','Casco','','1990','http://www.nuestramirada.org/profile/fredicasco','h',true);
+		$casco->setPais($paises['paraguay']);
+		$personas[]= $casco;	
+	
+		$encina = new Persona('Paz','Encina','','1990','https://vimeo.com/user7170507','m',true);
+		$encina->setPais($paises['paraguay']);
+		$personas[]= $encina;		
+		
+		
+		//---URUGUAY
+		
+		$aguerre = new Persona('Enrique','Aguerre','','1980','http://netart.org.uy/interfaces02/uy/aguerre_bio.html','h',true);
+		$aguerre->setPais($paises['uruguay']);
+		$personas[]= $aguerre;	
+		
+		$puppo = new Persona('Teresa','Puppo','','1990','http://teresapuppo.com/','m',true);
+		$puppo->setPais($paises['uruguay']);
+		$personas[]= $puppo;	
+		
 		//---------------
 		foreach ($paises as $pais) {
 			$app['db.orm.em']->persist( $pais);

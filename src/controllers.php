@@ -52,7 +52,7 @@ $app->get('/busqueda', function () use ($app) {
 //---------------------------------------------------------------------
 
 $app->get('/admin/cargar', 'BaseVideoArte\Controller\CargaDatosController::cargarDatosAction')->bind('cargar_datos');
-
+$app->get('/admin/colab', 'BaseVideoArte\Controller\AdminController::colaboradorAction')->bind('colab');
 //---------------------------------------------------------------------
 //contacto y "sobre el proyecto"
 $app->get('/contacto', function () use ($app) {

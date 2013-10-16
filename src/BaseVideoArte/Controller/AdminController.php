@@ -239,5 +239,23 @@ class AdminController {
 		return $app['twig'] -> render('/Admin/pruebas.twig.html', array('meta' => $m, 'form' => $form -> createView()));
 
 	}
+	
+	
+	public function colaboradorAction(Application $app, Request $request) {
+		$p = new Persona('a','b','c','d','f','b',true);
+		$o = new Obra('t','r','d','23');
+		
+		$p->addColaboracion($o);
+		$o->addColaborador($p);
+		$app['db.orm.em'] -> persist($p);
+		$app['db.orm.em'] -> persist($o);
+		$app['db.orm.em'] -> flush();
+		
+		
+		$p = $app['db.orm.em']-> getRepository('BaseVideoArte\Entidades\Persona') -> findOneByNombre('a');
+		
+		
+		
+	}
 
 }

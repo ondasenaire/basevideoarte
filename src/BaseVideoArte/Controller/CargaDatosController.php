@@ -173,16 +173,17 @@ class CargaDatosController {
 
 	public function cargarPaises(){
 		$paises = array();
-		$paises['argentina'] = new Pais('argentina');
-		$paises['brasil'] = new Pais('brasil');
-		$paises['bolivia'] = new Pais('bolivia');
-		$paises['chile'] = new Pais('chile');
-		$paises['colombia'] = new Pais('colombia');
-		$paises['cuba'] = new Pais('cuba');
-		$paises['ecuador'] = new Pais('ecuador');
-		$paises['peru'] = new Pais('peru');
-		$paises['paraguay'] = new Pais('paraguay');
-		$paises['venezuela'] = new Pais('venezuela');
+		$paises['argentina'] = new Pais('Argentina');
+		$paises['brasil'] = new Pais('Brasil');
+		$paises['bolivia'] = new Pais('Bolivia');
+		$paises['chile'] = new Pais('Chile');
+		$paises['colombia'] = new Pais('Colombia');
+		$paises['cuba'] = new Pais('Cuba');
+		$paises['ecuador'] = new Pais('Ecuador');
+		$paises['peru'] = new Pais('Perú');
+		$paises['paraguay'] = new Pais('Paraguay');
+		$paises['venezuela'] = new Pais('Venezuela');
+		$paises['uruguay'] = new Pais('Uruguay');
 		return $paises;
 	}
 	

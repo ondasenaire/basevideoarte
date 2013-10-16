@@ -20,9 +20,10 @@ class VideoArteController {
 				
 			
 					$q =$app['db.orm.em'] -> createQueryBuilder();
-       				$q ->select('p.id', 'p.nombre', 'p.apellido')
-      				 ->from('BaseVideoArte\Entidades\Persona',' p')
-        			 ->where("SUBSTRING(p.apellido, 1, 1) = '$valor'");		
+       				$q ->select('persona', 'pais')
+      				 ->from('BaseVideoArte\Entidades\Persona',' persona')
+					 ->leftJoin('persona.pais', 'pais')
+        			 ->where("SUBSTRING(persona.apellido, 1, 1) = '$valor'");		
 					$consulta = $q->getQuery(); 					
 					$resultado = $consulta->getResult();								
 				
@@ -33,10 +34,20 @@ class VideoArteController {
 
 		}else{
 				$qb = $app['db.orm.em'] -> createQueryBuilder();
-				$qb -> select('p.id', 'p.nombre', 'p.apellido') -> from('BaseVideoArte\Entidades\Persona', 'p');
+				$qb->select('persona', 'pais')
+					->from('BaseVideoArte\Entidades\Persona', 'persona')
+					->leftJoin('persona.pais', 'pais')
+					->orderBy('pais.pais', 'ASC')
+					; 
+				// $qb -> select('p.id', 'p.nombre', 'p.apellido','c')
+				 // ->from('BaseVideoArte\Entidades\Persona', 'p')
+				 // ->leftJoin('p.pais','c');
 				$consulta = $qb -> getQuery();
 				$resultado = $consulta -> getResult();
 			
+			
+		
+
 			
 		}
 	

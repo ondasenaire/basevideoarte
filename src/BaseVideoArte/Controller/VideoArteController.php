@@ -23,7 +23,9 @@ class VideoArteController {
        				$q ->select('persona', 'pais')
       				 ->from('BaseVideoArte\Entidades\Persona',' persona')
 					 ->leftJoin('persona.pais', 'pais')
-        			 ->where("SUBSTRING(persona.apellido, 1, 1) = '$valor'");		
+        			 ->where("SUBSTRING(persona.apellido, 1, 1) = '$valor'")
+        			 ->orderBy('pais.pais', 'ASC')
+					 ;		
 					$consulta = $q->getQuery(); 					
 					$resultado = $consulta->getResult();								
 				

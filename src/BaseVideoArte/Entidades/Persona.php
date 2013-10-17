@@ -29,10 +29,15 @@ class Persona {
 	private $mostrar;
 
 	// CAMPOS RELACIONADOS
-	/**
-	 * @ManyToOne(targetEntity="TipoDePersona")
-	 * @JoinColumn(name="tipo_id", referencedColumnName="id")
-	 */
+    // ...
+
+    /**
+     * @ManyToMany(targetEntity="TipoDePersona") 
+     * @JoinTable(name="tipos_x_persona",
+     *      joinColumns={@JoinColumn(name="persona_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@JoinColumn(name="tipo_id", referencedColumnName="id")}
+     *      )
+     **/
 	private $tipo;
 
 	//Many-To-One, Unidirectional
@@ -263,28 +268,7 @@ class Persona {
         return $this->mostrar;
     }
 
-    /**
-     * Set tipo
-     *
-     * @param \BaseVideoArte\Entidades\TipoDePersona $tipo
-     * @return Persona
-     */
-    public function setTipo(\BaseVideoArte\Entidades\TipoDePersona $tipo = null)
-    {
-        $this->tipo = $tipo;
-    
-        return $this;
-    }
-
-    /**
-     * Get tipo
-     *
-     * @return \BaseVideoArte\Entidades\TipoDePersona 
-     */
-    public function getTipo()
-    {
-        return $this->tipo;
-    }
+   
 
     /**
      * Set pais

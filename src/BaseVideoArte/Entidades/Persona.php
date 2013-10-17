@@ -32,13 +32,10 @@ class Persona {
     // ...
 
     /**
-     * @ManyToMany(targetEntity="TipoDePersona") 
-     * @JoinTable(name="tipos_x_persona",
-     *      joinColumns={@JoinColumn(name="persona_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@JoinColumn(name="tipo_id", referencedColumnName="id")}
-     *      )
+     * @ManyToMany(targetEntity="TipoDePersona", inversedBy="personas") 
+     * @JoinTable(name="tipos_x_persona")
      **/
-	private $tipo;
+	private $tipos;
 
 	//Many-To-One, Unidirectional
 	/**
@@ -87,6 +84,7 @@ class Persona {
 		$this->sexo = $sexo;
 		$this->mostrar = $mostrar;
 		
+		$this -> tipos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> metadatos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> obras = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> eventos = new \Doctrine\Common\Collections\ArrayCollection();
@@ -457,4 +455,39 @@ class Persona {
     {
         return $this->colaboraciones;
     }
+
+    /**
+     * Add tipo
+     *
+     * @param \BaseVideoArte\Entidades\TipoDePersona $tipo
+     * @return Persona
+     */
+    public function addTipo(\BaseVideoArte\Entidades\TipoDePersona $tipo)
+    {
+        $this->tipo[] = $tipo;
+    
+        return $this;
+    }
+
+    /**
+     * Remove tipo
+     *
+     * @param \BaseVideoArte\Entidades\TipoDePersona $tipo
+     */
+    public function removeTipo(\BaseVideoArte\Entidades\TipoDePersona $tipo)
+    {
+        $this->tipo->removeElement($tipo);
+    }
+
+    /**
+     * Get tipo
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+
+
 }

@@ -12,6 +12,17 @@ namespace BaseVideoArte\Entidades;
 	/** @Column(type="string") */
 	private $tipo;
 	
+	 /**
+     * @ManyToMany(targetEntity="Persona", mappedBy="tipos")
+     **/
+	private $personas;
+	//--------
+ 
+ 
+ 	public function __construct($tipo){
+ 		$this->tipo;
+		$this->personas = new \Doctrine\Common\Collections\ArrayCollection();
+ 	}
  
     /**
      * Get id

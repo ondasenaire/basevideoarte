@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 use BaseVideoArte\Entidades\Pais;
 use BaseVideoArte\Entidades\Persona;
-
+use BaseVideoArte\Entidades\TipoDePersona;
 class CargaDatosController {
 	
 
@@ -15,6 +15,7 @@ class CargaDatosController {
 	// PERSONAS
 	public function cargarDatosAction(Application $app) {
 		$paises = $this->cargarPaises();
+		$tipos = $this->cargarTiposDePersona();
 		
 		
 		//---PERSONAS--
@@ -30,10 +31,13 @@ class CargaDatosController {
 		  ,'1990','http://www2.sescsp.org.br/sesc/videobrasil/site/dossier022/bio_en.asp','h',true);
 		
 		$denegri->setPais($paises['argentina']);
+		$denegri->addTipo($tipos['artista']);
+		
 		$personas[]= $denegri;
 		//---
 		$khourian = new Persona('Hernán','Khourián','','2000','http://www.hernankhourian.com.ar/','h',true);
 		$khourian->setPais($paises['argentina']);	
+		$khourian->addTipo($tipos['artista']);
 		$personas[]= $khourian;
 		//---
 		$bambozzi = new Persona('lucas','bambozzi','Lucas Bambozzi is a multimedia artist based in São Paulo, Brazil. His works are constituted by pieces dealing with media in a wide variety of formats, such as installations, single channel videos, short films and interactive projects. His works have been shown in solo and collective exhibitions in more than 40 countries, often collecting relevant awards and prizes.
@@ -157,6 +161,12 @@ class CargaDatosController {
 			$app['db.orm.em']->persist( $pais);
 		}
 		
+		
+		foreach ($tipos as $tipo) {
+			$app['db.orm.em']->persist( $tipo);
+		}
+		
+		
 		foreach ($personas as $persona) {
 			echo $persona->getApellido().'  <br>';
 			$app['db.orm.em']->persist( $persona);
@@ -187,5 +197,12 @@ class CargaDatosController {
 		return $paises;
 	}
 	
+	
+	public function cargarTiposDePersona(){
+		$tipos	=  array();
+		$tipos['artista'] = new TipoDePersona('artista');
+		$tipos['curador'] = new TipoDePersona('curador');
+		return $tipos;
+	}
 
 }

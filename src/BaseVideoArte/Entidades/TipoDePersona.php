@@ -20,7 +20,7 @@ namespace BaseVideoArte\Entidades;
  
  
  	public function __construct($tipo){
- 		$this->tipo;
+ 		$this->tipo = $tipo;
 		$this->personas = new \Doctrine\Common\Collections\ArrayCollection();
  	}
  

@@ -32,9 +32,9 @@ class Persona {
     // ...
 
     /**
-     * @ManyToMany(targetEntity="TipoDePersona", inversedBy="personas") 
-     * @JoinTable(name="tipos_x_persona")
-     **/
+     * @ManyToMany(targetEntity="TipoDePersona" ,inversedBy="personas") 
+     * @JoinTable(name="tipos_x_persona" )
+     */
 	private $tipos;
 
 	//Many-To-One, Unidirectional
@@ -94,6 +94,8 @@ class Persona {
 
 	//-----------------------------
 
+
+  
 
     /**
      * Get id
@@ -266,7 +268,38 @@ class Persona {
         return $this->mostrar;
     }
 
-   
+    /**
+     * Add tipos
+     *
+     * @param \BaseVideoArte\Entidades\Tipo $tipos
+     * @return Persona
+     */
+    public function addTipo(\BaseVideoArte\Entidades\TipoDePersona $tipos)
+    {
+        $this->tipos[] = $tipos;
+    
+        return $this;
+    }
+
+    /**
+     * Remove tipos
+     *
+     * @param \BaseVideoArte\Entidades\Tipo $tipos
+     */
+    public function removeTipo(\BaseVideoArte\Entidades\TipoDePersona $tipos)
+    {
+        $this->tipos->removeElement($tipos);
+    }
+
+    /**
+     * Get tipos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getTipos()
+    {
+        return $this->tipos;
+    }
 
     /**
      * Set pais
@@ -322,6 +355,39 @@ class Persona {
     public function getObras()
     {
         return $this->obras;
+    }
+
+    /**
+     * Add colaboraciones
+     *
+     * @param \BaseVideoArte\Entidades\Obra $colaboraciones
+     * @return Persona
+     */
+    public function addColaboracion(\BaseVideoArte\Entidades\Obra $colaboraciones)
+    {
+        $this->colaboraciones[] = $colaboraciones;
+    
+        return $this;
+    }
+
+    /**
+     * Remove colaboraciones
+     *
+     * @param \BaseVideoArte\Entidades\Obra $colaboraciones
+     */
+    public function removeColaboracion(\BaseVideoArte\Entidades\Obra $colaboraciones)
+    {
+        $this->colaboraciones->removeElement($colaboraciones);
+    }
+
+    /**
+     * Get colaboraciones
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getColaboraciones()
+    {
+        return $this->colaboraciones;
     }
 
     /**
@@ -422,72 +488,4 @@ class Persona {
     {
         return $this->metadatos;
     }
-
-    /**
-     * Add colaboraciones
-     *
-     * @param \BaseVideoArte\Entidades\Obra $colaboraciones
-     * @return Persona
-     */
-    public function addColaboracion(\BaseVideoArte\Entidades\Obra $colaboraciones)
-    {
-        $this->colaboraciones[] = $colaboraciones;
-    
-        return $this;
-    }
-
-    /**
-     * Remove colaboraciones
-     *
-     * @param \BaseVideoArte\Entidades\Obra $colaboraciones
-     */
-    public function removeColaboracion(\BaseVideoArte\Entidades\Obra $colaboraciones)
-    {
-        $this->colaboraciones->removeElement($colaboraciones);
-    }
-
-    /**
-     * Get colaboraciones
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getColaboraciones()
-    {
-        return $this->colaboraciones;
-    }
-
-    /**
-     * Add tipo
-     *
-     * @param \BaseVideoArte\Entidades\TipoDePersona $tipo
-     * @return Persona
-     */
-    public function addTipo(\BaseVideoArte\Entidades\TipoDePersona $tipo)
-    {
-        $this->tipo[] = $tipo;
-    
-        return $this;
-    }
-
-    /**
-     * Remove tipo
-     *
-     * @param \BaseVideoArte\Entidades\TipoDePersona $tipo
-     */
-    public function removeTipo(\BaseVideoArte\Entidades\TipoDePersona $tipo)
-    {
-        $this->tipo->removeElement($tipo);
-    }
-
-    /**
-     * Get tipo
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getTipo()
-    {
-        return $this->tipo;
-    }
-
-
 }

@@ -463,4 +463,27 @@ class Obra {
     }
 
     
+
+    /**
+     * Add colaboradores
+     *
+     * @param \BaseVideoArte\Entidades\Persona $colaboradores
+     * @return Obra
+     */
+    public function addColaboradore(\BaseVideoArte\Entidades\Persona $colaboradores)
+    {
+        $this->colaboradores[] = $colaboradores;
+    
+        return $this;
+    }
+
+    /**
+     * Remove colaboradores
+     *
+     * @param \BaseVideoArte\Entidades\Persona $colaboradores
+     */
+    public function removeColaboradore(\BaseVideoArte\Entidades\Persona $colaboradores)
+    {
+        $this->colaboradores->removeElement($colaboradores);
+    }
 }

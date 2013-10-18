@@ -8,6 +8,8 @@ use Symfony\Component\HttpFoundation\Request;
 use BaseVideoArte\Entidades\Pais;
 use BaseVideoArte\Entidades\Persona;
 use BaseVideoArte\Entidades\TipoDePersona;
+use BaseVideoArte\Entidades\Obra;
+
 class CargaDatosController {
 	
 
@@ -38,6 +40,7 @@ class CargaDatosController {
 		$khourian = new Persona('Hernán','Khourián','','2000','http://www.hernankhourian.com.ar/','h',true);
 		$khourian->setPais($paises['argentina']);	
 		$khourian->addTipo($tipos['artista']);
+		
 		$personas[]= $khourian;
 		//---
 		$bambozzi = new Persona('lucas','bambozzi','Lucas Bambozzi is a multimedia artist based in São Paulo, Brazil. His works are constituted by pieces dealing with media in a wide variety of formats, such as installations, single channel videos, short films and interactive projects. His works have been shown in solo and collective exhibitions in more than 40 countries, often collecting relevant awards and prizes.
@@ -163,9 +166,11 @@ class CargaDatosController {
 		
 		
 		foreach ($tipos as $tipo) {
+				
 			$app['db.orm.em']->persist( $tipo);
 		}
 		
+			
 		
 		foreach ($personas as $persona) {
 			echo $persona->getApellido().'  <br>';
@@ -175,7 +180,7 @@ class CargaDatosController {
 		
 		$app['db.orm.em']->flush();
 		
-		return new Response("");
+		return new Response("hola");
 	}
 
 
@@ -203,6 +208,28 @@ class CargaDatosController {
 		$tipos['artista'] = new TipoDePersona('artista');
 		$tipos['curador'] = new TipoDePersona('curador');
 		return $tipos;
+	}
+	
+	
+	//probando relacion
+	public function tipoAction(Application $app){
+			
+		$e = new Tipo('sessr');
+		$encina = new Persona('Passz','Encina','','1990','https://vimeo.com/user7170507','m',true);
+		$obra1 = new Obra('eden','dewjb j ',' 2010','1.20');
+		//$e->addPersona($encina);
+		$encina->addTipo($e);
+		$e->addPersona($encina);
+		
+		$encina->addObra($obra1);
+		$obra1->addArtista($encina);
+		
+		
+		$app['db.orm.em']->persist( $encina);
+		$app['db.orm.em']->persist( $e);
+		$app['db.orm.em']->persist( $obra1);
+		$app['db.orm.em']->flush();
+		return new Response('hola');
 	}
 
 }

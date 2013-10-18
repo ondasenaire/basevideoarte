@@ -12,9 +12,9 @@ namespace BaseVideoArte\Entidades;
 	/** @Column(type="string") */
 	private $tipo;
 	
-	 /**
+	/**
      * @ManyToMany(targetEntity="Persona", mappedBy="tipos")
-     **/
+     */
 	private $personas;
 	//--------
  
@@ -24,6 +24,9 @@ namespace BaseVideoArte\Entidades;
 		$this->personas = new \Doctrine\Common\Collections\ArrayCollection();
  	}
  
+  
+
+
     /**
      * Get id
      *
@@ -38,7 +41,7 @@ namespace BaseVideoArte\Entidades;
      * Set tipo
      *
      * @param string $tipo
-     * @return TipoDePersona
+     * @return Tipo
      */
     public function setTipo($tipo)
     {
@@ -55,5 +58,38 @@ namespace BaseVideoArte\Entidades;
     public function getTipo()
     {
         return $this->tipo;
+    }
+
+    /**
+     * Add personas
+     *
+     * @param \BaseVideoArte\Entidades\Persona $personas
+     * @return Tipo
+     */
+    public function addPersona(\BaseVideoArte\Entidades\Persona $personas)
+    {
+        $this->personas[] = $personas;
+    
+        return $this;
+    }
+
+    /**
+     * Remove personas
+     *
+     * @param \BaseVideoArte\Entidades\Persona $personas
+     */
+    public function removePersona(\BaseVideoArte\Entidades\Persona $personas)
+    {
+        $this->personas->removeElement($personas);
+    }
+
+    /**
+     * Get personas
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPersonas()
+    {
+        return $this->personas;
     }
 }

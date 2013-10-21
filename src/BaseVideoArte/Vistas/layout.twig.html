@@ -1,37 +1,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/
-xhtml1/DTD/xhtml1-strict.dtd"> 
+xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>{% block title %}{% endblock %} | Base Video Arte</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="{{app.request.basepath}}css/style.css" />
-  </head>
- 
-  <body>
-    <div id="web">
-      <h1>Video Arte Latinoamericano</h1>
- 
-      <div id="menu">
-        <ul>
-        <li><a href="{{ app.url_generator.generate('inicio') }}">Inicio</a></li>
-        <li><a href="{{ app.url_generator.generate('obras') }}">Obras</a></li>
-        <li><a href="{{ app.url_generator.generate('personas') }}">Personas</a></li>
-        <li><a href="{{ app.url_generator.generate('eventos') }}">Eventos</a></li>
-        <li><a href="{{ app.url_generator.generate('busqueda') }}">Buscador Avanzado</a></li>
-        <li><a href="{{ app.url_generator.generate('proyecto') }}">Sobre el Proyecto</a></li>
-        <li><a href="{{ app.url_generator.generate('contacto') }}">Contacto</a></li>
-{#           <li><a href="{{ app.url_generator.generate('inicio') }}">Inicio</a></li>#}
-{#           <li><a href="{{ app.url_generator.generate('imagenes') }}">Im�genes</a></li>#}
-{#           <li><a href="{{ app.url_generator.generate('texto') }}">Texto</a></li>#}
-        </ul>
-      </div>
- 
-      <h2>{% block tituloSeccion %}{% endblock %}</h2>
- 
-      <div id="contenido">
-        {% block contenido %}
-        {% endblock %}
-      </div>
-    </div>
-  </body>
+	<head>
+		<title>{% block title %}{% endblock %} | Base Video Arte</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="{{app.request.basepath}}css/style.css" />
+	</head>
+
+	<body>
+		<div id="wrap" align="center">
+
+			<div id="portadainicio"><img src="{{app.request.basepath}}/medios/iconos/portadainicio.jpg">
+			</div>
+			<div id="separador">
+				<center>
+					<img src="{{app.request.basepath}}/medios/iconos/separador.png" />
+				</center>
+			</div>
+			<br />
+			<a name="arriba"></a>
+			<div id="menu" class="langs">
+				<ul>
+					<a href="{{ app.url_generator.generate('inicio') }}" class="opacy" 	style="padding-right:25px;">Inicio</a>
+					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
+					<a href="{{ app.url_generator.generate('obras') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Obras</a>
+					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
+					<a href="{{ app.url_generator.generate('personas') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Personas</a>
+					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
+					<a href="{{ app.url_generator.generate('eventos') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Eventos</a>
+					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
+					<a href="{{ app.url_generator.generate('busqueda') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Busqueda Avanzada</a>
+					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
+					<a href="{{ app.url_generator.generate('proyecto') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Equipo</a>
+					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
+					<a href="{{ app.url_generator.generate('contacto') }}" class="opacy" 					style="padding-left: 25px;">Contacto</a>
+				</ul>
+			</div>
+			<div id="separador">
+				<center>
+					<img src="{{app.request.basepath}}/medios/iconos/separador.png" />
+				</center>
+			</div>
+
+			<h2>{% block tituloSeccion %}{% endblock %}</h2>
+
+			<div id="contenido">
+				{% block contenido %}
+				{% endblock %}
+			</div>
+		</div>
+	</body>
 </html>

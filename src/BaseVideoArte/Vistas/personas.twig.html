@@ -9,14 +9,14 @@
 
 {% set abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'] %}
 
-
+	
 	<div id="anclasordenalfabetico">
 		{% for i in abc %}
 		<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}" class="ordenlinks" >{{ i }}</a>
 		{% endfor %}
-		<a href="{{ path('personas') }}" >todos</a>
+		<a href="{{ path('personas') }}" class="ordenlinks" >todos</a>
 	</div>
-	<div id="separador"></div>
+	
  
     <ul>
     {% for persona in lista_personas %}

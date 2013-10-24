@@ -1,0 +1,6 @@
+{
+	"personas": [
+		{"nombre":"","apellido":"","info":"", "anho":"", "web":"","sexo":"","mostrar":true}
+	]
+
+}

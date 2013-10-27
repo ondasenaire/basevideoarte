@@ -1,9 +1,9 @@
 <?php
-namespace BaseVideoArte\Util\Inicializador;
+namespace BaseVideoArte\Util\Carga;
 
 use Silex\Application;
 
-class InicializarDatos {
+class CargadorDatos {
 	//Entidades de clasificacion
 	private $paises;
 	private $formatos;
@@ -16,6 +16,16 @@ class InicializarDatos {
 	private $personas;
 	private $obras;
 	private $eventos;
+	
+	
+	
+	public function iniciar(){
+		$this->paises = $this->procesarPaises();
+		$this->formatos = $this->procesarFormatos();
+		$this->generos = $this->procesarGeneros();
+		$this->tipos = $this->procesarTipos();
+	}
+	
 	
 	public function asociar(){
 		
@@ -64,5 +74,57 @@ class InicializarDatos {
 	
 
 	}
+
+//-----------------
+
+	public function json($archivo){
+
+		$str_datos = file_get_contents(__DIR__.$archivo);
+		$datos = json_decode($str_datos,true);
+		return $datos;
+	}
+	
+	
+	public function procesarPaises(){
+		
+		$lista_paises = $this->json("/paises.json");
+		$paises = array();
+		foreach ($lista_paises as $clave => $pais) {
+			$paises [$clave] = $pais;
+		}
+		
+		return $paises;	
+	}
+	
+	
+	public function procesarTipos(){
+		
+	}
+	
+	public function procesarGeneros(){
+		
+	}
+	
+	public function procesarFormatos(){
+		
+	}
+	
+	public function procesarPersonas(){
+		
+	}
+	
+	public function procesarObras(){
+		
+	}
+		
+	public function procesarEventos(){
+		
+	}
+	
+	
+	
+	
+
+
 
 }

@@ -23,7 +23,28 @@ use BaseVideoArte\Entidades\Evento;
 use BaseVideoArte\Entidades\Medio;
 
 
+use BaseVideoArte\Util\Carga\CargadorDatos;
+
+
 class TestController{
+	
+	public function jsonAction(){
+		$a = new CargadorDatos();
+		//$datos = $a->json("/paises.json");		
+		//$tipos = $a->json("/tipos.json");
+		
+		$p = $a->procesarPaises();
+		foreach ($p as $pais) {
+			 echo $pais['pais'];
+		}
+		
+	//	echo '<br>';
+		
+		//print_r($tipos);
+		
+				return new Response( " ");
+	}
+	
 	
 	public function colaboradorAction(Application $app, Request $request) {
 		$p = new Persona('a','b','c','d','f','b',true);

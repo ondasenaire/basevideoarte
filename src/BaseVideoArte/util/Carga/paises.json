@@ -1,6 +1,26 @@
-{"paises": [
-	"argentina":{"pais":"Argentina"},
-	"brasil":{"pais":"Brasil"}
+{
+	"argentina" 			: {"pais":"Argentina"},
+	"belice" 				: {"pais":"Bélice"},
+	"brasil"    			: {"pais":"Brasil"},
+	"bolivia" 				: {"pais":"Bolivia"},
+	"chile" 				: {"pais":"Chile"},
+	"colombia"				: {"pais":"Colombia"},
+	"costa_rica" 			: {"pais":"Costa Rica"},
+	"cuba" 					: {"pais":"Cuba"},
+	"republica_dominicana"  : {"pais":"República Dominicana"},
+	"ecuador"				: {"pais":"Ecuador"},
+	"el_salvador"	    	: {"pais":"El Salvador"},
+	"guatemala"				: {"pais":"Guatemala"},
+	"guayana_francesa"		: {"pais":"Guayana Francesa"},
+	"haiti"		            : {"pais":"Haití"},
+	"honduras"				: {"pais":"Honduras"},
+	"mexico"	    		: {"pais":"México"},
+	"nicaragua"	    		: {"pais":"Nicaragua"},
+	"panama"	    		: {"pais":"Panamá"},
+	"paraguay"	    		: {"pais":"Paraguay"},
+	"peru"	    			: {"pais":"Perú"},
+	"puerto_rico"    		: {"pais":"Puerto Rico"},
+	"venezuela"	    		: {"pais":"Venezuela"},
+	"uruguay"	    		: {"pais":"Uruguay"}
 
-]
 }

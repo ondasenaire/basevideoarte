@@ -6,7 +6,11 @@
 		 "inicio":"1990",
 		 "web":"http://www2.sescsp.org.br/sesc/videobrasil/site/dossier022/bio_en.asp",
 		 "sexo":"h",
-		 "mostrar":true
+		 "mostrar":true,
+		 
+		 "pais": "argentina",
+		 "tipo":["artista","curador"],
+		 "obras":[]
 		 },
 		
 		
@@ -17,7 +21,11 @@
 		 "inicio":"2000",
 		 "web":"http://www.hernankhourian.com.ar/",
 		 "sexo":"h",
-		 "mostrar":true
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":[],
+		 "obras":[]
 		 }
 		
 	

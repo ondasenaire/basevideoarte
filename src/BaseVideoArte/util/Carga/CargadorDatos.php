@@ -122,7 +122,17 @@ class CargadorDatos {
 	public function procesarPersonas(){
 			$lista_personas = $this->json("/personas.json");
 			foreach ($lista_personas as $clave => $persona) {
-			$this->personas [$clave] = new Persona($persona['nombre'],$persona['apellido'],$persona['data'],$persona['inicio'],$persona['web'],$persona['sexo'],$persona['mostrar']);
+			$p = new Persona($persona['nombre'],$persona['apellido'],$persona['data'],$persona['inicio'],$persona['web'],$persona['sexo'],$persona['mostrar']);	
+			$p->setPais($this->paises[$persona['pais']]);
+			//;
+			foreach ($persona['tipo'] as $tipo) {
+				echo $tipo;
+				$p->addTipo($this->tipos[$tipo]);
+				
+			}
+			
+			$this->personas [$clave] = $p;
+			
 		}	
 	}
 	

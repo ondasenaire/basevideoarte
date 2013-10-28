@@ -1,6 +1,19 @@
 {
-	"obras": [
-		{"titulo":"","sinopsis":"","anho":"", "duracion":""}
-	]
+	"III momentos":
+	{
+	"titulo":"III momentos",
+	"sinopsis":" ",
+	"anho":"1998", 
+	"duracion":"16m"
+	},
+
+	"Instante Bony":
+	{
+	"titulo":"Instante Bony",
+	"sinopsis":" Oscar Bony, uno de los más importantes artistas conceptuales argentinos, dispara una pistola 9mm. El gesto oculto con el que se crea la obra, es dilatado en el tiempo para construir un breve retrato del artista.",
+	"anho":"2000", 
+	"duracion":"1m54s"
+	}
+	
 
 }

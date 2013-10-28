@@ -23,6 +23,7 @@ class CargadorDatos {
 		$this->procesarPaises();
 		$this->procesarTipos();
 		$this->procesarPersonas();
+		$this->procesarObras();
 
 	}
 	
@@ -119,7 +120,10 @@ class CargadorDatos {
 	}
 	
 	public function procesarObras(){
-		
+			$lista_obras = $this->json("/obras.json");
+			foreach ($lista_obras as $clave => $obra) {
+			$this->obras [$clave] = $obra;
+		}		
 	}
 		
 	public function procesarEventos(){
@@ -140,5 +144,7 @@ class CargadorDatos {
 		return $this->personas;
 	}	
 
-
+	public function getObras(){
+		return $this->obras;
+	}
 }

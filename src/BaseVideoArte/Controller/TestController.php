@@ -53,7 +53,12 @@ class TestController{
 		}	
 		 echo '<br>';	
 		
-		
+		$obras = $a->getObras();
+		foreach ($obras as $obra) {
+			 echo '<br>';	
+			 echo $obra['titulo'];
+		}	
+		 echo '<br>';	
 		//print_r($personas);	
 		return new Response( " ");
 	}

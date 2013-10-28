@@ -32,17 +32,30 @@ class TestController{
 		$a = new CargadorDatos();
 		//$datos = $a->json("/paises.json");		
 		//$tipos = $a->json("/tipos.json");
-		
-		$p = $a->procesarPaises();
+		$a->iniciar();
+		$p = $a->getPaises();
 		foreach ($p as $pais) {
+			 echo '<br>';	
 			 echo $pais['pais'];
 		}
+		echo '<br>';		
+		//--
+		$t = $a->getTipos();
+		foreach ($t as $tipo) {
+			 echo '<br>';	
+			 echo $tipo['tipo'];
+		}	
+		 echo '<br>';	
+		$personas = $a->getPersonas();
+		foreach ($personas as $persona) {
+			 echo '<br>';	
+			 echo $persona['apellido'];
+		}	
+		 echo '<br>';	
 		
-	//	echo '<br>';
 		
-		//print_r($tipos);
-		
-				return new Response( " ");
+		//print_r($personas);	
+		return new Response( " ");
 	}
 	
 	

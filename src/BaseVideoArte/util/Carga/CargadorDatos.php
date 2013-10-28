@@ -20,10 +20,10 @@ class CargadorDatos {
 	
 	
 	public function iniciar(){
-		$this->paises = $this->procesarPaises();
-		$this->formatos = $this->procesarFormatos();
-		$this->generos = $this->procesarGeneros();
-		$this->tipos = $this->procesarTipos();
+		$this->procesarPaises();
+		$this->procesarTipos();
+		$this->procesarPersonas();
+
 	}
 	
 	
@@ -88,17 +88,19 @@ class CargadorDatos {
 	public function procesarPaises(){
 		
 		$lista_paises = $this->json("/paises.json");
-		$paises = array();
 		foreach ($lista_paises as $clave => $pais) {
-			$paises [$clave] = $pais;
+			$this->paises [$clave] = $pais;
 		}
-		
-		return $paises;	
+					
 	}
 	
 	
 	public function procesarTipos(){
-		
+		$lista_tipos = $this->json("/tipos.json");
+		//$paises = array();
+		foreach ($lista_tipos as $clave => $tipo) {
+			$this->tipos [$clave] = $tipo;
+		}
 	}
 	
 	public function procesarGeneros(){
@@ -110,7 +112,10 @@ class CargadorDatos {
 	}
 	
 	public function procesarPersonas(){
-		
+			$lista_personas = $this->json("/personas.json");
+			foreach ($lista_personas as $clave => $persona) {
+			$this->personas [$clave] = $persona;
+		}	
 	}
 	
 	public function procesarObras(){
@@ -121,10 +126,19 @@ class CargadorDatos {
 		
 	}
 	
+	//---------------------------
 	
-	
-	
+	public function getPaises(){
+		return $this->paises;
+	}
 
+	public function getTipos(){
+		return $this->tipos;
+	}	
+	
+	public function getPersonas(){
+		return $this->personas;
+	}	
 
 
 }

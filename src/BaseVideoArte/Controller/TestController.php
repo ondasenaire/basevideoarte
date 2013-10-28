@@ -28,38 +28,41 @@ use BaseVideoArte\Util\Carga\CargadorDatos;
 
 class TestController{
 	
-	public function jsonAction(){
+	public function jsonAction(Application $app){
 		$a = new CargadorDatos();
-		//$datos = $a->json("/paises.json");		
-		//$tipos = $a->json("/tipos.json");
-		$a->iniciar();
+		
+		$a->cargar();
 		$p = $a->getPaises();
 		foreach ($p as $pais) {
 			 echo '<br>';	
-			 echo $pais['pais'];
+			 echo $pais->getPais();
 		}
 		echo '<br>';		
 		//--
 		$t = $a->getTipos();
 		foreach ($t as $tipo) {
 			 echo '<br>';	
-			 echo $tipo['tipo'];
-		}	
+			 echo $tipo->getTipo();
+		}
+		// print_r($t);	
 		 echo '<br>';	
 		$personas = $a->getPersonas();
 		foreach ($personas as $persona) {
 			 echo '<br>';	
-			 echo $persona['apellido'];
+			 echo $persona->getApellido();
 		}	
 		 echo '<br>';	
 		
 		$obras = $a->getObras();
 		foreach ($obras as $obra) {
 			 echo '<br>';	
-			 echo $obra['titulo'];
+			 echo $obra->getTitulo();
 		}	
 		 echo '<br>';	
 		//print_r($personas);	
+		
+		
+		$a->persistir($app);
 		return new Response( " ");
 	}
 	

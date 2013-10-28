@@ -2,7 +2,11 @@
 namespace BaseVideoArte\Util\Carga;
 
 use Silex\Application;
-
+use BaseVideoArte\Entidades\Pais;
+use BaseVideoArte\Entidades\Persona;
+use BaseVideoArte\Entidades\Formato;
+use BaseVideoArte\Entidades\Obra;
+use BaseVideoArte\Entidades\TipoDePersona;
 class CargadorDatos {
 	//Entidades de clasificacion
 	private $paises;
@@ -19,7 +23,7 @@ class CargadorDatos {
 	
 	
 	
-	public function iniciar(){
+	public function cargar(){
 		$this->procesarPaises();
 		$this->procesarTipos();
 		$this->procesarPersonas();
@@ -31,48 +35,51 @@ class CargadorDatos {
 	public function asociar(){
 		
 	}
-	public function persistir() {
-
-		foreach ($paises as $pais) {
+	
+	public function persistir(Application $app) {
+		
+		foreach ($this->paises as $pais) {
 			$app['db.orm.em'] -> persist($pais);
 		}
-
-		foreach ($formatos as $formato) {
-			$app['db.orm.em'] -> persist($formato);
-		}
-
-		foreach ($generos as $genero) {
-			$app['db.orm.em'] -> persist($genero);
-		}
+// 
+		// foreach ($formatos as $formato) {
+			// $app['db.orm.em'] -> persist($formato);
+		// }
+// 
+		// foreach ($generos as $genero) {
+			// $app['db.orm.em'] -> persist($genero);
+		// }
+// 		
 		
-		
-		foreach ($tipos as $tipo) {
+		foreach ($this->tipos as $tipo) {
 			$app['db.orm.em'] -> persist($tipo);
 		}
 		
 		
-		foreach ($medios as $medio) {
-			$app['db.orm.em'] -> persist($medio);
-		}
-		
-		foreach ($metadatos as $metadato) {
-			$app['db.orm.em'] -> persist($metadato);
-		}
-		
+		// foreach ($medios as $medio) {
+			// $app['db.orm.em'] -> persist($medio);
+		// }
+// 		
+		// foreach ($metadatos as $metadato) {
+			// $app['db.orm.em'] -> persist($metadato);
+		// }
+// 		
 //----------------------
 
-		foreach ($personas as $persona) {
+		foreach ($this->personas as $persona) {
 			$app['db.orm.em'] -> persist($persona);
 		}		
 		
-		foreach ($obra as $obra) {
+		foreach ($this->obras as $obra) {
 			$app['db.orm.em'] -> persist($obra);
 		}
 		
-		foreach ($eventos as $evento) {
-			$app['db.orm.em'] -> persist($evento);
-		}
-	
+		// foreach ($eventos as $evento) {
+			// $app['db.orm.em'] -> persist($evento);
+		// }
+// 	
+// 	
+		$app['db.orm.em']->flush();
 
 	}
 
@@ -90,7 +97,7 @@ class CargadorDatos {
 		
 		$lista_paises = $this->json("/paises.json");
 		foreach ($lista_paises as $clave => $pais) {
-			$this->paises [$clave] = $pais;
+			$this->paises [$clave] = new Pais($pais['pais']);
 		}
 					
 	}
@@ -100,7 +107,7 @@ class CargadorDatos {
 		$lista_tipos = $this->json("/tipos.json");
 		//$paises = array();
 		foreach ($lista_tipos as $clave => $tipo) {
-			$this->tipos [$clave] = $tipo;
+			$this->tipos [$clave] = new TipoDePersona($tipo['tipo']);
 		}
 	}
 	
@@ -115,14 +122,14 @@ class CargadorDatos {
 	public function procesarPersonas(){
 			$lista_personas = $this->json("/personas.json");
 			foreach ($lista_personas as $clave => $persona) {
-			$this->personas [$clave] = $persona;
+			$this->personas [$clave] = new Persona($persona['nombre'],$persona['apellido'],$persona['data'],$persona['inicio'],$persona['web'],$persona['sexo'],$persona['mostrar']);
 		}	
 	}
 	
 	public function procesarObras(){
 			$lista_obras = $this->json("/obras.json");
 			foreach ($lista_obras as $clave => $obra) {
-			$this->obras [$clave] = $obra;
+			$this->obras [$clave] = new Obra($obra['titulo'],$obra['sinopsis'],$obra['anho'],$obra['duracion']);
 		}		
 	}
 		

@@ -60,9 +60,9 @@ class CargadorDatos {
 		// $app['db.orm.em'] -> persist($medio);
 		// }
 		//
-		// foreach ($metadatos as $metadato) {
-		// $app['db.orm.em'] -> persist($metadato);
-		// }
+	//	foreach ($this->metadatos as $metadato) {
+		//$app['db.orm.em'] -> persist($metadato);
+	//	}
 		//
 		//----------------------
 
@@ -122,6 +122,9 @@ class CargadorDatos {
 		}
 	}
 
+
+
+
 	public function procesarPersonas() {
 		$lista_personas = $this -> json("/personas.json");
 		foreach ($lista_personas as $clave => $persona) {
@@ -129,12 +132,12 @@ class CargadorDatos {
 			$p -> setPais($this -> paises[$persona['pais']]);
 			//;
 			foreach ($persona['tipo'] as $tipo) {
-				echo $tipo;
+				
 				$p -> addTipo($this -> tipos[$tipo]);
 
 			}
 			foreach ($persona['obras'] as $obra) {
-				echo $obra;
+				
 				$p -> addObra($this -> obras[$obra]);
 
 			}
@@ -156,6 +159,13 @@ class CargadorDatos {
 			foreach ($obra['genero'] as $genero) {
 				$o -> addGenero($this -> generos[$genero]);
 				
+			}
+			
+			foreach ($obra['metadatos'] as $metadato) {
+				//busca el metadato y lo asocia
+				$met = new \BaseVideoArte\Entidades\MetadatoObra($metadato['metadato'],$metadato['tipo']);				
+				$o -> addMetadato($met);
+				$met->setObra($o);
 			}
 			
 			$this -> obras[$clave] = $o;

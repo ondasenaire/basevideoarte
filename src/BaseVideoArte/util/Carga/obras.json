@@ -7,7 +7,8 @@
 	"duracion":"16m",
 	
 	"formato":["Video"],
-	"genero": ["Experimental"]
+	"genero": ["Experimental"],
+	"metadatos":[{"metadato":"con 3 autos","tipo":"formato"}]
 	},
 
 	"Instante Bony":
@@ -18,7 +19,8 @@
 	"duracion":"1m54s",
 	
 	"formato":["Super8","Hi-8"],
-	"genero": ["Experimental"]
+	"genero": ["Experimental"],
+	"metadatos":[]
 	}
 	
 

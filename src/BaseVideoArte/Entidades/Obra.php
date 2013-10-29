@@ -71,7 +71,7 @@ class Obra {
 	private $palabrasClave;
 
     /**
-     * @OneToMany(targetEntity="MetadatoObra", mappedBy="obra")
+     * @OneToMany(targetEntity="MetadatoObra", mappedBy="obra", cascade={"persist"})
      **/
 	private $metadatos;
 	//-----FUNCIONES

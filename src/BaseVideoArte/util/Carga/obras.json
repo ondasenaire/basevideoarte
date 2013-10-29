@@ -6,7 +6,8 @@
 	"anho":"1998", 
 	"duracion":"16m",
 	
-	"formato":[]
+	"formato":["Video"],
+	"genero": ["Experimental"]
 	},
 
 	"Instante Bony":
@@ -16,7 +17,8 @@
 	"anho":"2000", 
 	"duracion":"1m54s",
 	
-	"formato":["Super8","Hi-8"]
+	"formato":["Super8","Hi-8"],
+	"genero": ["Experimental"]
 	}
 	
 

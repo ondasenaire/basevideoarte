@@ -65,7 +65,12 @@ class TestController{
 			 echo '<br>';	
 			 echo $formato->getFormato();
 		}	 
-		 
+		 echo '<br>';	
+		$generos = $a->getGeneros();
+		foreach ($generos as $genero) {
+			 echo '<br>';	
+			 echo $genero->getGenero();
+		}		 
 		//print_r($personas);	
 		
 		

@@ -1,6 +1,6 @@
 {
-	"instalacion":{"formato":"Instalación"},
-	"video":{"formato":"Video"},
+	"Instalacion":{"formato":"Instalación"},
+	"Video":{"formato":"Video"},
 	"MiniDV":{"formato":"MiniDV"},
 	"DV":{"formato":"DV"},
 	"16mm":{"formato":"16mm"},

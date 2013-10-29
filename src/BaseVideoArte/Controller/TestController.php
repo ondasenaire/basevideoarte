@@ -34,6 +34,7 @@ class TestController{
 		$a->cargar();
 		$p = $a->getPaises();
 		foreach ($p as $pais) {
+			
 			 echo '<br>';	
 			 echo $pais->getPais();
 		}
@@ -59,6 +60,12 @@ class TestController{
 			 echo $obra->getTitulo();
 		}	
 		 echo '<br>';	
+		$formatos = $a->getFormatos();
+		foreach ($formatos as $formato) {
+			 echo '<br>';	
+			 echo $formato->getFormato();
+		}	 
+		 
 		//print_r($personas);	
 		
 		

@@ -26,8 +26,11 @@ class CargadorDatos {
 	public function cargar(){
 		$this->procesarPaises();
 		$this->procesarTipos();
-		$this->procesarPersonas();
+		$this->procesarFormatos();
 		$this->procesarObras();
+		
+		$this->procesarPersonas();
+		
 
 	}
 	
@@ -41,12 +44,12 @@ class CargadorDatos {
 		foreach ($this->paises as $pais) {
 			$app['db.orm.em'] -> persist($pais);
 		}
-// 
-		// foreach ($formatos as $formato) {
-			// $app['db.orm.em'] -> persist($formato);
-		// }
-// 
-		// foreach ($generos as $genero) {
+ 
+		foreach ($this->formatos as $formato) {
+			$app['db.orm.em'] -> persist($formato);
+		}
+ 
+		// foreach ($this->generos as $genero) {
 			// $app['db.orm.em'] -> persist($genero);
 		// }
 // 		
@@ -105,7 +108,6 @@ class CargadorDatos {
 	
 	public function procesarTipos(){
 		$lista_tipos = $this->json("/tipos.json");
-		//$paises = array();
 		foreach ($lista_tipos as $clave => $tipo) {
 			$this->tipos [$clave] = new TipoDePersona($tipo['tipo']);
 		}
@@ -116,7 +118,10 @@ class CargadorDatos {
 	}
 	
 	public function procesarFormatos(){
-		
+		$lista_formatos = $this->json("/formatos.json");
+		foreach ($lista_formatos as $clave => $formato) {
+			$this->formatos [$clave] = new Formato($formato['formato']);
+		}
 	}
 	
 	public function procesarPersonas(){
@@ -130,7 +135,11 @@ class CargadorDatos {
 				$p->addTipo($this->tipos[$tipo]);
 				
 			}
-			
+			foreach ($persona['obras'] as $obra) {
+				echo $obra;
+				$p->addObra($this->obras[$obra]);
+				
+			}
 			$this->personas [$clave] = $p;
 			
 		}	
@@ -139,7 +148,14 @@ class CargadorDatos {
 	public function procesarObras(){
 			$lista_obras = $this->json("/obras.json");
 			foreach ($lista_obras as $clave => $obra) {
-			$this->obras [$clave] = new Obra($obra['titulo'],$obra['sinopsis'],$obra['anho'],$obra['duracion']);
+			
+			$o = new Obra($obra['titulo'],$obra['sinopsis'],$obra['anho'],$obra['duracion']);
+			
+			foreach ($obra['formato'] as $formato) {
+				$o->addFormato($this->formatos[$formato]);
+				
+			}
+			$this->obras [$clave] = $o;
 		}		
 	}
 		
@@ -163,5 +179,9 @@ class CargadorDatos {
 
 	public function getObras(){
 		return $this->obras;
+	}
+	
+	public function getFormatos(){
+		return $this->formatos;
 	}
 }

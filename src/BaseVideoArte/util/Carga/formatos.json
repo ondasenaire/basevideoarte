@@ -1,4 +1,13 @@
 {
+	"instalacion":{"formato":"Instalación"},
+	"video":{"formato":"Video"},
+	"MiniDV":{"formato":"MiniDV"},
+	"DV":{"formato":"DV"},
+	"16mm":{"formato":"16mm"},
+	"Super8":{"formato":"Super8"},
+	"Hi-8":{"formato":"Hi-8"},
+	"VHS":{"formato":"VHS"},
+	"35mm":{"formato":"35mm"}
 	
 
 }

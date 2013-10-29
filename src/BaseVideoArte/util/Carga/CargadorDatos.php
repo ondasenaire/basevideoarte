@@ -141,6 +141,14 @@ class CargadorDatos {
 				$p -> addObra($this -> obras[$obra]);
 
 			}
+			//metadatos persona
+			foreach ($persona['metadatos'] as $metadato) {
+				//busca el metadato y lo asocia
+				echo 'SOY UN METADATO PERSONA';
+				$met = new \BaseVideoArte\Entidades\MetadatoPersona($metadato['metadato'],$metadato['tipo']);				
+				$p -> addMetadato($met);
+				$met->setPersona($p);
+			}
 			$this -> personas[$clave] = $p;
 
 		}

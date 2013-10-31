@@ -1,0 +1,78 @@
+{
+
+	"aravena_claudia":
+		{"nombre":"Claudia",
+		 "apellido":"Aravena",
+		 "data":"1968 nace en Santiago de Chile. Entre 1987 y 1992 estudia Diseño Gráfico en la Universidad Arcis, y se titula en Comunicación Audiovisual en el Instituto Arcos. Vive en Santiago de Chile.",
+		 "inicio":"1990",
+		 "web":"http://www.claudiaaravenaabughosh.cl/ - http://www2.sescsp.org.br/sesc/videobrasil/site/dossier024/apresenta_en.asp",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais": "chile",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		"cifuentes_guillermo":
+		{"nombre":"Guillermo",
+		 "apellido":"Cifuentes",
+		 "data":"Guillermo Cifuentes Espinoza, artista audiovisual. Nació en Santiago, Chile, el 10 de febrero de 1968 y falleció el 27 de mayo de 2007. Entre los años 1988 y 1991, estudió Comunicación Audiovisual en el Instituto de Arte y Comunicación, ARCOS. Desde 1995 a 1998, cursó un Master of Fine Arts con Mención en Video Arte, en el College of Visual and Performing Arts de la Universidad de Syracuse, Estados Unidos. Guillermo Cifuentes produjo obras de video arte ligadas a la instalación, y con reflexiones respecto del contexto social en Chile, abordando líneas de trabajo centradas en la historia familiar, el contexto urbano y por conceptos como la memoria, la identidad, el desarraigo y lo transitorio, entendidos “como construcciones frágiles, en proceso, hechos de fragmentos, de residuos”, según palabras del artista. El artista utilizó en sus obras medios como el video, fotografía, cine y la computación.",
+		 "inicio":"1990",
+		 "web":"http://revista.escaner.cl/node/192",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais": "chile",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		 "endress_edgar":
+		{"nombre":"Edgar",
+		 "apellido":"Endress",
+		 "data":"Chile, 1970. Edgar Endress es un artista Chileno que trabaja en los límites de la escultura social / práctica, medios interactivos, la colaboración y la ejecución pública. La mayor parte de la obra de Endress involucra un trabajo con comunidades con un énfasis en la cultura popular. Sus trabajos de videoarte y documentales revelan un estilo muy personal de cámara y edición, con un interés constante en la relación entre el paisaje natural y el construido, así como en la presencia humana y las historias personales que se crean en estos espacios.Es también el fundador del Laboratorio Colectivo Flotante, un museo móvil que tiene el objetivo de acercar el arte a la vida cotidiana del público y estimular la participación en torno al arte contemporáneo y lo social.Además dirige un laboratorio experimental de artes y tecnologías en la Universidad de George Mason.",
+		 "inicio":"1990",
+		 "web":"http://eendress.wordpress.com/",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais": "chile",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		"ramirez_enrique":
+		{"nombre":"Enrique",
+		 "apellido":"Ramirez",
+		 "data":"Born in 1979 in Santiago, Chile. He has a master degree in Contemporary art and New Media in Studio National of art contemporain Le Fresnoy, France. Enrique Ramirez’s work could be described as poetic incursions towards the humanization of contemporary dystopias. His film-installations and photography deals with the politics of exodus and exile and the discontinuity of memory, but for Ramirez this always means an arduous search into subjective imaginary. The vast landscapes that often appear in his works are conceived as geo-poetic spaces for imagination, territories open for vision and deambulation. The mood of the images is a contemplative one; the landscape, the breeze, the water, the sand, they all seem to work together in an effort to place a subjective view.",
+		 "inicio":"1990",
+		 "web":"http://www.enriqueramirez.net",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais": "chile",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		"saquel_carolina":
+		{"nombre":"Carolina",
+		 "apellido":"Saquel",
+		 "data":"Lives and Works in Paris, France. Through an increasingly embodied use of video, Carolina Saquel has explored the myriad possibilities of the point of view as a subject for the transformation of nature as form.  Using the moving image as medium for altering perceptions of temporality, her work has transited form reflections on painting- the frame as a window to the world- to what could be considered a sculptural use of the moving image. Saquel’s current work observes nature as hard material, playing with the textures, tonality and rhythm of the image, that through camera movements and perspective turn its matter into narrative. By altering the supposedly presented, in an almost structuralist way –creating a materialist dialectic tension with the out of frame– only to immediately betray and bastardize all principles of structuralist film by turning the constructed shape into a character in itself. Going even further, bordering the esoteric, the moving image process is used to burst the mold of the subject matter, by -as the artist herself has noted- “insisting on the dimensions of the threatening and obscure”. Saquel thrusts her matter into the uncontrollable realm of formlessness. Seemingly ordinary natural subjects, like trees in a forest or water in a tank are turned into, or unveiled, as living creatures. Using her camera to dive into the unknown, Saquel confronts her latest projects as open laboratories, where the shooting process intentionally crashes with the obscurity of nature as material to be molded into an unexpected being. This almost organic approach transforms the filming experience and process into the result, the live model (a park, a well, a waterfall) and the artist’s relation to it through the camera, is the ‘coming into presence’ of the film itself. Close observation is used by Saquel to trespass the limits of formalism by allowing ‘the miasmic area of experience’ to take over. There is no desire to tread through the vastness of dark content, on the contrary Saquel’s work plays in the wilderness of fiction and non-transparency.",
+		 "inicio":"1990",
+		 "web":"http://www.carolinasaquel.com/",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais": "chile",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 } 
+		 
+}

@@ -1,5 +1,5 @@
 {	
-		"Bambozzi_Lucas":
+		"bambozzi_lucas":
 		{"nombre":"Lucas",
 		 "apellido":"Bambozzi",
 		 "data":"Lucas Bambozzi is a multimedia artist based in São Paulo, Brazil. His works are constituted by pieces dealing with media in a wide variety of formats, such as installations, single channel videos, short films and interactive projects. His works have been shown in solo and collective exhibitions in more than 40 countries, often collecting relevant awards and prizes. Was a visiting artist at the CAiiA-STAR Centre – currently operating as Planetary Collegium, where he has developed an extensive research about on-line privacy and pervasive systems, as part of his MPHIL studies, concluded in 2006 at the University of Plymouth, UK. Some curatorial projects include SonarSound (2004); Digitofagia (2004); Life Goes Mobile (Nokiatrends 2005 and 2006), Motomix Art & Music Festival (2006), O Lugar Dissonante (2009) among other shows. He is one of the initiators and curators of the arte.mov, International Mobile Media Art Festival (2006-2011). Took part in the collectives FAQ/feitoamãos and Cobaia, dealing with live video performances and media intervention projects in public spaces. Recent exhibitions: Interconnect at ZKM, Karlsruhe/Germany (2006), Pensé Sauvage at Frankfurter Kunstverein in Germany (2007) Emergentes at Laboral, (2007/2008) Gijon/Spain and Fundación Telefonica (2008), Buenos Aires/Argentina, RE:akt!, reconstruction, re-enactment, re-reporting, exhibited both at ŠKUC gallery, Ljubljana/Slovenia  and at Museum of Contemporary Art Rijeka/ Croatia (2009) and Restraint at Oboros Montreal/Canada. In 2010 took part in exhibitions at ISEA in Dortmund, Germany and at Ars Eletrônica, in Linz, Áustria. In 2011 has a retrospective of his works at the Laboratorio Arte Alameda, in Mexico DF.",
@@ -9,7 +9,83 @@
 		 "mostrar":true,
 		 
 		 "pais": "brasil",
-		 "tipo":["artista","curador"],
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		 "guimares_cao":
+		{"nombre":"Cao",
+		 "apellido":"Guimares",
+		 "data":"Cao Guimarães es un reconocido cineasta y artista visual nacido en 1965 en Belo Horizonte, donde vive y trabaja. Desde fines de los ochenta ha estado exhibiendo su trabajo en variados museos y galerías alrededor del mundo, tales como Tate Modern, Guggenheim Museum, Museum of Modern Art NY, Gasworks, Frankfurten Kunstverein, Studio Guenzano, Galeria La Caja Negra y Galeria Nara Roesler. Fue parte de la XXV y XXVII Bienal Internacional de Arte de São Paulo y de la Insite Biennial 2005 (San Diego/ Tijuana). Algunas de sus piezas son parte de las colecciones públicas de la Fondation Cartier Pour L’art Contemporain, Tate Modern, Walker Art Center, Guggehein Museum, Museu de Arte Moderna de São Paulo, MoMA y del Instituto Cultural Inhotim, entre otros, y sus films han participado en variados festivals de cine, tales como Locarno International Film Festival, Mostra Internazionale d’Arte Cinematografica di Venezia, Sundance Film Festival, Cannes Film Festival, International Documentary Film Festival of Amsterdam y el São Paulo International Film Festival , entre otros.",
+		 "inicio":"2000",
+		 "web":"http://www.caoguimaraes.com/",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		 "cardoso_ines":
+		{"nombre":"Inés",
+		 "apellido":"Cardoso",
+		 "data":"Ines Cardoso is a video artist and documentary based in Sao Paulo in Sao Paulo, Brazil. Her works are constituted by authorial and independent pieces, including a wide variety of formats, such as installations, single channel videos, short films and interactive projects.",
+		 "inicio":"1990",
+		 "web":"http://vimeo.com/user2595777 - http://www2.sescsp.org.br/sesc/videobrasil/vbonline/bd/index.asp?cd_entidade=21274&cd_idioma=18531",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		 
+		 "meneghetti_cesar":
+		{"nombre":"César",
+		 "apellido":"Meneghetti",
+		 "data":"CÉSAR MENEGHETTI, was born in São Paulo, Brazil. B.A. in Visual Communication at FAAP São Paulo, B.A. Fine Arts (Mixed Medias) at London Metropolitan University (City of London Polytechnic) and further degree at Centro Sperimentale di Cinematografia, Cinecittà, Rome. Artist and film-maker his work is centered on social issues, migration and the concept of borders, political, social and individual edges, the interaction with people and media between the North and South hemisphere. He uses the cinema medium as well as film, video, photography, painting and installation in art to give images a new approach to the world. Through the mix of various technical supports he uses these electronic/digital instruments to extract and isolate frames of reality and re-elaborate them in a new context. He has shown his artwork in more than 39 countries around the world and has made about 60 films and videos including 2 feature films, 5 documentaries, 53 short films and experimental videos. In the last 20 years he had received over 60 awards, prizes and scholarships for his work. He lives and works in between Berlin, Rome and São Paulo.",
+		 "inicio":"1990",
+		 "web":"http://www.cesarmeneghetti.net/",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		  "morales_wagner":
+		{"nombre":"Wagner",
+		 "apellido":"Morales",
+		 "data":"Wagner Morales is a film maker and a visual artist. He was born in Sao Paulo (1971) and lives and works in Paris. He went to France in 2004 for a residence at Le Fresnoy. For the following two of years he participated in the Programme Pavillion of the Palais de Tokyo. He has made several auteur films, documentaries, photographs and installations. His work is shown at the Galeria Transversal, in Sao Paulo and his films and videos, as well as his installations, are exhibited in important institutions in Brazil, France and many other countries. Graduated in Anthropology, he started to work with film just right after college. Since them, his practice has been concentrated on visual and sound media and he has done some projects on video, music, installation and photography. He never worked as an anthropologist. Morales participated of Bienal do Mercosul in 2010 and 2011 and curated the video lounge of 28ª Bienal Internacional de São Paulo. In 2005 he did release “Preto contra Branco”, doc awarded at DOCTV programme and the “Best International Documentary” at Festival ReelWord, em Toronto, Canadá.  In 2010, he was a resident artist at HIAP – Helsinki International Artist-in-residence Programme, em Helsink, Finland.",
+		 "inicio":"1990",
+		 "web":"http://www.videobrasil.org.br/ffdossier/ffdossier002/eng/ind.htm/",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		 "oliveira_farkas_solange":
+		{"nombre":"Solange",
+		 "apellido":"Oliveira Farkas",
+		 "data":"Wagner Morales is a film maker and a visual artist. He was born in Sao Paulo (1971) and lives and works in Paris. He went to France in 2004 for a residence at Le Fresnoy. For the following two of years he participated in the Programme Pavillion of the Palais de Tokyo. He has made several auteur films, documentaries, photographs and installations. His work is shown at the Galeria Transversal, in Sao Paulo and his films and videos, as well as his installations, are exhibited in important institutions in Brazil, France and many other countries. Graduated in Anthropology, he started to work with film just right after college. Since them, his practice has been concentrated on visual and sound media and he has done some projects on video, music, installation and photography. He never worked as an anthropologist. Morales participated of Bienal do Mercosul in 2010 and 2011 and curated the video lounge of 28ª Bienal Internacional de São Paulo. In 2005 he did release “Preto contra Branco”, doc awarded at DOCTV programme and the “Best International Documentary” at Festival ReelWord, em Toronto, Canadá.  In 2010, he was a resident artist at HIAP – Helsinki International Artist-in-residence Programme, em Helsink, Finland.",
+		 "inicio":"1980",
+		 "web":"http://universes-in-universe.org/eng/bien/sesc_videobrasil/2011/solange_farkas",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
 		 "obras":[],
 		 "metadatos": []
 		 }

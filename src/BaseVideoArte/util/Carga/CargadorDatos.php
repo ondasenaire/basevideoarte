@@ -195,7 +195,7 @@ class CargadorDatos {
 			$lista_obras = $this -> json($this -> datos.'/' . $archivo -> getRelativePathname());
 			foreach ($lista_obras as $clave => $obra) {
 
-				$o = new Obra($obra['titulo'], $obra['sinopsis'], $obra['anho'], $obra['duracion']);
+				$o = new Obra($obra['titulo'], $obra['sinopsis'], $obra['anho'], $obra['duracion'],$obra['mostrar']);
 				//busca y agrega los formatos
 				foreach ($obra['formato'] as $formato) {
 					$o -> addFormato($this -> formatos[$formato]);

@@ -27,6 +27,11 @@ class Obra {
 	 */
 	private $duracion;
 
+	/**
+ 	* @Column(type="boolean")
+ 	*/
+	private $mostrar;
+
 	//---CAMPOS RELACIONADOS
 	/**
 	 * @ManyToMany(targetEntity="Genero", inversedBy="obras")
@@ -104,6 +109,31 @@ class Obra {
     public function getId()
     {
         return $this->id;
+    }
+	
+	
+	
+    /**
+     * Set mostrar
+     *
+     * @param boolean $mostrar
+     * @return Obra
+     */
+    public function setMostrar($mostrar)
+    {
+        $this->mostrar = $mostrar;
+    
+        return $this;
+    }
+
+    /**
+     * Get mostrar
+     *
+     * @return boolean 
+     */
+    public function getMostrar()
+    {
+        return $this->mostrar;
     }
 
     /**

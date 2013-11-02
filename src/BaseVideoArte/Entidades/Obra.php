@@ -81,12 +81,13 @@ class Obra {
 	private $metadatos;
 	//-----FUNCIONES
 
-	public function __construct($titulo,$sinopsis,$anho,$duracion) {
+	public function __construct($titulo,$sinopsis,$anho,$duracion,$mostrar) {
 		
 		$this->titulo = $titulo;
 		$this->sinopsis = $sinopsis;
 		$this->anho = $anho;
-		$this->duracion = $duracion;		
+		$this->duracion = $duracion;
+		$this->mostrar = $mostrar;		
 		
 		$this -> metadatos = new \Doctrine\Common\Collections\ArrayCollection();
 		$this -> formatos = new \Doctrine\Common\Collections\ArrayCollection();

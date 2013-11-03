@@ -1,0 +1,34 @@
+{
+
+"aguerre_enrique":
+		{"nombre":"Enrique",
+		 "apellido":"Aguerre",
+		 "data":"Realizador de video y entornos digitales, miembro fundador del NUVA (Núcleo Uruguayo de Videoarte); actualmente coordina el Departamento de Video del Museo Nacional de Artes Visuales.",
+		 "inicio":"1980",
+		 "web":"http://netart.org.uy/interfaces02/uy/aguerre_bio.html",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais": "uruguay",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		 
+		 "puppo_teresa":
+		 {"nombre":"Teresa",
+		 "apellido":"Puppo",
+		 "data":"Teresa Puppo es artista plástica y escritora, desde 1984 realiza múltiples exposiciones, destacándose: Rencontres Internationales París-Berlín (París, Francia/Berlín, Alemania)(2001), Bit Bang (Centro Cultural de España, Lima, Perú)(2001), Interfaces (Instituto Goethe, Montevideo, Uruguay)(2001), \"Elogio del video\",Ciclo de Arte Electrónico (Museo de Arte Moderno de Buenos Aires, Buenos Aires, Argentina)(2001), Interferences, Festival D'Arts Multimedia Urbains (Belfort, Francia)(2000), \"Sobre gustos...\" (Centro Municipal de exposiciones, Montevideo, Uruguay)(1999), \"La Mujer del Año\" (Museo y Archivo Histórico Municipal Cabildo de Montevideo, Montevideo, Uruguay), \"Puerta de la vida y de la muerte\" (Museo Juan Manuel Blanes, Montevideo, Uruguay)(1996).",
+		 "inicio":"1990",
+		 "web":"http://teresapuppo.com/",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais": "uruguay",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 }
+		 
+}

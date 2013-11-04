@@ -1,0 +1,28 @@
+{
+	"Berlin: been there/to be here":
+	{
+	"titulo":"Berlin: been there/to be here",
+	"sinopsis":"Numerosos directores cinematográficos y video-artistas han intentado, con éxito variable, producir representaciones visuales de los recuerdos. El ojo de la memoria no ve las cosas de la misma manera como el ojo físico, y muchos artistas ha llegado a lamentar esta diferencia. El intento de Aravena Abughosh pertenece a la categoría de los éxitos. Se las ha arreglado para dar cuenta del carácter fragmentario y asociativo de la memoria; del vago emerger y disolverse de las imágenes, e incluso de los sentimientos que están tan intrínsecamente ligados a ello. En su tierra de origen, todos sufren de amnesia, dice la chilena Aravena Abughosh. Se traslada a Berlín donde se siente como una extraña que rehusa hablar el idioma. Pero esta ciudad, un lugar desbordante de historia y memoria, cura su propia memoria perdida llevándola a través de un doloroso proceso de recuperación. Es un proceso que ella no puede evitar, si bien al comienzo intenta resistirlo: la voz en off de su habla corriente busca excusas y explicaciones reconfortantes; la otra voz en off, sin embargo, una voz que susurra al interior de su mente, se rehusa a ser pacificada. La voz susurra preguntas inquisitivas e inferencias perturbadoras relacionadas con asuntos que ella aparentemente ha conseguido evadir por años”. ",
+	"anho":"2000", 
+	"duracion":"13m",
+	"mostrar": true,
+	
+	"formato":["Instalacion"],
+	"genero": ["Experimental"],
+	"metadatos":[]
+	},
+	
+	"Lugar comun / common place I":
+	{
+	"titulo":"Lugar común / common place I",
+	"sinopsis":"lugar común/common place I es la primera etapa del proyecto, iniciado en el año 2000 y completado en marzo del 2001. Consistió en la elaboración e intercambio de documentación en video acerca de diferentes aspectos de nuestro “ser-en-la-ciudad”. Estos documentos, concebidos como notas de trabajo y cartas personales a la vez, articulan una mirada dual, a partir del cotidiano, sobre dos diferentes ciudades de dos diferentes distancias: Claudia Aravena, hija de una inmigrante palestina en Chile, transformada ahora en una extranjera en Berlín; Guillemo Cifuentes, hijo de exiliados políticos chilenos, reinventando ahora un sentido de pertenencia a Chile. Cada uno observando la ciudad para el otro, desde la acumulación de distancias y desplazamientos que marcan sus biografías respectivas. El primer resultado consolidó la correspondencia misma, concentrándose especialmente en elaborar el aspecto del intercambio y de la comunicación a distancia que ha sido el eje de trabajo de ambos a lo largo del proyecto. ",
+	"anho":"2001", 
+	"duracion":"24m",
+	"mostrar": true,
+	
+	"formato":[],
+	"genero": ["Experimental", "Documental"],
+	"metadatos":[]
+	}
+
+}

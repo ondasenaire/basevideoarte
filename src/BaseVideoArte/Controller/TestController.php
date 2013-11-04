@@ -50,7 +50,7 @@ class TestController{
 		$personas = $a->getPersonas();
 		foreach ($personas as $persona) {
 			 echo '<br>';	
-			 echo $persona->getApellido();
+			 $persona->verDatos();
 		}	
 		 echo '<br>';	
 		

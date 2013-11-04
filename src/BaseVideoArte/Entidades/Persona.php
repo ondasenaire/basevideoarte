@@ -93,7 +93,9 @@ class Persona {
 	}
 
 	//-----------------------------
-
+	public function verDatos(){
+		return printf("%s, %s ( %s )  | inicio: %d | sexo: %s ", $this->apellido,$this->nombre,$this->pais->getPais(),$this->inicio,$this->sexo);
+	}
 
   
 

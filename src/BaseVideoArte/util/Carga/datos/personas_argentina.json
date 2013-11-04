@@ -70,7 +70,7 @@
 		 "mostrar":true,
 		 
 		 "pais":"argentina",
-		 "tipo":["artista"],
+		 "tipo":["artista","curador"],
 		 "obras":[],
 		 "metadatos": []
 		 },
@@ -89,8 +89,113 @@
 		 "tipo":["artista"],
 		 "obras":[],
 		 "metadatos": []
+		 },
+		 
+		 "larranaga_gabriela":
+		{"nombre":"Gabriela",
+		 "apellido":"Larrañaga",
+		 "data":"Nace en Buenos Aires, en 1965 donde vive actualmente. Artista visual. Egresada de la Escuela Nacional de Bellas Artes \"Prilidiano Pueyrredón\" (IUNA). Continuó su formación en los talleres de Armando Sapia (dibujo), Ana Eckell (pintura), Fabiana Barreda y Mónica Girón (clínica y análisis de obra). Participó en el programa “Intercambios” (2008) coordinado por Patricia Hackim y Valeria González. Asistió al taller de Cine Experimental dirigido por Claudio Caldini y el taller de video de Lia Dansker. Desde 1989 ha participado distintas muestras individuales, colectivas y proyectos junto a artistas nacionales y extranjeros. Formó parte del Grupo Cimarrón (grupo de artistas que trabajaron a partir del concepto de Memoria, Identidad y Utopía en distintos espacios no convencionales de exposición: Biblioteca Miguel Cané, Museo de Ciencias Naturales de Mercedes, Pasaje Soria del Barrio de Palermo, entre otros). En paralelo realizó tres proyectos en colaboración entre artistas argentinos y alemanes en ambos países: \"Canta, ladra, late\" (Dresden, 1995) \"Co-Razón\" (Bs As, 1998) y \"Drei Ufer\" (Neuzelle, 2000), realizando instalaciones, performances y producción y edición de textos en común. En los últimos años ha realizado videos propios y en colaboración con otros artistas como Teresa Puppo, Graciela Taquini, Paula Rivas, entre otros, tomando como eje el diálogo y la conexión. Colabora en las producciones de videoarte y videoinstalaciones de Ricardo Pons.",
+		 "inicio":"1990",
+		 "web":"http://dialogoenconstruccion.blogspot.com.ar/",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+	
+		 "pons_ricardo":
+		{"nombre":"Ricardo",
+		 "apellido":"Pons",
+		 "data":"Su obra artística tiene innegables relaciones con la Historia Argentina, la problemática social y la relación entre Hombre y Tecnología. Ricardo Pons utiliza y combina los distintos elementos de su vocabulario técnico-audiovisual. Se formó como músico e ingeniero especializándose en informática, dedicándose profesionalmente al desarrollo de sistemas en web. Participó o fue líder de distintos proyectos musicales. Estudió guitarra de jazz y armonía. Ese background posibilita su primer contacto con la realización audiovisual al final de los 80’s como sonorizador de un grupo de cine independiente, participando en festivales en el país y en el exterior. En 1992 comenzó la producción independiente de video-arte, siendo exhibidos sus trabajos en varios países de América y Europa. En dicha categoría se enmarca “Metáfora de un Crimen Perfecto” de 1997 basada en una reinterpretación de “El Crimen Perfecto” de Jean Baudrillard que puede ser considerado un trabajo determinante en el desarrollo de su lenguaje audiovisual. Aborda allí por primera vez la problemática de la relación del Hombre con la Tecnología. En 1999 comenzó a realizar video-instalaciones y video-acciones en Argentina, Uruguay y Alemania. La video-instalación ”Estratosterra” recibe el Primer Premio en el XC Salón Nacional de Artes Visuales (2001) en la sección Instalaciones. Se trata de la ambientación simbólica de una excavación arqueológica en un ambiente de exposición sirviendo de marco para una proyección cenital sobre el hueco simulado en el piso. Este trabajo se inspira a partir de “Radiografía de la Pampa” de Ezequiel Martínez Estrada. Las imágenes reproducidas remiten al devenir histórico argentino reforzando las experiencias que Ricardo Pons venía realizando interviniendo material documental, otro elemento recurrente en su producción. En 2002 comienza la realización de obras multimedia que adquieren el formato de libro-medios digitales interactivos-modelización 3D. Uno de los conceptos trazadores en la obra de Ricardo Pons es la tensión existente entre los conceptos de Proyecto y Utopía. Basándose en los medios digitales de modelización 3D retoma utopías no realizadas y las hace funcionar virtualmente a través de dichas herramientas informáticas recontextualizándolas en el presente. El primero de sus trabajos en esa línea fue el “Proyecto Pulqui 2” en donde desarrolló un simulador de vuelo del avión en cuestión, una serie de trabajos audiovisuales y textos de investigación en formato libro. Dicha obra fue realizada con el aporte de la Fundación Antorchas. Luego a partir de un proyecto iniciado en Alemania en 2005 realizó la publicación del libro-DVD interactivo “Ciudad Anarquista Digital” (2005-2009) en donde retoma una ciudad imaginada por el anarquista Pierre Quiroule en 1914 “materializándola” en un modelo 3D navegable. Reedita el libro original complementándolo con abundante material audiovisual. Para la realización del modelo contó con el supervisión de la especialista en arquitectura utópica Celia Guevara y con el periodista Néstor Restivo en la investigación histórica. Realiza numerosos trabajos en colaboración con otros artistas, destacándose entre ellos los videos realizados con León Ferrari: “Casablanca”, “Lombrices” y “Arquitecture of Madness”, este último como encargo de la Universidad de Essex.",
+		 "inicio":"1990",
+		 "web":"https://vimeo.com/user10330416",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		
+		 "rivas_silvia":
+		{"nombre":"Silvia",
+		 "apellido":"Rivas",
+		 "data":"Artista visual. Nació en Buenos Aires en abril de 1957. Se formo en la Escuela de Bellas Artes “Prilidiano Pueyrredón” donde se recibió de profesora de escultura. Paralelamente se formo en el taller de la calle Cangallo de Kenneth Kemble. donde tenían sus talleres Víctor Grippo, Heredia, Pablo Suárez, Gorriarena, Smoje entre otros. A partir del 99 se dedica fundamentalmente a la imagen en movimiento o trabajo basado en el tiempo que se materializa generalmente en forma de video- instalaciones. Expuso en 1998 en el Museo Nacional de Bellas Artes. En 2001 obtuvo la Beca John Simon Guggenheim lo que le permitió hacer la muestra de video-instalaciones “Notas sobre el Tiempo” en la Sala Cronopios del Centro Cultural Recoleta. En 2004 mostró la serie de video-instalaciones “Todo lo de Afuera” en el Museo de Arte Moderno de Buenos Aires. Participó dos veces en la Bienal de Mercorsur y una en la Bienal de La Habana. En 2005 fue becada por el Wexner Center for The Arts en Columbus, Ohio. La instalación allí realizada “Tiny Events” se expuso aquí en Buenos Aires en el Espacio Fundación Telefónica.",
+		 "inicio":"1990",
+		 "web":"http://www.silviarivas.com",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		
+		 "taquini_graciela":
+		{"nombre":"Graciela",
+		 "apellido":"Taquini",
+		 "data":"Artista y curadora argentina que ha desarrollado la mayor parte de su producción artística en el área del video experimental monocanal. Sus obras han recibido diferentes premios, entre ellos el Premio de la Asociación de Críticos de Arte de la Argentina al mejor guion, el Primer Premio del Festival Videobrasil, y en 2005 el Premio a la Acción Multimedia, Asociación Argentina de Críticos de Arte. Ha sido apodada \"la tía del videoarte argentino\" por su temprana participación e interés en dicha disciplina. En 2012 recibió la Premio Konex de Platino en Video Arte.",
+		 "inicio":"1980",
+		 "web":"http://www.gracielataquini.info/",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista","curador"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		  "vanoni_anabel":
+		{"nombre":"Anabel",
+		 "apellido":"Vanoni",
+		 "data":"Nace en Bs. As. Argentina, actualmente vive y trabaja en México D.F. Licenciada en Artes Visuales por el Instituto Universitario Nacional de Arte. I.U.N.A y Profesora Nacional de Dibujo y Pintura por la Escuela Nacional de Bellas Artes Prilidiano Pueyrredón de Bs.As. Argentina. A partir de 1993 se dedica a la investigación y experimentación del trabajo-obra de su cuerpo en el espacio: la Performance. Desde entonces hasta la actualidad su obra transita por el hacer con su propio cuerpo, en diálogo con la fotografía, la ilustración, el video-arte, las instalaciones, la danza, el arte – objeto y el diseño. Desde 1994 hasta el 2002 integró como miembro fundante el Grupo FOSA, un colectivo  argentino de siete artistas interesados en las interacciones entre el cuerpo y la tecnología, dedicados al arte de acción, la performance y el video. Dirige y participa en varias obras de danza, teatro y cine experimental diseñando espacios escénicos, luces y vestuario de las diferentes piezas. Ha impartido conferencias y talleres de performance y disparadores creativos en diversas universidades e instituciones dentro y fuera de su país. Su destacada labor multidisciplinaria e innovadora en el arte, fue reconocida con muchos premios y distinciones a la largo de su trayectoria.",
+		 "inicio":"1990",
+		 "web":"http://www.anabelvanoni.com",
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		  "testoni_nicolas":
+		{"nombre":"Nicolás",
+		 "apellido":"Testoni",
+		 "data":"Nació en Bahía Blanca, en 1974. Su trabajo ha recibido el apoyo de las fundaciones Jan Vrijman (2005) y Prince Claus (2007) de Holanda, y distinciones en el Premio MAMBA Fundación Telefónica de “Arte y Nuevas Tecnologías” (Buenos Aires, 2006), el festival Videobrasil (San Pablo, 2007), el Concurso para obras de música y video Leonor Hirsch (Buenos Aires, 2008), el Concours Internationaux Bourges -Musiques Electroacoustiques et Arts Electroniques- (Bourges, 2009), y el Prix Ton Bruneil (Amsterdam, 2010). Forma parte de Ferrowhite (museo taller).",
+		 "inicio":"2000",
+		 "web":"http://nicolastestoni.com.ar/",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		 "delgado_christian":
+		{"nombre":"Christian",
+		 "apellido":"Delgado",
+		 "data":" ",
+		 "inicio":"2000",
+		 "web":" ",
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
 		 }
 		 
-		
-	
+		 
+		 
 }

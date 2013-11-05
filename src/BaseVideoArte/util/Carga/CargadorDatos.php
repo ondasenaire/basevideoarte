@@ -223,7 +223,9 @@ class CargadorDatos {
 				// busca las palabras clave
 				if( array_key_exists('palabras',$obra) ){
 					foreach ($obra['palabras'] as $palabra) {
-						
+						$pc = new \BaseVideoArte\Entidades\PalabraClave($palabra);
+						$o -> addPalabrasClave($pc);
+						$pc ->addObra ($o);
 					}
 				}
 				

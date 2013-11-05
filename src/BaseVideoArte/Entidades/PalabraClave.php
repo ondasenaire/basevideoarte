@@ -26,7 +26,8 @@ class PalabraClave {
 	private $obras;
 	//---------------------------------------
 
-	public function __construct() {
+	public function __construct($palabra) {
+		$this->palabra = $palabra;
 		$this -> obras = new \Doctrine\Common\Collections\ArrayCollection();
 	}
 

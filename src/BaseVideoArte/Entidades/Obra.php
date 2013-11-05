@@ -99,7 +99,13 @@ class Obra {
 		$this -> palabrasClave = new \Doctrine\Common\Collections\ArrayCollection();
 	}
 
-	
+	public function verDatos(){
+		$palabras = " ";
+		foreach ($this->palabrasClave as $pc){
+			$palabras = $palabras . " ".$pc->getPalabra(); 
+		}
+		return printf("%s (%d) | duracion: %s | palabras: %s", $this->titulo,$this->anho,$this->duracion ,$palabras);
+	}
 
 
     /**

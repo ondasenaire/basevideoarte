@@ -57,7 +57,7 @@ class TestController{
 		$obras = $a->getObras();
 		foreach ($obras as $obra) {
 			 echo '<br>';	
-			 echo $obra->getTitulo();
+			$obra->verDatos();
 		}	
 		 echo '<br>';	
 		$formatos = $a->getFormatos();

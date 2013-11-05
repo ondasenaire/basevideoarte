@@ -68,7 +68,7 @@ class PalabraClave {
      * @param \BaseVideoArte\Entidades\Obras $obras
      * @return PalabraClave
      */
-    public function addObra(\BaseVideoArte\Entidades\Obras $obras)
+    public function addObra(\BaseVideoArte\Entidades\Obra $obras)
     {
         $this->obras[] = $obras;
     

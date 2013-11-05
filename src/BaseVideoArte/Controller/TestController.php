@@ -74,7 +74,7 @@ class TestController{
 		//print_r($personas);	
 		
 		
-		//$a->persistir($app);
+		$a->persistir($app);
 		return new Response( " ");
 	}
 	

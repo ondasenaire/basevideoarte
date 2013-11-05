@@ -24,7 +24,8 @@
 	"formato":["Super8","Hi-8"],
 	"genero": ["Experimental"],
 	"metadatos":[],
-	"palabras": ["h","fdS VDFS"]
+	"palabras": ["h","fdS VDFS"],
+	"medios": [{"medio":"dsf", "tipo":"ppal","descripcion":"sdf" }]
 	}
 	
 

@@ -232,7 +232,10 @@ class CargadorDatos {
 				// busca los medios
 				if( array_key_exists('medios',$obra) ){
 					foreach ($obra['medios'] as $medio) {
-						
+						echo '<br>existe la clave medio<br>';
+						$m = new \BaseVideoArte\Entidades\Medio($medio['medio'],$medio['descripcion'],$medio['tipo']);
+						$o->addMedio($m);
+						$m->addObra($o);
 					}
 				}
 				

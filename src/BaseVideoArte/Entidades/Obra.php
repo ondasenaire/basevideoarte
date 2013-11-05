@@ -70,7 +70,7 @@ class Obra {
 	//imagenes, videos,links ,etc
 
 	/**
-	 * @ManyToMany(targetEntity="PalabraClave", inversedBy="obras")
+	 * @ManyToMany(targetEntity="PalabraClave", inversedBy="obras", cascade={"persist"})
 	 * @JoinTable(name="palabras_x_obra")
 	 */
 	private $palabrasClave;
@@ -104,7 +104,12 @@ class Obra {
 		foreach ($this->palabrasClave as $pc){
 			$palabras = $palabras . " ".$pc->getPalabra(); 
 		}
-		return printf("%s (%d) | duracion: %s | palabras: %s", $this->titulo,$this->anho,$this->duracion ,$palabras);
+		
+		$medios = " ";
+		foreach ($this->medios as $medio){
+			$medios = $medios . " ".$medio->getArchivo(); 
+		}
+		return printf("%s (%d) | duracion: %s | palabras: %s | medios: %s", $this->titulo,$this->anho,$this->duracion ,$palabras, $medios);
 	}
 
 

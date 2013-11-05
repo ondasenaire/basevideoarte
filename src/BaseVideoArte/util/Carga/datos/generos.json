@@ -1,4 +1,5 @@
 {
 	"Documental": {"genero":"Documental"},
-	"Experimental": {"genero":"Experimental"}
+	"Experimental": {"genero":"Experimental"},
+	"Ficcion": {"genero":"Ficción"}
 }

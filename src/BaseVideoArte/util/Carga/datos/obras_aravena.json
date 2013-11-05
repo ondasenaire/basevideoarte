@@ -9,7 +9,7 @@
 	
 	"formato":["Instalacion"],
 	"genero": ["Experimental"],
-	"metadatos":[]
+	"palabras": ["inmigración","territorialidad"]	
 	},
 	
 	"Lugar comun / common place I":
@@ -18,11 +18,127 @@
 	"sinopsis":"lugar común/common place I es la primera etapa del proyecto, iniciado en el año 2000 y completado en marzo del 2001. Consistió en la elaboración e intercambio de documentación en video acerca de diferentes aspectos de nuestro “ser-en-la-ciudad”. Estos documentos, concebidos como notas de trabajo y cartas personales a la vez, articulan una mirada dual, a partir del cotidiano, sobre dos diferentes ciudades de dos diferentes distancias: Claudia Aravena, hija de una inmigrante palestina en Chile, transformada ahora en una extranjera en Berlín; Guillemo Cifuentes, hijo de exiliados políticos chilenos, reinventando ahora un sentido de pertenencia a Chile. Cada uno observando la ciudad para el otro, desde la acumulación de distancias y desplazamientos que marcan sus biografías respectivas. El primer resultado consolidó la correspondencia misma, concentrándose especialmente en elaborar el aspecto del intercambio y de la comunicación a distancia que ha sido el eje de trabajo de ambos a lo largo del proyecto. ",
 	"anho":"2001", 
 	"duracion":"24m",
-	"mostrar": true,
-	
-	"formato":[],
+	"mostrar": true,	
+		
 	"genero": ["Experimental", "Documental"],
-	"metadatos":[]
+	"palabras": ["inmigración","exilio"]
+	
+	},
+	
+	"Lugar comun / common place II":
+	{
+	"titulo":"Lugar común / common place II",
+	"sinopsis":"La segunda etapa del proyecto involucra la integración en el trabajo del aspecto migratorio. Un trabajo que es capaz de replicar el traspaso, una y otra vez repetido, de los límites, en cuanto base misma, tanto en un sentido conceptual como material, del proyecto. Esta etapa contempla dos instalaciones gemelas, una en Santiago, la otra en Berlín, de modo de desplegar los conceptos centrales (dislocación, desplazamiento, distancia) soportados por el video, re-editado y re-diseñado de un modo site-specific. De esta manera, los artistas no hablan solamente de la experiencia de desarraigo: también la sostienen formal y performativamente, relocalizándola y retornándola a sus lugares de origen y, a la vez, poniendolos en comunicación. Una actividad, un desplazamiento activo, que finalmente se constituyen ellos mismos en lugar: un lugar de identidad común, entendida como un gesto activo de ofrenda y apropriación.",
+	"anho":"2001", 
+	"duracion":"-",
+	"mostrar": true,	
+	
+	"formato":["Instalacion"],	
+	"genero": ["Experimental", "Documental"],
+	"metadatos": [{"metadato":"3 canales","tipo":"formato"}],
+	"palabras": ["migración","desarraigo"]
+	
+	},
+	
+	"11 de Septiembre":
+	{
+	"titulo":"11 de Septiembre",
+	"sinopsis":"11 de Septiembre pone en relación dos situaciones extremas: los ataques de 2001 en Nueva York, y el golpe militar encabezado por el General Pinochet que derrocó al Presidente Salvador Allende, en el Chile de 1973. Dos hechos, a veintiocho años de distancia, reunidos por la “fracturación de las memorias presentes y pasadas”, tal como lo indica la sinópsis del video.",
+	"anho":"2002", 
+	"duracion":"5m30s",
+	"mostrar": true,	
+	
+	"formato":[],	
+	"genero": ["Experimental"],
+	"palabras": ["terrorismo de estado", "golpe militar", "atentado", "Salvador Allende", "Pinochet"]
+	
+	},
+	
+	"Beitjala":
+	{
+	"titulo":"Beitjala",
+	"sinopsis":"Beitjala es la primera parte del Proyecto Palestina. La instalación consiste en un tríptico: tres video-proyecciones montadas en la vitrina de un comercio situado en un rincón ajetreado y concurrido de Patronato, distrito árabe-palestino de Santiago de Chile. A través de su instalación en un espacio público este trabajo no solamente propone la búsqueda personal y subjetiva de la identidad; también aborda el contexto socio-cultural de Chile, buscando una confrontación creativa con el tema de la diversidad cultural es este país. El gesto fundacional es el retorno a los orígenes: a Beitjala y a Palestina. Por ello, el gesto de viajar en busca de estas imágenes, que forman parte del imaginario de los emigrantes palestinos en Chile. Este proyecto aborda la re-territorialización de una cultura, que se ha establecido en un lugar distante de sus origenes. Habla no sólo de los inmigrantes palestinos en Chile: representa también a una gran parte de la población latinoamericana.",
+	"anho":"2003", 
+	"duracion":"-",
+	"mostrar": true,	
+	
+	"formato":["Instalacion"],	
+	"genero": ["Experimental","Documental"],
+	"palabras": ["diversidad cultural", "Palestina", "inmigración"]
+	
+	},
+	
+	"Greetings from Palestina":
+	{
+	"titulo":"Greetings from Palestina",
+	"sinopsis":"“Greetings from Palestina, parte segunda del Palestina Project, trata de la movilidad de las identidades culturales, de los problemas de transculturalción. Se basa en una dinámica de souvenirs y tarjetas postales, que es llevada a una situación precaria y luego parodiada. Sobre una construcción provisoria que imita un muro, se proyecta una imagen en formato panorámico. Se ve una calle de Bethlehem bloqueada por un muro: corta el acceso a la ciudad de Jerusalem. En off se escucha un diálogo entre la artista y los soldados que resguardan la posición. El paisaje es presentado como un espacio en el cual identidades culturales son construidas. El paisaje intervenido, el paisaje como perfilador, define conceptos de identidad posibles e imposibles, que capacitan y evitan. La estrategia de la instalación implica una confrontación de la mirada del extraño con un 'error de codificación', el cual funciona en los diferentes niveles, temáticos y formales, de la instalación.“ (Dra. Andrea Kottow).",
+	"anho":"2003", 
+	"duracion":"-",
+	"mostrar": true,	
+	
+	"formato":["Instalacion"],	
+	"genero": ["Experimental","Documental"],
+	"palabras": ["inmigración", "Palestina", "transculturación", "territorialidad"]
+	
+	},
+	
+	"Out of Place":
+	{
+	"titulo":"Out of Place",
+	"sinopsis":"Out of Place es la tercera obra del Proyecto Palestina. Promueve una intensa exploración de la representación y el territorio, de preguntas por la memoria y la identidad. Una vez más, las miradas de Aravena están divididas entre la experiencia personal - representada aquí por las memorias familiares- y preguntas históricas y políticas, lo cual amplia significativamente el campo de significación de las imágenes. Usando los recursos del video para enfatizar percepciones, asociar contenidos y ampliar sus reflexiones sobre asuntos de fondo, la artista multiplica sus puntos de vista utilizando sofisticados juegos de lenguaje.",
+	"anho":"2005", 
+	"duracion":"20m",
+	"mostrar": true,	
+	
+	"formato":["Video"],	
+	"genero": ["Experimental","Documental"],
+	"palabras": ["inmigración", "Palestina", "identidad", "memoria"]
+	
+	},
+	
+	"Esto No Es Un Loop, Es Tiempo Real":
+	{
+	"titulo":"Esto No Es Un Loop, Es Tiempo Real",
+	"sinopsis":"\"Esperar es un estado. Esperar es la forma más elevada de desperdicio humano. Las enfermedades son a menudo curables, el tiempo perdido se pierde irremediablemente. Para las personas que viven en un país extranjero, la existencia se transforma en los primeros días, semanas o años de un estado de espera. Esperar la pequeña autorización para la gran perspectiva\" (Micky Kwella). Esta sala de espera específica se instala aquí como la metáfora de la cosa indeseada, de la disipación y el despedicio en el ser humano que sufre el problema de la migración. La instalación de Claudia Aravena consiste en la mise-en-scene de una sala de espera, con material documental de la Oficina de Migración de Santiago.",
+	"anho":"2009", 
+	"duracion":"-",
+	"mostrar": true,	
+	
+	"formato":["Instalacion"],	
+	"genero": ["Experimental"],
+	"palabras": ["migración", "espera"]
+	
+	},
+	
+	"Fear / Miedo":
+	{
+	"titulo":"Fear / Miedo",
+	"sinopsis":"Vivimos en una sociedad que, en cierta medida, se deja regir por un Imperio del Miedo. El origen de muchos eventos históricos se remonta a la represión, a la pérdida. Y los mega-eventos históricos convergen hasta formar una catástrofe de tal magnitud, de modo que las heridas jamás acaban de cerrarse. Se origina así un círculo vicioso, que contribuye a la preservación del miedo.",
+	"anho":"2009", 
+	"duracion":"-",
+	"mostrar": true,	
+	
+	"formato":["Instalacion"],	
+	"genero": ["Experimental"],
+	"palabras": []
+	
+	},
+	
+	"in (continente)":
+	{
+	"titulo":"in (continente)",
+	"sinopsis":"\"Más grande es el odio que nos ha inspirado, que el mar que nos separa de ella\" reza una de las oraciones con mayor fuerza significativa de la Carta de Jamaica de Simón Bolívar. La obra gira en torno a esta frase, referida a España, cuyas palabras aparecen y desaparecen en el transcurso de la secuencia de imágenes, desarticuladas de la cohesión que las junta recién al final del video para formar aquella declaración programática que defiende la independencia. La oración se evidencia de este modo como un nudo simbólico procesal, resultado de una historia compleja y sus posibles articulaciones. Las imágenes del video, en un constante vaivén de un barco en el agua, se abren a las dimensiones de la inmensidad de ese mar que sirve a Bolívar como metaforización de la magnitud del odio que obliga a sublevarse frente a los colonizadores. Es un mar en el que se inscribe, a su vez, una nueva historia, que, así una lectura posible, obliga a pensar en otras colonizaciones y dependencias económicas.",
+	"anho":"2009", 
+	"duracion":"13m",
+	"mostrar": true,	
+	
+	"formato":["Instalacion"],	
+	"genero": ["Documental"],
+	"palabras": ["colonización", "Simón Bolivar"]
+	
 	}
+	
+	
+
 
 }

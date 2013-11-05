@@ -200,14 +200,14 @@ class CargadorDatos {
 				if( array_key_exists('formato',$obra) ){
 					foreach ($obra['formato'] as $formato) {
 						$o -> addFormato($this -> formatos[$formato]);
-						echo '<br>existe la clave formato<br>';
+						//echo '<br>existe la clave formato<br>';
 					}
 				}
 				//busca y agrega los generos
 				if( array_key_exists('genero',$obra) ){
 					foreach ($obra['genero'] as $genero) {
 					$o -> addGenero($this -> generos[$genero]);
-					echo '<br>existe la clave genero<br>';
+					//echo '<br>existe la clave genero<br>';
 					}
 				}
 				// busca los metadatos
@@ -232,7 +232,7 @@ class CargadorDatos {
 				// busca los medios
 				if( array_key_exists('medios',$obra) ){
 					foreach ($obra['medios'] as $medio) {
-						echo '<br>existe la clave medio<br>';
+						//echo '<br>existe la clave medio<br>';
 						$m = new \BaseVideoArte\Entidades\Medio($medio['medio'],$medio['descripcion'],$medio['tipo']);
 						$o->addMedio($m);
 						$m->addObra($o);

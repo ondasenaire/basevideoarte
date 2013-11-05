@@ -11,7 +11,10 @@
 		 
 		 "pais": "chile",
 		 "tipo":["artista"],
-		 "obras":[],
+		 "obras":["Berlin: been there/to be here","Lugar comun / common place I","Lugar comun / common place II",
+		 "11 de Septiembre","Beitjala", "Greetings from Palestina", "Out of Place", "Esto No Es Un Loop, Es Tiempo Real",
+		 "Fear / Miedo"
+		 ],
 		 "metadatos": []
 		 },
 		 

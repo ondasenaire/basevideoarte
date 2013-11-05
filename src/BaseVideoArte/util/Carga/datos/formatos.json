@@ -1,13 +1,18 @@
 {
 	"Instalacion":{"formato":"Instalación"},
 	"Video":{"formato":"Video"},
+	"Video Digital":{"formato":"Video Digital"},
 	"MiniDV":{"formato":"MiniDV"},
 	"DV":{"formato":"DV"},
 	"16mm":{"formato":"16mm"},
 	"Super8":{"formato":"Super8"},
 	"Hi-8":{"formato":"Hi-8"},
 	"VHS":{"formato":"VHS"},
-	"35mm":{"formato":"35mm"}
+	"35mm":{"formato":"35mm"},
+	"Betacam SP":{"formato":"Betacam SP"},
+	"DVD":{"formato":"DVD"},
+	"DVCAM":{"formato":"DVCAM"},
+	"DigiBeta":{"formato":"DigiBeta"}
 	
 
 }

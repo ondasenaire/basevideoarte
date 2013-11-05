@@ -197,22 +197,43 @@ class CargadorDatos {
 
 				$o = new Obra($obra['titulo'], $obra['sinopsis'], $obra['anho'], $obra['duracion'],$obra['mostrar']);
 				//busca y agrega los formatos
-				foreach ($obra['formato'] as $formato) {
-					$o -> addFormato($this -> formatos[$formato]);
+				if( array_key_exists('formato',$obra) ){
+					foreach ($obra['formato'] as $formato) {
+						$o -> addFormato($this -> formatos[$formato]);
+						echo '<br>existe la clave formato<br>';
+					}
 				}
 				//busca y agrega los generos
-				foreach ($obra['genero'] as $genero) {
+				if( array_key_exists('genero',$obra) ){
+					foreach ($obra['genero'] as $genero) {
 					$o -> addGenero($this -> generos[$genero]);
-
+					echo '<br>existe la clave genero<br>';
+					}
 				}
-
+				// busca los metadatos
+				if( array_key_exists('metadatos',$obra) ){	
 				foreach ($obra['metadatos'] as $metadato) {
 					//busca el metadato y lo asocia
-					$met = new \BaseVideoArte\Entidades\MetadatoObra($metadato['metadato'], $metadato['tipo']);
-					$o -> addMetadato($met);
-					$met -> setObra($o);
+						$met = new \BaseVideoArte\Entidades\MetadatoObra($metadato['metadato'], $metadato['tipo']);
+						$o -> addMetadato($met);
+						$met -> setObra($o);
+					}
 				}
-
+				
+				// busca las palabras clave
+				if( array_key_exists('palabras',$obra) ){
+					foreach ($obra['palabras'] as $palabra) {
+						
+					}
+				}
+				
+				// busca los medios
+				if( array_key_exists('medios',$obra) ){
+					foreach ($obra['medios'] as $medio) {
+						
+					}
+				}
+				
 				$this -> obras[$clave] = $o;
 			}
 		}

@@ -8,6 +8,7 @@
 	"duracion":"6m",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["16mm","Super8"],
 	"genero": ["Experimental"],
 	"palabras": ["amor", "pasión"]	
@@ -21,6 +22,7 @@
 	"duracion":"6m",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":[],
 	"genero": ["Experimental"],
 	"palabras": []	
@@ -34,6 +36,7 @@
 	"duracion":"12m",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["DV","Betacam SP"],
 	"genero": ["Documental"],
 	"palabras": []	
@@ -47,6 +50,7 @@
 	"duracion":"21m",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["16mm","Super8"],
 	"genero": ["Ficcion"],
 	"palabras": []	
@@ -61,6 +65,7 @@
 	"duracion":"30s",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV","Super8"],
 	"genero": ["Documental"],
 	"palabras": ["trilogía"]	
@@ -74,6 +79,7 @@
 	"duracion":"6m",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV","Super8"],
 	"genero": ["Experimental"],
 	"palabras": []	
@@ -87,6 +93,7 @@
 	"duracion":"91m",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["16mm","DV","Super8"],
 	"genero": ["Documental"],
 	"palabras": ["trabajo", "oficio"]	
@@ -100,6 +107,7 @@
 	"duracion":"2m 45s",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV","DVD"],
 	"genero": ["Experimental"],
 	"palabras": ["efímero", "permanente"]	
@@ -113,6 +121,7 @@
 	"duracion":"4m 30s",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV"],
 	"genero": ["Experimental"],
 	"palabras": []	
@@ -126,6 +135,7 @@
 	"duracion":"89m",
 	"mostrar": true,
 	
+	"autores": ["bambozzi_lucas"],
 	"formato":["DVD","DigiBeta","DVCAM"],
 	"genero": ["Documental"],
 	"palabras": ["frontera", "amazonas"]	
@@ -139,6 +149,8 @@
 	"duracion":"-",
 	"mostrar": true,
 	
+	
+	"autores": ["bambozzi_lucas"],
 	"formato":["Video Digital"],
 	"genero": ["Experimental"],
 	"palabras": []	

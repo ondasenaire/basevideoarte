@@ -29,9 +29,9 @@ class CargadorDatos {
 		$this -> procesarTipos();
 		$this -> procesarFormatos();
 		$this -> procesarGeneros();
-
-		$this -> procesarObras();
 		$this -> procesarPersonas();
+		$this -> procesarObras();
+		
 		$this -> buscarArchivos('obras');
 	}
 
@@ -167,15 +167,15 @@ class CargadorDatos {
 
 				}
 				//proceso las obras
-				foreach ($persona['obras'] as $obra) {
+				//foreach ($persona['obras'] as $obra) {
 
-					$p -> addObra($this -> obras[$obra]);
+					//$p -> addObra($this -> obras[$obra]);
 
-				}
+				//}
 				//metadatos persona
 				foreach ($persona['metadatos'] as $metadato) {
 					//busca el metadato y lo asocia
-					echo 'SOY UN METADATO PERSONA';
+					//echo 'SOY UN METADATO PERSONA';
 					$met = new \BaseVideoArte\Entidades\MetadatoPersona($metadato['metadato'], $metadato['tipo']);
 					$p -> addMetadato($met);
 					$met -> setPersona($p);
@@ -203,6 +203,19 @@ class CargadorDatos {
 						//echo '<br>existe la clave formato<br>';
 					}
 				}
+				
+				// asigno autores
+				if (array_key_exists('autores', $obra)){
+					foreach ($obra['autores'] as $autor) {
+						$a = $this->personas[$autor];
+						
+						$a->addObra($o);
+						$o->addArtista($a);
+								
+					}
+					echo 'hola';
+				}
+				
 				//busca y agrega los generos
 				if( array_key_exists('genero',$obra) ){
 					foreach ($obra['genero'] as $genero) {

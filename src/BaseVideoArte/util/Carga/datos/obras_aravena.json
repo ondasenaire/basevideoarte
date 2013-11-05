@@ -7,6 +7,7 @@
 	"duracion":"13m",
 	"mostrar": true,
 	
+	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],
 	"genero": ["Experimental"],
 	"palabras": ["inmigración","territorialidad"]	
@@ -20,6 +21,7 @@
 	"duracion":"24m",
 	"mostrar": true,	
 		
+	"autores": ["aravena_claudia"],	
 	"genero": ["Experimental", "Documental"],
 	"palabras": ["inmigración","exilio"]
 	
@@ -33,6 +35,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental", "Documental"],
 	"metadatos": [{"metadato":"3 canales","tipo":"formato"}],
@@ -48,6 +51,7 @@
 	"duracion":"5m30s",
 	"mostrar": true,	
 	
+	"autores": ["aravena_claudia"],
 	"formato":[],	
 	"genero": ["Experimental"],
 	"palabras": ["terrorismo de estado", "golpe militar", "atentado", "Salvador Allende", "Pinochet"]
@@ -62,6 +66,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental","Documental"],
 	"palabras": ["diversidad cultural", "Palestina", "inmigración"]
@@ -76,6 +81,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental","Documental"],
 	"palabras": ["inmigración", "Palestina", "transculturación", "territorialidad"]
@@ -90,6 +96,7 @@
 	"duracion":"20m",
 	"mostrar": true,	
 	
+	"autores": ["aravena_claudia"],
 	"formato":["Video"],	
 	"genero": ["Experimental","Documental"],
 	"palabras": ["inmigración", "Palestina", "identidad", "memoria"]
@@ -104,6 +111,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental"],
 	"palabras": ["migración", "espera"]
@@ -118,6 +126,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental"],
 	"palabras": []
@@ -132,6 +141,7 @@
 	"duracion":"13m",
 	"mostrar": true,	
 	
+	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Documental"],
 	"palabras": ["colonización", "Simón Bolivar"]

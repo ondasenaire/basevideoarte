@@ -166,12 +166,8 @@ class CargadorDatos {
 					$p -> addTipo($this -> tipos[$tipo]);
 
 				}
-				//proceso las obras
-				//foreach ($persona['obras'] as $obra) {
-
-					//$p -> addObra($this -> obras[$obra]);
-
-				//}
+				//proceso las obras (no. ahora se hace desde obras)
+				
 				//metadatos persona
 				foreach ($persona['metadatos'] as $metadato) {
 					//busca el metadato y lo asocia

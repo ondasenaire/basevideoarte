@@ -22,9 +22,14 @@ class CargadorDatos {
 	private $obras;
 	private $eventos;
 	private $datos;
+	//
+	private $palabrasClave;
 
 	public function cargar() {
 		$this -> datos = '/datos';
+		
+		$this-> palabrasClave = array();
+		
 		$this -> procesarPaises();
 		$this -> procesarTipos();
 		$this -> procesarFormatos();
@@ -33,6 +38,8 @@ class CargadorDatos {
 		$this -> procesarObras();
 		
 		$this -> buscarArchivos('obras');
+		
+		
 	}
 
 	public function asociar() {
@@ -230,11 +237,30 @@ class CargadorDatos {
 				}
 				
 				// busca las palabras clave
+				/*
+				 * aqui es diferente al resto. si la palabra no fue utilizada
+				 * la crea y la carga en $this->palabrasClave.
+				 * si ya esta , se la usa desde $this->palabrasClave
+				 */
 				if( array_key_exists('palabras',$obra) ){
 					foreach ($obra['palabras'] as $palabra) {
-						$pc = new \BaseVideoArte\Entidades\PalabraClave($palabra);
-						$o -> addPalabrasClave($pc);
-						$pc ->addObra ($o);
+						// veo si la palabra clave fue utilizada antes
+						if( array_key_exists($palabra, $this->palabrasClave) ){
+							echo 'la palabra ya existe  '.$palabra.' <br>';
+							// $palabra es el indice para buscar las palabras clave
+							$o -> addPalabrasClave($this->palabrasClave[$palabra]);
+							$this->palabrasClave[$palabra] ->addObra ($o);
+							
+							
+						} else {
+							$pc = new \BaseVideoArte\Entidades\PalabraClave($palabra);
+							$o -> addPalabrasClave($pc);
+							$pc ->addObra ($o);
+							$this->palabrasClave[$palabra] = $pc;
+						}
+						
+						
+						
 					}
 				}
 				

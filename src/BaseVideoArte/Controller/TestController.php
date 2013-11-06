@@ -71,9 +71,7 @@ class TestController{
 			 echo '<br>';	
 			 echo $genero->getGenero();
 		}		 
-		//print_r($personas);	
-		
-		
+				
 		//$a->persistir($app);
 		return new Response( " ");
 	}

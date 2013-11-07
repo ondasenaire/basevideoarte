@@ -32,6 +32,19 @@ class VideoArteController {
 			}
 			if ($filtro == 'pais' && $valor != null) {
 				echo 'filtra por pais';
+				$qb = $app['db.orm.em'] -> createQueryBuilder();
+				$qb->select('persona', 'pais')
+					->from('BaseVideoArte\Entidades\Persona', 'persona')
+					->leftJoin('persona.pais', 'pais')
+					->where("pais.pais = '$valor'")
+					
+					; 
+				
+				$consulta = $qb -> getQuery();
+				$resultado = $consulta -> getResult();
+				
+				
+				
 			}
 
 		}else{

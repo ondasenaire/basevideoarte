@@ -25,7 +25,7 @@
  	{% for persona in lista_personas %}
 		<div id="filas">
 			<h3 id="persona_nombre"><a href="{{path('persona',{persona: persona.id}) }}" > {{ persona.apellido|e }} {{ persona.nombre|e }}</a> </h3>
-			<h2 id="persona_pais"><a href="#">{{persona.pais.pais}}</a></h2>
+			<h2 id="persona_pais"><a href="{{ path('personas',{filtro: 'pais', valor : persona.pais.pais }) }}">{{persona.pais.pais}}</a></h2>
 		</div>
 	{% endfor %}	
 </div>

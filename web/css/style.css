@@ -56,44 +56,33 @@ table
 		font: normal;
 		outline: none;
 		}
-a.opacy
-		{
-		font-size: 18px;
-		filter: alpha(opacity=100);
-		opacity: 10;
-		text-decoration:none;
-		text-align: center;
-		color: #000000;
-		}
-a.opacy:hover
-		{
-		filter: alpha(opacity=70);
-		opacity: .70;
-		color:#ae0300;
-		}
-a.opacy:active
-		{color:#ae0300;}
-a
-		{text-align: center;}
 .clear
 		{clear:both; overflow:hidden}
 .line
 		{repeat-x; height:2px;}
+p
+		{
+		display: block;
+		-webkit-margin-before: 1em;
+		-webkit-margin-after: 1em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+		}
 
 /* BaseVideoArte */
 
-	#portada
-			{
-			background: #FFFFFF no-repeat center;
-			width: 1020px;
-			height: 600px;
-			position: relative;
-			}
+#portada
+		{
+		background: #FFFFFF no-repeat center;
+		width: 1000px;
+		height: 600px;
+		position: relative;
+		}
 .langs
 	  	{
 		font-size: 16px;
 		text-align: center;
-		background-color: #c1c1c1;
 		padding: 10px 0px 0px 0px;
 		}
 .langs a 
@@ -104,7 +93,7 @@ a
 		}
 #wrap
 		{
-		width: 1020px;
+		width: 1000px;
 		height: auto;
 		margin: 0px;
 		text-align: center;
@@ -112,41 +101,150 @@ a
 		}
 	#portadainicio
 			{
-			width: 1020px;
-			height: 180px;
+			width: 1000px;
+			height: 122px;
+			margin: 10px 0px 10px 0px;
 			background-image: url('portadainicio.jpg');
 			}
 	#separador
 		{
 		width: 1000px;
-		height: 2px;
+		height: 10px;
 		text-align: center;
 		}
+
+/* NAVEGACION */
+
 	#menu
 			{
 			text-align: center;
 			width: 1000px;
 			height: 30px;
-			margin: 0px;
-			#background-color: #d9d9d9;
+			margin: auto;
 			}
 	#anclasordenalfabetico
 			{
 			width: 1000px;
-			height: 50px;
-			margin: 0;
+			height: 16px;
+			margin: 0px;
+			padding: 0px;
 			}
-		.divanclas
+		#anclasordenalfabetico a
 			{
-			width: 500px;
-			height: auto;
-			margin-left: 30px;
-			margin-bottom: 30px;
-			text-align: left;
-			text-decoration: none;
-			color: #000000;
-			font-size: 15px;
+			font-size: 18px;
 			}
+		#anclasordenalfabetico a:hover {
+			color:#b00000;
+			}
+	#nav	{
+		width: 100%;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+		text-align: center;
+		}
+	#nav li {
+		margin: 1px 4px 4px 4px;
+		padding: 1px 4px 4px 4px;
+		border: 0px;
+		float: left;
+		display: inline;
+		}
+	#nav li a {
+		display:inline-block;
+		width:140px;
+		height:6px;
+		padding:10px 0;
+		text-decoration:none;
+		text-align:center;
+		font-size:13px;
+		color:#FFFFFF;
+		background-color:#2e2e2e;
+		border-left:5px solid #2e2e2e;
+		}
+	a.actual {
+		color:#FFFFFF !important;
+		background-color:#589738 !important; 
+		border-left:5px solid #2e2e2e !important; 
+		}
+	#nav li a:hover {
+		color:#FFFFFF;
+		background-color:#b00000;
+		}
+
+/* CONTENIDO PERSONAS */
+
+	#containerart {
+		width: 1000px;
+		height: auto;
+		margin: 20px 0px 0px 5px;
+		float: left;
+		display: block;
+		}
+	#filas {
+		width: 240px;
+		height: auto;
+		text-align: left;
+		margin: 0px 0px 20px 2px;
+		float: left;
+		display: block;
+		}
+		#filas h3
+			{
+			padding-bottom: 5px;
+			padding-left: 16px;
+			font-size: 16px;
+			}
+		#filas h3 a
+			{
+			text-decoration: none;
+			color: #2e2e2e;
+			}
+		#filas h3 a:hover {
+			color:#b00000;
+			}
+		#filas h2
+			{
+			padding-left: 16px;
+			font-size: 14px;
+			}
+		#filas h2 a
+			{
+			text-decoration: none;
+			color: #2e2e2e;
+			}
+		#filas h2 a:hover {
+			color:#589738;
+			}
+
+/* CONTENIDO ARTISTAS */
+		#header_artista
+			{
+			width: 1000px;
+			height: 60px;
+			margin: 0px;
+			font-size: 30px;
+			display: block;
+			}
+		#foto
+			{
+			width: 160px;
+			height: 160px;
+			margin: 0px;
+			float: right !important;
+			}
+		#descripcion
+			{
+			width: 1000px;
+			height: auto;
+			margin: 0px;
+			padding-left: 16px;
+			display: block;
+			}
+
+
+/* EN CASO DE QUE NO HUBIERA LISTADOS DE MAS DE UNA LETRA, EL SIGUIENTE CÓDIGO NO ES NECESARIO */
 		#cont2letras
 			{
 			width: 1000px;
@@ -159,7 +257,7 @@ a
 			{
 			width: 500px;
 			height: auto;
-			margin: 0px 0px 10px; 0px;
+			margin: 0px 0px 5px 0px;
 			float: left;
 			display: block;
 			}
@@ -180,5 +278,11 @@ a
 				text-align: center;
 				color:#ae0300;
 				}
-
-/* Falta: declarar el "back to top", armar los separadores con gráficos, estilizar los links del .divanclas */
+		#containervolverarriba
+			{
+			width: 500px;
+			height: auto;
+			margin: 0px 0px 5px 0px;
+			float: left;
+			display: block;
+			}

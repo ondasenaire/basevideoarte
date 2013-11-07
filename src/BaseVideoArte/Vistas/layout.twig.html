@@ -1,4 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% set pagina_actual = pagina_actual|default('inicio') %}
+
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
@@ -17,12 +20,12 @@
 			
 			<div id="menu" class="langs">
 				<ul id="nav">
-					<li style="padding-left: 20px;"><a href="{{ app.url_generator.generate('inicio') }}">Inicio</a></li>
-					<li><a href="{{ app.url_generator.generate('obras') }}">Obras</a></li>
-					<li><a href="{{ app.url_generator.generate('personas') }}" class="actual">Personas</a></li>
-					<li><a href="{{ app.url_generator.generate('eventos') }}">Eventos</a></li>
-					<li><a href="{{ app.url_generator.generate('busqueda') }}">Búsqueda Avanzada</a></li>
-					<li><a href="{{ app.url_generator.generate('proyecto') }}">Equipo</a></li>		
+					<li style="padding-left: 20px;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'inicio' %} class="actual"{% endif%} >Inicio</a></li>
+					<li><a href="{{ app.url_generator.generate('obras') }}"  {% if pagina_actual == 'obras' %} class="actual"{% endif%}>Obras</a></li>
+					<li><a href="{{ app.url_generator.generate('personas') }}" {% if pagina_actual == 'personas' %} class="actual"{% endif%} >Personas</a></li>
+					<li><a href="{{ app.url_generator.generate('eventos') }}" {% if pagina_actual == 'eventos' %} class="actual"{% endif%} >Eventos</a></li>
+					<li><a href="{{ app.url_generator.generate('busqueda')}}"  {% if pagina_actual == 'busqueda' %} class="actual"{% endif%}  >Búsqueda Avanzada</a></li>
+					<li><a href="{{ app.url_generator.generate('equipo') }}" {% if pagina_actual == 'equipo' %} class="actual"{% endif%}>Equipo</a></li>		
 				</ul>
 			</div>			
 			<div id="separador"></div>

@@ -70,13 +70,13 @@ class VideoArteController {
 
 	//	echo $filtro;
 		//echo $valor;
-		return $app['twig'] -> render('/personas.twig.html', array('lista_personas' => $resultado));
+		return $app['twig'] -> render('/personas.twig.html', array('lista_personas' => $resultado, 'pagina_actual'=>'personas'));
 	}
 
 	public function mostrarPersonaAction(Application $app, $persona) {
 		$repoPersonas = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Persona');
 		$persona = $repoPersonas -> findOneById($persona);
-		return $app['twig'] -> render('/persona.twig.html', array('persona' => $persona));
+		return $app['twig'] -> render('/persona.twig.html', array('persona' => $persona, 'pagina_actual'=>'personas'));
 	}
 
 	//----------------------------------------------------------------
@@ -84,13 +84,13 @@ class VideoArteController {
 	public function listarObrasAction(Application $app) {
 		$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
 		$obras = $repositorioObras -> findAll();
-		return $app['twig'] -> render('/obras.html.twig', array('lista_obras' => $obras));
+		return $app['twig'] -> render('/obras.html.twig', array('lista_obras' => $obras, 'pagina_actual'=>'obras'));
 	}
 
 	public function mostrarObraAction(Application $app, $obra) {
 		$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
 		$obra = $repositorioObras -> findOneById($obra);
-		return $app['twig'] -> render('/obra.html.twig', array('obra' => $obra));
+		return $app['twig'] -> render('/obra.html.twig', array('obra' => $obra, 'pagina_actual'=>'obras'));
 	}
 
 	//----------------------------------------------------------------
@@ -98,13 +98,13 @@ class VideoArteController {
 	public function listarEventosAction(Application $app) {
 		$consulta = $app['db.orm.em'] -> createQuery('SELECT e.id,e.nombre,e.anho, SUBSTRING(e.info,1,300) AS info  FROM BaseVideoArte\Entidades\Evento e');
 		$eventos = $consulta -> getResult();
-		return $app['twig'] -> render('/eventos.twig.html', array('eventos' => $eventos));
+		return $app['twig'] -> render('/eventos.twig.html', array('eventos' => $eventos, 'pagina_actual'=>'eventos'));
 	}
 
 	public function mostrarEventoAction(Application $app, $evento) {
 		$repoEventos = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Evento');
 		$evento = $repoEventos -> findOneById($evento);
-		return $app['twig'] -> render('/evento.html.twig', array('evento' => $evento));
+		return $app['twig'] -> render('/evento.html.twig', array('evento' => $evento, 'pagina_actual'=>'eventos'));
 	}
 
 }

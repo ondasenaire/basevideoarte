@@ -51,7 +51,7 @@ $app->match('/admin/nueva_persona', 'BaseVideoArte\Controller\AdminController::n
 
 //BUSCADOR
 $app->get('/busqueda', function () use ($app) {
-    return $app['twig']->render('/busqueda.html.twig', array());
+    return $app['twig']->render('/busqueda.html.twig', array('pagina_actual'=>'busqueda'));
 })
 ->bind('busqueda')
 ;
@@ -71,15 +71,15 @@ $app->get('/test/json', 'BaseVideoArte\Controller\TestController::jsonAction')->
 //---------------------------------------------------------------------
 //contacto y "sobre el proyecto"
 $app->get('/contacto', function () use ($app) {
-    return $app['twig']->render('/contacto.html.twig', array());
+    return $app['twig']->render('/contacto.html.twig', array('pagina_actual'=>'contacto'));
 })
 ->bind('contacto')
 ;
 
-$app->get('/proyecto', function () use ($app) {
-    return $app['twig']->render('/proyecto.html.twig', array());
+$app->get('/equipo', function () use ($app) {
+    return $app['twig']->render('/equipo.twig.html', array('pagina_actual'=>'equipo'));
 })
-->bind('proyecto')
+->bind('equipo')
 ;
 //ERROR
 $app->error(function (\Exception $e, $code) use ($app) {

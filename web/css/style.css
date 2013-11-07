@@ -23,7 +23,7 @@ caption, tbody, tfoot, thead
 		}
 body
 		{
-		width: 1020px;
+		width: 1000px;
 		height: auto;
 		background: #FFFFFF; 
 		text-align: center;
@@ -56,19 +56,16 @@ table
 		font: normal;
 		outline: none;
 		}
+p		{
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin-bottom: 2px;
+		font-size: 14px;
+		line-height: 20px;
+		}
 .clear
 		{clear:both; overflow:hidden}
 .line
 		{repeat-x; height:2px;}
-p
-		{
-		display: block;
-		-webkit-margin-before: 1em;
-		-webkit-margin-after: 1em;
-		-webkit-margin-start: 0px;
-		-webkit-margin-end: 0px;
-		font-family: Arial, Helvetica, sans-serif;
-		}
 
 /* BaseVideoArte */
 
@@ -83,7 +80,7 @@ p
 	  	{
 		font-size: 16px;
 		text-align: center;
-		padding: 10px 0px 0px 0px;
+		padding: 0px;
 		}
 .langs a 
 		{
@@ -125,7 +122,7 @@ p
 	#anclasordenalfabetico
 			{
 			width: 1000px;
-			height: 16px;
+			height: 20px;
 			margin: 0px;
 			padding: 0px;
 			}
@@ -178,9 +175,10 @@ p
 	#containerart {
 		width: 1000px;
 		height: auto;
-		margin: 20px 0px 0px 5px;
+		padding: 10px 0px 0px 5px;
 		float: left;
 		display: block;
+		line-height: 1;
 		}
 	#filas {
 		width: 240px;
@@ -218,33 +216,109 @@ p
 			color:#589738;
 			}
 
-/* CONTENIDO ARTISTAS */
+/* CONTENIDO PERSONAS */
+
+	#container_artista
+		{
+		height: auto;
+		width: 1000px;
+		padding: 10px 0px 0px 5px;
+		}
 		#header_artista
 			{
 			width: 1000px;
-			height: 60px;
-			margin: 0px;
+			height: 30px;
+			margin-bottom: 10px;
+			padding-left: 16px;
 			font-size: 30px;
+			text-align: center;
+			}
+		#sep_try
+			{
+			width: 950px;
+			height: 10px;
+			text-align: left;
+			margin-left: 16px;
+			border-bottom: 1px solid rgb(238, 238, 238);
+			margin-bottom: 10px;
+			}
+
+/* CONTENIDO ARTISTA */		
+		
+		#container_foto
+			{
+			height: 200px;
+			width: 170px;
+			float: right;
+			padding: 4px;
+			margin: 0px 34px 0px 13px;
+			}
+		#foto {
+			height: 150px;
+			width: 150px;
+			margin: 0px 34px 0px 13px;
+			padding: 4px;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 			display: block;
 			}
-		#foto
-			{
-			width: 160px;
-			height: 160px;
-			margin: 0px;
-			float: right !important;
+		#datosfoto {
+			height: 50px;
+			width: 150px;
+			margin: 0px 0px 0px 4px;
+			padding: 4px 4px 4px 12px;
+			text-align: center;
+			display: block;
 			}
-		#descripcion
-			{
-			width: 1000px;
+		#descripcion {
+			width: 950px;
 			height: auto;
-			margin: 0px;
+			text-align: justify;
 			padding-left: 16px;
 			display: block;
 			}
+		#txts {
+			width: 1000px;
+			padding-left: 16px;
+			text-align: left;
+			}
+		#txts a
+			{
+			text-decoration: none;
+			color: #2e2e2e;
+			}
+		#txts a:hover {
+			color:#b00000;
+			}
+		#containerobras
+			{
+			width: 950px;
+			height: auto;
+			padding-left: 16px;
+			display: block;
+			text-align: center;
+			}
+			#obra
+				{
+				width: 300px;
+				height: auto;
+				text-align: center;
+				display: block;
+				float: left;
+				margin-left: 20px;
+				}
+			#fotoobra
+				{
+				height: 200px;
+				width: 200px;
+				margin: 4px 46px 4px 46px;
+				padding: 4px;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+				display: block;
+				}
 
 
-/* EN CASO DE QUE NO HUBIERA LISTADOS DE MAS DE UNA LETRA, EL SIGUIENTE CÓDIGO NO ES NECESARIO */
 		#cont2letras
 			{
 			width: 1000px;

@@ -7,7 +7,7 @@
 {% set paisActual = "" %}
 {% set memPais = "" %}
 
-{% set abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'] %}
+{% set abc = ['A','B','C','D','E','F','G','H','I','J','K','K','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'] %}
 
 	
 	<div id="anclasordenalfabetico">
@@ -17,24 +17,19 @@
 		<a href="{{ path('personas') }}" class="ordenlinks" >todos</a>
 	</div>
 	
+	<div id="sep_try" style="margin-left: 22px !important;">
+	</div>
+	<div id="separador"></div>
  
-    <ul>
-    {% for persona in lista_personas %}
-    {% set paisActual = persona.pais.pais %}
+ <div id="containerart">
+ 	{% for persona in lista_personas %}
+		<div id="filas">
+			<h3 id="persona_nombre"><a href="{{path('persona',{persona: persona.id}) }}" > {{ persona.apellido|e }} {{ persona.nombre|e }}</a> </h3>
+			<h2 id="persona_pais"><a href="#">{{persona.pais.pais}}</a></h2>
+		</div>
+	{% endfor %}	
+</div>
+		 
     
-    {% if memPais == "" %}
-    	
-   		{% set memPais =  paisActual %}
-   		<h3>{{paisActual}}</h3>
-    
-    {% elseif memPais != paisActual  %}
-    	{% set memPais = paisActual %}
-    	<h3>{{paisActual}}</h3>
-        	
-    {% endif %}
-    
-        <li><a href="{{path('persona',{persona: persona.id}) }}" > {{ persona.apellido|e }} {{ persona.nombre|e }}</a> </li>
-    {% endfor %}
-    </ul>
 {% endblock %}
 

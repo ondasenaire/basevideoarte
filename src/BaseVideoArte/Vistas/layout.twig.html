@@ -1,6 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/
-xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 	<head>
 		<title>{% block title %}{% endblock %} | Base Video Arte</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -10,38 +10,22 @@ xhtml1/DTD/xhtml1-strict.dtd">
 	<body>
 		<div id="wrap" align="center">
 
-			<div id="portadainicio"><img src="{{app.request.basepath}}/medios/iconos/portadainicio.jpg">
+			<div id="portadainicio"><img src="{{app.request.basepath}}/medios/iconos/portadainicio.jpg" width="975">
 			</div>
-			<div id="separador">
-				<center>
-					<img src="{{app.request.basepath}}/medios/iconos/separador.png" />
-				</center>
+			<div id="sep_try" style="margin-left: 22px !important;">
 			</div>
-			<br />
-			<a name="arriba"></a>
+			
 			<div id="menu" class="langs">
-				<ul>
-					<a href="{{ app.url_generator.generate('inicio') }}" class="opacy" 	style="padding-right:25px;">Inicio</a>
-					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
-					<a href="{{ app.url_generator.generate('obras') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Obras</a>
-					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
-					<a href="{{ app.url_generator.generate('personas') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Personas</a>
-					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
-					<a href="{{ app.url_generator.generate('eventos') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Eventos</a>
-					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
-					<a href="{{ app.url_generator.generate('busqueda') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Busqueda Avanzada</a>
-					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
-					<a href="{{ app.url_generator.generate('proyecto') }}" class="opacy" style="padding-right:25px; 					padding-left: 25px;">Equipo</a>
-					<img src="{{app.request.basepath}}/medios/iconos/sep_menu.png" height="15">
-					<a href="{{ app.url_generator.generate('contacto') }}" class="opacy" 					style="padding-left: 25px;">Contacto</a>
+				<ul id="nav">
+					<li style="padding-left: 20px;"><a href="{{ app.url_generator.generate('inicio') }}">Inicio</a></li>
+					<li><a href="{{ app.url_generator.generate('obras') }}">Obras</a></li>
+					<li><a href="{{ app.url_generator.generate('personas') }}" class="actual">Personas</a></li>
+					<li><a href="{{ app.url_generator.generate('eventos') }}">Eventos</a></li>
+					<li><a href="{{ app.url_generator.generate('busqueda') }}">Búsqueda Avanzada</a></li>
+					<li><a href="{{ app.url_generator.generate('proyecto') }}">Equipo</a></li>		
 				</ul>
-			</div>
-			<div id="separador">
-				<center>
-					<img src="{{app.request.basepath}}/medios/iconos/separador.png" />
-				</center>
-			</div>
-			<br />
+			</div>			
+			<div id="separador"></div>
 			<a name="arriba"></a>
 			<h2>{% block tituloSeccion %}{% endblock %}</h2>
 

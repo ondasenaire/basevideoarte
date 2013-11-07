@@ -2,7 +2,7 @@
 namespace BaseVideoArte\Entidades;
 /**
  * @Entity
- * Table(name="metadatos")
+ * @Table(name="metadatos")
  * @InheritanceType("SINGLE_TABLE")
  * @DiscriminatorColumn(name="discr", type="string")
  * @DiscriminatorMap({"per" = "MetadatoPersona", "obr" = "MetadatoObra", "ev" = "MetadatoEvento"})

@@ -1,0 +1,52 @@
+####listar personas  sepradas por pais
+
+<ul>
+    {% for persona in lista_personas %}
+    {% set paisActual = persona.pais.pais %}
+    
+    {% if memPais == "" %}
+    	
+   		{% set memPais =  paisActual %}
+   		<h3>{{paisActual}}</h3>
+    
+    {% elseif memPais != paisActual  %}
+    	{% set memPais = paisActual %}
+    	<h3>{{paisActual}}</h3>
+        	
+    {% endif %}
+    
+        <li><a href="{{path('persona',{persona: persona.id}) }}" > {{ persona.apellido|e }} {{ persona.nombre|e }}</a> </li>
+    {% endfor %}
+    </ul>
+    
+    
+    
+    
+    
+    
+ ####
+ va a implementarse dentro de la clase
+ 
+     {#variables#}
+    {% set img_ppal = "" %}
+    {% set enlaces = "" %}
+    {% set imagenes = "" %}
+    {% set enlaces = "" %}
+    
+ 
+  {#busco los medios de la persona#}
+    {%for medio in persona.medios%}
+    	{% if medio.getStipo() == 'imagen principal'%}
+    		{% set img_ppal = medio.archivo %}
+    	{% endif %}
+    	
+    	{% if medio.getStipo() == 'enlace'%}
+    		{% set enlaces = medio.archivo %}
+    	{% endif %}
+    	
+    	{% if medio.getStipo() == 'imagen'%}
+    		{% set imagenes = medio.archivo %}
+    	{% endif %}
+   
+
+    {% endfor %}   

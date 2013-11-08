@@ -1,47 +1,47 @@
  {% extends 'layout.twig.html' %}
 
-{% block title %}Artistas{% endblock %}
+{% block title %}Personas{% endblock %}
 
 {% block contenido %}
+      
    
-    {#variables#}
-    {% set img_ppal = "" %}
-    {% set enlaces = "" %}
-    {% set imagenes = "" %}
-    {% set enlaces = "" %}
-    
-    
-    Persona: {{ persona.nombre }} {{ persona.apellido }} 
-    {#busco los medios de la persona#}
-    {%for medio in persona.medios%}
-    	{% if medio.getStipo() == 'imagen principal'%}
-    		{% set img_ppal = medio.archivo %}
-    	{% endif %}
-    	
-    	{% if medio.getStipo() == 'enlace'%}
-    		{% set enlaces = medio.archivo %}
-    	{% endif %}
-    	
-    	{% if medio.getStipo() == 'imagen'%}
-    		{% set imagenes = medio.archivo %}
-    	{% endif %}
+   <div id="container_artista">
+		<div id="header_artista">
+		  {{ persona.apellido }}, {{ persona.nombre }}
+		</div>
+		<div id="separador">
+		</div>
+		<div id="container_foto">
+			<div id="foto"><img src="http://basevideoarte.com.ar/wp-content/uploads/2013/04/carolina-saquel-150x150.jpg" />
+			</div>
+			<div id="datosfoto">
+				<p><strong>País: </strong>{{persona.pais.pais}}</p>
+				<p><strong>Inicio Actividad: </strong>{{persona.inicio}}</p>
+			</div>
+		</div>
+		<div id="descripcion">
+		{{persona.data}}
+		<div id="txts">
+		<p><strong>Sitio web: </strong><a href="#">{{persona.web}}</a></p>
+		</div>
+		<div id="separador"></div>
+		<div id="separador"></div>
+		<div id="obras">
+			{% for obra in persona.obras %}
+			<div id="obra">
+				<p><strong>{{obra.titulo}}</strong></p>
+				<div id="fotoobra">
+					<a href="{{path('obra',{obra: obra.id}) }}"><img src="http://basevideoarte.com.ar/wp-content/uploads/2013/04/carolina-saquel-150x150.jpg" height="200" width="200" /></a>
+				</div>
+				<p>{{obra.anho}}</p><p> {%for formato in obra.formatos%} {{formato.formato}}{%endfor%} </p>
+			</div>
+			{% endfor %}
+			
+		</div>
+	</div>
    
-
-    {% endfor %}
- 
-    <img src="{{ app.request.basepath }}/medios/img/{{img_ppal}}"/>
    
-    <h3>Obras Realizadas</h3>
-    <ul>
-    {% for obra in persona.obras %}
-        	<li>
-        		<h4>{{obra.titulo}}</h4>
-        		<p>{{obra.sinopsis}}</p>
-        		<a href="{{path('obra',{obra: obra.id}) }}"> ver mas</a>
-        	</li>
-    {% endfor %}
-    </ul>
-    
+   </div>
  
 
 {% endblock %}

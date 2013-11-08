@@ -3,7 +3,19 @@
 {% block title %}Personas{% endblock %}
 
 {% block contenido %}
-      
+    {% set abc = ['A','B','C','D','E','F','G','H','I','J','K','K','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'] %}
+
+	
+	<div id="anclasordenalfabetico">
+		{% for i in abc %}
+		<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}" class="ordenlinks" >{{ i }}</a>
+		{% endfor %}
+		<a href="{{ path('personas') }}" class="ordenlinks" >todos</a>
+	</div>
+	
+	<div id="sep_try" style="margin-left: 22px !important;">
+	</div>
+	<div id="separador"></div>  
    
    <div id="container_artista">
 		<div id="header_artista">

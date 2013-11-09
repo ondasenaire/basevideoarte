@@ -27,7 +27,7 @@
 			<div id="foto"><img src="http://basevideoarte.com.ar/wp-content/uploads/2013/04/carolina-saquel-150x150.jpg" />
 			</div>
 			<div id="datosfoto">
-				<p><strong>País: </strong>{{persona.pais.pais}}</p>
+				<p><strong>País: </strong><a href="{{ path('personas',{filtro: 'pais', valor : persona.pais.pais }) }}"> {{persona.pais.pais}} </a></p>
 				<p><strong>Inicio Actividad: </strong>{{persona.inicio}}</p>
 			</div>
 		</div>

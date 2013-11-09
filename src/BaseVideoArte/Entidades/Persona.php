@@ -490,4 +490,15 @@ class Persona {
     {
         return $this->metadatos;
     }
+	
+	//
+	public function getMediosByTipo($tipo = null){
+			foreach ($this->medios as $medio) {
+				if($medio->getSTipo == $tipo){
+					echo 'eh amigo gato';
+				}
+			}
+	}
+	
+	
 }

@@ -528,4 +528,21 @@ class Obra {
     {
         $this->colaboradores->removeElement($colaboradores);
     }
+	
+	
+	//------------
+	
+	
+	public function getMediosByTipo($tipo = null){
+			$m = array();	
+			foreach ($this->medios as $medio) {
+				if($medio->getSTipo() == $tipo){
+					$m [] = $medio;	
+					//echo 'eh amigo gato';
+				}
+			}
+			
+			return $m;
+	}
+	
 }

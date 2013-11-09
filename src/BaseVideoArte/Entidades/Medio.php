@@ -64,7 +64,7 @@ class Medio {
 	}
 
 	public function getTipos() {
-		return array('1' => 'ppal', '2' => 'imagen', '3' => 'enlace', '4' => 'video', '5' => 'video embebido', );
+		return array('1' => 'ppal', '2' => 'imagen', '3' => 'enlace', '4' => 'video', '5' => 'embebido', );
 	}
 
 	public function getSTipo() {

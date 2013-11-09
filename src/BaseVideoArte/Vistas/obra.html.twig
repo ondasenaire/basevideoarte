@@ -11,6 +11,13 @@
         	 <a href="{{path('persona',{persona: artista.id}) }}" >{{artista.nombre}}</a>
         	{% endfor %}
         </p>
+        
+        
+        {% for medio in obra.getMediosByTipo('ppal') %}
+       	{{ medio.archivo }}<br>
+        {%endfor%}
+        
+        
   </li>
   
   

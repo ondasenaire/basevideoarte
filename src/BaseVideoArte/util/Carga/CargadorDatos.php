@@ -176,13 +176,35 @@ class CargadorDatos {
 				//proceso las obras (no. ahora se hace desde obras)
 				
 				//metadatos persona
-				foreach ($persona['metadatos'] as $metadato) {
-					//busca el metadato y lo asocia
-					//echo 'SOY UN METADATO PERSONA';
-					$met = new \BaseVideoArte\Entidades\MetadatoPersona($metadato['metadato'], $metadato['tipo']);
-					$p -> addMetadato($met);
-					$met -> setPersona($p);
+				if( array_key_exists('metadatos',$persona) ){
+					foreach ($persona['metadatos'] as $metadato) {
+						//busca el metadato y lo asocia
+						//echo 'SOY UN METADATO PERSONA';
+						$met = new \BaseVideoArte\Entidades\MetadatoPersona($metadato['metadato'], $metadato['tipo']);
+						$p -> addMetadato($met);
+						$met -> setPersona($p);
+					}
 				}
+				
+				// foto ppal
+				if( array_key_exists('foto',$persona) ){
+					
+						 echo '<br>existe la foto<br>';
+						 $m = new \BaseVideoArte\Entidades\Medio($persona['foto'],"foto de $persona[apellido] $persona[apellido]",'ppal');
+						 $p->addMedio($m);
+						 $m->addPersona($p);
+					 
+				}
+				
+				
+				//web
+				
+				if( array_key_exists('web',$persona) ){
+					
+				}
+				
+				
+				// guardo la perosna en array
 				$this -> personas[$clave] = $p;
 
 			}
@@ -216,7 +238,7 @@ class CargadorDatos {
 						$o->addArtista($a);
 								
 					}
-					echo 'hola';
+					//echo 'hola';
 				}
 				
 				//busca y agrega los generos

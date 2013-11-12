@@ -94,7 +94,11 @@ class Persona {
 
 	//-----------------------------
 	public function verDatos(){
-		return printf("%s, %s ( %s )  | inicio: %d | sexo: %s ", $this->apellido,$this->nombre,$this->pais->getPais(),$this->inicio,$this->sexo);
+		 $foto = ''; 
+		 foreach ($this->getMediosByTipo('ppal') as $f){
+		 	$foto = $f->getArchivo();
+		 }
+		return printf("%s, %s ( %s )  | inicio: %d | sexo: %s |foto: %s ", $this->apellido,$this->nombre,$this->pais->getPais(),$this->inicio,$this->sexo, $foto );
 	}
 
   
@@ -493,12 +497,15 @@ class Persona {
 	
 	//
 	public function getMediosByTipo($tipo = null){
+			$m = array();	
 			foreach ($this->medios as $medio) {
-				if($medio->getSTipo == $tipo){
-					echo 'eh amigo gato';
+				if($medio->getSTipo() == $tipo){
+					$m [] = $medio;	
+					//echo 'eh amigo gato';
 				}
 			}
+			
+			return $m;
 	}
-	
 	
 }

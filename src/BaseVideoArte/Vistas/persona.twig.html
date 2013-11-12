@@ -24,7 +24,8 @@
 		<div id="separador">
 		</div>
 		<div id="container_foto">
-			<div id="foto"><img src="http://basevideoarte.com.ar/wp-content/uploads/2013/04/carolina-saquel-150x150.jpg" />
+			<div id="foto"><img src="http://basevideoarte.com.ar/wp-content/uploads/2013/04/carolina-saquel-150x150.jpg" alt="{%if persona.getFoto != null %}{{persona.getFoto().descripcion}}{%endif%}" />
+			
 			</div>
 			<div id="datosfoto">
 				<p><strong>País: </strong><a href="{{ path('personas',{filtro: 'pais', valor : persona.pais.pais }) }}"> {{persona.pais.pais}} </a></p>

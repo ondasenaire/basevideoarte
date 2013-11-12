@@ -190,7 +190,7 @@ class CargadorDatos {
 				if( array_key_exists('foto',$persona) ){
 					
 						 echo '<br>existe la foto<br>';
-						 $m = new \BaseVideoArte\Entidades\Medio($persona['foto'],"foto de $persona[apellido] $persona[apellido]",'ppal');
+						 $m = new \BaseVideoArte\Entidades\Medio($persona['foto'],"foto de $persona[nombre] $persona[apellido]",'ppal');
 						 $p->addMedio($m);
 						 $m->addPersona($p);
 					 

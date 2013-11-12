@@ -94,14 +94,47 @@ class Persona {
 
 	//-----------------------------
 	public function verDatos(){
-		 $foto = ''; 
-		 foreach ($this->getMediosByTipo('ppal') as $f){
-		 	$foto = $f->getArchivo();
+		 // $foto = $this->getFoto();
+		 // if($foto == null){
+		 	// echo 'BOLUUUUUUUUUUUUUUUUUUUU';
+		 // } 
+		 
+		 $foto = $this->getFoto();
+		 if ($foto == null){
+		 	$foto = 'no tiene foto';
+		 }else{
+		 	$foto = $foto->getArchivo();
 		 }
-		return printf("%s, %s ( %s )  | inicio: %d | sexo: %s |foto: %s ", $this->apellido,$this->nombre,$this->pais->getPais(),$this->inicio,$this->sexo, $foto );
+		 		
+		  // foreach ($this->getMediosByTipo('ppal') as $f){
+		 	 // $foto = $f->getArchivo();
+		  // }
+		return printf("%s, %s ( %s )  | inicio: %d | sexo: %s |foto: %s ", $this->apellido,$this->nombre,$this->pais->getPais(),$this->inicio,$this->sexo, $foto);
 	}
 
   
+  //
+	public function getMediosByTipo($tipo = null){
+			$m = array();	
+			foreach ($this->medios as $medio) {
+				if($medio->getSTipo() == $tipo){
+					$m [] = $medio;	
+					//echo 'eh amigo gato';
+				}
+			}
+			
+			return $m;
+	}
+  
+  
+  	public function getFoto(){
+  		 
+		$f = $this->getMediosByTipo('ppal');
+  		return end($f) ;
+  	}
+  
+  
+  //GET SET
 
     /**
      * Get id
@@ -495,17 +528,6 @@ class Persona {
         return $this->metadatos;
     }
 	
-	//
-	public function getMediosByTipo($tipo = null){
-			$m = array();	
-			foreach ($this->medios as $medio) {
-				if($medio->getSTipo() == $tipo){
-					$m [] = $medio;	
-					//echo 'eh amigo gato';
-				}
-			}
-			
-			return $m;
-	}
+	
 	
 }

@@ -310,6 +310,19 @@ class CargadorDatos {
 						$m->addObra($o);
 					}
 				}
+				// busca videos embebidos
+				if( array_key_exists('videos',$obra) ){
+					foreach ($obra['videos'] as $video) {
+						echo '<br>HAY UN VIDEO<br>';
+						$m = new \BaseVideoArte\Entidades\Medio($video,"video de $obra[titulo]",'embebido');
+						$o->addMedio($m);
+						$m->addObra($o);
+					}
+				}
+				
+				
+				
+				
 				
 				$this -> obras[$clave] = $o;
 			}

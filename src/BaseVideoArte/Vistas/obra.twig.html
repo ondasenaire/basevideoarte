@@ -6,7 +6,7 @@
    <li>
         <h3>{{obra.titulo}} , ({{obra.anho}})</h3>
         <p>{{obra.sinopsis}}</p>
-        <p{%if obra.getFoto != null %}{{obra.getFoto().descripcion}}{%endif%}</p>
+        <p>{%if obra.getFoto != null %}{{obra.getFoto().descripcion}}{%endif%}</p>
         <p>
         	{% for artista in obra.artistas%}
         	 <a href="{{path('persona',{persona: artista.id}) }}" >{{artista.nombre}}</a>
@@ -14,12 +14,12 @@
         </p>
         
         
-        {% for medio in obra.getMediosByTipo('ppal') %}
-       	{{ medio.archivo }}<br>
-        {%endfor%}
+       
         
         
   </li>
-  
+   {% for medio in obra.getMediosByTipo('embebido') %}
+       	{{ medio.archivo |raw }}
+   {%endfor%}
   
 {% endblock %}

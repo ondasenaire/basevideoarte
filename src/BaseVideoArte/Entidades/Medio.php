@@ -14,7 +14,7 @@ class Medio {
 	private $id;
 
 	/**
-	 * @Column(type="string")
+	 * @Column(type="string",length=1024)
 	 */
 	private $archivo;
 	// ruta al archivo o url de un link

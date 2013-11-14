@@ -165,7 +165,7 @@ class CargadorDatos {
 			//----- paso 3
 			$lista_personas = $this -> json($this -> datos .'/' . $archivo -> getRelativePathname());
 			foreach ($lista_personas as $clave => $persona) {
-				$p = new Persona($persona['nombre'], $persona['apellido'], $persona['data'], $persona['inicio'], $persona['web'], $persona['sexo'], $persona['mostrar']);
+				$p = new Persona($persona['nombre'], $persona['apellido'], $persona['data'], $persona['inicio'], '', $persona['sexo'], $persona['mostrar']);
 				$p -> setPais($this -> paises[$persona['pais']]);
 				//proceso tipo;
 				foreach ($persona['tipo'] as $tipo) {
@@ -200,7 +200,12 @@ class CargadorDatos {
 				//web
 				
 				if( array_key_exists('web',$persona) ){
-					
+					echo '<br>existe la web<br>';
+					foreach ($persona['web'] as $web) {
+						 $m = new \BaseVideoArte\Entidades\Medio($persona['web'],"web de $persona[apellido]",'web');
+						 $p->addMedio($m);
+						 $m->addPersona($p);
+					}
 				}
 				
 				

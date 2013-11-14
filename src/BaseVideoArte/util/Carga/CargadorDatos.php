@@ -291,6 +291,16 @@ class CargadorDatos {
 					}
 				}
 				
+						// foto ppal
+				if( array_key_exists('foto',$obra) ){
+					
+						 echo '<br>existe la foto en obra<br>';
+						 $m = new \BaseVideoArte\Entidades\Medio($obra['foto'],"foto de $obra[titulo]",'ppal');
+						 $o->addMedio($m);
+						 $m->addObra($o);
+					 
+				}
+				
 				// busca los medios
 				if( array_key_exists('medios',$obra) ){
 					foreach ($obra['medios'] as $medio) {

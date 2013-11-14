@@ -90,7 +90,7 @@ class VideoArteController {
 	public function mostrarObraAction(Application $app, $obra) {
 		$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
 		$obra = $repositorioObras -> findOneById($obra);
-		return $app['twig'] -> render('/obra.html.twig', array('obra' => $obra, 'pagina_actual'=>'obras'));
+		return $app['twig'] -> render('/obra.twig.html', array('obra' => $obra, 'pagina_actual'=>'obras'));
 	}
 
 	//----------------------------------------------------------------

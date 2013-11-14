@@ -112,7 +112,27 @@ class Obra {
 		return printf("%s (%d) | duracion: %s | palabras: %s | medios: %s", $this->titulo,$this->anho,$this->duracion ,$palabras, $medios);
 	}
 
+	
+	public function getMediosByTipo($tipo = null){
+			$m = array();	
+			foreach ($this->medios as $medio) {
+				if($medio->getSTipo() == $tipo){
+					$m [] = $medio;	
+					//echo 'eh amigo gato';
+				}
+			}
+			
+			return $m;
+	}
 
+
+	public function getFoto(){
+  		 
+		$f = $this->getMediosByTipo('ppal');
+  		return end($f) ;
+  	}
+  
+//------GET SET--------------
     /**
      * Get id
      *
@@ -533,16 +553,5 @@ class Obra {
 	//------------
 	
 	
-	public function getMediosByTipo($tipo = null){
-			$m = array();	
-			foreach ($this->medios as $medio) {
-				if($medio->getSTipo() == $tipo){
-					$m [] = $medio;	
-					//echo 'eh amigo gato';
-				}
-			}
-			
-			return $m;
-	}
 	
 }

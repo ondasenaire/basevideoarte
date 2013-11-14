@@ -202,7 +202,7 @@ class CargadorDatos {
 				if( array_key_exists('web',$persona) ){
 					echo '<br>existe la web<br>';
 					foreach ($persona['web'] as $web) {
-						 $m = new \BaseVideoArte\Entidades\Medio($persona['web'],"web de $persona[apellido]",'web');
+						 $m = new \BaseVideoArte\Entidades\Medio($web,"web de $persona[apellido]",'web');
 						 $p->addMedio($m);
 						 $m->addPersona($p);
 					}

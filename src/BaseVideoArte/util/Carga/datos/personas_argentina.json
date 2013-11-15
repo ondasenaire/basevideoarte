@@ -12,7 +12,8 @@
 		 "pais": "argentina",
 		 "tipo":["artista"],
 		 "obras":["III momentos","Instante Bony"],
-		 "metadatos": [{"metadato":"gatos","tipo":"nombre"},{"metadato":"gatos","tipo":"apellido"}]
+		 "metadatos": [{"metadato":"gatos","tipo":"nombre"},{"metadato":"gatos","tipo":"apellido"}],
+		 "enlaces": ["sda","sad"]
 		 },
 		
 		

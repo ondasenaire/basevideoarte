@@ -190,7 +190,7 @@ class CargadorDatos {
 				if( array_key_exists('foto',$persona) ){
 					
 						 echo '<br>existe la foto<br>';
-						 $m = new \BaseVideoArte\Entidades\Medio($persona['foto'],"foto de $persona[nombre] $persona[apellido]",'ppal');
+						 $m = new \BaseVideoArte\Entidades\Medio($persona['foto'],"foto $persona[apellido]",'ppal');
 						 $p->addMedio($m);
 						 $m->addPersona($p);
 					 
@@ -202,9 +202,19 @@ class CargadorDatos {
 				if( array_key_exists('web',$persona) ){
 					echo '<br>existe la web<br>';
 					foreach ($persona['web'] as $web) {
-						 $m = new \BaseVideoArte\Entidades\Medio($web,"web de $persona[apellido]",'web');
+						 $m = new \BaseVideoArte\Entidades\Medio($web,"web $persona[apellido]",'web');
 						 $p->addMedio($m);
 						 $m->addPersona($p);
+					}
+				}
+				
+					//enlaces
+				if( array_key_exists('enlaces',$persona) ){
+					foreach ($persona['enlaces'] as $enlace) {
+						echo '<br>HAY UN enlaceeeeee<br>';
+						$m = new \BaseVideoArte\Entidades\Medio($enlace,"info $persona[apellido]",'enlace');
+						$p->addMedio($m);
+						$m->addPersona($p);
 					}
 				}
 				
@@ -295,7 +305,7 @@ class CargadorDatos {
 				if( array_key_exists('foto',$obra) ){
 					
 						 echo '<br>existe la foto en obra<br>';
-						 $m = new \BaseVideoArte\Entidades\Medio($obra['foto'],"foto de $obra[titulo]",'ppal');
+						 $m = new \BaseVideoArte\Entidades\Medio($obra['foto'],"foto $obra[titulo]",'ppal');
 						 $o->addMedio($m);
 						 $m->addObra($o);
 					 
@@ -314,7 +324,17 @@ class CargadorDatos {
 				if( array_key_exists('videos',$obra) ){
 					foreach ($obra['videos'] as $video) {
 						echo '<br>HAY UN VIDEO<br>';
-						$m = new \BaseVideoArte\Entidades\Medio($video,"video de $obra[titulo]",'embebido');
+						$m = new \BaseVideoArte\Entidades\Medio($video,"video $obra[titulo]",'embebido');
+						$o->addMedio($m);
+						$m->addObra($o);
+					}
+				}
+				
+				//enlaces
+				if( array_key_exists('enlaces',$obra) ){
+					foreach ($obra['enlaces'] as $enlace) {
+						echo '<br>HAY UN enlaceeeeee<br>';
+						$m = new \BaseVideoArte\Entidades\Medio($enlace,"info $obra[titulo]",'enlace');
 						$o->addMedio($m);
 						$m->addObra($o);
 					}

@@ -37,7 +37,7 @@ class CargadorDatos {
 		$this -> procesarPersonas();
 		$this -> procesarObras();
 		
-		$this -> buscarArchivos('obras');
+	//	$this -> buscarArchivos('obras');
 		
 		
 	}
@@ -100,10 +100,10 @@ class CargadorDatos {
 		return $datos;
 	}
 
-	public function buscarArchivos($tipo) {
+	public function buscarArchivos($tipo,$dir) {
 
 		$finder = new \Symfony\Component\Finder\Finder();
-		$finder -> files() -> in(__DIR__ . $this -> datos) -> name($tipo . '*');
+		$finder -> files() -> in(__DIR__ . $this -> datos.'/'.$dir) -> name($tipo . '*');
 		//	echo '<br> en la carpeta datos hay: <br> ';
 		// foreach ($finder as $file) {
 		//
@@ -160,7 +160,7 @@ class CargadorDatos {
 	public function procesarPersonas() {
 		// debido a la cantidad de personar se usa el finder para organizar las personas en grupos
 		//finder
-		$finder = $this -> buscarArchivos('personas');
+		$finder = $this -> buscarArchivos('personas','');
 		foreach ($finder as $archivo) {
 			//----- paso 3
 			$lista_personas = $this -> json($this -> datos .'/' . $archivo -> getRelativePathname());
@@ -229,10 +229,10 @@ class CargadorDatos {
 
 	public function procesarObras() {
 
-		$finder = $this -> buscarArchivos('obras');
+		$finder = $this -> buscarArchivos('obras','obras');
 		foreach ($finder as $archivo) {
 			//--
-			$lista_obras = $this -> json($this -> datos.'/' . $archivo -> getRelativePathname());
+			$lista_obras = $this -> json($this -> datos .'/obras/' . $archivo -> getRelativePathname());
 			foreach ($lista_obras as $clave => $obra) {
 
 				$o = new Obra($obra['titulo'], $obra['sinopsis'], $obra['anho'], $obra['duracion'],$obra['mostrar']);

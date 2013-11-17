@@ -12,7 +12,8 @@
 	"Betacam SP":{"formato":"Betacam SP"},
 	"DVD":{"formato":"DVD"},
 	"DVCAM":{"formato":"DVCAM"},
-	"DigiBeta":{"formato":"DigiBeta"}
+	"DigiBeta":{"formato":"DigiBeta"},
+	"TV":{"formato":"TV"}
 	
 
 }

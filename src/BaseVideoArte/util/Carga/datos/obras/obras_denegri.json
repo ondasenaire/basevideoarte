@@ -1,0 +1,246 @@
+{
+	
+	"III momentos":
+	{
+	"titulo":"III momentos",
+	"sinopsis":" ",
+	"anho":"1998", 
+	"duracion":"16m",
+	"mostrar": true,
+	
+	"foto":"iii_momentos.png",
+	"autores": ["denegri_andres"],
+	"formato":["Video"],
+	"genero": ["Experimental"],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+
+	"Instante Bony":
+	{
+	"titulo":"Instante Bony",
+	"sinopsis":" Oscar Bony, uno de los más importantes artistas conceptuales argentinos, dispara una pistola 9mm. El gesto oculto con el que se crea la obra, es dilatado en el tiempo para construir un breve retrato del artista.",
+	"anho":"2000", 
+	"duracion":"1m54s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["Super8","Hi-8"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": ["Oscar Bony", "arte conceptual"],
+	"medios": []
+	},
+	
+	"Cuando vuelvas vamos a ir a comer a Cantón":
+	{
+	"titulo":"Cuando vuelvas vamos a ir a comer a Cantón",
+	"sinopsis":"El texto susurrado de una pequeña carta de amor, se desplaza por la imagen de cuatro fotografías.",
+	"anho":"2001", 
+	"duracion":"1m33s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": ["carta", "amor"],
+	"medios": []
+	},
+	
+	"Luján":
+	{
+	"titulo":"Luján",
+	"sinopsis":"A sensitive documentary film about the annual pilgrimage of followers from Buenos Aires to the Basilica of Nossa Senhora de Luján [Our Lady of Luján], Argentina's patron saint, in Luján, forty miles away from the capital. It delves into a wide variety of types, intentions, and interests surrounding the mystical, popular journey.",
+	"anho":"2004", 
+	"duracion":"2h2m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":[],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": ["Luján", "peregrinación", "virgen"],
+	"medios": []
+	},
+	
+	"Duchamp: Buenos Aires no existe":
+	{
+	"titulo":"Duchamp: Buenos Aires no existe",
+	"sinopsis":"Featuring images from various periods and excerpts from letters, this video speculates on how Frenchman Marcel Duchamp saw the capital of Argentina, where he lived between 1918 and 1919 in order to escape the United States military service.",
+	"anho":"2005", 
+	"duracion":"26m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["TV"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Uyuni":
+	{
+	"titulo":"Uyuni",
+	"sinopsis":"She wants to leave. He feels safe there. The barren landscape of the Bolivian town of Uyuni is cut by a transmission of Peruvian radio. The tense situation of Latin America is in the violence of the wind. Worked with Super 8mm film and video, the image’s texture talks about diverse feeling from the same view.",
+	"anho":"2005", 
+	"duracion":"8m18s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Cerca de Bony":
+	{
+	"titulo":"Cerca de Bony",
+	"sinopsis":"Documental sobre el artista plástico Oscar Bony.",
+	"anho":"2006", 
+	"duracion":"30m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["Video"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"El ahogo":
+	{
+	"titulo":"El ahogo",
+	"sinopsis":"Delicately built with pictures, notes, and other memorabilia, this video evokes memories of family and of a childhood filled with military signs.",
+	"anho":"2006", 
+	"duracion":"6m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":[],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Un Martes":
+	{
+	"titulo":"Un Martes",
+	"sinopsis":"A small film installation about childhood memories, made with two Super 8 loops.",
+	"anho":"2006", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["Instalacion"],
+	"genero": ["Experimental"],
+	"metadatos":[{"metadato":"con dos loops en Super 8","tipo":"formato"}],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Colonia":
+	{
+	"titulo":"Colonia",
+	"sinopsis":"El río corre, el tiempo pasa.",
+	"anho":"2008", 
+	"duracion":"2m29s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["Video Digital"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Grito":
+	{
+	"titulo":"Grito",
+	"sinopsis":"In Latin America, the 70s and 80s were years darkened by military dictatorships, which forced a policy of terror and extermination. Many of those who lived their childhood during that period have a personal history built as an extremely complex plot. Grito works with throbbing autobiographical memories and Images that resound in the head and block the throat. It is the last step in a series of audiovisual reflections about the relationship between identity, ideology and affection. A Super-8mm and a low-quality digital video entwine in the anachronistic construction of the familiar recollection.",
+	"anho":"2008", 
+	"duracion":"21m28s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["35mm"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Dialogos (en los bancos de una plaza)":
+	{
+	"titulo":"Dialogos (en los bancos de una plaza)",
+	"sinopsis":" ",
+	"anho":"2010", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["Instalacion"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Llueve en Mar del Plata":
+	{
+	"titulo":"Llueve en Mar del Plata",
+	"sinopsis":" ",
+	"anho":"2011", 
+	"duracion":"12m35s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["Video Digital"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Sobre Belgrado":
+	{
+	"titulo":"Sobre Belgrado",
+	"sinopsis":" ",
+	"anho":"2011", 
+	"duracion":"4m7s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["denegri_andres"],
+	"formato":["Super8"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	}
+	
+	
+	
+	
+
+}

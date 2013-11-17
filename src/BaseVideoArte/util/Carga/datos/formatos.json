@@ -1,5 +1,6 @@
 {
 	"Instalacion":{"formato":"Instalación"},
+	"Video Instalacion":{"formato":"Video Instalación"},
 	"Video":{"formato":"Video"},
 	"Video Digital":{"formato":"Video Digital"},
 	"MiniDV":{"formato":"MiniDV"},
@@ -13,7 +14,10 @@
 	"DVD":{"formato":"DVD"},
 	"DVCAM":{"formato":"DVCAM"},
 	"DigiBeta":{"formato":"DigiBeta"},
-	"TV":{"formato":"TV"}
-	
+	"TV":{"formato":"TV"},
+	"Monocanal":{"formato":"Video monocanal"},
+	"Multicanal":{"formato":"Video multicanal"},
+	"Panel LCD":{"formato":"Panel LCD"},
+	"HD":{"formato":"HD"}	
 
 }

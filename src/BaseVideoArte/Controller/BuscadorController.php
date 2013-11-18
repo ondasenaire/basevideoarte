@@ -40,9 +40,9 @@ class BuscadorController {
 				$form_general->bind($request);
 				if ($form_general->isValid() ){
 					$consulta = $form_general->getData();
-					echo 'erwr';
+					$respuesta = $this -> busquedaGeneral($app, $consulta['consulta']);
 				}
-				$respuesta = $this -> busquedaGeneral($app, $consulta['consulta']);
+				
 				
 			}
 
@@ -66,17 +66,20 @@ class BuscadorController {
 //  CONSULTASSSSS
 
 	public function busquedaGeneral(Application $app, $criterio) {
-		// $q_obras = $app['db.orm.em'] -> createQueryBuilder();
-		// $q_obras -> select('obra') -> from('BaseVideoArte\Entidades\Obra', ' obra') -> where() -> orderBy('obra.titulo', 'ASC');
-		// $consulta = $q -> getQuery();
+		//obras
+		//('persona',{persona: persona.id})
+		$lp = "persona/";
+		$lo = "obras/";
 		
-		
-		$query = $app['db.orm.em']->createQuery("SELECT obra.id, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'");
+		$query = $app['db.orm.em']->createQuery("SELECT CONCAT('$lo',obra.id) AS link, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'");
 		$obras = $query->getResult();
+		//personas
+		$query = $app['db.orm.em']->createQuery("SELECT  CONCAT('$lp',persona.id) AS link, persona.apellido AS encabezado FROM BaseVideoArte\Entidades\Persona persona WHERE persona.apellido LIKE '%$criterio%'");
+		$personas = $query->getResult();
+		// mezclo arrays
+		$resultado_general = array_merge($obras,$personas);
 		
-
-		
-		return array('mensaje' => 'hay una busqueda general que procesar', 'resultado' => $obras);
+		return array('mensaje' => 'hay una busqueda general que procesar', 'resultado' => $resultado_general);
 	}
 
 }

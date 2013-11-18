@@ -47,7 +47,7 @@
 <div id="resultado_busqueda">
 	{{respuesta.mensaje}}
 	{%for resultado in respuesta.resultado%}
-		<h3>{{resultado.encabezado}}</h3>
+		<a href="{{app.request.basepath}}/{{resultado.link}}"><h3>{{resultado.encabezado}}</h3></a>
 	{%endfor%}
 	
 </div>

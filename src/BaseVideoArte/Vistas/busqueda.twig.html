@@ -1,0 +1,23 @@
+ {% extends 'layout.twig.html' %}
+
+{% block title %}Busqueda avanzada{% endblock %}
+
+{% block contenido %}
+    <form id="busqueda_general" action="{{ path('busqueda') }}" method="post" >
+    	{{form_row(form_general.consulta) }}
+    	{{form_row(form_general.buscar) }}
+    </form>
+    
+     <form id="busqueda_personas" action="{{ path('busqueda') }}" method="post" >
+    	{{form_row(form_personas.nombre) }}
+    	{{form_row(form_personas.pais) }}
+    	{{form_row(form_personas.tipo) }}
+    	{{form_row(form_personas.buscar) }}
+    	
+    </form>
+    
+     <form id="busqueda_obras" action="{{ path('busqueda') }}" method="post" >
+    	{{form_widget(form_obras) }}
+    	
+    </form>
+{% endblock %}

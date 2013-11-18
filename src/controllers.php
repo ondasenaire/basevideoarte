@@ -50,11 +50,11 @@ $app->match('/admin/nueva_persona', 'BaseVideoArte\Controller\AdminController::n
 // $app->match('/admin/pruebas_get_metadatos', 'BaseVideoArte\Controller\AdminController::recuperarMetadataAction')->bind('get_metadatos');
 
 //BUSCADOR
-$app->get('/busqueda', function () use ($app) {
-    return $app['twig']->render('/busqueda.html.twig', array('pagina_actual'=>'busqueda'));
-})
-->bind('busqueda')
-;
+// $app->get('/busqueda', function () use ($app) {
+    // return $app['twig']->render('/busqueda.html.twig', array('pagina_actual'=>'busqueda'));
+// })
+// ->bind('busqueda')
+$app->match('/admin/busqueda', 'BaseVideoArte\Controller\BuscadorController::BuscadoresAction')->bind('busqueda');
 //--------------MANTENIMIENTO-----------------------------------------------------
 
 $app->get('/admin/cargar', 'BaseVideoArte\Controller\CargaDatosController::cargarDatosAction')->bind('cargar_datos');

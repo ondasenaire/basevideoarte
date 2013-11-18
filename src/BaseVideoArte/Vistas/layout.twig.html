@@ -8,6 +8,8 @@
 		<title>{% block title %}{% endblock %} | Base Video Arte</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" href="{{app.request.basepath}}/css/style.css" />
+		{% block css %}{% endblock %}
+		{% block js %}{% endblock %}
 	</head>
 
 	<body>

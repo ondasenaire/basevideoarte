@@ -1,23 +1,42 @@
- {% extends 'layout.twig.html' %}
+{% extends 'layout.twig.html' %}
 
-{% block title %}Busqueda avanzada{% endblock %}
+{% block title %}Buscador{% endblock %}
+{% block js%}<script type="text/javascript" src="{{app.request.getBaseURL()}}js/libs/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="{{app.request.getBaseURL()}}js/buscador.js"></script>
+{%endblock%}
 
 {% block contenido %}
-    <form id="busqueda_general" action="{{ path('busqueda') }}" method="post" >
-    	{{form_row(form_general.consulta) }}
-    	{{form_row(form_general.buscar) }}
-    </form>
-    
-     <form id="busqueda_personas" action="{{ path('busqueda') }}" method="post" >
-    	{{form_row(form_personas.nombre) }}
-    	{{form_row(form_personas.pais) }}
-    	{{form_row(form_personas.tipo) }}
-    	{{form_row(form_personas.buscar) }}
-    	
-    </form>
-    
-     <form id="busqueda_obras" action="{{ path('busqueda') }}" method="post" >
-    	{{form_widget(form_obras) }}
-    	
-    </form>
+<div class="tab">
+	<a href="#primero">General</a>
+	<a href="#segundo">Personas</a>
+	<a href="#tercero">Obras</a>
+	<div class="clear"> </div>
+</div>
+
+<div class="tab_form">
+	<div id="primero">
+		<form id="busqueda_general" action="{{ path('busqueda') }}" method="post" >
+			{{form_row(form_general.consulta) }}
+			{{form_row(form_general.buscar) }}
+		</form>
+	</div>
+
+	<div id="segundo">
+
+		<form id="busqueda_personas" action="{{ path('busqueda') }}" method="post" >
+			{{form_row(form_personas.nombre) }}
+			{{form_row(form_personas.pais) }}
+			{{form_row(form_personas.tipo) }}
+			{{form_row(form_personas.buscar) }}
+
+		</form>
+	</div>
+	<div id="tercero">
+		<form id="busqueda_obras" action="{{ path('busqueda') }}" method="post" >
+			{{form_widget(form_obras) }}
+
+		</form>
+	</div>
+</div>
+
 {% endblock %}

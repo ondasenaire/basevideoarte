@@ -54,7 +54,7 @@ $app->match('/admin/nueva_persona', 'BaseVideoArte\Controller\AdminController::n
     // return $app['twig']->render('/busqueda.html.twig', array('pagina_actual'=>'busqueda'));
 // })
 // ->bind('busqueda')
-$app->match('/admin/busqueda', 'BaseVideoArte\Controller\BuscadorController::BuscadoresAction')->bind('busqueda');
+$app->match('/busqueda', 'BaseVideoArte\Controller\BuscadorController::BuscadoresAction')->bind('busqueda');
 //--------------MANTENIMIENTO-----------------------------------------------------
 
 $app->get('/admin/cargar', 'BaseVideoArte\Controller\CargaDatosController::cargarDatosAction')->bind('cargar_datos');

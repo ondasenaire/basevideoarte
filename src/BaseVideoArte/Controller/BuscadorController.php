@@ -13,9 +13,12 @@ class BuscadorController {
 
 	public function buscadoresAction(Application $app, Request $request) {
 
+		$general = array('consulta'); // string recibido
+
+
 		//  FORM GENERAL
 		$buscadorGeneral = new BuscadorGeneralType();
-		$form_general = $app["form.factory"] -> create($buscadorGeneral);
+		$form_general = $app["form.factory"] -> create($buscadorGeneral,$general);
 		//  FORM PERSONAS
 		$buscadorPersonas = new BuscadorPersonasType();
 		$form_personas = $app["form.factory"] -> create($buscadorPersonas);
@@ -34,7 +37,12 @@ class BuscadorController {
 
 			if ($request -> request -> has('buscador_general')) {
 				//echo 'buscador general';
-				$respuesta = $this -> busquedaGeneral($app);
+				$form_general->bind($request);
+				if ($form_general->isValid() ){
+					$consulta = $form_general->getData();
+					echo 'erwr';
+				}
+				$respuesta = $this -> busquedaGeneral($app, $consulta['consulta']);
 				
 			}
 
@@ -57,13 +65,13 @@ class BuscadorController {
 	}
 //  CONSULTASSSSS
 
-	public function busquedaGeneral(Application $app) {
+	public function busquedaGeneral(Application $app, $criterio) {
 		// $q_obras = $app['db.orm.em'] -> createQueryBuilder();
 		// $q_obras -> select('obra') -> from('BaseVideoArte\Entidades\Obra', ' obra') -> where() -> orderBy('obra.titulo', 'ASC');
 		// $consulta = $q -> getQuery();
 		
 		
-		$query = $app['db.orm.em']->createQuery("SELECT obra.id, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%or%'");
+		$query = $app['db.orm.em']->createQuery("SELECT obra.id, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'");
 		$obras = $query->getResult();
 		
 

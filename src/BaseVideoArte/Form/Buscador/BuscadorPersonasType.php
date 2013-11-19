@@ -14,14 +14,21 @@ class BuscadorPersonasType extends AbstractType {
 	private $opcionesTipo;
 	
 	public function buildForm(FormBuilderInterface $builder, array $options) {
-		$builder->add('nombre','text');
+		$builder->add('nombre','text', array(
+				'label'=> 'Nombre o Apellido: ',
+				'required' => true														
+			) );
 		$builder->add('pais','choice',array(
-				'choices' => array('1'=>'asdas','2'=>'asdas','3'=>'asdas'),
+				'choices' => $this->opcionesPais,
+				'label' => 'Pais: ',
 				'multiple' => false,
-				'expanded' => false
+				'expanded' => false,
+				'required' =>false
 			));
 		$builder->add('tipo','choice',array(
-				'choices' => array('1'=>'artista','2'=>'curador/a'),
+				'label' => 'Actividad: ',
+				'required' => false,
+				'choices' => $this->opcionesTipo,
 				'multiple' => true,
 				'expanded' => true
 			));

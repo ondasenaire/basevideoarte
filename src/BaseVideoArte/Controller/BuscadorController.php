@@ -1,6 +1,9 @@
 <?php
 namespace BaseVideoArte\Controller;
 use Silex\Application;
+//utilidades
+use BaseVideoArte\Util\Opciones\OpcionesForm;
+
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -9,19 +12,32 @@ use BaseVideoArte\Form\Buscador\BuscadorGeneralType;
 use BaseVideoArte\Form\Buscador\BuscadorPersonasType;
 use BaseVideoArte\Form\Buscador\BuscadorObrasType;
 
+
+
 class BuscadorController {
 
 	public function buscadoresAction(Application $app, Request $request) {
-
-		$general = array('consulta'); // string recibido
+		$opciones = new OpcionesForm();
+		$receptor_general = array('consulta'); // string recibido
+		$receptor_personas = array('nombre' => '', 'pais'=>'','tipo'=>array());
 
 
 		//  FORM GENERAL
 		$buscadorGeneral = new BuscadorGeneralType();
-		$form_general = $app["form.factory"] -> create($buscadorGeneral,$general);
+		$form_general = $app["form.factory"] -> create($buscadorGeneral,$receptor_general);
 		//  FORM PERSONAS
 		$buscadorPersonas = new BuscadorPersonasType();
-		$form_personas = $app["form.factory"] -> create($buscadorPersonas);
+		//-----
+
+		
+		//-----
+		
+	
+		
+		$buscadorPersonas->setOpcionesPais($opciones->getOpcionesPais($app));
+		$buscadorPersonas->setOpcionesTipo($opciones->getOpcionesTipo($app));
+		$form_personas = $app["form.factory"] -> create($buscadorPersonas,$receptor_personas);
+		
 		//  FORM OBRAS
 		$buscadorObras = new BuscadorObrasType();
 		$form_obras = $app["form.factory"] -> create($buscadorObras);
@@ -41,16 +57,26 @@ class BuscadorController {
 				if ($form_general->isValid() ){
 					$consulta = $form_general->getData();
 					$respuesta = $this -> busquedaGeneral($app, $consulta['consulta']);
-				}
-				
+				}		
 				
 			}
 
 			if ($request -> request -> has('buscador_personas')) {
-				//$respuesta['mensaje'] = 'hay una busqueda de personas que procesar';
+				//echo 'buscador personASA';		
+				$form_personas->bind($request);
+				if ($form_personas->isValid() ){
+					$consulta = $form_personas->getData();
+					//print_r($consulta);
+					echo 'el form va';
+					$respuesta = $this -> busquedaPersonas($app, $consulta['nombre'], $consulta['pais'], $consulta['tipo']);
+				}else{
+					echo 'el form no va';
+				}	
+							
 			}
 
 			if ($request -> request -> has('buscador_obras')) {
+				echo 'buscador obras';
 				//$respuesta ['mensaje'] = 'hay una busqueda de obras que procesar';
 			}
 
@@ -81,5 +107,23 @@ class BuscadorController {
 		
 		return array('mensaje' => 'hay una busqueda general que procesar', 'resultado' => $resultado_general);
 	}
+	
+	// busqueda personas
+	
+	public function busquedaPersonas(Application $app, $nombre,$pais,$tipo ){
+		
+		$tipos = implode(",", $tipo );
+		
+		print_r($tipo);
+		
+		$mensaje = "nombre: $nombre  pais: $pais tipo: $tipos";			
+		//$query = $app['db.orm.em']->createQuery("SELECT CONCAT('persona/',obra.id) AS link, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'");
+		//$obras = $query->getResult();
+		echo $mensaje;	
+		
+		return array('mensaje' => $mensaje, 'resultado' => '--');
+		
+	}
+	
 
 }

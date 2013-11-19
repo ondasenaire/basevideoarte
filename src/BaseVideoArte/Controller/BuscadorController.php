@@ -17,29 +17,35 @@ use BaseVideoArte\Form\Buscador\BuscadorObrasType;
 class BuscadorController {
 
 	public function buscadoresAction(Application $app, Request $request) {
+		// facilitador de opciones	
 		$opciones = new OpcionesForm();
+		
 		$receptor_general = array('consulta'); // string recibido
 		$receptor_personas = array('nombre' => '', 'pais'=>'','tipo'=>array());
+		$receptor_obras = array('titulo'=> '', 'formato'=> '','palabras'=> array() );
 
+
+		/*
+		 * -Instancio el formulario
+		 * -cargo opciones necesarias
+		 * -invoco al builder
+		 */
 
 		//  FORM GENERAL
 		$buscadorGeneral = new BuscadorGeneralType();
 		$form_general = $app["form.factory"] -> create($buscadorGeneral,$receptor_general);
 		//  FORM PERSONAS
 		$buscadorPersonas = new BuscadorPersonasType();
-		//-----
-
-		
-		//-----
-		
 	
-		
 		$buscadorPersonas->setOpcionesPais($opciones->getOpcionesPais($app));
 		$buscadorPersonas->setOpcionesTipo($opciones->getOpcionesTipo($app));
 		$form_personas = $app["form.factory"] -> create($buscadorPersonas,$receptor_personas);
 		
 		//  FORM OBRAS
 		$buscadorObras = new BuscadorObrasType();
+		
+		$buscadorObras->setOpcionesFormato($opciones->getOpcionesFormato($app));
+		$buscadorObras->setOpcionesPalabra($opciones->getOpcionesPalabraClave($app));
 		$form_obras = $app["form.factory"] -> create($buscadorObras);
 		//  FORM AVANZADo
 
@@ -60,24 +66,29 @@ class BuscadorController {
 				}		
 				
 			}
-
+// buscador personas
 			if ($request -> request -> has('buscador_personas')) {
 				//echo 'buscador personASA';		
 				$form_personas->bind($request);
 				if ($form_personas->isValid() ){
 					$consulta = $form_personas->getData();
 					//print_r($consulta);
-					echo 'el form va';
+					//echo 'el form va';
 					$respuesta = $this -> busquedaPersonas($app, $consulta['nombre'], $consulta['pais'], $consulta['tipo']);
 				}else{
-					echo 'el form no va';
+					//echo 'el form no va';
 				}	
 							
 			}
-
+// buscador obras
 			if ($request -> request -> has('buscador_obras')) {
-				echo 'buscador obras';
-				//$respuesta ['mensaje'] = 'hay una busqueda de obras que procesar';
+				//echo 'buscador obras';
+				$form_obras->bind($request);
+				if ($form_obras->isValid() ){
+					$consulta = $form_obras->getData();
+					$respuesta = $this -> busquedaObras($app, $consulta['titulo'],$consulta['formato'],$consulta['palabras']);
+				}
+				
 			}
 
 		}
@@ -114,16 +125,27 @@ class BuscadorController {
 		
 		$tipos = implode(",", $tipo );
 		
-		print_r($tipo);
+		//print_r($tipo);
 		
 		$mensaje = "nombre: $nombre  pais: $pais tipo: $tipos";			
 		//$query = $app['db.orm.em']->createQuery("SELECT CONCAT('persona/',obra.id) AS link, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'");
 		//$obras = $query->getResult();
-		echo $mensaje;	
+		//echo $mensaje;	
 		
 		return array('mensaje' => $mensaje, 'resultado' => '--');
 		
 	}
 	
+	// busqueda obras
+	
+	public function busquedaObras(Application $app, $titulo,$formato,$palabras){
+		
+		$palabras = implode(",", $palabras );
+		
+		//print_r($tipo);
+		
+		$mensaje = "titulo: $titulo  formato: $formato palabras: $palabras";		
+		return array('mensaje' => $mensaje, 'resultado' => '--');
+	}
 
 }

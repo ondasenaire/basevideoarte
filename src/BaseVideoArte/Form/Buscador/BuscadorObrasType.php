@@ -10,30 +10,34 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 class BuscadorObrasType extends AbstractType {
 	
-	private $opcionesPais;
-	private $opcionesTipo;
+	private $opcionesFormato;
+	private $opcionesPalabra;
 	
 	public function buildForm(FormBuilderInterface $builder, array $options) {
-		$builder->add('nombre','text');
-		$builder->add('pais','choice',array(
-				'choices' => array('1'=>'arg','2'=>'brasil','3'=>'chile'),
-				'multiple' => false,
-				'expanded' => false
-			));
-		$builder->add('genero','choice',array(
-				'choices' => array('1'=>'Documental','2'=>'Experimental'),
-				'multiple' => false,
-				'expanded' => false
-			));
+		$builder->add('titulo','text',array(
+				'required'=> false,
+				'label'=> 'Título: ',
+				));
+		
+		//GENERO NO VA EN LA PRIMERA ETAPA	
+		// $builder->add('genero','choice',array(
+				// 'choices' => array('1'=>'Documental','2'=>'Experimental'),
+				// 'multiple' => false,
+				// 'expanded' => false
+			// ));
 			
 		$builder->add('formato','choice',array(
-				'choices' => array('1'=>'16mm','2'=>'35mm'),
+				'choices' => $this->opcionesFormato,
+				'required'=> false,
+				'label'=> 'Formato: ',
 				'multiple' => false,
 				'expanded' => false
 		));	
-		$builder->add('palabra','choice',array(
-				'choices' => array('1'=>'inmigracion','2'=>'palestina'),
-				'multiple' => false,
+		$builder->add('palabras','choice',array(
+				'choices' => $this->opcionesPalabra,
+				'required'=> false,
+				'label'=> 'Palabra Clave: ',
+				'multiple' => true,
 				'expanded' => false
 		));	
 		
@@ -41,13 +45,13 @@ class BuscadorObrasType extends AbstractType {
 	}
 	
 
-	public function setOpcionesPais( $op){
-		$this->opcionesPais = $op;
+	public function setOpcionesFormato( $op){
+		$this->opcionesFormato = $op;
 		
 	}
 	
-	public function setOpcionesTipo( $o){
-		$this->opcionesTipo = $o;
+	public function setOpcionesPalabra( $o){
+		$this->opcionesPalabra = $o;
 		
 	}
 		

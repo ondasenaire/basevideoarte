@@ -33,16 +33,16 @@ class OpcionesForm {
 		return $this->getOpciones($app, 'TipoDePersona', 'tipo');
 	}
 	
-	public function getOpcionesFormato(){
+	public function getOpcionesFormato(Application $app){
 		return $this->getOpciones($app, 'Formato', 'formato');
 	}
 	
-	public function getOpcionesGenero(){
-		
+	public function getOpcionesGenero(Application $app){
+		return $this->getOpciones($app, 'Genero', 'genero');
 	}
 	
-	public function getOpcionesPalabraClave(){
-		
+	public function getOpcionesPalabraClave(Application $app){
+		return $this->getOpciones($app, 'PalabraClave', 'palabra');
 	}
 
 	

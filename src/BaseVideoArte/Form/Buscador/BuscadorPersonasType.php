@@ -16,7 +16,7 @@ class BuscadorPersonasType extends AbstractType {
 	public function buildForm(FormBuilderInterface $builder, array $options) {
 		$builder->add('nombre','text', array(
 				'label'=> 'Nombre o Apellido: ',
-				'required' => true														
+				'required' => false														
 			) );
 		$builder->add('pais','choice',array(
 				'choices' => $this->opcionesPais,

@@ -23,8 +23,6 @@ class BuscadorController {
 		$receptor_general = array('consulta'); // string recibido
 		$receptor_personas = array('nombre' => '', 'pais'=>'','tipo'=>array());
 		$receptor_obras = array('titulo'=> '', 'formato'=> '','palabras'=> array() );
-
-
 		/*
 		 * -Instancio el formulario
 		 * -cargo opciones necesarias
@@ -100,7 +98,10 @@ class BuscadorController {
 																	'respuesta' => $respuesta) );
 
 	}
-//  CONSULTASSSSS
+	/**
+ 	* 
+ 	*/
+//  CONSULTASSSSS-------------------------------------------______________________________________
 
 	public function busquedaGeneral(Application $app, $criterio) {
 		//obras
@@ -111,7 +112,8 @@ class BuscadorController {
 		$query = $app['db.orm.em']->createQuery("SELECT CONCAT('$lo',obra.id) AS link, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'");
 		$obras = $query->getResult();
 		//personas
-		$query = $app['db.orm.em']->createQuery("SELECT  CONCAT('$lp',persona.id) AS link, persona.apellido AS encabezado FROM BaseVideoArte\Entidades\Persona persona WHERE persona.apellido LIKE '%$criterio%'");
+		$query = $app['db.orm.em']->createQuery("SELECT  CONCAT('$lp',persona.id) AS link, CONCAT(persona.apellido, CONCAT(', ',persona.nombre) ) AS encabezado 
+		FROM BaseVideoArte\Entidades\Persona persona WHERE (persona.apellido LIKE '%$criterio%' OR persona.nombre LIKE '%$criterio%') ");
 		$personas = $query->getResult();
 		// mezclo arrays
 		$resultado_general = array_merge($obras,$personas);
@@ -120,19 +122,76 @@ class BuscadorController {
 	}
 	
 	// busqueda personas
-	
-	public function busquedaPersonas(Application $app, $nombre,$pais,$tipo ){
+	/**
+	 *   BUSCADOR PERSONAS
+	 */
+	public function busquedaPersonas(Application $app, $nombre,$pais,$tipos ){
+		/*
+		 * -El array $condiciones contiene las distintos criterios de consulta marcador por el usuario
+		 * - El array $leftJoins contiene los LEFT JOIN necesarios
+		 */	
+		$condiciones = array();
+		$leftJoin = array();
+		$mensaje = '';	
 		
-		$tipos = implode(",", $tipo );
+		if( !empty($nombre)){
+			$mensaje = $mensaje. ' hay nombre';
+			$condiciones [] =  " (persona.apellido LIKE '%$nombre%' OR persona.nombre LIKE '%$nombre%')";			
+		}		
+		if( !empty($pais)){
+			$mensaje = $mensaje. ',  hay pais';
+			$condiciones []= " pais.id= $pais ";
+			$leftJoin[] = " persona.pais pais";
+		}
 		
-		//print_r($tipo);
+		if( !empty($tipos) ){
+			
+			$mensaje = $mensaje. ',  hay tipo';
+			// armo condicion de acuerdo a la cantidad de tipos
+			$condicion = "";
+			foreach($tipos as $indice => $tipo){
+					if( $indice != 0){
+						//ver atentamente este caso, multiples tipos
+						$condicion = $condicion." AND ";	
+					}
+						
+						$condicion = $condicion." persona.id IN (SELECT p$indice.id FROM BaseVideoArte\Entidades\Persona p$indice JOIN p$indice.tipos tipos$indice WHERE tipos$indice.id = $tipo)";
+					
+				//echo $tipo;
+			} 
+		//	$condicion = $condicion.") ";
+			
+			//"SELECT persona.apellido FROM BaseVideoArte\Entidades\Persona persona WHERE  persona.id IN (SELECT p.id FROM BaseVideoArte\Entidades\Persona p JOIN p.tipos tipos 
+			//WHERE tipos.id = 1) AND persona.id IN (SELECT p2.id FROM BaseVideoArte\Entidades\Persona p2 JOIN p2.tipos tipos2 WHERE tipos2.id = 2)";
+			$condiciones[]= $condicion;
+			$leftJoin[] = " persona.tipos tipos";
+		}
+				
+
+// PROCESA LA CONSULTA
+ 		if(  empty($condiciones) ){
+			$personas = null;
+			$mensaje = 'No ha ingresado ningún criterio de búsqueda';
+		}else{
+			
+			$andWhere = '';
+			foreach ($condiciones as $indice => $condicion) {
+				if	($indice != 0){
+					$andWhere = $andWhere.' AND '.$condicion;
+				}else{
+					$andWhere = $andWhere.' '.$condicion;
+				}
+								
+			}	
+			
+			$consulta = "SELECT DISTINCT CONCAT('persona/',persona.id) AS link, CONCAT(persona.apellido, CONCAT(', ',persona.nombre) ) AS encabezado FROM BaseVideoArte\Entidades\Persona persona 
+						LEFT JOIN persona.pais pais LEFT JOIN persona.tipos tipos WHERE $andWhere";
+			$q =  $app['db.orm.em']->createQuery($consulta);
+			$personas = $q->getResult();
+			$mensaje = $consulta;
+		}
 		
-		$mensaje = "nombre: $nombre  pais: $pais tipo: $tipos";			
-		//$query = $app['db.orm.em']->createQuery("SELECT CONCAT('persona/',obra.id) AS link, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'");
-		//$obras = $query->getResult();
-		//echo $mensaje;	
-		
-		return array('mensaje' => $mensaje, 'resultado' => '--');
+		return array('mensaje' => $mensaje, 'resultado' => $personas);
 		
 	}
 	

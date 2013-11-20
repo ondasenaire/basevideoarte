@@ -32,6 +32,15 @@ class BuscadorPersonasType extends AbstractType {
 				'multiple' => true,
 				'expanded' => true
 			));
+			
+					$builder->add('sexo','choice',array(
+				'label' => 'Actividad: ',
+				'required' => false,
+				'empty_value'=>'ambos',
+				'choices' => array('h'=>'hombre', 'm'=>'mujer'),
+				'multiple' => false,
+				'expanded' => true
+			));
 		$builder->add('buscar','submit');
 	}
 	

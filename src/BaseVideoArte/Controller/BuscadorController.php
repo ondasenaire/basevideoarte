@@ -21,7 +21,7 @@ class BuscadorController {
 		$opciones = new OpcionesForm();
 		
 		$receptor_general = array('consulta'); // string recibido
-		$receptor_personas = array('nombre' => '', 'pais'=>'','tipo'=>array());
+		$receptor_personas = array('nombre' => '','sexo'=>'', 'pais'=>'','tipo'=>array());
 		$receptor_obras = array('titulo'=> '', 'formato'=> '','palabras'=> array() );
 		/*
 		 * -Instancio el formulario
@@ -61,6 +61,7 @@ class BuscadorController {
 				if ($form_general->isValid() ){
 					$consulta = $form_general->getData();
 					$respuesta = $this -> busquedaGeneral($app, $consulta['consulta']);
+					 
 				}		
 				
 			}
@@ -72,7 +73,7 @@ class BuscadorController {
 					$consulta = $form_personas->getData();
 					//print_r($consulta);
 					//echo 'el form va';
-					$respuesta = $this -> busquedaPersonas($app, $consulta['nombre'], $consulta['pais'], $consulta['tipo']);
+					$respuesta = $this -> busquedaPersonas($app, $consulta['nombre'],$consulta['sexo'] ,$consulta['pais'], $consulta['tipo']);
 				}else{
 					//echo 'el form no va';
 				}	
@@ -127,7 +128,7 @@ class BuscadorController {
 	/**
 	 *   BUSCADOR PERSONAS
 	 */
-	public function busquedaPersonas(Application $app, $nombre,$pais,$tipos ){
+	public function busquedaPersonas(Application $app, $nombre,$sexo,$pais,$tipos ){
 		/*
 		 * -El array $condiciones contiene las distintos criterios de consulta marcador por el usuario
 		 * - El array $leftJoins contiene los LEFT JOIN necesarios
@@ -139,7 +140,14 @@ class BuscadorController {
 		if( !empty($nombre)){
 			$mensaje = $mensaje. ' hay nombre';
 			$condiciones [] =  " (persona.apellido LIKE '%$nombre%' OR persona.nombre LIKE '%$nombre%')";			
-		}		
+		}	
+		
+		if(!empty($sexo) ){
+			$mensaje = $mensaje. ' hay sexo';
+			//echo $mensaje;
+			$condiciones[] = " persona.sexo = '$sexo' ";
+		}
+			
 		if( !empty($pais)){
 			$mensaje = $mensaje. ',  hay pais';
 			$condiciones []= " pais.id= $pais ";

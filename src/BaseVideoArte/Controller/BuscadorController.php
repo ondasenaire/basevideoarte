@@ -109,16 +109,18 @@ class BuscadorController {
 		$lp = "persona/";
 		$lo = "obras/";
 		
-		$query = $app['db.orm.em']->createQuery("SELECT CONCAT('$lo',obra.id) AS link, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'");
+		$obras_query = "SELECT 'obras' AS entidad,obra.id AS link, obra.titulo AS encabezado FROM BaseVideoArte\Entidades\Obra obra WHERE obra.titulo LIKE '%$criterio%'";
+		$query = $app['db.orm.em']->createQuery($obras_query);
 		$obras = $query->getResult();
 		//personas
-		$query = $app['db.orm.em']->createQuery("SELECT  CONCAT('$lp',persona.id) AS link, CONCAT(persona.apellido, CONCAT(', ',persona.nombre) ) AS encabezado 
-		FROM BaseVideoArte\Entidades\Persona persona WHERE (persona.apellido LIKE '%$criterio%' OR persona.nombre LIKE '%$criterio%') ");
+		$personas_query = "SELECT 'personas' AS entidad, persona.id AS link, CONCAT(persona.apellido, CONCAT(', ',persona.nombre) ) AS encabezado 
+		FROM BaseVideoArte\Entidades\Persona persona WHERE (persona.apellido LIKE '%$criterio%' OR persona.nombre LIKE '%$criterio%') ";
+		$query = $app['db.orm.em']->createQuery($personas_query);
 		$personas = $query->getResult();
 		// mezclo arrays
 		$resultado_general = array_merge($obras,$personas);
 		
-		return array('mensaje' => 'hay una busqueda general que procesar', 'resultado' => $resultado_general);
+		return array('mensaje' => $obras_query.'<br><br>'.$personas_query, 'resultado' => $resultado_general);
 	}
 	
 	// busqueda personas
@@ -157,10 +159,7 @@ class BuscadorController {
 						
 						$condicion = $condicion." persona.id IN (SELECT p$indice.id FROM BaseVideoArte\Entidades\Persona p$indice JOIN p$indice.tipos tipos$indice WHERE tipos$indice.id = $tipo)";
 					
-				//echo $tipo;
 			} 
-		//	$condicion = $condicion.") ";
-			
 			//"SELECT persona.apellido FROM BaseVideoArte\Entidades\Persona persona WHERE  persona.id IN (SELECT p.id FROM BaseVideoArte\Entidades\Persona p JOIN p.tipos tipos 
 			//WHERE tipos.id = 1) AND persona.id IN (SELECT p2.id FROM BaseVideoArte\Entidades\Persona p2 JOIN p2.tipos tipos2 WHERE tipos2.id = 2)";
 			$condiciones[]= $condicion;
@@ -184,7 +183,7 @@ class BuscadorController {
 								
 			}	
 			
-			$consulta = "SELECT DISTINCT CONCAT('persona/',persona.id) AS link, CONCAT(persona.apellido, CONCAT(', ',persona.nombre) ) AS encabezado FROM BaseVideoArte\Entidades\Persona persona 
+			$consulta = "SELECT DISTINCT 'personas' AS entidad ,persona.id AS link, CONCAT(persona.apellido, CONCAT(', ',persona.nombre) ) AS encabezado FROM BaseVideoArte\Entidades\Persona persona 
 						LEFT JOIN persona.pais pais LEFT JOIN persona.tipos tipos WHERE $andWhere";
 			$q =  $app['db.orm.em']->createQuery($consulta);
 			$personas = $q->getResult();
@@ -196,15 +195,60 @@ class BuscadorController {
 	}
 	
 	// busqueda obras
-	
-	public function busquedaObras(Application $app, $titulo,$formato,$palabras){
 		
-		$palabras = implode(",", $palabras );
+	/**
+	 *   BUSCADOR OBRAS
+	 */
+	
+	public function busquedaObras(Application $app, $titulo,$formato,$palabra){
+		
+		//$palabras = implode(",", $palabras );
+		$condiciones = array();
+		$leftJoin = array();
+		$mensaje = '';	
+		if(!empty($titulo)){
+			$condiciones [] = " o.titulo LIKE '%$titulo%' ";
+		}
+		if(!empty($formato)){
+			$condiciones [] = " formato.id =$formato ";
+		}
+		if(!empty($palabra)){
+			$condiciones [] = " palabra.id =$palabra ";
+		}
+		
+		//--------------
+		//--------------
+		if(  empty($condiciones) ){
+			$obras = null;
+			$mensaje = 'No ha ingresado ningún criterio de búsqueda';
+		}else{
+			
+			$andWhere = '';
+			foreach ($condiciones as $indice => $condicion) {
+				if	($indice != 0){
+					$andWhere = $andWhere.' AND '.$condicion;
+				}else{
+					$andWhere = $andWhere.' '.$condicion;
+				}
+								
+			}	
+			
+			$consulta ="SELECT DISTINCT 'obras' AS entidad, o.titulo AS encabezado, o.id AS link FROM BaseVideoArte\Entidades\Obra o LEFT JOIN o.palabrasClave palabra LEFT JOIN o.formatos formato
+		  WHERE $andWhere";
+			$q =  $app['db.orm.em']->createQuery($consulta);
+			$obras = $q->getResult();
+			$mensaje = $consulta;	
+		}
+		//--------------
+		
 		
 		//print_r($tipo);
+		// $consulta = "SELECT DISTINCT o.titulo AS encabezado, o.id AS link FROM BaseVideoArte\Entidades\Obra o LEFT JOIN o.palabrasClave palabra LEFT JOIN o.formatos formato
+		  // WHERE palabra.id =$palabra AND formato.id =$formato AND o.titulo LIKE '%$titulo%' ";
+	//	$mensaje = "titulo: $titulo  formato: $formato palabras: $palabras";
 		
-		$mensaje = "titulo: $titulo  formato: $formato palabras: $palabras";		
-		return array('mensaje' => $mensaje, 'resultado' => '--');
+		
+		return array('mensaje' => $mensaje, 'resultado' => $obras);
 	}
 
 }

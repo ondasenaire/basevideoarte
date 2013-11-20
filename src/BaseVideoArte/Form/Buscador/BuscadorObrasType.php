@@ -37,7 +37,7 @@ class BuscadorObrasType extends AbstractType {
 				'choices' => $this->opcionesPalabra,
 				'required'=> false,
 				'label'=> 'Palabra Clave: ',
-				'multiple' => true,
+				'multiple' => false,
 				'expanded' => false
 		));	
 		

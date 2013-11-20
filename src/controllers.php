@@ -30,8 +30,12 @@ $app->get('/persona/{persona}',    'BaseVideoArte\Controller\VideoArteController
 	
 	
 // OBRAS
-$app->get('/obras',    'BaseVideoArte\Controller\VideoArteController::listarObrasAction')->bind('obras');
-$app->get('/obras/{obra}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('obra');
+$app->get('/obras/{filtro}/{valor}', 'BaseVideoArte\Controller\VideoArteController::listarObrasAction')->bind('obras')
+	 ->value('filtro','abc')
+	 ->value('valor','a')
+	 ->assert('filtro','[a-z]+')
+	 ->assert('valor','[ñ Ñ a-z A-Z]+');
+$app->get('/obras/{obra}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('obra')->assert('obra','\d+');
 // EVENTOS
 $app->get('/eventos','BaseVideoArte\Controller\VideoArteController::listarEventosAction')->bind('eventos');
 $app->get('/eventos/{evento}','BaseVideoArte\Controller\VideoArteController::mostrarEventoAction')->bind('evento');

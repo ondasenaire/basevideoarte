@@ -16,7 +16,7 @@ class VideoArteController {
 
 		if ($filtro != null) {
 			if ($filtro == 'abc' && $valor != null) {
-				echo 'filtra por abecedario con la letra '.$valor;
+			//	echo 'filtra por abecedario con la letra '.$valor;
 				
 			
 					$q =$app['db.orm.em'] -> createQueryBuilder();
@@ -31,7 +31,7 @@ class VideoArteController {
 				
 			}
 			if ($filtro == 'pais' && $valor != null) {
-				echo 'filtra por pais';
+			//	echo 'filtra por pais';
 				$qb = $app['db.orm.em'] -> createQueryBuilder();
 				$qb->select('persona', 'pais')
 					->from('BaseVideoArte\Entidades\Persona', 'persona')
@@ -81,13 +81,32 @@ class VideoArteController {
 
 	//----------------------------------------------------------------
 	//OBRAS
-	public function listarObrasAction(Application $app) {
-		$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
-		$obras = $repositorioObras -> findAll();
-		return $app['twig'] -> render('/obras.html.twig', array('lista_obras' => $obras, 'pagina_actual'=>'obras'));
+	public function listarObrasAction(Application $app,$filtro,$valor) {
+			
+		if ($filtro != null) {
+			echo 'hay filtro';
+			if ($filtro == 'abc' && $valor != null) {
+				echo ' por abecedario';
+				$query = $app['db.orm.em']->createQuery("SELECT obra.titulo, obra.id, persona.id AS id_persona, persona.apellido, persona.nombre FROM
+												BaseVideoArte\Entidades\Obra obra LEFT JOIN obra.artistas persona WHERE SUBSTRING(obra.titulo, 1, 1) LIKE 'a%'");
+			$obras = $query->getResult();
+			}
+		}else{
+			echo 'no hay filtro';
+		
+		
+		}	
+		//	$obras = '';
+		//$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
+		//$obras = $repositorioObras -> findAll();
+		
+		
+		
+		
+		return $app['twig'] -> render('/obras.twig.html', array('lista_obras' => $obras, 'pagina_actual'=>'obras'));
 	}
 
-	public function mostrarObraAction(Application $app, $obra) {
+	public function mostrarObraAction(Application $app,$obra) {
 		$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
 		$obra = $repositorioObras -> findOneById($obra);
 		return $app['twig'] -> render('/obra.twig.html', array('obra' => $obra, 'pagina_actual'=>'obras'));

@@ -34,7 +34,7 @@ $app->get('/obras/{filtro}/{valor}', 'BaseVideoArte\Controller\VideoArteControll
 	 ->value('filtro','abc')
 	 ->value('valor','a')
 	 ->assert('filtro','[a-z]+')
-	 ->assert('valor','[ñ Ñ a-z A-Z]+');
+	 ->assert('valor','[\* ñ Ñ a-z A-Z]+');
 $app->get('/obras/{obra}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('obra')->assert('obra','\d+');
 // EVENTOS
 $app->get('/eventos','BaseVideoArte\Controller\VideoArteController::listarEventosAction')->bind('eventos');

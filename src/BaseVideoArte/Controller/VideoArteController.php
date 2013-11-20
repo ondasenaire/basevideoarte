@@ -86,7 +86,15 @@ class VideoArteController {
 		if ($filtro != null) {
 			echo 'hay filtro';
 			if ($filtro == 'abc' && $valor != null) {
-				echo ' por abecedario';
+					if( $valor == '*' ){
+						echo 'buscar aquellas obras que NO comienzan con letra';
+					}else{
+						echo 'buscar aquellas obras que SI comienzan con letra';
+					}	
+					
+				//echo ' por abecedario';
+				
+				
 				$query = $app['db.orm.em']->createQuery("SELECT obra.titulo, obra.id, persona.id AS id_persona, persona.apellido, persona.nombre FROM
 												BaseVideoArte\Entidades\Obra obra LEFT JOIN obra.artistas persona WHERE SUBSTRING(obra.titulo, 1, 1) LIKE 'a%'");
 			$obras = $query->getResult();

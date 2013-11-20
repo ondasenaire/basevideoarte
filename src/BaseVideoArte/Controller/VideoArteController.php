@@ -43,8 +43,6 @@ class VideoArteController {
 				$consulta = $qb -> getQuery();
 				$resultado = $consulta -> getResult();
 				
-				
-				
 			}
 
 		}else{
@@ -84,20 +82,26 @@ class VideoArteController {
 	public function listarObrasAction(Application $app,$filtro,$valor) {
 			
 		if ($filtro != null) {
-			echo 'hay filtro';
+			//echo 'hay filtro';
 			if ($filtro == 'abc' && $valor != null) {
 					if( $valor == '*' ){
-						echo 'buscar aquellas obras que NO comienzan con letra';
+						$abc = "'A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'";
+						$query = $app['db.orm.em']->createQuery("SELECT obra.titulo, obra.id, persona.id AS id_persona, persona.apellido, persona.nombre FROM
+												BaseVideoArte\Entidades\Obra obra LEFT JOIN obra.artistas persona WHERE SUBSTRING(obra.titulo, 1, 1) NOT IN ($abc)");
+						$obras = $query->getResult();
+						
+				//		echo 'buscar aquellas obras que NO comienzan con letra';
 					}else{
-						echo 'buscar aquellas obras que SI comienzan con letra';
+					//	echo 'buscar aquellas obras que SI comienzan con letra';
+						$query = $app['db.orm.em']->createQuery("SELECT obra.titulo, obra.id, persona.id AS id_persona, persona.apellido, persona.nombre FROM
+												BaseVideoArte\Entidades\Obra obra LEFT JOIN obra.artistas persona WHERE SUBSTRING(obra.titulo, 1, 1) LIKE '$valor%'");
+						$obras = $query->getResult();
 					}	
 					
 				//echo ' por abecedario';
 				
 				
-				$query = $app['db.orm.em']->createQuery("SELECT obra.titulo, obra.id, persona.id AS id_persona, persona.apellido, persona.nombre FROM
-												BaseVideoArte\Entidades\Obra obra LEFT JOIN obra.artistas persona WHERE SUBSTRING(obra.titulo, 1, 1) LIKE 'a%'");
-			$obras = $query->getResult();
+				
 			}
 		}else{
 			echo 'no hay filtro';

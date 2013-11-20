@@ -131,6 +131,30 @@ class Obra {
 		$f = $this->getMediosByTipo('ppal');
   		return end($f) ;
   	}
+	
+	
+	 /**
+     * Get duracion
+     *
+	  * modificada
+	  * 
+     * @return string 
+     */
+    public function getDuracion($formato = null)
+    {
+		//$dur = str_replace("h", " horas ", $this->duracion).str_replace("m", " minutos ", $this->duracion).str_replace("s", " segundos ", $this->duracion);
+		$dur = $this->duracion;
+		$d = array("h","m","s");
+		$a = array('h'=>' horas ','m'=>' minutos ','s'=>' segundos ');
+	//	$trans = array("h" => "-", "hello" => "hi", "hi" => "hello");
+		$dur = strtr($dur, $a);
+	
+	//		$dur = str_replace($d, $a, $dur);
+		// $dur = str_replace("m", " minutos ", $dur);
+		// $dur = str_replace("s", " segundos ", $dur);	
+        return $dur;
+    }
+	
   
 //------GET SET--------------
     /**
@@ -250,15 +274,7 @@ class Obra {
         return $this;
     }
 
-    /**
-     * Get duracion
-     *
-     * @return string 
-     */
-    public function getDuracion()
-    {
-        return $this->duracion;
-    }
+   
 
     /**
      * Add generos

@@ -55,6 +55,7 @@ $app->match('/admin/nueva_persona', 'BaseVideoArte\Controller\AdminController::n
 // })
 // ->bind('busqueda')
 $app->match('/busqueda', 'BaseVideoArte\Controller\BuscadorController::BuscadoresAction')->bind('busqueda');
+$app->post('/buscar', 'BaseVideoArte\Controller\BuscadorController::buscarAction')->bind('buscar');
 //--------------MANTENIMIENTO-----------------------------------------------------
 
 $app->get('/admin/cargar', 'BaseVideoArte\Controller\CargaDatosController::cargarDatosAction')->bind('cargar_datos');

@@ -6,6 +6,7 @@ use BaseVideoArte\Util\Opciones\OpcionesForm;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
 
 //formularios
 use BaseVideoArte\Form\Buscador\BuscadorGeneralType;
@@ -16,7 +17,7 @@ use BaseVideoArte\Form\Buscador\BuscadorObrasType;
 
 class BuscadorController {
 
-	public function buscadoresAction(Application $app, Request $request) {
+	public function buscadoresAction(Application $app, Request $request ) {
 		// facilitador de opciones	
 		$opciones = new OpcionesForm();
 		
@@ -49,19 +50,23 @@ class BuscadorController {
 
 		// FORM EVENTOS
 
-		//---------------
-
-		$mensaje = '';
-		$respuesta = array('mensaje'=>' ', 'resultado' => array());
+		// //---------------
+		
+			 $mensaje = '';
+			 $respuesta = array('mensaje'=>'', 'resultado' => array());	
+		
+		
+		
 		if ($request -> isMethod('POST')) {
-
+			//echo 'HOLA';
 			if ($request -> request -> has('buscador_general')) {
 				//echo 'buscador general';
 				$form_general->bind($request);
 				if ($form_general->isValid() ){
 					$consulta = $form_general->getData();
 					$respuesta = $this -> busquedaGeneral($app, $consulta['consulta']);
-					 
+					$form_general = $app["form.factory"] -> create($buscadorGeneral,$receptor_general);
+				
 				}		
 				
 			}
@@ -99,6 +104,20 @@ class BuscadorController {
 																	'respuesta' => $respuesta) );
 
 	}
+
+//------BUSCAR ACTION-----
+
+public function buscarAction($respuesta){
+	echo 'hola';
+	$respuesta = 'eh gato';
+	return $app->redirect($app['url_generator']->generate('busqueda'));
+	
+}
+
+
+//-----------
+
+
 	/**
  	* 
  	*/

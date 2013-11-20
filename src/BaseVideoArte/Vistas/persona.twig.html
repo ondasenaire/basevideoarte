@@ -44,12 +44,13 @@
 			<div id="containerobras">
 				
 				<h5>Obras Realizadas</h5>
-				{% for obra in persona.obras %}
-				<ul class="unstyled">
-				<li class="cadaobra"><a href="{{path('obra',{obra: obra.id}) }}" class="ObrasLinks">{{obra.titulo}}</a><small class="anioObraEvento">({{obra.anho}})</small></li>
 				
-				</ul>
+				<ul class="unstyled">
+					{% for obra in persona.obras %}
+				<li class="cadaobra"><a href="{{path('obra',{obra: obra.id}) }}" class="ObrasLinks">{{obra.titulo}}</a><small class="anioObraEvento">({{obra.anho}})</small></li>
 				{% endfor %}
+				</ul>
+				
 			</div>
 		<div id="separador"> </div>
 		<div id="separador"> </div>

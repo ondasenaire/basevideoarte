@@ -45,9 +45,14 @@
 	</div>
 </div>
 
-<div id="resultado_busqueda">
+
+<div id="containerObrasEventos">
+		<div id="containerobras">
+	<div id="resultado_busqueda">
 	{{respuesta.mensaje}}
 	{%set titulo = ''%}
+	
+	<ul class="unstyled">
 	{%for resultado in respuesta.resultado%}
 		{% if titulo != resultado.entidad%}
 			{% set titulo = resultado.entidad%}
@@ -56,16 +61,17 @@
 		
 		
 		{%if resultado.entidad == 'obras' %}
-			<a href="{{path('obra',{obra: resultado.link}) }}"><h3>{{resultado.encabezado}}</h3></a>
+		<li class="cadaobra">	<a class="ObrasLinks" href="{{path('obra',{obra: resultado.link}) }}"><h3>{{resultado.encabezado}}</h3></a></li>
 		{%endif %}
 		
 		{%if resultado.entidad == 'personas' %}
-			<a href="{{ path('persona',{persona: resultado.link}) }}"><h3>{{resultado.encabezado}}</h3></a>
+			<li class="cadaobra"><a class="ObrasLinks" href="{{ path('persona',{persona: resultado.link}) }}"><h3>{{resultado.encabezado}}</h3></a></li>
 		{%endif %}
 		
 		
 	{%endfor%}
-	
+	</ul>
+	</div>
+	</div>
 </div>
-
 {% endblock %}

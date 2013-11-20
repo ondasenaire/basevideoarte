@@ -21,40 +21,47 @@
 		<div id="header_artista">
 		  {{ persona.apellido }}, {{ persona.nombre }}
 		</div>
-		<div id="separador">
-		</div>
+		<div id="separador"> </div>
 		<div id="container_foto">
 			<div id="foto"><img src="http://basevideoarte.com.ar/wp-content/uploads/2013/04/carolina-saquel-150x150.jpg" alt="{%if persona.getFoto != null %}{{persona.getFoto().descripcion}}{%endif%}" />
 			
 			</div>
 			<div id="datosfoto">
 				<p><strong>País: </strong><a href="{{ path('personas',{filtro: 'pais', valor : persona.pais.pais }) }}"> {{persona.pais.pais}} </a></p>
-				<p><strong>Inicio Actividad: </strong>{{persona.inicio}}</p>
+				
 			</div>
 		</div>
 		<div id="descripcion">
 		{{persona.data}}
+		</div>
 		<div id="txts">
 		<p><strong>Sitio web: </strong>{%for web in persona.getMediosByTipo('web')%}<a href="{{web.archivo}}" target="_blank"> {{web.archivo}} </a>{%endfor%}</p>
 		</div>
-		<div id="separador"></div>
-		<div id="separador"></div>
-		<div id="obras">
-			{% for obra in persona.obras %}
-			<div id="obra">
-				<p><strong>{{obra.titulo}}</strong></p>
-				<div id="fotoobra">
-					<a href="{{path('obra',{obra: obra.id}) }}"><img src="http://basevideoarte.com.ar/wp-content/uploads/2013/04/carolina-saquel-150x150.jpg" height="200" width="200" /></a>
-				</div>
-				<p>{{obra.anho}}</p><p> {%for formato in obra.formatos%} {{formato.formato}}{%endfor%} </p>
+		<div id="separador"> </div>
+		<div id="separador"> </div>
+		
+		<div id="containerObrasEventos">
+			<div id="containerobras">
+				
+				<h5>Obras Realizadas</h5>
+				{% for obra in persona.obras %}
+				<ul class="unstyled">
+				<li class="cadaobra"><a href="{{path('obra',{obra: obra.id}) }}" class="ObrasLinks">{{obra.titulo}}</a><small class="anioObraEvento">({{obra.anho}})</small></li>
+				
+				</ul>
+				{% endfor %}
 			</div>
-			{% endfor %}
-			
+		<div id="separador"> </div>
+		<div id="separador"> </div>
+		
 		</div>
+		
+		
+		
 	</div>
    
    
-   </div>
+
  
 
 {% endblock %}

@@ -1,21 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 {% set pagina_actual = pagina_actual|default('inicio') %}
-
-
+{% set path = app.request.basepath %}
+{% set uri = app.request.uri %}
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
+		<base href="basevideoarte.com.ar/web/" />
 		<title>{% block title %}{% endblock %} | Base Video Arte</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" href="{{app.request.basepath}}/css/style.css" />
+		<link rel="stylesheet" href="{{ esServer(path,uri) }}/css/style.css" />
 		{% block css %}{% endblock %}
 		{% block js %}{% endblock %}
 	</head>
 
 	<body>
+		<p>base: {{app.request.basepath}}</p>
+		<p>base url: {{app.request.baseurl}}</p>
+		<p>base uri: {{app.request.requesturi}}</p>
+		<p>base info: {{app.request.pathinfo}}</p>
+		<p>base info: {{app.request.uri}}</p>
+		<p>{{ esServer(app.request.basepath,app.request.uri) }}</p>
 		<div id="wrap" align="center">
 
-			<div id="portadainicio"><img src="{{app.request.basepath}}/medios/iconos/portadainicio.jpg" width="975">
+			<div id="portadainicio"><img src="{{ esServer(path,uri) }}/medios/iconos/portadainicio.jpg" width="975">
 			</div>
 			<div id="sep_try" style="margin-left: 22px !important;">
 			</div>

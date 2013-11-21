@@ -62,4 +62,19 @@ $app['twig'] = $app -> share($app -> extend('twig', function($twig, $app) {
 
 
 
+$app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
+
+	$twig->addFunction(  new \Twig_SimpleFunction("esServer", function ($path,$uri) {
+  
+     $y = $path;
+     if(strpos($uri,'http://basevideoarte.com.ar/') !== false){
+     	$y = '/web';
+     }
+    echo  $y;
+})
+
+ );
+    return $twig;
+}));
+
 return $app;

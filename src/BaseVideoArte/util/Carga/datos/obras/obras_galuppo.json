@@ -1,0 +1,446 @@
+{
+
+	
+	"El Diablo vino a Túcson ":
+	{
+	"titulo":"El Diablo vino a Túcson ",
+	"sinopsis":"Relato de la atracción sexual entre un hombre y una muñeca.",
+	"anho":"1998", 
+	"duracion":"20m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["VHS"],
+	"genero": ["Ficcion"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Teoría de los líquidos":
+	{
+	"titulo":"Teoría de los líquidos",
+	"sinopsis":"Video inspirado en fragmentos de “Los ojos azules pelo negro” de Marguerite Duras, utilizando como punto de partida el afiche de la película “Garage Olimpo”, de Marco Becchis.",
+	"anho":"1999", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["VHS"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Mala Noche":
+	{
+	"titulo":"Mala Noche",
+	"sinopsis":"Diario personal errático sobre un período de malas noches.",
+	"anho":"1999", 
+	"duracion":"40m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["VHS"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+		
+	"Teoría de la deriva":
+	{
+	"titulo":"Teoría de la deriva",
+	"sinopsis":"Figuras y paisajes al borde de la disolución, una despedida improbable, un trayecto marítimo destinado al naufragio, y una historia apenas esbozada en la asociación de imágenes ajenas manipuladas.",
+	"anho":"2000", 
+	"duracion":"8m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["VHS"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"La persistencia de la oscuridad (teoría de los elementos ígneos)":
+	{
+	"titulo":"La persistencia de la oscuridad (teoría de los elementos ígneos)",
+	"sinopsis":"Una historia de amor poco probable entre incendios y desapariciones.",
+	"anho":"2000", 
+	"duracion":"18m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Ficcion"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"La disección de una mujer ahogada":
+	{
+	"titulo":"La disección de una mujer ahogada",
+	"sinopsis":"Registros familiares ajenos apropiados, fragmentos de películas mudas, material televisivo reciclado; fuentes y soportes disímiles se integran para dar forma a un relato variable, nunca definitivo. Un trayecto narrado desde las impresiones internas de una mujer que lo ha perdido todo.",
+	"anho":"2002", 
+	"duracion":"60m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Ficcion"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"El ticket que explotó":
+	{
+	"titulo":"El ticket que explotó",
+	"sinopsis":"Material televisivo manipulado y fragmentos de viejos westerns se ponen en relación con textos inspirados en el libro de W. Burroughs “El ticket que explotó”. La violenta represión del 19 y 20 de diciembre de 2001 perpetrada por la policía argentina, sirve como punto de partida para establecer una mirada personal sobre las formas que adopta el totalitarismo.",
+	"anho":"2002", 
+	"duracion":"5m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"La progresión de las catástrofes":
+	{
+	"titulo":"La progresión de las catástrofes",
+	"sinopsis":"A partir de imágenes apropiadas del cine (\"El hombre quieto\", de John Ford) y de registros familiares ajenos, se esbozan conjeturas acerca de la imposibilidad de representar el amor en las películas. Inspirado en textos de J-L Godard y Margueirte Duras.",
+	"anho":"2004", 
+	"duracion":"8m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Días enteros bajo las piedras":
+	{
+	"titulo":"Días enteros bajo las piedras",
+	"sinopsis":"Timoka, un lugar indeterminado regido por una estricta estructura carcelaria. Clara Vogler y Nataniel conviven en una espera que no es otra cosa más que la postergación de una muerte inevitable.Relato fragmentado hecho de retazos propios y ajenos, de manipulaciones e interferencias, de citas oblicuas o evidentes. Una historia acerca del amor, la muerte, la incomunicación, la opresión, la ceguera, la necesidad, el encierro, y la remota posibilidad de cambiarlo todo.",
+	"anho":"2004", 
+	"duracion":"65m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Ficcion"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"La propagación de la desdicha":
+	{
+	"titulo":"La propagación de la desdicha",
+	"sinopsis":"La madre y el hijo. El miedo a la pérdida de lo amado. Del hijo. Muerte o emancipación. El horror ante la pérdida de los lazos afectivos. Y la duda del hijo, entre la necesidad desesperada de protección y la búsqueda de la libertad.",
+	"anho":"2005", 
+	"duracion":"18m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"La persecución del viento":
+	{
+	"titulo":"La persecución del viento",
+	"sinopsis":"Asociación poética de imágenes ajenas y textos para esbozar ideas en torno al sentido de la ‘búsqueda’.",
+	"anho":"2005", 
+	"duracion":"6m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"El otro lado de la hoguera":
+	{
+	"titulo":"El otro lado de la hoguera",
+	"sinopsis":"Partiendo del mito cinematográfico, en este caso Rennee Falconetti, muerta en Bs. As. en 1946, pasando por el registro familiar en súper 8 en relación a mi abuelo paterno muerto en 1980, y culminando con videos recientes de mi hija, que en 2006 cumplirá 2 años; el video se estructura a modo de breve epistolario construyendo sobre la marcha y haciendo surgir un intento de actualización de la barbarie.",
+	"anho":"2006", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"La curvatura de la tierra":
+	{
+	"titulo":"La curvatura de la tierra",
+	"sinopsis":"Una mujer observa el mar, tres personas despiertan; dos acontecimientos intrascendentes marcados por la incapacidad humana de ver la curvatura de la tierra en el horizonte.",
+	"anho":"2006", 
+	"duracion":"5m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Sweetheart – storie(s) about accidents of love":
+	{
+	"titulo":"Sweetheart – storie(s) about accidents of love",
+	"sinopsis":"“Sweetheart” pone en escena un entramado de materiales diversos, visuales y sonoros, apropiándose de archivos ajenos y utilizando registro propio elaborado con distintas fuentes: video digital, VHS, cámara web, súper 8. Disímiles líneas de textos se entrecruzan en un modelo de composición fragmentario, donde las pequeñas historias de lo cotidiano se contraponen a las ‘grandes’ historias de la representación cinematográfica y de los personajes públicos. Así, lo en apariencia intrascendente tomado por una cámara ‘vigilante’ que rinde cuentas de la vida cotidiana de una pareja, se deja invadir por formas y textos que conforman un comentario múltiple acerca de la representación misma.",
+	"anho":"2006", 
+	"duracion":"60m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Sorry":
+	{
+	"titulo":"Sorry",
+	"sinopsis":"Cuatro elementos (no tan) ‘ajenos’ reutilizados de base: una imagen de la película “Semen”, de Ernesto Baca, el tema “Sorry”, compuesto por Vera Baxter para dicha película, planos utilizados en el largo experimental “Star”, del mismo Gustavo Galuppo, y archivos de las pruebas atómicas en Bikini Atol.",
+	"anho":"2007", 
+	"duracion":"5m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Fedra o la desesperación":
+	{
+	"titulo":"Fedra o la desesperación",
+	"sinopsis":"Algunos ecos de la obra de Racine, otros de la reescritura de Marguerite Yourcenar. Sin embargo aquí, Fedra ya no es tal. Es en cambio una configuración anómala construida en base a retazos de voces de otras mujeres, de espacios geográficos que difícilmente le pertenezcan, y de tiempos indescifrables. Fedra no es ya aquella mujer del mito, no es en realidad ninguna otra identificable, es todas las mujeres y ninguna, es la encarnación de la desesperación por un amor no correspondido.",
+	"anho":"2008", 
+	"duracion":"15m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Star(s)":
+	{
+	"titulo":"Star(s)",
+	"sinopsis":"Star(s) es el intento de construir una imagen posible del otro y de uno mismo, de lo cercano y de lo propio. El intento urgente de reconocerse en un sitio, como parte de algo que lo integra y lo excluye a la vez; la familia. Pero aquí todo es visto y buscado a través de una memoria enraizada en las imágenes del mito cinematográfico. Así, todo se confunde y se diluye, en un laberinto de imágenes ordinarias y extraordinarias que se diferencian y se indiferencian estableciendo una distancia con el entorno real. Star es, a fin de cuentas, el proceso de construcción de un video destinado al fracaso.",
+	"anho":"2008", 
+	"duracion":"69m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Sunlight":
+	{
+	"titulo":"Sunlight",
+	"sinopsis":"\"Sunlight\" es un trabajo en proceso, pero un proceso que, cabe aclarar, quedará inconcluso. La idea de un pre-cine, un cine científico desarrollado por pioneros mucho antes que la institucionazación del cine-espectáculo de los hermanos Lumiere, se pone de manifiesto mediante la exposición biográfica de uno de sus supuestos precursores, Jacques Steiner. A partir de esa línea, y creando conexiones con un presente videográfico cercano al autorretrato, \"Sunlight\" se propone la tarea absurda de buscar una utilidad para las imágenes. \"Sunlight\" es, entonces, un falso work in progress, un falso documental, una obra fallida, un video sobre el fracaso y sobre la determinación obstinada de seguir intentando.",
+	"anho":"2008", 
+	"duracion":"36m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	
+	"María o el fracaso":
+	{
+	"titulo":"María o el fracaso",
+	"sinopsis":"Imágenes y sonidos apropiados de films políticos de J-L Godard y Guy Debord para construir una nueva versión improbable de la inmaculada concepción de María. Dos mujeres, dos momentos históricos, y dos estadios de la imagen.",
+	"anho":"2009", 
+	"duracion":"22m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Yo, Duras":
+	{
+	"titulo":"Yo, Duras",
+	"sinopsis":"Marguerite Duras, tal vez en el último día de su vida, encerrada en su casa de Paris. Un punto de partida incierto para construir una ficción mutante, o un autorretrato disfrazado de otra cosa. Los pasados posibles, aunque poco probables. Un presente inmovilizado como rastro de la ausencia y de la soledad. El cine y los libros. Un gesto algo imprudente que teje nexos entre lo irreconciliable.",
+	"anho":"2010", 
+	"duracion":"65m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["DV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Los reflejos frágiles":
+	{
+	"titulo":"Los reflejos frágiles",
+	"sinopsis":"Rastros frágiles de una memoria construida desde las imágenes. Todo se destruye, se descarta, se pierde. Un gesto vano, un juego infantil obstinado en borrar huellas falsas, representaciones inútiles. Y la propia imagen también cayendo, resquebrajándose, quemándose, desapareciendo. “Los reflejos frágiles” propone una mirada poética sobre la memoria y sus huellas en las imágenes técnicas.",
+	"anho":"2010", 
+	"duracion":"5m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["Video Digital"],
+	"genero": ["Experimental"],
+	"metadatos":[{"metadato":"video digital definición estándard", "tipo":"formato"}],
+	"palabras": [],
+	"medios": []
+	}
+	,
+	
+	"La remota posibilidad del amor":
+	{
+	"titulo":"La remota posibilidad del amor",
+	"sinopsis":"Un retrato y un autorretrato imposibles. Dos movimientos en mismo gesto difuso. Imágenes algo ingenuas tomadas por una niña y textos/sonidos que las traicionan y las resignifican. El espacio de una casa en relación a uno mismo (y al otro). El video y el cine. El hartazgo y la necesidad de cambiar el rumbo.",
+	"anho":"2011", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["Video Digital"],
+	"genero": ["Experimental"],
+	"metadatos":[{"metadato":"video digital definición estándard", "tipo":"formato"}],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Besos y hasta siempre (Epílogo para una antología del fracaso)":
+	{
+	"titulo":"Besos y hasta siempre (Epílogo para una antología del fracaso)",
+	"sinopsis":"Tres comunicaciones infructuosas. El mar como espacio del desencuentro amoroso. Lo que no se entiende, lo ininteligible en las imágenes y en las palabras. Y en el cine los monstruos marinos, los acorazados, los náufragos, los piratas, y Antoine Doinel solo frente al mar, mirando a cámara para cerrar un derrotero que ya no es el suyo, sino el de las imágenes y el de los fracasos amorosos. Y al final, un gesto vano y algo violento, destruirlo todo para empezar de nuevo.",
+	"anho":"2011", 
+	"duracion":"42m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["Video Digital"],
+	"genero": ["Experimental"],
+	"metadatos":[{"metadato":"video digital definición estándard", "tipo":"formato"}],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"¿Qué sois ahora?":
+	{
+	"titulo":"¿Qué sois ahora?",
+	"sinopsis":"Documental sobre la banda porteña Pequeña Orquesta Reincidentes.",
+	"anho":"2011", 
+	"duracion":"60m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[{"metadato":"video digital definición estándard", "tipo":"formato"}],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Cinco putas en febrero":
+	{
+	"titulo":"Cinco putas en febrero",
+	"sinopsis":"El cine, las canciones populares y la TV como marco para una fuga anunciada hacia la violencia. Y en el centro, el grito persistente de una prostituta como único signo de entereza y resistencia en medio de la barbarie.",
+	"anho":"2012", 
+	"duracion":"18m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["gustavo_galuppo"],
+	"formato":["Video Digital"],
+	"genero": ["Experimental"],
+	"metadatos":[{"metadato":"video digital definición estándard", "tipo":"formato"}],
+	"palabras": [],
+	"medios": []
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

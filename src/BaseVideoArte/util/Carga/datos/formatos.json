@@ -5,6 +5,7 @@
 	"Video Digital":{"formato":"Video Digital"},
 	"MiniDV":{"formato":"MiniDV"},
 	"DV":{"formato":"DV"},
+	"HDV":{"formato":"HDV"},
 	"16mm":{"formato":"16mm"},
 	"Super8":{"formato":"Super8"},
 	"Hi-8":{"formato":"Hi-8"},

@@ -1,0 +1,125 @@
+{
+	"Olhos opacos":
+	{
+	"titulo":"Olhos opacos",
+	"sinopsis":" ",
+	"anho":"1999", 
+	"duracion":"20m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["morales_wagner"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Não há ninguém aqui #1":
+	{
+	"titulo":"Não há ninguém aqui #1",
+	"sinopsis":" ",
+	"anho":"2000", 
+	"duracion":"4m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["morales_wagner"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Na lona":
+	{
+	"titulo":"Na lona",
+	"sinopsis":" ",
+	"anho":"2002", 
+	"duracion":"25m40s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["morales_wagner"],
+	"formato":[],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Cassino, Filme de Estrada":
+	{
+	"titulo":"Cassino, Filme de Estrada",
+	"sinopsis":" ",
+	"anho":"2003", 
+	"duracion":"14m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["morales_wagner"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Ficção Científica":
+	{
+	"titulo":"Ficção Científica",
+	"sinopsis":" ",
+	"anho":"2003", 
+	"duracion":"6m25s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["morales_wagner"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Filme de Horror":
+	{
+	"titulo":"Filme de Horror",
+	"sinopsis":" ",
+	"anho":"2003", 
+	"duracion":"5m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["morales_wagner"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Filme de Foda":
+	{
+	"titulo":"Filme de Foda",
+	"sinopsis":" ",
+	"anho":"2006", 
+	"duracion":"9m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["morales_wagner"],
+	"formato":["Video Digital"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	}
+	
+	
+}

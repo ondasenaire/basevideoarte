@@ -1,0 +1,126 @@
+{
+	"Areas":
+	{
+	"titulo":"Areas",
+	"sinopsis":" ",
+	"anho":"2000", 
+	"duracion":"89m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["hernan_khourian"],
+	"formato":[],
+	"genero": ["Experimental","Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Las Sábanas de Norberto":
+	{
+	"titulo":"Las Sábanas de Norberto",
+	"sinopsis":" ",
+	"anho":"2003", 
+	"duracion":"46m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["hernan_khourian"],
+	"formato":[],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+		
+	"Puna":
+	{
+	"titulo":"Puna",
+	"sinopsis":" ",
+	"anho":"2006", 
+	"duracion":"43m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["hernan_khourian"],
+	"formato":[],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+		
+	"Esplín o errar o sin embargo":
+	{
+	"titulo":"Esplín o errar o sin embargo",
+	"sinopsis":" ",
+	"anho":"2007", 
+	"duracion":"19m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["hernan_khourian"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Pernoctantes":
+	{
+	"titulo":"Pernoctantes",
+	"sinopsis":" ",
+	"anho":"2008", 
+	"duracion":"61m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["hernan_khourian"],
+	"formato":[],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Huellas de un Siglo en el Bicentenario (4 capitulos)":
+	{
+	"titulo":"Huellas de un Siglo en el Bicentenario (4 capitulos)",
+	"sinopsis":" ",
+	"anho":"2010", 
+	"duracion":"26m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["hernan_khourian"],
+	"formato":["TV"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Memoria k":
+	{
+	"titulo":"Memoria",
+	"sinopsis":" ",
+	"anho":"2010", 
+	"duracion":"14m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["hernan_khourian"],
+	"formato":[],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	}
+	
+}

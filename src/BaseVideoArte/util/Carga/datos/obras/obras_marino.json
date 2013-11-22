@@ -1,0 +1,142 @@
+{
+"Ir a":
+	{
+	"titulo":"Ir a",
+	"sinopsis":" ",
+	"anho":"1995", 
+	"duracion":"8m33s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["ivan_marino"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+"En el reino del sueño de la muerte":
+	{
+	"titulo":"En el reino del sueño de la muerte",
+	"sinopsis":"Iván Marino presenta una serie de instantes, una suerte de poemas visuales que se suceden frente al espectador. Emociones, miradas, cuerpos y detalles llenan la pantalla para llevarnos hacia el subconsciente sin perder de vista lo físico de nuestras realidades.",
+	"anho":"1997", 
+	"duracion":"17m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["ivan_marino"],
+	"formato":["DVD", "Betacam"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+"Sobre la colonia":
+	{
+	"titulo":"Sobre la colonia",
+	"sinopsis":"Iván Marino realiza un interesante ejercicio sobre el documental. En 1994 le encargan un documental sobre un reformatorio de menores que cumplía 60 años. Durante el proceso de investigación, el artista encontrará material fílmico realizado en el mismo sitio en 1920. El vídeo resultante de Iván Marino ofrece una combinación dual de la visión de 1920 y la mirada actual del artista.",
+	"anho":"1997", 
+	"duracion":"18m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["ivan_marino"],
+	"formato":["DVD", "Betacam"],
+	"genero": ["Experimental", "Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+"Siesta":
+	{
+	"titulo":"Siesta",
+	"sinopsis":" ",
+	"anho":"1997", 
+	"duracion":"10m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["ivan_marino"],
+	"formato":[],
+	"genero": ["Experimental", "Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+"Letanías":
+	{
+	"titulo":"Letanías",
+	"sinopsis":"El cuerpo de la mujer ha sido una constante en la historia del arte. Iván Marino se aproxima a lo físico del cuerpo, buscando cada detalle desde la cámara, recorriendo un cuerpo que se ofrece desnudo al espectador.",
+	"anho":"2000", 
+	"duracion":"8m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["ivan_marino"],
+	"formato":["DVD", "Betacam"],
+	"genero": ["Experimental", "Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+			
+"Cinco Retratos de una Mujer Sentada":
+	{
+	"titulo":"Cinco Retratos de una Mujer Sentada",
+	"sinopsis":"Como ya hiciera en el trabajo Un Día Bravo, el realizador Iván Marino, vuelve a elaborar un ensayo visual centrando su mirada en torno a su tía Rosita Bravo, una mujer de avanzada edad que presenta síntomas de padecer algún tipo de demencia senil. En este caso Marino busca 5 localizaciones o situaciones diferentes en los que el sujeto en cuestión se presenta realizando una serie de actividades tales como comer, pasear o acariciar las cuentas de su rosario. En estas actividades presuntamente banales el autor logra encontrar y hacernos reflexionar sobre la locura, la precariedad física y los límites de la vida.",
+	"anho":"2005", 
+	"duracion":"13m50s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["ivan_marino"],
+	"formato":["DVD", "Betacam"],
+	"genero": ["Experimental", "Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+"Pn=!":
+	{
+	"titulo":"Pn=!",
+	"sinopsis":" ",
+	"anho":"2006", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["ivan_marino"],
+	"formato":[ "Video Instalacion"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+"Un Día Bravo":
+	{
+	"titulo":"Un Día Bravo",
+	"sinopsis":"Rosita Bravo, la tia de Iván Marino, es una mujer mayor en un estado físico (y seguramente mental) problemático. El artista presenta un retrato de la mujer, mostrando su intimidad y realizando actos cotidianos. La mujer no habla en todo el vídeo, pero consiente la presencia de la cámara sin perjuicios.",
+	"anho":"1987-2005", 
+	"duracion":"23m25s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["ivan_marino"],
+	"formato":[ "DVD", "Betacam"],
+	"genero": ["Experimental", "Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	}								
+
+}

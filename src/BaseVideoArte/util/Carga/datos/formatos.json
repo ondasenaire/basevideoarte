@@ -11,6 +11,7 @@
 	"Hi-8":{"formato":"Hi-8"},
 	"VHS":{"formato":"VHS"},
 	"35mm":{"formato":"35mm"},
+	"Betacam":{"formato":"Betacam"},
 	"Betacam SP":{"formato":"Betacam SP"},
 	"DVD":{"formato":"DVD"},
 	"DVCAM":{"formato":"DVCAM"},

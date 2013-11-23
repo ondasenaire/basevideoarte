@@ -1,19 +1,13 @@
 {% extends 'layout.twig.html' %}
 
 {% block title %}Buscador{% endblock %}
-{% block js%}<!-- <script type="text/javascript" src="{{ esServer(path,uri) }}/js/libs/jquery-1.5.2.min.js"></script>
-<script type="text/javascript" src="{{ esServer(path,uri) }}/js/buscador.js"></script> -->
+{% block js%}{%endblock%}
 {%block css%}<link rel="stylesheet" href="{{ esServer(path,uri) }}/css/form.css" />{%endblock%}
 
-{%endblock%}
+
 
 {% block contenido %}
-<div class="tab">
-	<a href="#form_general">General</a>
-	<a href="#form_personas">Personas</a>
-	<a href="#form_obras">Obras</a>
-	<div class="clear"> </div>
-</div>
+
 
 <div class="tab_form">
 	<div id="form_general">

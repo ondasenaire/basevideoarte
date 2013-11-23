@@ -14,12 +14,7 @@
 	</head>
 
 	<body>
-		<p>base: {{app.request.basepath}}</p>
-		<p>base url: {{app.request.baseurl}}</p>
-		<p>base uri: {{app.request.requesturi}}</p>
-		<p>base info: {{app.request.pathinfo}}</p>
-		<p>base info: {{app.request.uri}}</p>
-		<p>{{ esServer(app.request.basepath,app.request.uri) }}</p>
+		
 		<div id="wrap" align="center">
 
 			<div id="portadainicio"><img src="{{ esServer(path,uri) }}/medios/iconos/portadainicio.jpg" width="975">

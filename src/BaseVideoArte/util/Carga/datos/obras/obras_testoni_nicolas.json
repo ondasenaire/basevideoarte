@@ -1,0 +1,56 @@
+{
+
+
+	"Rodolfo René Boiardini carga un bidón con agua":
+	{
+	"titulo":"Rodolfo René Boiardini carga un bidón con agua",
+	"sinopsis":"“Rodolfo René Boiardini cuenta sobre un cataclismo mundial y en su relato el cataclismo está presente en los feroces desplazamientos de espacio (desde el sideral –’un cometa que atravesaba todo el cielo’– al barrial –’se veía como ese galpón de grande más o menos’–), de tiempo (1945 deviene inmediatamente mito bíblico, luego 1976) y de los mismos sentidos del relato, ya en cuanto a lo que se entiende por catástrofe (de las plagas de Egipto a la enumeración de epidemias -viruela, escarlatina, sarampión– a los asesinados por la última dictadura militar), ya en las causas mismas de esas muertes, en principio cósmicas (el cometa), luego divinas (la plaga langosta), luego ‘naturales’ (las epidemias), luego ideológicas (la dictadura). Pero esos desplazamientos no están marcados como tales, no hay explicitación ninguna sobre los pasajes, y el recorrido se muestra desde una continuidad para dejar bien en claro que la lógica –si se pudiera hablar en términos de lógica– es otra: como si la verdad de la dictadura militar sólo fuera pasible de ser narrada desde aquello que estaría marcado en términos de delirio. Y como si fuera el delirio el criterio de razón, ya que Cometa, Dios, Peste o Dictadura Militar se podrían plantear como términos intercambiables para mostrar que las causas, por sobre los matices, son todas políticas y que por tanto los desplazamientos no son tales: ¿cuál sería la distancia tan grande que va del cometa sideral al enorme galpón de enfrente? Enorme galpón que perteneciera a la compañía exportadora Bunge y Born, a metros del ‘rancho’ del propio Boiardini. Astronomía y economía: tan lejos el cometa como el capital, tan poderosos el cometa y el capital en su proximidad, tan poderosa la necesidad de reacondicionar los términos del relato. Ningún delirio en el delirio.” Sergio Raimondi, “Tallarines, cometas y clavos“.",
+	"anho":"1998", 
+	"duracion":"4m20s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["testoni_nicolas"],
+	"formato":["VHS"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+		"Buque tanque pasa cargando 50.000 toneladas de combustible":
+	{
+	"titulo":"Buque tanque pasa cargando 50.000 toneladas de combustible",
+	"sinopsis":" ",
+	"anho":"2003", 
+	"duracion":"1m23s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["testoni_nicolas","delgado_christian"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"El Puerto":
+	{
+	"titulo":"El Puerto",
+	"sinopsis":"“El Puerto” es una serie de videos breves producidos para las salas de Ferrowhite, museo taller ubicado en Ingeniero White, puerto de la ciudad de Bahía Blanca. La mayor parte de estos videos supone un lugar específico, un nombre propio, una acción cotidiana. Proyectarlos en el museo intenta ubicar estos retratos en el marco de las transformaciones que ha vivido Ingeniero White en el último cuarto de siglo. Alguien me dijo alguna vez que veía estos cortos como los avances de una película que no existe. Tal vez “El Puerto” sea, en definitiva, esa película que crece y se desarrolla en estado de “trailer”, porque la idea es menos concluir sobre el destino de la comunidad que retrata, que señalar su complejo pero abierto porvenir.",
+	"anho":"2006", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	}			
+}

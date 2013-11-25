@@ -1,0 +1,256 @@
+{
+
+	"Roles":
+	{
+	"titulo":"Roles",
+	"sinopsis":"Opera Prima que reflexiona acerca de la identidad, en un plano secuencia interrumpido por fotos y videos. Voces en off desgranan nombres e insultos. Con \"Solo tu\" interpretada por \"Los Plateros\" como música incidental. Es el primer autorretrato performático en la historia del video arte argentino.",
+	"anho":"1988", 
+	"duracion":"3m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["VHS"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["autorretrato"],
+	"medios": []
+	}	,
+	
+	"Psycho x Borges":
+	{
+	"titulo":"Psycho x Borges",
+	"sinopsis":"En esta breve obra se combina el testimonio oral de la figura más importante de la literatura argentina: Jorge Luis Borges, opinando sobre el clásico de Hitchcock, \"Psicosis\". A su vez, es una referencia irónica a las madres dominantes.",
+	"anho":"1997", 
+	"duracion":"1m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["Borges", "Psycho", "Hitchcock"],
+	"medios": []
+	},
+	
+	
+	
+	"Lo sublime banal":
+	{
+	"titulo":"Lo sublime banal",
+	"sinopsis":"En este video la cámara recorre sin solución de continuidad un ámbito doméstico y donde la historia tiene una revelación. El plano secuencia resulta tan envolvente como el batido de la crema, o como la historia que narran dos mujeres maduras que, en lugar de hablar de temas cotidianos, reviven un hecho que tiene más de treinta años y que parece haber dejado marcas. Los géneros se desvanecen, las protagonistas, recrean una anécdota siempre recordada y a la vez contradictoria. ¿Cuál es el sitio de lo sublime? ¿Qué es lo banal? Para Cortázar, para el espectador, ¿para ellas? Lo sublime tal vez sea cómo se instaura en una cocina el mundo cortazariano una vez más.",
+	"anho":"2004", 
+	"duracion":"12m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["Cortázar"],
+	"medios": []
+	},
+	
+	
+	"Cadáveres":
+	{
+	"titulo":"Cadáveres",
+	"sinopsis":"Basado en el poema de Nestor Perlongher Cadáveres intepretado por Liliana Dauness",
+	"anho":"2005", 
+	"duracion":"3m20s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["Cadaveres", "Perlongher"],
+	"medios": []
+	},
+	
+	
+	"Granada":
+	{
+	"titulo":"Granada",
+	"sinopsis":"Basada en el testimonio videográfico de la artista Andrea Fasani, una víctima del terrorismo de Estado reinante en Argentina durante la década del 70.",
+	"anho":"2005", 
+	"duracion":"6m10s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Sísifa":
+	{
+	"titulo":"Sísifa",
+	"sinopsis":"Sísifa está atrapada y pretende salir, se esfuerza una y otra vez con sus recursos de mujer en una lucha existencial que concluye sin solemnidades.",
+	"anho":"2007", 
+	"duracion":"1m40s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	}	,
+	
+	"Quebrada":
+	{
+	"titulo":"Quebrada",
+	"sinopsis":"Un video de Graciela Taquini para Videografías de Gerli",
+	"anho":"2008", 
+	"duracion":"4m40s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Border line":
+	{
+	"titulo":"Border line",
+	"sinopsis":"Este video fue realizado para un proyecto de intervención en el ascensor detenido de la Fundación Osde para la muestra curada por la Dra. Laura Malosetti Costa: Pampa Ciudad y Suburbio de 2007.  El público entraba en un ascensor tipo jaula del edificio y pulsaba una perilla para hacer funcionar el video que resultaba ser una publicidad de un satélite de vigilancia.",
+	"anho":"2007", 
+	"duracion":"2m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Instalacion"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	}	,
+	
+	
+	"Estar con Doffo en mechita":
+	{
+	"titulo":"Estar con Doffo en mechita",
+	"sinopsis":"Las huellas de una visita inolvidable al pueblo natal de Juan Doffo despierta la ambición de una artista del video que quiere a toda costa estar legitimada en el flamante Museo local. Humor y recuerdo eternizados en la imagen en el proceso de gestarse. ",
+	"anho":"2010", 
+	"duracion":"5m50s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["Doffo", "Mechita"],
+	"medios": []
+	},
+	
+	
+	"El mundo de...":
+	{
+	"titulo":"El mundo de...",
+	"sinopsis":"Una mujer atesora una postal mientras mira su entorno por la ventana, conectando el presente con el pasado. Inspirado en El mundo de Cristina de Andrew Wyeth.",
+	"anho":"2009", 
+	"duracion":"1m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["Andrew Wyeth"],
+	"medios": []
+	},
+	
+	"Fin del mundo":
+	{
+	"titulo":"Fin del mundo",
+	"sinopsis":"Una vez más la artista performer entre el adentro y el afuera realiza una irónico autorretrato en una desopilante cita al Barroco",
+	"anho":"2011", 
+	"duracion":"1m25s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	
+	
+	
+	
+	
+	"Secretos":
+	{
+	"titulo":"Secretos",
+	"sinopsis":"Frente al hogar, tres mujeres de diferentes generaciones comparten, ocultan e intercambian reprimidos secretos de familia.",
+	"anho":"2007", 
+	"duracion":"5m20s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela","larranaga_gabriela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["familia"],
+	"medios": []
+	},
+	
+	
+	"Vaiven":
+	{
+	"titulo":"Vaiven",
+	"sinopsis":"Caminata flotante, zambullirse y emerger, como metáforas de la existencia.",
+	"anho":"2009", 
+	"duracion":"2m40s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela","larranaga_gabriela"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["agua"],
+	"medios": []
+	},
+	
+	
+		"Lugar común":
+	{
+	"titulo":"Lugar común",
+	"sinopsis":"A partir de un pedido de Edgar Endress para una muestra en el edificio del Banco Mundial de Washington, Graciela Taquini le pide a sus amigos que envien solamente por medios electronicos material con refranes acerca del dinero. Ricardo Pons edita con la colaboracion de Graciela Taquini el material heterogeneo recibido, con una cierta dosis de humor. Los materiales reproducidos cuentan con el consentimiento de los generadores de los mismos.",
+	"anho":"2010", 
+	"duracion":"20m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["taquini_graciela","pons_ricardo"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": ["banco mundial"],
+	"medios": []
+	}							
+		
+}

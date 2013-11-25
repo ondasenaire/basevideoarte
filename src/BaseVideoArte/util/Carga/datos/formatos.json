@@ -3,6 +3,7 @@
 	"Video Instalacion":{"formato":"Video Instalación"},
 	"Video":{"formato":"Video"},
 	"Video Digital":{"formato":"Video Digital"},
+	"Loop":{"formato":"Loop"},
 	"MiniDV":{"formato":"MiniDV"},
 	"DV":{"formato":"DV"},
 	"HDV":{"formato":"HDV"},

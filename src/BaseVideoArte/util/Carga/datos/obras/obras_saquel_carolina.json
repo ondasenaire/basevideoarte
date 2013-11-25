@@ -1,0 +1,264 @@
+{
+
+"Recaídas: única instancia":
+	{
+	"titulo":"Recaídas: única instancia",
+	"sinopsis":" ",
+	"anho":"1999", 
+	"duracion":"12m5s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":[],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Recaídas: Untitled (blouse)":
+	{
+	"titulo":"Recaídas: Untitled (blouse)",
+	"sinopsis":" ",
+	"anho":"1999", 
+	"duracion":"7m20s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":[],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+		"Recaídas: Untitled (hose)":
+	{
+	"titulo":"Recaídas: Untitled (hose)",
+	"sinopsis":" ",
+	"anho":"1999", 
+	"duracion":"7m35s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":[],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Script":
+	{
+	"titulo":"Script",
+	"sinopsis":" ",
+	"anho":"2000", 
+	"duracion":"16m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":["Video Instalacion"],
+	"genero": [],
+	"metadatos":[{"metadato":"videoinstalación de dos canales", "tipo":"formato"}],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"A plomo":
+	{
+	"titulo":"A plomo",
+	"sinopsis":" ",
+	"anho":"2001", 
+	"duracion":"16m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":[],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Cucaña":
+	{
+	"titulo":"Cucaña",
+	"sinopsis":" ",
+	"anho":"2002", 
+	"duracion":"9m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":[],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Pimenti":
+	{
+	"titulo":"Pimenti",
+	"sinopsis":" ",
+	"anho":"2004", 
+	"duracion":"8m33s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":["35mm"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Picadero":
+	{
+	"titulo":"Picadero",
+	"sinopsis":" ",
+	"anho":"2006", 
+	"duracion":"6m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":["16mm","DVD"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Pocket: Sans titre (Blindfold)":
+	{
+	"titulo":"Pocket: Sans titre (Blindfold)",
+	"sinopsis":" ",
+	"anho":"2006", 
+	"duracion":"4m50s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":[],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Pocket: Tout est pareil":
+	{
+	"titulo":"Pocket: Tout est pareil",
+	"sinopsis":" ",
+	"anho":"2006", 
+	"duracion":"4m30s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":[],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"La catástrofe es amarilla: Dialogue d'insectes":
+	{
+	"titulo":"La catástrofe es amarilla: Dialogue d'insectes",
+	"sinopsis":" ",
+	"anho":"2007", 
+	"duracion":"1m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":["HD","Loop"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"La catástrofe es amarilla: Figures devant une métaporphose I":
+	{
+	"titulo":"La catástrofe es amarilla: Figures devant une métaporphose I",
+	"sinopsis":" ",
+	"anho":"2007", 
+	"duracion":"20m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":["HDV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"La catástrofe es amarilla: Figures devant une métaporphose II":
+	{
+	"titulo":"La catástrofe es amarilla: Figures devant une métaporphose II",
+	"sinopsis":" ",
+	"anho":"2007", 
+	"duracion":"15m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":["HDV"],
+	"genero": ["Experimental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	"Nivelar la distancia: Reconstitution du jardin delectable":
+	{
+	"titulo":"Nivelar la distancia: Reconstitution du jardin delectable",
+	"sinopsis":" ",
+	"anho":"2008", 
+	"duracion":"9m38s",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":["HDV","Loop"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Un portrait peut avoir un fond neutre":
+	{
+	"titulo":"Un portrait peut avoir un fond neutre",
+	"sinopsis":" ",
+	"anho":"-", 
+	"duracion":"14m",
+	"mostrar": true,
+	
+	"foto":".png",
+	"autores": ["saquel_carolina"],
+	"formato":["Video Instalacion","Monocanal"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	}
+	
+}

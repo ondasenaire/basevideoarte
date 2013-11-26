@@ -57,9 +57,9 @@ class BuscadorController {
 		
 		
 		
-		if ($request -> isMethod('POST')) {
+		if ($request -> isMethod('GET')) {
 			//echo 'HOLA';
-			if ($request -> request -> has('buscador_general')) {
+			if ($request -> query -> has('buscador_general')) {
 				//echo 'buscador general';
 				$form_general->bind($request);
 				if ($form_general->isValid() ){
@@ -71,7 +71,7 @@ class BuscadorController {
 				
 			}
 // buscador personas
-			if ($request -> request -> has('buscador_personas')) {
+			if ($request -> query -> has('buscador_personas')) {
 				//echo 'buscador personASA';		
 				$form_personas->bind($request);
 				if ($form_personas->isValid() ){
@@ -85,7 +85,7 @@ class BuscadorController {
 							
 			}
 // buscador obras
-			if ($request -> request -> has('buscador_obras')) {
+			if ($request -> query -> has('buscador_obras')) {
 				//echo 'buscador obras';
 				$form_obras->bind($request);
 				if ($form_obras->isValid() ){

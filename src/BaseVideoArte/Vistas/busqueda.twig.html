@@ -11,7 +11,7 @@
 
 <div class="tab_form">
 	<div id="form_general">
-		<form id="busqueda_general" action="{{ path('busqueda') }}" method="post" >
+		<form id="busqueda_general" action="{{ path('busqueda') }}" method="get" >
 			{{form_row(form_general.consulta) }}
 			{{form_row(form_general.buscar) }}
 			{{ form_rest(form_general) }}
@@ -19,7 +19,7 @@
 	</div>
 
 	<div id="form_personas">
-		<form id="busqueda_personas" action="{{ path('busqueda') }}" method="post" >
+		<form id="busqueda_personas" action="{{ path('busqueda') }}" method="get" >
 			{{form_row(form_personas.nombre) }}
 			{{form_row(form_personas.sexo) }}
 			{{form_row(form_personas.pais) }}
@@ -31,7 +31,7 @@
 	</div>
 	
 	<div id="form_obras">
-		<form id="busqueda_obras" action="{{ path('busqueda') }}" method="post" >
+		<form id="busqueda_obras" action="{{ path('busqueda') }}" method="get" >
 			{{form_widget(form_obras) }}
 			{{ form_rest(form_obras) }}
 

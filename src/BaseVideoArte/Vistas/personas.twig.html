@@ -12,9 +12,9 @@
 	
 	<div id="anclasordenalfabetico">
 		{% for i in abc %}
-		<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}" class="ordenlinks" >{{ i }}</a>
+		<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}"  {% if letra_activa == i %} class="actual"{% endif%} class="ordenlinks" >{{ i }}</a>
 		{% endfor %}
-		<a href="{{ path('personas') }}" class="ordenlinks" >todos</a>
+		<a href="{{ path('personas') }}" {% if letra_activa == 'todas' %} class="actual"{% endif%} class="ordenlinks" >todas</a>
 	</div>
 	
 	<div id="sep_try" style="margin-left: 22px !important;">

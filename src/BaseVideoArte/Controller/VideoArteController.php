@@ -13,7 +13,9 @@ class VideoArteController {
 	//----------------------------------------------------------------
 	// PERSONAS
 	public function listarPersonasAction(Application $app, $filtro, $valor) {
-
+		
+		$letra_activa = '';
+		
 		if ($filtro != null) {
 			if ($filtro == 'abc' && $valor != null) {
 			//	echo 'filtra por abecedario con la letra '.$valor;
@@ -27,7 +29,8 @@ class VideoArteController {
         			 ->orderBy('pais.pais', 'ASC')
 					 ;		
 					$consulta = $q->getQuery(); 					
-					$resultado = $consulta->getResult();								
+					$resultado = $consulta->getResult();
+					$letra_activa = $valor;								
 				
 			}
 			if ($filtro == 'pais' && $valor != null) {
@@ -57,18 +60,12 @@ class VideoArteController {
 				 // ->leftJoin('p.pais','c');
 				$consulta = $qb -> getQuery();
 				$resultado = $consulta -> getResult();
-			
-			
-		
-
-			
+				$letra_activa = 'todas';			
 		}
 	
-	
-
-	//	echo $filtro;
+		//	echo $filtro;
 		//echo $valor;
-		return $app['twig'] -> render('/personas.twig.html', array('lista_personas' => $resultado, 'pagina_actual'=>'personas'));
+		return $app['twig'] -> render('/personas.twig.html', array('lista_personas' => $resultado, 'pagina_actual'=>'personas', 'letra_activa'=>$letra_activa));
 	}
 
 	public function mostrarPersonaAction(Application $app, $persona) {
@@ -80,7 +77,7 @@ class VideoArteController {
 	//----------------------------------------------------------------
 	//OBRAS
 	public function listarObrasAction(Application $app,$filtro,$valor) {
-			
+		$letra_activa = '';	
 		if ($filtro != null) {
 			//echo 'hay filtro';
 			if ($filtro == 'abc' && $valor != null) {
@@ -90,32 +87,24 @@ class VideoArteController {
 												BaseVideoArte\Entidades\Obra obra LEFT JOIN obra.artistas persona WHERE SUBSTRING(obra.titulo, 1, 1) NOT IN ($abc)");
 						$obras = $query->getResult();
 						
+						$letra_activa = '*';
 				//		echo 'buscar aquellas obras que NO comienzan con letra';
 					}else{
 					//	echo 'buscar aquellas obras que SI comienzan con letra';
 						$query = $app['db.orm.em']->createQuery("SELECT obra.titulo, obra.id, persona.id AS id_persona, persona.apellido, persona.nombre FROM
 												BaseVideoArte\Entidades\Obra obra LEFT JOIN obra.artistas persona WHERE SUBSTRING(obra.titulo, 1, 1) LIKE '$valor%'");
 						$obras = $query->getResult();
+						$letra_activa = $valor;
+						echo $valor;
 					}	
 					
-				//echo ' por abecedario';
-				
-				
-				
+				//echo ' por abecedario';			
 			}
 		}else{
-			echo 'no hay filtro';
-		
-		
+			echo 'no hay filtro';		
 		}	
-		//	$obras = '';
-		//$repositorioObras = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Obra');
-		//$obras = $repositorioObras -> findAll();
 		
-		
-		
-		
-		return $app['twig'] -> render('/obras.twig.html', array('lista_obras' => $obras, 'pagina_actual'=>'obras'));
+		return $app['twig'] -> render('/obras.twig.html', array('lista_obras' => $obras, 'pagina_actual'=>'obras','letra_activa'=>$letra_activa));
 	}
 
 	public function mostrarObraAction(Application $app,$obra) {

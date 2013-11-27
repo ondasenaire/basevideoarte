@@ -32,7 +32,7 @@ $app->get('/persona/{persona}',    'BaseVideoArte\Controller\VideoArteController
 // OBRAS
 $app->get('/obras/{filtro}/{valor}', 'BaseVideoArte\Controller\VideoArteController::listarObrasAction')->bind('obras')
 	 ->value('filtro','abc')
-	 ->value('valor','a')
+	 ->value('valor','A')
 	 ->assert('filtro','[a-z]+')
 	 ->assert('valor','[\* ñ Ñ a-z A-Z]+');
 $app->get('/obras/{obra}',    'BaseVideoArte\Controller\VideoArteController::mostrarObraAction')->bind('obra')->assert('obra','\d+');

@@ -73,6 +73,7 @@ $app->match('/test/reset', 'BaseVideoArte\Controller\TestController::ingresarDat
 $app->match('/test/pruebas_get_metadatos', 'BaseVideoArte\Controller\TestController::recuperarMetadataAction')->bind('get_metadatos');
 
 $app->get('/test/json', 'BaseVideoArte\Controller\TestController::jsonAction')->bind('json');
+$app->get('/test/embeber', 'BaseVideoArte\Controller\TestController::embeberAction')->bind('embeber');
 //---------------------------------------------------------------------
 //contacto y "sobre el proyecto"
 $app->get('/contacto', function () use ($app) {

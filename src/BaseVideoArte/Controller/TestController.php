@@ -237,4 +237,12 @@ class TestController{
 	}
 	
 	
+	public function embeberAction(Application $app){
+		$emb = new \BaseVideoArte\Util\Embeber\Embeber();
+		
+		$vid = $emb->embeber('http://vimeo.com/26037858');
+		
+		return new Response(" $vid");
+	}
+	
 }

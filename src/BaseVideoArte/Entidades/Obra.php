@@ -133,6 +133,24 @@ class Obra {
   	}
 	
 	
+	// videos embebidos
+	/*
+	 *  
+	 */
+	public function getVideos(){
+		$videos = $this->getMediosByTipo('embebido');
+		$embeb = new \BaseVideoArte\Util\Embeber\Embeber();
+		$v = array();
+		foreach ($videos as $video){
+			$v [] = $embeb->embeber($video->getArchivo());	
+			
+		}
+		
+		
+		return $v;
+	}
+	
+	
 	 /**
      * Get duracion
      *

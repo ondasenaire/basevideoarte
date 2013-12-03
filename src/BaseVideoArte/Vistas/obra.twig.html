@@ -14,13 +14,15 @@
         	{% endfor %}
         </p>
         
-        
+        <ul>
+        	{% for video in obra.getVideos()%}
+        	      	 {{video | raw}}
+        	{% endfor %}
+        </ul>
        
         
         
   </li>
-   {% for medio in obra.getMediosByTipo('embebido') %}
-       	{{ medio.archivo |raw }}
-   {%endfor%}
+
   
 {% endblock %}

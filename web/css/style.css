@@ -366,6 +366,51 @@ p		{
 			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
 			}		
 			
+/* CONTENIDO OBRA */
+
+			#containerobra
+			{
+			height: auto;
+			width: 1000px;
+			padding: 10px 0px 0px 5px;
+			}
+			#containerobra h3 a
+			{
+			text-decoration: none;
+			color: #b00000;
+			font-size: 30px;
+			}
+			#containerobra h3 a:hover {
+			color: #589738;
+			}
+			#ordendataobra
+			{
+			width: 550px;
+			height: auto;
+			padding: 0px;
+			padding-bottom: 10px;
+			}
+			#campoinfo
+			{
+			width: 120px;
+			height: auto;			
+			float: left;
+			display: block;
+			text-align: left !important;
+			}
+			#campodescripcion
+			{
+			width: 400px;
+			height: auto;
+			float: left;
+			display: block;
+			text-align: left !important;
+			}
+			.spaninfoobra
+			{
+			font-size: 16px;			
+			}
+			
 /* PARA ORDENAR */
 
 		#cont2letras
@@ -390,6 +435,14 @@ p		{
 				font-size: 15px;
 				text-decoration: none;
 				color: #000000;
+				text-align: center;
+				}
+			.ordenlinksactual
+				{
+				padding-right:4px;
+				font-size: 15px;
+				text-decoration: none;
+				color: #b00000;
 				text-align: center;
 				}
 			.ordenlinksar

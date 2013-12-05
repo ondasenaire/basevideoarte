@@ -3,26 +3,67 @@
 {% block title %}Obras{% endblock %}
 
 {% block contenido %}
-   <li>
-        <h3>{{obra.titulo}} , ({{obra.anho}})</h3>
-        <p>{{obra.sinopsis}}</p>
-        <p>{{obra.duracion}}</p>
-        <p>{%if obra.getFoto != null %}{{obra.getFoto().descripcion}}{%endif%}</p>
-        <p>
-        	{% for artista in obra.artistas%}
-        	 <a href="{{path('persona',{persona: artista.id}) }}" >{{artista.nombre}}</a>
-        	{% endfor %}
-        </p>
-        
+<div id="sep_try" style="margin-left: 22px !important;">
+	</div>
+	<div id="separador"></div>
+	<div id="containerobra">
+		<h3><a href="#">{{obra.titulo}}</a></h3>
+		<div id="separador"></div>
+		<div id="separador"></div>
+		<img src="{{ esServer(path,uri) }}/medios/iconos/template_obra.jpg"  alt="{%if obra.getFoto != null %}{{obra.getFoto().descripcion}}{%endif%}" />
+		<div id="separador"></div>
+		<div id="separador"></div>
+		<center>
+		<div id="ordendataobra">
+			<div id="campoinfo">			
+				<p><span class="spaninfoobra"><strong>Sinopsis</strong></span></p>
+			</div>
+			<div id="campodescripcion">				
+				<p><span class="spaninfoobra">{{obra.sinopsis}}</span></p>
+			</div>		
+		</div>
+		<div id="ordendataobra">
+			<div id="campoinfo">			
+				<p><span class="spaninfoobra"><strong>Autor: </strong></span></p>
+			</div>
+			<div id="campodescripcion">				
+				<p><span class="spaninfoobra"> 
+					{% for artista in obra.artistas%}
+        	 			<a href="{{path('persona',{persona: artista.id}) }}" >{{artista.apellido}}, {{artista.nombre}} ({{artista.pais.pais}})</a>
+        			{% endfor %}</span></p>
+			</div>		
+		</div>
+		<div id="ordendataobra">
+			<div id="campoinfo">			
+				<p><span class="spaninfoobra"><strong>Año: </strong></span></p>
+			</div>
+			<div id="campodescripcion">				
+				<p><span class="spaninfoobra">{{obra.anho}} </span></p>
+			</div>		
+		</div>
+	
+		
+		        
         <ul>
         	{% for video in obra.getVideos()%}
         	      	 {{video | raw}}
         	{% endfor %}
         </ul>
+		</center>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+   
+
        
         
-        
-  </li>
+ 
 
   
 {% endblock %}

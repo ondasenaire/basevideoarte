@@ -29,7 +29,10 @@
 		</div>
 	{% endfor %}	
 </div>
-		 
+		
+{% for mensaje in mensajes %}
+ <p style="padding: 50px; color:red;">{{mensaje}}</p>
+{%endfor%}
     
 {% endblock %}
 

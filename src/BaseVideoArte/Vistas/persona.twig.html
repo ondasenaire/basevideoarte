@@ -16,7 +16,14 @@
 	<div id="sep_try" style="margin-left: 22px !important;">
 	</div>
 	<div id="separador"></div>  
+   {%if mensajes%}
    
+    {% for mensaje in mensajes %}
+ 	 <p style="padding: 50px; color:red;">{{mensaje}}</p>
+	{%endfor%}
+   
+   
+   {%else%}
    <div id="container_artista">
 		<div id="header_artista">
 		  {{ persona.apellido }}, {{ persona.nombre }}
@@ -60,7 +67,7 @@
 		
 		
 	</div>
-   
+   {%endif%}
    
 
  

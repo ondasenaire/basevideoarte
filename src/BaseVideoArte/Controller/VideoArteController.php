@@ -15,6 +15,7 @@ class VideoArteController {
 	public function listarPersonasAction(Application $app, $filtro, $valor) {
 		
 		$letra_activa = '';
+		$mensajes = array();
 		
 		if ($filtro != null) {
 			if ($filtro == 'abc' && $valor != null) {
@@ -63,21 +64,39 @@ class VideoArteController {
 				$letra_activa = 'todas';			
 		}
 	
+	
+		if( count($resultado) === 0 ){
+			$mensajes [] = 'No existen personas para el criterio especificado';
+		}
+		//$app->redirect('/here', 301)
 		//	echo $filtro;
 		//echo $valor;
-		return $app['twig'] -> render('/personas.twig.html', array('lista_personas' => $resultado, 'pagina_actual'=>'personas', 'letra_activa'=>$letra_activa));
+		return $app['twig'] -> render('/personas.twig.html', array(
+				 'lista_personas' => $resultado,
+				 'pagina_actual'=>'personas',
+				 'letra_activa'=>$letra_activa,
+				 'mensajes' => $mensajes
+				 ));
 	}
 
 	public function mostrarPersonaAction(Application $app, $persona) {
+		
+		$mensajes = array(); // mensajes de error y demas
 		$repoPersonas = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Persona');
 		$persona = $repoPersonas -> findOneById($persona);
-		return $app['twig'] -> render('/persona.twig.html', array('persona' => $persona, 'pagina_actual'=>'personas'));
+		
+		if ( $persona === null){
+			$mensajes [] = 'No existe la persona buscada';
+		}
+		
+		return $app['twig'] -> render('/persona.twig.html', array('persona' => $persona, 'pagina_actual'=>'personas', 'mensajes' => $mensajes));
 	}
 
 	//----------------------------------------------------------------
 	//OBRAS
 	public function listarObrasAction(Application $app,$filtro,$valor) {
 		$letra_activa = '';	
+		$mensajes = array();
 		if ($filtro != null) {
 			//echo 'hay filtro';
 			if ($filtro == 'abc' && $valor != null) {
@@ -104,7 +123,17 @@ class VideoArteController {
 			echo 'no hay filtro';		
 		}	
 		
-		return $app['twig'] -> render('/obras.twig.html', array('lista_obras' => $obras, 'pagina_actual'=>'obras','letra_activa'=>$letra_activa));
+		
+		if( count($obras) === 0){
+			$mensajes [] = 'No existen obras para el criterio especificado';
+		}
+		
+		return $app['twig'] -> render('/obras.twig.html', array(
+					'lista_obras' => $obras,
+					'pagina_actual'=>'obras',
+					'letra_activa'=>$letra_activa,
+					'mensajes' => $mensajes
+					));
 	}
 
 	public function mostrarObraAction(Application $app,$obra) {

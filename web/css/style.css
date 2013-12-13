@@ -287,10 +287,10 @@ p		{
 		#txts a
 			{
 			text-decoration: none;
-			color: #2e2e2e;
+			color: #b00000;
 			}
 		#txts a:hover {
-			color:#b00000;
+			color:#589738;
 			}
 		#containerobras
 			{
@@ -368,47 +368,64 @@ p		{
 			
 /* CONTENIDO OBRA */
 
-			#containerobra
+		#container_obra
+		{
+		height: auto;
+		width: 1000px;
+		text-align: left !important;
+		padding: 10px 0px 0px 23px;
+		margin: 0 0 20px;
+		display: block;
+		}
+		#header_obra
 			{
-			height: auto;
 			width: 1000px;
-			padding: 10px 0px 0px 5px;
+			height: 30px;
+			margin-bottom: 10px;
+			padding-left: 16px;
+			font-size: 30px;
+			text-align: center;
 			}
-			#containerobra h3 a
+		#fotoobra
+			{
+			width: 380px;
+			height: 214px;
+			text-align: left !important;
+			float: left;
+			margin-right: 20px;
+			display: inline-block;
+			}
+		#datos_ficha_obra
+			{
+			width: 520px;
+			min-height: 180px;
+			text-align: left;
+			padding-left: 18px;
+			border-left: 1px solid rgb(238, 238, 238);
+			float: left;
+			display: inline-block;		
+			}
+		#datos_obras {
+			width: 520px;
+			text-align: left;
+			}
+		#datos_obras a
 			{
 			text-decoration: none;
 			color: #b00000;
-			font-size: 30px;
 			}
-			#containerobra h3 a:hover {
+		#datos_obras a:hover {
 			color: #589738;
 			}
-			#ordendataobra
+		#embedvideo
 			{
-			width: 550px;
-			height: auto;
-			padding: 0px;
-			padding-bottom: 10px;
+			margin: 20px;
+			display: inline;
+			padding: 20px;
 			}
-			#campoinfo
+		.iframevid
 			{
-			width: 120px;
-			height: auto;			
-			float: left;
-			display: block;
-			text-align: left !important;
-			}
-			#campodescripcion
-			{
-			width: 400px;
-			height: auto;
-			float: left;
-			display: block;
-			text-align: left !important;
-			}
-			.spaninfoobra
-			{
-			font-size: 16px;			
+			margin: 20px;	
 			}
 			
 /* PARA ORDENAR */

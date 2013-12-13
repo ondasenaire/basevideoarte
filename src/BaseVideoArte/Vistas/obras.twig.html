@@ -9,7 +9,7 @@
 	
 	<div id="anclasordenalfabetico">
 		{% for i in abc %}
-		<a href="{{ path('obras',{filtro: 'abc', valor : i }) }}" {% if letra_activa == i %} class="actual"{% endif%} class="ordenlinks" >{{ i }}</a>
+		<a href="{{ path('obras',{filtro: 'abc', valor : i }) }}" {% if letra_activa == i %} class="ordenlinksactual"{% endif%} class="ordenlinks" >{{ i }}</a>
 		{% endfor %}
 		
 	</div>

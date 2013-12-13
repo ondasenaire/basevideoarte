@@ -5,9 +5,45 @@
 {% block contenido %}
 <div id="sep_try" style="margin-left: 22px !important;">
 	</div>
-	<div id="separador"></div>
+	<div id="separador"> </div>
+		<div id="header_obra">
+			{{obra.titulo}}
+		</div>
+	<div id="separador"> </div>
 	<div id="containerobra">
-		<h3><a href="#">{{obra.titulo}}</a></h3>
+		<div id="fotoobra">
+			<img src="{{ esServer(path,uri) }}/medios/iconos/380x214.jpg" />
+		</div>
+		<div id="datos_ficha_obra">
+			<div id="datos_obras">
+				<p><strong>Artista: </strong>{% for artista in obra.artistas%}
+        	 								<a href="{{path('persona',{persona: artista.id}) }}" >{{artista.apellido}}, {{artista.nombre}} ({{artista.pais.pais}})</a>
+        									{% if loop.last != true %} , {%endif%}
+        									{% endfor %}
+        		</p>
+				
+				{% if (obra.sinopsis !=  " ") and (obra.sinopsis is not empty)   %}				
+				<p><strong>Sinópsis: </strong>{{obra.sinopsis}}</p>				
+				{% endif %}
+				
+				<p><strong>Año: </strong>{{obra.anho}} </p>
+				
+				
+				
+				{% if obra.formatos is not empty%}
+				<p><strong>formatos: </strong>{% for formato in obra.formatos %}
+        	 								{{formato.formato}}
+        	 								{% if loop.last != true %} , {%endif%}
+        									{% endfor %}
+        		</p>
+				{% endif %}
+				
+			</div>
+		</div>
+		
+		
+		
+		<!-- <h3><a href="#">{{obra.titulo}}</a></h3>
 		<div id="separador"></div>
 		<div id="separador"></div>
 		<img src="{{ esServer(path,uri) }}/medios/iconos/template_obra.jpg"  alt="{%if obra.getFoto != null %}{{obra.getFoto().descripcion}}{%endif%}" />
@@ -49,7 +85,7 @@
         	      	 {{video | raw}}
         	{% endfor %}
         </ul>
-		</center>
+		</center> -->
 	</div>
 </div>
 </body>

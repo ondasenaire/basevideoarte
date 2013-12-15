@@ -3,8 +3,7 @@
 {% block title %}Obras{% endblock %}
 
 {% block contenido %}
-<div id="sep_try" style="margin-left: 22px !important;">
-	</div>
+<div id="sep_try" style="margin-left: 22px !important;"> </div>
 	<div id="separador"> </div>
 		<div id="header_obra">
 			{{obra.titulo}}
@@ -29,7 +28,6 @@
 				<p><strong>Año: </strong>{{obra.anho}} </p>
 				
 				
-				
 				{% if obra.formatos is not empty%}
 				<p><strong>formatos: </strong>{% for formato in obra.formatos %}
         	 								{{formato.formato}}
@@ -40,8 +38,11 @@
 				
 			</div>
 		</div>
-		
-		
+	</div>
+	<div id="separador"> </div> 
+		{% for video in obra.getVideos()%}
+        	      	 {{video | raw}}
+        {% endfor %}		
 		
 		<!-- <h3><a href="#">{{obra.titulo}}</a></h3>
 		<div id="separador"></div>
@@ -86,20 +87,6 @@
         	{% endfor %}
         </ul>
 		</center> -->
-	</div>
-</div>
-</body>
-</html>
 
-
-
-
-
-   
-
-       
-        
  
-
-  
 {% endblock %}

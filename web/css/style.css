@@ -170,6 +170,25 @@ p		{
 		color:#FFFFFF;
 		background-color:#b00000;
 		}
+		
+/* CONTENIDO INICIO */
+
+	#infoinicio
+		{
+		text-align: justify !important;
+		width: 950px;
+		height: auto;
+		margin-bottom: 20px;
+		padding-left: 18px;	
+		}
+		#infoinicio a
+			{
+			text-decoration: none;
+			color: #b00000;
+			}
+		#infoinicio a:hover {
+			color: #589738;
+			}
 
 /* CONTENIDO PERSONAS */
 
@@ -294,7 +313,7 @@ p		{
 			}
 		#containerobras
 			{
-			width: 930px;
+			width: 928px;
 			height: auto;
 			padding: 15px 10px 15px 10px;
 			margin-left: 16px;
@@ -341,7 +360,7 @@ p		{
 			}
 		#containereventosart
 			{
-			width: 930px;
+			width: 928px;
 			height: auto;
 			padding: 15px 10px 15px 10px;
 			margin-left: 16px;
@@ -354,7 +373,7 @@ p		{
 			}			
 		#containercurador
 			{
-			width: 930px;
+			width: 928px;
 			height: auto;
 			padding: 15px 10px 15px 10px;
 			margin-left: 16px;
@@ -365,7 +384,7 @@ p		{
 			border-radius: 4px;
 			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
 			}		
-			
+
 /* CONTENIDO OBRA */
 
 		#container_obra
@@ -394,11 +413,12 @@ p		{
 			float: left;
 			margin-right: 20px;
 			display: inline-block;
+			margin-bottom: 20px;
 			}
 		#datos_ficha_obra
 			{
-			width: 520px;
-			min-height: 180px;
+			width: 503px;
+			min-height: 420px;
 			text-align: left;
 			padding-left: 18px;
 			border-left: 1px solid rgb(238, 238, 238);
@@ -406,7 +426,7 @@ p		{
 			display: inline-block;		
 			}
 		#datos_obras {
-			width: 520px;
+			width: 503px;
 			text-align: left;
 			}
 		#datos_obras a
@@ -425,8 +445,26 @@ p		{
 			}
 		.iframevid
 			{
-			margin: 20px;	
+			margin: 15px 0 0 0;
 			}
+		#containerObrasEventos
+			{
+			display: inline-block;
+			float: left;
+			margin: 20px 7px 0px 5px;				
+			}
+		.estilovinetas		
+			{
+			min-height: 413px;
+			padding: 15px 10px 15px 10px;
+			margin-left: 4px;
+			display: block;
+			text-align: left;
+			background-color: rgb(245, 245, 245);
+			border: 1px solid rgb(227, 227, 227);
+			border-radius: 4px;
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+			}		
 			
 /* PARA ORDENAR */
 

@@ -15,13 +15,13 @@ namespace BaseVideoArte\Util\Embeber;
 	}
 	
 	public function getVimeoURL($video_url){
-		return $this->vimeo_oembed_endpoint . '.json?url=' . rawurlencode($video_url) . '&width=640';
+		return $this->vimeo_oembed_endpoint . '.json?url=' . rawurlencode($video_url) . '&width=380';
 		
 		
 	}
 	
 	public function getYoutubeURL($video_url){
-		return $this->youtube_oembeb.'?url=' . rawurlencode($video_url). '&width=340' ;
+		return $this->youtube_oembeb.'?url=' . rawurlencode($video_url). '&maxwidth=380' ;
 		
 	}
 	

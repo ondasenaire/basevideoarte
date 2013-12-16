@@ -12,6 +12,11 @@
 	<div id="containerobra">
 		<div id="fotoobra">
 			<img src="{{ esServer(path,uri) }}/medios/iconos/380x214.jpg" />
+			
+			{% for video in obra.getVideos()%}
+        	      	 {{video | raw}}
+        	{% endfor %}		
+			
 		</div>
 		<div id="datos_ficha_obra">
 			<div id="datos_obras">
@@ -40,9 +45,7 @@
 		</div>
 	</div>
 	<div id="separador"> </div> 
-		{% for video in obra.getVideos()%}
-        	      	 {{video | raw}}
-        {% endfor %}		
+		
 		
 		<!-- <h3><a href="#">{{obra.titulo}}</a></h3>
 		<div id="separador"></div>

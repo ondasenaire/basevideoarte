@@ -7,37 +7,55 @@
 
 
 {% block contenido %}
+<div id="separador"></div><div id="separador"></div>
 
 
-<div class="tab_form">
-	<div id="form_general">
-		<form id="busqueda_general" action="{{ path('busqueda') }}" method="get" >
-			{{form_row(form_general.consulta) }}
-			{{form_row(form_general.buscar) }}
-			{{ form_rest(form_general) }}
-		</form>
-	</div>
+	
 
 	<div id="form_personas">
+		<h3>Buscar Personas</h3><br />
 		<form id="busqueda_personas" action="{{ path('busqueda') }}" method="get" >
-			{{form_row(form_personas.nombre) }}
-			{{form_row(form_personas.sexo) }}
-			{{form_row(form_personas.pais) }}
-			{{form_row(form_personas.tipo) }}
-			{{form_row(form_personas.buscar) }}
-			 {{ form_rest(form_personas) }}
+			<div><p>{{form_label(form_personas.nombre) }}<br />{{form_widget(form_personas.nombre) }}  </p></div>
+			
+			<div><p>{{form_label(form_personas.sexo) }} <br /> 
+				 	{% for child in form_personas.sexo %}
+						<div class="titcamp">{{form_widget(child)}}    {{form_label(child )}} <br /> </div> 
+					{% endfor %}
+				</p>
+			</div>
+			
+			<div><p>{{form_label(form_personas.pais) }}<br />{{form_widget(form_personas.pais) }}  </p></div>
+			<div><p>{{form_label(form_personas.tipo) }}<br />{{form_widget(form_personas.tipo) }}  </p></div><br />
+			<div><p>{{form_row(form_personas.buscar) }}</p></div><br />
+			 <div><p>{{ form_rest(form_personas) }}</p></div>
+			 
+			 
+			 <!-- {% for child in form_personas.sexo %} {{ form_widget(child) }}	{% endfor %}  , { 'attr': {'class': 'titcamp'} } -->
 
 		</form>
 	</div>
 	
 	<div id="form_obras">
+		<h3>Buscar Obras</h3><br />
 		<form id="busqueda_obras" action="{{ path('busqueda') }}" method="get" >
-			{{form_widget(form_obras) }}
+			<div><p>{{form_label(form_obras.titulo) }} <br /> {{form_widget(form_obras.titulo) }} </p></div>
+			<div><p>{{form_label(form_obras.formato) }} <br /> {{form_widget(form_obras.formato) }} </p></div>
+			<div><p>{{form_label(form_obras.palabras) }} <br /> {{form_widget(form_obras.palabras) }} </p></div><br />
 			{{ form_rest(form_obras) }}
 
 		</form>
 	</div>
-</div>
+	
+	
+	<div id="form_general">
+		<h3>Busqueda General</h3><br />
+		<form id="busqueda_general" action="{{ path('busqueda') }}" method="get" >
+			<div><p>{{form_label(form_general.consulta) }}<br /> {{form_widget(form_general.consulta) }} </p></div><br />
+			{{form_row(form_general.buscar) }}
+			{{ form_rest(form_general) }}
+		</form>
+	</div>
+
 
 
 <div id="containerObrasEventos">

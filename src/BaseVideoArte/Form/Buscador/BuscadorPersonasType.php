@@ -23,23 +23,26 @@ class BuscadorPersonasType extends AbstractType {
 				'label' => 'Pais: ',
 				'multiple' => false,
 				'expanded' => false,
-				'required' =>false
+				'required' =>false,
+				
 			));
 		$builder->add('tipo','choice',array(
 				'label' => 'Actividad: ',
 				'required' => false,
 				'choices' => $this->opcionesTipo,
 				'multiple' => true,
-				'expanded' => true
+				'expanded' => true,
+				'attr' => array('class' => 'titcamp')
 			));
 			
-					$builder->add('sexo','choice',array(
-				'label' => 'Actividad: ',
+		$builder->add('sexo','choice',array(
+				'label' => 'Sexo: ',
 				'required' => false,
 				'empty_value'=>'ambos',
 				'choices' => array('h'=>'hombre', 'm'=>'mujer'),
 				'multiple' => false,
-				'expanded' => true
+				'expanded' => true,
+				//'attr' => array('class' => 'titcamp'),
 			));
 		$builder->add('buscar','submit');
 	}

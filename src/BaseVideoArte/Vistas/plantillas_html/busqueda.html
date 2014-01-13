@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>Buscador | Base Video Arte</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/form.css" />
+        <!-- <script type="text/javascript" src="/web/js/libs/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="/web/js/buscador.js"></script> -->
+	</head>
+
+	<body>
+		<div id="wrap" align="center">
+			<div id="portadainicio"><img src="portadainicio.jpg" width="975">
+			</div>
+			<div id="sep_try" style="margin-left: 22px !important;">
+			</div>
+			<div id="menu" class="langs">
+				<ul id="nav">
+					<li style="padding-left: 20px;"><a href="/">Inicio</a></li>
+					<li style="padding-left: 20px;"><a href="/obras">Obras</a></li>
+					<li style="padding-left: 20px;"><a href="/personas">Personas</a></li>
+					<li style="padding-left: 20px;"><a href="/busqueda" class="actual">Búsqueda Avanzada</a></li>
+					<li style="padding-left: 20px;" ><a href="/equipo">Equipo</a></li>		
+				</ul>
+			</div>			
+			<div id="separador"></div>
+			<div id="separador"></div><div id="separador"></div>
+			<div id="contenido">
+                
+<div id="form_personas">
+		<h3>Buscar Personas</h3><br />
+		<form id="busqueda_personas" action="/busqueda" method="post" >
+			<div><p><label for="buscador_personas_nombre">Nombre o Apellido:</label><br /><input type="text" id="buscador_personas_nombre" name="buscador_personas[nombre]" /></p></div>
+			<div><p><label>Sexo: <br /></label><input type="radio" id="buscador_personas_sexo_placeholder" name="buscador_personas[sexo]" value="" checked="checked" /><label for="buscador_personas_sexo_placeholder"  class="titcamp">&nbsp;Ambos</label><br /><input type="radio" id="buscador_personas_sexo_0" name="buscador_personas[sexo]" value="h" /><label for="buscador_personas_sexo_0"  class="titcamp">&nbsp;Hombre</label><br /><input type="radio" id="buscador_personas_sexo_1" name="buscador_personas[sexo]" value="m" /><label for="buscador_personas_sexo_1"  class="titcamp">&nbsp;Mujer</label></p></div>
+			<div><p><label for="buscador_personas_pais">Pais: <br /></label><select id="buscador_personas_pais" name="buscador_personas[pais]"><option value=""></option><option value="1">Argentina</option><option value="2">Bélice</option><option value="3">Brasil</option><option value="4">Bolivia</option><option value="5">Chile</option><option value="6">Colombia</option><option value="7">Costa Rica</option><option value="8">Cuba</option><option value="9">República Dominicana</option><option value="10">Ecuador</option><option value="11">El Salvador</option><option value="12">Guatemala</option><option value="13">Guayana Francesa</option><option value="14">Haití</option><option value="15">Honduras</option><option value="16">México</option><option value="17">Nicaragua</option><option value="18">Panamá</option><option value="19">Paraguay</option><option value="20">Perú</option><option value="21">Puerto Rico</option><option value="22">Venezuela</option><option value="23">Uruguay</option></select></p></div>
+			<div><p><label>Actividad: <br /></label><div id="buscador_personas_tipo"><input type="checkbox" id="buscador_personas_tipo_0" name="buscador_personas[tipo][]" value="1" /><label for="buscador_personas_tipo_0"  class="titcamp">&nbsp;Artista</label><br /><input type="checkbox" id="buscador_personas_tipo_1" name="buscador_personas[tipo][]" value="2" /><label for="buscador_personas_tipo_1"   class="titcamp">&nbsp;Curador</label></p></div></div><br />
+			<div><button type="submit" id="buscador_personas_buscar" name="buscador_personas[buscar]">Buscar</button></div>
+			 <input type="hidden" id="buscador_personas__token" name="buscador_personas[_token]" value="b940de38c1a8d4cb02e6f6c03d465c770a7eb71a" />
+
+		</form>
+	</div>
+
+	
+	<div id="form_obras">
+		<h3>Buscar Obras</h3><br />
+		<form id="busqueda_obras" action="/busqueda" method="post" >
+			
+			<div><p><label for="buscador_obras_titulo">Título: </label><br /><input type="text" id="buscador_obras_titulo" name="buscador_obras[titulo]" /></p></div>
+			<div><p><label for="buscador_obras_formato">Formato: </label><br /><select id="buscador_obras_formato" name="buscador_obras[formato]"><option value=""></option><option value="1">Instalación</option><option value="2">Video Instalación</option><option value="3">Video</option><option value="4">Video Digital</option><option value="5">Loop</option><option value="6">MiniDV</option><option value="7">DV</option><option value="8">HDV</option><option value="9">16mm</option><option value="10">Super8</option><option value="11">Hi-8</option><option value="12">VHS</option><option value="13">35mm</option><option value="14">Betacam</option><option value="15">Betacam SP</option><option value="16">DVD</option><option value="17">DVCAM</option><option value="18">DigiBeta</option><option value="19">TV</option><option value="20">Video monocanal</option><option value="21">Video multicanal</option><option value="22">Panel LCD</option><option value="23">HD</option></select></p></div>
+			<div><p><label for="buscador_obras_palabras">Palabra Clave: </label><br /><select id="buscador_obras_palabras" name="buscador_obras[palabras]"><option value=""></option><option value="1">autorretrato</option><option value="2">Borges</option><option value="3">Psycho</option><option value="4">Hitchcock</option><option value="5">Cortázar</option><option value="6">Cadaveres</option><option value="7">Perlongher</option><option value="8">Doffo</option><option value="9">Mechita</option><option value="10">Andrew Wyeth</option><option value="11">familia</option><option value="12">agua</option><option value="13">banco mundial</option><option value="14">mapa</option><option value="15">opresión</option><option value="16">imposición cultural</option><option value="17">poesía</option><option value="18">música</option><option value="19">pueblo fantasma</option><option value="20">pocilga</option><option value="21">repulsivo</option><option value="22">acogedor</option><option value="23">medea</option><option value="24">manicomio</option><option value="25">asilo</option><option value="26">San Pablo</option><option value="27">museo</option><option value="28">skype</option><option value="29">Oscar Bony</option><option value="30">arte conceptual</option><option value="31">carta</option><option value="32">amor</option><option value="33">Luján</option><option value="34">peregrinación</option><option value="35">virgen</option><option value="36">inmigración</option><option value="37">territorialidad</option><option value="38">exilio</option><option value="39">migración</option><option value="40">desarraigo</option><option value="41">terrorismo de estado</option><option value="42">golpe militar</option><option value="43">atentado</option><option value="44">Salvador Allende</option><option value="45">Pinochet</option><option value="46">diversidad cultural</option><option value="47">Palestina</option><option value="48">transculturación</option><option value="49">identidad</option><option value="50">memoria</option><option value="51">espera</option><option value="52">colonización</option><option value="53">Simón Bolivar</option><option value="54">intimidad</option><option value="55">beuys</option><option value="56">pasión</option><option value="57">trilogía</option><option value="58">trabajo</option><option value="59">oficio</option><option value="60">efímero</option><option value="61">permanente</option><option value="62">frontera</option><option value="63">amazonas</option></select></p></div>
+			<div><br /><button type="submit" id="buscador_obras_buscar" name="buscador_obras[buscar]">Buscar</button></div>
+			<input type="hidden" id="buscador_obras__token" name="buscador_obras[_token]" value="b940de38c1a8d4cb02e6f6c03d465c770a7eb71a" />
+
+		</form>
+	</div>
+    	<div id="form_general">
+		<h3>Busqueda General</h3><br />
+		<form id="busqueda_general" action="/busqueda" method="post" >
+			<div><p><label for="buscador_general_consulta" class="required">Consulta: <br /></label><input type="text" id="buscador_general_consulta" name="buscador_general[consulta]" required="required" /></p></div><br />
+			<div><button type="submit" id="buscador_general_buscar" name="buscador_general[buscar]">Buscar</button></div>
+			<input type="hidden" id="buscador_general__token" name="buscador_general[_token]" value="b940de38c1a8d4cb02e6f6c03d465c770a7eb71a" />
+		</form>
+	</div>
+
+
+
+BORRA SI QUERES ESTA PARTE
+
+
+
+			
+
+<!-- 
+<div id="containerObrasEventos">
+		<div id="containerobras">
+	<div id="resultado_busqueda">
+	
+		
+	<ul class="unstyled">
+		</ul>
+	</div>
+	</div>
+</div> -->
+			</div>
+		</div>
+	</body>
+</html>

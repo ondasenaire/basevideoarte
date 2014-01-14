@@ -73,6 +73,8 @@ $app->match('/test/reset', 'BaseVideoArte\Controller\TestController::ingresarDat
 $app->match('/test/pruebas_get_metadatos', 'BaseVideoArte\Controller\TestController::recuperarMetadataAction')->bind('get_metadatos');
 
 $app->get('/test/json', 'BaseVideoArte\Controller\TestController::jsonAction')->bind('json');
+$app->get('/test/borrarBD', 'BaseVideoArte\Controller\TestController::borrarBDAction')->bind('borrarBD');
+$app->get('/test/crearBD', 'BaseVideoArte\Controller\TestController::crearBDAction')->bind('crearBD');
 $app->get('/test/embeber', 'BaseVideoArte\Controller\TestController::embeberAction')->bind('embeber');
 //---------------------------------------------------------------------
 //contacto y "sobre el proyecto"

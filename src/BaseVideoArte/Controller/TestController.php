@@ -72,9 +72,37 @@ class TestController{
 			 echo $genero->getGenero();
 		}		 
 				
-		//$a->persistir($app);
+		$a->persistir($app);
 		return new Response( " ");
 	}
+	
+	
+	//--------------
+	public function borrarBDAction(Application $app){
+		
+	//	$input = new \Symfony\Component\Console\Input\ArgvInput();
+	//	$input->setArgument('arg1', 'value');
+		$s = new \Doctrine\ORM\Tools\SchemaTool($app['db.orm.em']);
+		//$a = $s->getDropDatabaseSQL( );
+		//var_dump($a);
+		$s->dropDatabase();
+		return new Response("");
+	}
+	
+		public function crearBDAction(Application $app){
+		
+	//	$input = new \Symfony\Component\Console\Input\ArgvInput();
+	//	$input->setArgument('arg1', 'value');
+		$em = $app['db.orm.em'];
+		$s = new \Doctrine\ORM\Tools\SchemaTool($app['db.orm.em']);
+		//$a = $s->getDropDatabaseSQL( );
+		//var_dump($a);
+		$a = $s->getCreateSchemaSql();
+		var_dump($a);
+		return new Response("");
+	}
+	
+	//--------------
 	
 	
 	public function colaboradorAction(Application $app, Request $request) {

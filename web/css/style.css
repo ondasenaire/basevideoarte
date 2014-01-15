@@ -107,7 +107,7 @@ p		{
 	#separador
 		{
 		width: 1000px;
-		height: 10px;
+		height: 8px;
 		text-align: center;
 		}
 
@@ -171,22 +171,92 @@ p		{
 		background-color:#b00000;
 		}
 		
+/* FOOTER */
+
+	#footer
+		{
+		width: 950px;
+		height: 100px;
+		margin: 0px 0px 10px 20px;
+		padding-top: 8px;
+		padding-bottom: 0px;
+		text-align: center !important;
+		}
+		
 /* CONTENIDO INICIO */
 
-	#infoinicio
+	#menuinicio
+		{
+		width: 200px;
+		height: 200px;
+		margin-left: 2px;
+		margin-right: 14px;
+		float: left;
+		display: block;
+		border-right: 1px solid rgb(238, 238, 238);
+		}
+	#navi	{
+		width: 100%;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+		text-align: center;
+		}
+	#navi li {
+		margin: 1px 4px 4px 1px;
+		padding: 1px 4px 4px 1px;
+		border: 0px;
+		float: left;
+		display: inline;
+		}
+	#navi li a {
+		display:inline-block;
+		width:159px;
+		height:10px;
+		padding:10px 0;
+		text-decoration:none;
+		text-align:center;
+		font-size:13px;
+		color:#FFFFFF;
+		background-color:#2e2e2e;
+		border-left:5px solid #2e2e2e;
+		}
+	#navi li a:hover {
+		color:#FFFFFF;
+		background-color:#b00000;
+		}
+	#infoin
 		{
 		text-align: justify !important;
 		width: 950px;
 		height: auto;
 		margin-bottom: 20px;
 		padding-left: 18px;	
+		display: block;
 		}
-		#infoinicio a
+	#infoinicio
+		{
+		text-align: justify !important;
+		width: 948px;
+		height: auto;
+		margin-bottom: 20px;
+		padding-left: 18px;	
+		}
+		.inicioestilo
+			{
+			text-align: justify !important;
+			width: 948px;
+			height: auto;
+			margin-bottom: 20px;
+			padding-left: 18px;
+			}
+		.inicioestilo a
 			{
 			text-decoration: none;
 			color: #b00000;
 			}
-		#infoinicio a:hover {
+		.inicioestilo a:hover {
 			color: #589738;
 			}
 
@@ -262,6 +332,7 @@ p		{
 			margin-left: 16px;
 			border-bottom: 1px solid rgb(238, 238, 238);
 			margin-bottom: 10px;
+			margin-top: 10px;
 			}
 
 /* CONTENIDO ARTISTA */		
@@ -464,7 +535,40 @@ p		{
 			border: 1px solid rgb(227, 227, 227);
 			border-radius: 4px;
 			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
-			}		
+			}
+			
+/* EQUIPO */
+
+		#equipo
+			{
+			width: 1000px;
+			height: 220px;
+			padding: 10px 0px 0px 0px;
+			margin-left: 20px;
+			}
+		.filasequipo
+			{
+			width: 240px;
+			height: auto;
+			margin: 10px 10px 10px 0px;
+			margin: 0px 0px 20px 2px;
+			padding-right: 5px;
+			float: left;
+			display: block;
+			text-align: left;	
+			}
+		.equiponombre
+			{
+			color: #b00000;
+			}
+		.equipotrabajo
+			{
+			color: #589738;	
+			}
+		.equipoanio
+			{
+			color: rgb(140, 140, 140);	
+			}
 			
 /* PARA ORDENAR */
 

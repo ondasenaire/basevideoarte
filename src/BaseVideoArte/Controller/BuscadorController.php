@@ -97,6 +97,25 @@ class BuscadorController {
 
 		}
 
+		//mensaje
+		/*
+		 *  aqui se edita el mensaje que se muestra al realizar la consulta
+		 *  indicando la cantidad de resultados
+		 * 
+		 * IMPORTANTE: EL CRITERIO DE BUSQUEDA SE MUESTRA MEDIANTE JQUERY, EN LOS 3 BUSCADORES.
+		 * desde el servidor se envia la cantidad de resultado o errores.
+		 */
+
+		$mensaje='';
+		$resultados = count($respuesta['resultado']);
+		if($resultados == 0){
+			$mensaje = $mensaje.' No hubo resultados';
+		}else{
+			$mensaje = $mensaje. 'La consulta devolvio '.$resultados.' resultados' ;
+		}
+		
+		$respuesta['mensaje'] = $mensaje; 
+		
 		return $app['twig'] -> render('/busqueda.twig.html', array('form_general' => $form_general -> createView(), 
 																	'form_personas' => $form_personas -> createView(), 
 																	'form_obras' => $form_obras -> createView(), 
@@ -115,12 +134,7 @@ public function buscarAction($respuesta){
 }
 
 
-//-----------
 
-
-	/**
- 	* 
- 	*/
 //  CONSULTASSSSS-------------------------------------------______________________________________
 
 	public function busquedaGeneral(Application $app, $criterio) {
@@ -140,7 +154,10 @@ public function buscarAction($respuesta){
 		// mezclo arrays
 		$resultado_general = array_merge($obras,$personas);
 		
-		return array('mensaje' => $obras_query.'<br><br>'.$personas_query, 'resultado' => $resultado_general);
+		$mensaje='';
+		
+		
+		return array('mensaje' => $mensaje, 'resultado' => $resultado_general);
 	}
 	
 	// busqueda personas
@@ -154,15 +171,16 @@ public function buscarAction($respuesta){
 		 */	
 		$condiciones = array();
 		$leftJoin = array();
+		$criterio = '';	
 		$mensaje = '';	
 		
 		if( !empty($nombre)){
-			$mensaje = $mensaje. ' hay nombre';
+			$criterio = $criterio. 'nombre: '.$nombre;
 			$condiciones [] =  " (persona.apellido LIKE '%$nombre%' OR persona.nombre LIKE '%$nombre%')";			
 		}	
 		
 		if(!empty($sexo) ){
-			$mensaje = $mensaje. ' hay sexo';
+			$criterio = $criterio. ' sexo: '.$sexo;
 			//echo $mensaje;
 			$condiciones[] = " persona.sexo = '$sexo' ";
 		}
@@ -214,8 +232,24 @@ public function buscarAction($respuesta){
 						LEFT JOIN persona.pais pais LEFT JOIN persona.tipos tipos WHERE $andWhere";
 			$q =  $app['db.orm.em']->createQuery($consulta);
 			$personas = $q->getResult();
-			$mensaje = $consulta;
+			//$mensaje = $consulta;
 		}
+		
+		/*
+		 * Editando mensaje
+		 */  
+		 
+		// $criterio = "nombre: $nombre, sexo: $sexo, pais: $pais, tipo: $tipos";
+		 
+		$mensaje = '' ;
+		// $resultados = count($personas);
+		// if($resultados == 0){
+			// $mensaje = $mensaje.' No hubo resultados';
+		// }else{
+			// $mensaje = $mensaje. 'La consulta devolvio '.$resultados.' resultados' ;
+		// }
+// 		
+		
 		
 		return array('mensaje' => $mensaje, 'resultado' => $personas);
 		
@@ -264,12 +298,10 @@ public function buscarAction($respuesta){
 		  WHERE $andWhere";
 			$q =  $app['db.orm.em']->createQuery($consulta);
 			$obras = $q->getResult();
-			$mensaje = $consulta;	
+			//$mensaje = $consulta;	
 		}
 		//--------------
-		
-		
-		//print_r($tipo);
+				
 		// $consulta = "SELECT DISTINCT o.titulo AS encabezado, o.id AS link FROM BaseVideoArte\Entidades\Obra o LEFT JOIN o.palabrasClave palabra LEFT JOIN o.formatos formato
 		  // WHERE palabra.id =$palabra AND formato.id =$formato AND o.titulo LIKE '%$titulo%' ";
 	//	$mensaje = "titulo: $titulo  formato: $formato palabras: $palabras";

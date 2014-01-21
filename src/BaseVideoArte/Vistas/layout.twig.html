@@ -13,25 +13,26 @@
 		{% block js %}{% endblock %}
 	</head>
 
-	<body>
+	<body class="body">
+		<header class="mainHeader">
+		<img src="{{ esServer(path,uri) }}/medios/iconos/portadainicio.jpg" />
 		
-		<div id="wrap" align="center">
+		<div class="separadorMenu"></div>
+		
+		<nav><ul>
+			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'inicio' %} class="menuActual"{% endif%}>Inicio</a></li>
+			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'obras' %} class="menuActual"{% endif%}>Obras</a></li>
+			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'personas' %} class="menuActual"{% endif%}>Personas</a></li>
+			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'busqueda' %} class="menuActual"{% endif%}>Búsqueda Avanzada</a></li>
+			<li><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'equipo' %} class="menuActual"{% endif%}>Equipo</a></li>
+		</ul></nav>
+		
+		<div class="separadorMenu"></div>
+		
+		</header>
+		
+		<div class="mainContent">
 
-			<div id="portadainicio"><img src="{{ esServer(path,uri) }}/medios/iconos/portadainicio.jpg" width="975">
-			</div>
-			<div id="sep_try" style="margin-left: 22px !important;">
-			</div>
-			
-			<div id="menu" class="langs">
-				<ul id="nav">
-					<li style="padding-left: 20px;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'inicio' %} class="actual"{% endif%} >Inicio</a></li>
-					<li style="padding-left: 20px;"><a href="{{ app.url_generator.generate('obras') }}"  {% if pagina_actual == 'obras' %} class="actual"{% endif%}>Obras</a></li>
-					<li style="padding-left: 20px;"><a href="{{ app.url_generator.generate('personas') }}" {% if pagina_actual == 'personas' %} class="actual"{% endif%} >Personas</a></li>
-					
-					<li style="padding-left: 20px;"><a href="{{ app.url_generator.generate('busqueda')}}"  {% if pagina_actual == 'busqueda' %} class="actual"{% endif%}  >Búsqueda Avanzada</a></li>
-					<li style="padding-left: 20px;" ><a href="{{ app.url_generator.generate('equipo') }}" {% if pagina_actual == 'equipo' %} class="actual"{% endif%}>Equipo</a></li>		
-				</ul>
-			</div>			
 			<div id="separador"></div>
 			<a name="arriba"></a>
 			<h2>{% block tituloSeccion %}{% endblock %}</h2>

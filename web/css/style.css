@@ -1,623 +1,128 @@
-/*
-Description: Investigación Base Video Arte UNTREF
-Author: Juan Sebastian Faccio
-Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
-*/
+body {
+	font-size: 88%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	text-align: left;
+	}
+	
+a {
+	text-decoration: none;	
+	}
 
-/*  CSS Reset */
+p {
+	margin: 0px;
+	}
+	
+img {
+	width: auto;
+   max-width:100%;
+   height: auto;
+	}
+	
+.body {
+	margin: 0 auto;
+	width: 90%;
+	}
+	
+.mainHeader img {
+	width: 100%;
+	height: auto;
+	margin: 2% 0;
+	}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,  
-caption, tbody, tfoot, thead
-		{
-		margin: 0; 
-		padding: 0; 
-		border: 0; 
-		outline: 0;
-		font-size: 100%; 
-		background: transparent;
-		}
-body
-		{
-		width: 1000px;
-		height: auto;
-		background: #FFFFFF; 
-		text-align: center;
-		font-family: Arial, Helvetica, sans-serif;
-		margin-left: auto;
-		margin-right: auto;
-		line-height: 1;
-		}
-ol, ul
-		{list-style: none;}
-blockquote, q
-		{quotes: none;}
-blockquote:before, blockquote:after, q:before, q:after
-		{
-		content: '';	
-		content: none;
-		}
-:focus	{outline: 0;}
-ins		{text-decoration: none;}
-del		{text-decoration: line-through;}
-table
-		{
-		border-collapse: collapse;
-		border-spacing: 0;
-		}
-* 
-		{
-		margin: 0;
-		padding: 0;
-		font: normal;
-		outline: none;
-		}
-p		{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		margin-bottom: 2px;
-		font-size: 14px;
-		line-height: 20px;
-		}
-.clear
-		{clear:both; overflow:hidden}
-.line
-		{repeat-x; height:2px;}
-
-/* BaseVideoArte */
-
-#portada
-		{
-		background: #FFFFFF no-repeat center;
-		width: 1000px;
-		height: 600px;
-		position: relative;
-		}
-.langs
-	  	{
-		font-size: 16px;
-		text-align: center;
-		padding: 0px;
-		}
-.langs a 
-		{
-		text-decoration: none;
-		color: #000000;
-		text-align: center;
-		}
-#wrap
-		{
-		width: 1000px;
-		height: auto;
-		margin: 0px;
-		text-align: center;
-		position: 50% 50%;
-		}
-	#portadainicio
-			{
-			width: 1000px;
-			height: 122px;
-			margin: 10px 0px 10px 0px;
-			background-image: url('portadainicio.jpg');
-			}
-	#separador
-		{
-		width: 1000px;
-		height: 8px;
-		text-align: center;
-		}
-
-/* NAVEGACION */
-
-	#menu
-			{
-			text-align: center;
-			width: 1000px;
-			height: 30px;
-			margin: auto;
-			}
-	#anclasordenalfabetico
-			{
-			width: 1000px;
-			height: 20px;
-			margin: 0px;
-			padding: 0px;
-			}
-		#anclasordenalfabetico a
-			{
-			font-size: 18px;
-			}
-		#anclasordenalfabetico a:hover {
-			color:#b00000;
-			}
-	#nav	{
-		width: 100%;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: block;
-		text-align: center;
-		}
-	#nav li {
-		margin: 1px 4px 4px 4px;
-		padding: 1px 4px 4px 4px;
-		border: 0px;
-		float: left;
-		display: inline;
-		}
-	#nav li a {
-		display:inline-block;
-		width:159px;
-		height:10px;
-		padding:10px 0;
-		text-decoration:none;
-		text-align:center;
-		font-size:13px;
-		color:#FFFFFF;
-		background-color:#2e2e2e;
-		border-left:5px solid #2e2e2e;
-		}
-	a.actual {
-		color:#FFFFFF !important;
-		background-color:#589738 !important; 
-		border-left:5px solid #2e2e2e !important; 
-		}
-	#nav li a:hover {
-		color:#FFFFFF;
-		background-color:#b00000;
-		}
-		
+/* MENU DE NAVEGACION */
+	
+.separadorMenu {
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	display: block;
+	float: left;
+	}
+	
+.mainHeader nav {
+	width: 100%;
+	height: 30px;
+	margin: 1% 0;
+	}
+	
+.mainHeader nav ul {
+	list-style: none;
+	margin: 0 auto;
+	width: 100%;
+	}
+	
+.mainHeader nav ul li {
+	float: left;
+	display: inline;
+	width: 16%;
+	margin-bottom: 0.5%;
+	}
+	
+ul {
+	padding-left: 0;
+	}
+	
+.mainHeader nav ul li a:link, .mainHeader nav a:visited {
+	width: 100%;
+	height: 22px;
+	display: inline-block;
+	padding: 4px 0;
+	text-align: center;
+	color:#FFFFFF;
+	background-color:#2e2e2e;
+	border-left:5px solid #2e2e2e;
+	}
+	
+.mainHeader nav ul li a:hover {
+	color: #FFFFFF;
+	background-color: #b00000;
+	}
+	
+.menuActual {
+	color: #FFFFFF !important;
+	background-color: #589738 !important; 
+	border-left: 5px solid #2e2e2e !important; 
+	}
+	
+/* CUERPO DE LA WEB */	
+	
+.mainContent {
+	width: 100%;
+	height: auto;
+	margin: 10px 0 10px 0;
+	text-align: justify;
+	display: block;
+	float: left;
+	}
+	
+.inicio a:link, .inicio a:visited {
+	color: #b00000;
+	}
+	
+.inicio a:hover {
+	color: #589738;
+	}
+	
 /* FOOTER */
+	
+.mainFooter {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 2% 0;
+	display: block;
+	float: left;
+	}
+	
+#bannerUntref {
+	width: 7%;
+	}
 
-	#footer
-		{
-		width: 950px;
-		height: 100px;
-		margin: 0px 0px 10px 20px;
-		padding-top: 8px;
-		padding-bottom: 0px;
-		text-align: center !important;
-		}
-		
-/* CONTENIDO INICIO */
+#bannerContinente {
+	width: 26%;
+	}	
 
-	#menuinicio
-		{
-		width: 200px;
-		height: 200px;
-		margin-left: 2px;
-		margin-right: 14px;
-		float: left;
-		display: block;
-		border-right: 1px solid rgb(238, 238, 238);
-		}
-	#navi	{
-		width: 100%;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: block;
-		text-align: center;
-		}
-	#navi li {
-		margin: 1px 4px 4px 1px;
-		padding: 1px 4px 4px 1px;
-		border: 0px;
-		float: left;
-		display: inline;
-		}
-	#navi li a {
-		display:inline-block;
-		width:159px;
-		height:10px;
-		padding:10px 0;
-		text-decoration:none;
-		text-align:center;
-		font-size:13px;
-		color:#FFFFFF;
-		background-color:#2e2e2e;
-		border-left:5px solid #2e2e2e;
-		}
-	#navi li a:hover {
-		color:#FFFFFF;
-		background-color:#b00000;
-		}
-	#infoin
-		{
-		text-align: justify !important;
-		width: 950px;
-		height: auto;
-		margin-bottom: 20px;
-		padding-left: 18px;	
-		display: block;
-		}
-	#infoinicio
-		{
-		text-align: justify !important;
-		width: 948px;
-		height: auto;
-		margin-bottom: 20px;
-		padding-left: 18px;	
-		}
-		.inicioestilo
-			{
-			text-align: justify !important;
-			width: 948px;
-			height: auto;
-			margin-bottom: 20px;
-			padding-left: 18px;
-			}
-		.inicioestilo a
-			{
-			text-decoration: none;
-			color: #b00000;
-			}
-		.inicioestilo a:hover {
-			color: #589738;
-			}
-
-/* CONTENIDO PERSONAS */
-
-	#containerart {
-		width: 1000px;
-		height: auto;
-		padding: 10px 0px 0px 5px;
-		float: left;
-		display: block;
-		line-height: 1;
-		}
-	#filas {
-		width: 240px;
-		height: auto;
-		text-align: left;
-		margin: 0px 0px 20px 2px;
-		padding-right: 5px;
-		float: left;
-		display: block;
-		}
-		#filas h3
-			{
-			padding-bottom: 5px;
-			padding-left: 16px;
-			font-size: 16px;
-			}
-		#filas h3 a
-			{
-			text-decoration: none;
-			color: #2e2e2e;
-			}
-		#filas h3 a:hover {
-			color:#b00000;
-			}
-		#filas h2
-			{
-			padding-left: 16px;
-			font-size: 14px;
-			}
-		#filas h2 a
-			{
-			text-decoration: none;
-			color: #2e2e2e;
-			}
-		#filas h2 a:hover {
-			color:#589738;
-			}
-
-/* CONTENIDO PERSONAS */
-
-	#container_artista
-		{
-		height: auto;
-		width: 1000px;
-		padding: 10px 0px 0px 5px;
-		}
-		#header_artista
-			{
-			width: 1000px;
-			height: 30px;
-			margin-bottom: 10px;
-			padding-left: 16px;
-			font-size: 30px;
-			text-align: center;
-			}
-		#sep_try
-			{
-			width: 950px;
-			height: 10px;
-			text-align: left;
-			margin-left: 16px;
-			border-bottom: 1px solid rgb(238, 238, 238);
-			margin-bottom: 10px;
-			margin-top: 10px;
-			}
-
-/* CONTENIDO ARTISTA */		
-		
-		#container_foto
-			{
-			height: 180px;
-			width: 170px;
-			float: right;
-			padding: 4px;
-			margin: 0px 34px 0px 13px;
-			}
-		#foto {
-			height: 150px;
-			width: 150px;
-			margin: 0px 34px 0px 13px;
-			padding: 4px;
-			border: 1px solid rgba(0, 0, 0, 0.2);
-			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-			display: block;
-			}
-		#datosfoto {
-			height: 25px;
-			width: 150px;
-			margin: 0px 0px 0px 4px;
-			padding: 4px 4px 4px 12px;
-			text-align: center;
-			display: block;
-			}
-		#descripcion {
-			width: 950px;
-			height: auto;
-			text-align: justify;
-			padding-left: 16px;
-			display: block;
-			}
-		#txts {
-			width: 1000px;
-			padding-left: 16px;
-			text-align: left;
-			}
-		#txts a
-			{
-			text-decoration: none;
-			color: #b00000;
-			}
-		#txts a:hover {
-			color:#589738;
-			}
-		#containerobras
-			{
-			width: 928px;
-			height: auto;
-			padding: 15px 10px 15px 10px;
-			margin-left: 16px;
-			display: block;
-			text-align: left;
-			background-color: rgb(245, 245, 245);
-			border: 1px solid rgb(227, 227, 227);
-			border-radius: 4px;
-			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
-			}
-			#obra
-			{
-			width: 900;
-			height: auto;
-			text-align: left;
-			}
-			.unstyled
-			{
-			margin-top: 10px;
-			}
-			.cadaobra
-			{
-			margin-bottom: 8px;
-			}
-			.anioObraEvento 
-			{
-			margin-bottom: 10px;
-			padding-left: 10px;
-			color: rgb(140, 140, 140);
-			}
-			.ObrasLinks
-			{
-			text-decoration: none;
-			color: #2e2e2e;
-			}
-			.ObrasLinks:hover
-			{
-			text-decoration: none;
-			color: #b00000;
-			}
-			small 
-			{
-			font-size: 80%;
-			}
-		#containereventosart
-			{
-			width: 928px;
-			height: auto;
-			padding: 15px 10px 15px 10px;
-			margin-left: 16px;
-			display: block;
-			text-align: left;
-			background-color: rgb(245, 245, 245);
-			border: 1px solid rgb(227, 227, 227);
-			border-radius: 4px;
-			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
-			}			
-		#containercurador
-			{
-			width: 928px;
-			height: auto;
-			padding: 15px 10px 15px 10px;
-			margin-left: 16px;
-			display: block;
-			text-align: left;
-			background-color: rgb(245, 245, 245);
-			border: 1px solid rgb(227, 227, 227);
-			border-radius: 4px;
-			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
-			}		
-
-/* CONTENIDO OBRA */
-
-		#container_obra
-		{
-		height: auto;
-		width: 1000px;
-		text-align: left !important;
-		padding: 10px 0px 0px 23px;
-		margin: 0 0 20px;
-		display: block;
-		}
-		#header_obra
-			{
-			width: 1000px;
-			height: 30px;
-			margin-bottom: 10px;
-			padding-left: 16px;
-			font-size: 30px;
-			text-align: center;
-			}
-		#fotoobra
-			{
-			width: 380px;
-			height: 214px;
-			text-align: left !important;
-			float: left;
-			margin-right: 20px;
-			display: inline-block;
-			margin-bottom: 20px;
-			}
-		#datos_ficha_obra
-			{
-			width: 503px;
-			min-height: 420px;
-			text-align: left;
-			padding-left: 18px;
-			border-left: 1px solid rgb(238, 238, 238);
-			float: left;
-			display: inline-block;		
-			}
-		#datos_obras {
-			width: 503px;
-			text-align: left;
-			}
-		#datos_obras a
-			{
-			text-decoration: none;
-			color: #b00000;
-			}
-		#datos_obras a:hover {
-			color: #589738;
-			}
-		#embedvideo
-			{
-			margin: 20px;
-			display: inline;
-			padding: 20px;
-			}
-		.iframevid
-			{
-			margin: 15px 0 0 0;
-			}
-		#containerObrasEventos
-			{
-			display: inline-block;
-			float: left;
-			margin: 20px 7px 0px 5px;				
-			}
-		.estilovinetas		
-			{
-			min-height: 413px;
-			padding: 15px 10px 15px 10px;
-			margin-left: 4px;
-			display: block;
-			text-align: left;
-			background-color: rgb(245, 245, 245);
-			border: 1px solid rgb(227, 227, 227);
-			border-radius: 4px;
-			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
-			}
-			
-/* EQUIPO */
-
-		#equipo
-			{
-			width: 1000px;
-			height: 220px;
-			padding: 10px 0px 0px 0px;
-			margin-left: 20px;
-			}
-		.filasequipo
-			{
-			width: 240px;
-			height: auto;
-			margin: 10px 10px 10px 0px;
-			margin: 0px 0px 20px 2px;
-			padding-right: 5px;
-			float: left;
-			display: block;
-			text-align: left;	
-			}
-		.equiponombre
-			{
-			color: #b00000;
-			}
-		.equipotrabajo
-			{
-			color: #589738;	
-			}
-		.equipoanio
-			{
-			color: rgb(140, 140, 140);	
-			}
-			
-/* PARA ORDENAR */
-
-		#cont2letras
-			{
-			width: 1000px;
-			height: auto;
-			margin: 0;
-			float: left;
-			display: block;
-			}
-		#containeranclas
-			{
-			width: 500px;
-			height: auto;
-			margin: 0px 0px 5px 0px;
-			float: left;
-			display: block;
-			}
-			.ordenlinks
-				{
-				padding-right:4px;
-				font-size: 15px;
-				text-decoration: none;
-				color: #000000;
-				text-align: center;
-				}
-			.ordenlinksactual
-				{
-				padding-right:4px;
-				font-size: 15px;
-				text-decoration: none;
-				color: #b00000;
-				text-align: center;
-				}
-			.ordenlinksar
-				{
-				padding-right:4px;
-				font-size: 15px;
-				text-decoration: none;
-				color: #000000;
-				text-align: center;
-				color:#ae0300;
-				}
-		#containervolverarriba
-			{
-			width: 500px;
-			height: auto;
-			margin: 0px 0px 5px 0px;
-			float: left;
-			display: block;
-			}
+#bannerBim {
+	width: 10%;
+	}

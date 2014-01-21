@@ -21,10 +21,10 @@
 		
 		<nav><ul>
 			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'inicio' %} class="menuActual"{% endif%}>Inicio</a></li>
-			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'obras' %} class="menuActual"{% endif%}>Obras</a></li>
-			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'personas' %} class="menuActual"{% endif%}>Personas</a></li>
-			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'busqueda' %} class="menuActual"{% endif%}>Búsqueda Avanzada</a></li>
-			<li><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'equipo' %} class="menuActual"{% endif%}>Equipo</a></li>
+			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('obras') }}" {% if pagina_actual == 'obras' %} class="menuActual"{% endif%}>Obras</a></li>
+			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('personas') }}" {% if pagina_actual == 'personas' %} class="menuActual"{% endif%}>Personas</a></li>
+			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('busqueda') }}" {% if pagina_actual == 'busqueda' %} class="menuActual"{% endif%}>Búsqueda Avanzada</a></li>
+			<li><a href="{{ app.url_generator.generate('equipo') }}" {% if pagina_actual == 'equipo' %} class="menuActual"{% endif%}>Equipo</a></li>
 		</ul></nav>
 		
 		<div class="separadorMenu"></div>
@@ -42,5 +42,12 @@
 				{% endblock %}
 			</div>
 		</div>
+		
+		
+	<footer class="mainFooter">
+		<a href="http://www.untref.edu.ar" target="_blank"><img src="{{ esServer(path,uri) }}/medios/iconos/banneruntref.jpg" style="padding-right: 3%;" id="bannerUntref" /></a>
+		<a href="http://www.continentevideo.com.ar" target="_blank"><img src="{{ esServer(path,uri) }}/medios/iconos/continentebanner.jpg" style="padding-left: 3%; padding-right: 3%;" id="bannerContinente" /></a>
+		<a href="http://www.bim.com.ar" target="_blank"><img src="{{ esServer(path,uri) }}/medios/iconos/bimbanner.jpg" style="padding-left: 3%;" id="bannerBim" /></a>
+	</footer>
 	</body>
 </html>

@@ -11,7 +11,14 @@
 	<div id="separador"> </div>
 	<div id="containerobra">
 		<div id="fotoobra">
-			<img src="{{ esServer(path,uri) }}/medios/iconos/380x214.jpg" />
+			
+			{% set pais = ''%}
+			{% for artista in obra.artistas%}
+				{%set pais = artista.pais.pais%}
+			{%endfor%}
+			
+			
+			<img src=" {%if obra.getFoto != null %}{{ esServer(path,uri) }}/medios/img/obras/{{pais|lower}}/{{obra.getFoto.archivo}}{%else%}{{ esServer(path,uri) }}/medios/iconos/380x214.jpg{%endif%}" />
 			
 			{% for video in obra.getVideos()%}
         	      	 {{video | raw}}

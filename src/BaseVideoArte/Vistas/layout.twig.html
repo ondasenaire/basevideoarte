@@ -38,8 +38,13 @@
 			<h2>{% block tituloSeccion %}{% endblock %}</h2>
 
 			<div id="contenido">
-				{% block contenido %}
-				{% endblock %}
+				<div class="content">
+					
+					<article class="inicio">
+						{% block contenido %}
+						{% endblock %}
+					</article>
+				</div>
 			</div>
 		</div>
 		

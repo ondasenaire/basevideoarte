@@ -13,7 +13,8 @@
 		 "tipo":["artista"],
 		 "obras":["III momentos","Instante Bony"],
 		 "metadatos": [{"metadato":"gatos","tipo":"nombre"},{"metadato":"gatos","tipo":"apellido"}],
-		 "enlaces": ["sda","sad"]
+		 "enlaces": ["sda","sad"],
+		 "foto":"denegri_andres.jpg"
 		 },
 		
 		
@@ -29,7 +30,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto":"khourian_hernan.jpg"
 		 },
 		 
 		 "diaz_morales_sebastian":
@@ -44,7 +46,9 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto": "diaz_morales_sebastian.jpg"
+		 
 		 },
 		 
 		 "gustavo_galuppo":
@@ -59,7 +63,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto":"galuppo_gustavo.jpg"
 		 },
 		 
 		 "szperling_silvina":
@@ -74,7 +79,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista","curador"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto": "szperling_silvina.jpg"
 		 },
 		 
 		 
@@ -90,7 +96,9 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto":"marino_ivan.jpg"
+		 
 		 },
 		 
 		 "larranaga_gabriela":
@@ -105,7 +113,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto": "larrañaga_gabriela.jpg"
 		 },
 	
 		 "pons_ricardo":
@@ -120,7 +129,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto":"pons_ricardo.jpg"
 		 },
 		
 		 "rivas_silvia":
@@ -135,7 +145,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto": "rivas_silvia.jpg"
 		 },
 		
 		 "taquini_graciela":
@@ -150,7 +161,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista","curador"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto":"taquini_graciela.jpg"
 		 },
 		 
 		  "vanoni_anabel":
@@ -165,7 +177,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto": "vanoni_anabel.jpg"
 		 },
 		 
 		  "testoni_nicolas":
@@ -180,7 +193,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto":"testoni_nicolas.jpg"
 		 },
 		 
 		 "delgado_christian":
@@ -195,7 +209,8 @@
 		 "pais":"argentina",
 		 "tipo":["artista"],
 		 "obras":[],
-		 "metadatos": []
+		 "metadatos": [],
+		 "foto":"delgado_christian.jpg"
 		 }
 		 
 		 

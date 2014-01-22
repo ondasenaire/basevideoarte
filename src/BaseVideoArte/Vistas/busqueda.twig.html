@@ -2,88 +2,146 @@
 
 {% block title %}Buscador{% endblock %}
 {% block js%}{%endblock%}
-{%block css%}<link rel="stylesheet" href="{{ esServer(path,uri) }}/css/form.css" />{%endblock%}
-
-
+{%block css%}
+<link rel="stylesheet" href="{{ esServer(path,uri) }}/css/form.css" />
+{%endblock%}
 
 {% block contenido %}
-<div id="separador"></div><div id="separador"></div>
-
-
-	
+<div id="container_formulario">
 
 	<div id="form_personas">
-		<h3>Buscar Personas</h3><br />
+		<p class="titulo">Buscar Personas</p>
 		<form id="busqueda_personas" action="{{ path('busqueda') }}" method="get" >
-			<div><p>{{form_label(form_personas.nombre) }}<br />{{form_widget(form_personas.nombre) }}  </p></div>
-			
-			<div><p>{{form_label(form_personas.sexo) }} <br /> 
-				 	{% for child in form_personas.sexo %}
-						<div class="titcamp">{{form_widget(child)}}    {{form_label(child )}} <br /> </div> 
+			<div>
+				<p>
+					{{form_label(form_personas.nombre) }}
+					<br />
+					{{form_widget(form_personas.nombre) }}
+				</p>
+			</div>
+
+			<div>
+				<p>
+					{{form_label(form_personas.sexo) }}
+					<br />
+					{% for child in form_personas.sexo %}
+					<div class="titcamp">
+						{{form_widget(child)}}    {{form_label(child )}}
+						<br />
+					</div>
 					{% endfor %}
 				</p>
 			</div>
-			
-			<div><p>{{form_label(form_personas.pais) }}<br />{{form_widget(form_personas.pais) }}  </p></div>
-			<div><p>{{form_label(form_personas.tipo) }}<br />{{form_widget(form_personas.tipo) }}  </p></div><br />
-			<div><p>{{form_row(form_personas.buscar) }}</p></div><br />
-			 <div><p>{{ form_rest(form_personas) }}</p></div>
-			 
-			 
-			 <!-- {% for child in form_personas.sexo %} {{ form_widget(child) }}	{% endfor %}  , { 'attr': {'class': 'titcamp'} } -->
+
+			<div>
+				<p>
+					{{form_label(form_personas.pais) }}
+					<br />
+					{{form_widget(form_personas.pais) }}
+				</p>
+			</div>
+			<div>
+				<p>
+					{{form_label(form_personas.tipo) }}
+					<br />
+					{{form_widget(form_personas.tipo) }}
+				</p>
+			</div>
+			<br />
+			<div>
+				<p>
+					{{form_row(form_personas.buscar) }}
+				</p>
+			</div>
+			<br />
+			<div>
+				<p>
+					{{ form_rest(form_personas) }}
+				</p>
+			</div>
+
+			<!-- {% for child in form_personas.sexo %} {{ form_widget(child) }}	{% endfor %}  , { 'attr': {'class': 'titcamp'} } -->
 
 		</form>
 	</div>
-	
+
 	<div id="form_obras">
-		<h3>Buscar Obras</h3><br />
+		<p class="titulo">Buscar Obras</p>
 		<form id="busqueda_obras" action="{{ path('busqueda') }}" method="get" >
-			<div><p>{{form_label(form_obras.titulo) }} <br /> {{form_widget(form_obras.titulo) }} </p></div>
-			<div><p>{{form_label(form_obras.formato) }} <br /> {{form_widget(form_obras.formato) }} </p></div>
-			<div><p>{{form_label(form_obras.palabras) }} <br /> {{form_widget(form_obras.palabras) }} </p></div><br />
+			<div>
+				<p>
+					{{form_label(form_obras.titulo) }}
+					<br />
+					{{form_widget(form_obras.titulo) }}
+				</p>
+			</div>
+			<div>
+				<p>
+					{{form_label(form_obras.formato) }}
+					<br />
+					{{form_widget(form_obras.formato) }}
+				</p>
+			</div>
+			<div>
+				<p>
+					{{form_label(form_obras.palabras) }}
+					<br />
+					{{form_widget(form_obras.palabras) }}
+				</p>
+			</div>
+			<br />
 			{{ form_rest(form_obras) }}
 
 		</form>
 	</div>
-	
-	
+
 	<div id="form_general">
-		<h3>Busqueda General</h3><br />
+		<p class="titulo">Busqueda General</p>
 		<form id="busqueda_general" action="{{ path('busqueda') }}" method="get" >
-			<div><p>{{form_label(form_general.consulta) }}<br /> {{form_widget(form_general.consulta) }} </p></div><br />
+			<div>
+				<p>
+					<label for="buscador_personas_nombre">{{form_label(form_general.consulta) }}:</label>
+					<br />
+					{{form_widget(form_general.consulta) }}
+				</p>
+			</div>
+			<br />
 			{{form_row(form_general.buscar) }}
 			{{ form_rest(form_general) }}
 		</form>
 	</div>
 
-
-
-<div id="containerObrasEventos">
+	<div id="containerObrasEventos">
 		<div id="containerobras">
-	<div id="resultado_busqueda">
-	{{respuesta.mensaje}}
-	{%set titulo = ''%}
-	
-	<ul class="unstyled">
-	{%for resultado in respuesta.resultado%}
-		{% if titulo != resultado.entidad%}
-			{% set titulo = resultado.entidad%}
-			<h2>{{titulo}}</h2>
-		{%endif%}
-		
-		
-		{%if resultado.entidad == 'obras' %}
-		<li class="cadaobra">	<a class="ObrasLinks" href="{{path('obra',{obra: resultado.link}) }}"><h3>{{resultado.encabezado}}</h3></a></li>
-		{%endif %}
-		
-		{%if resultado.entidad == 'personas' %}
-			<li class="cadaobra"><a class="ObrasLinks" href="{{ path('persona',{persona: resultado.link}) }}"><h3>{{resultado.encabezado}}</h3></a></li>
-		{%endif %}
-		
-		
-	{%endfor%}
-	</ul>
+			<div id="resultado_busqueda">
+				{{respuesta.mensaje}}
+				{%set titulo = ''%}
+
+				<ul class="unstyled">
+					{%for resultado in respuesta.resultado%}
+					{% if titulo != resultado.entidad%}
+					{% set titulo = resultado.entidad%}
+					<h2>{{titulo}}</h2>
+					{%endif%}
+
+					{%if resultado.entidad == 'obras' %}
+					<li class="cadaobra">
+						<a class="ObrasLinks" href="{{path('obra',{obra: resultado.link}) }}"><h3>{{resultado.encabezado}}</h3></a>
+					</li>
+					{%endif %}
+
+					{%if resultado.entidad == 'personas' %}
+					<li class="cadaobra">
+						<a class="ObrasLinks" href="{{ path('persona',{persona: resultado.link}) }}"><h3>{{resultado.encabezado}}</h3></a>
+					</li>
+					{%endif %}
+
+					{%endfor%}
+				</ul>
+			</div>
+		</div>
 	</div>
-	</div>
+
 </div>
+<div class="separadorMenu"> </div>
 {% endblock %}

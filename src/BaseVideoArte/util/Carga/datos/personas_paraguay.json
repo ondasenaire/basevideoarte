@@ -8,6 +8,7 @@
 		 "web":["http://www.nuestramirada.org/profile/fredicasco"],
 		 "sexo":"h",
 		 "mostrar":true,
+		 "foto":"casco_fredi.jpg",
 		 
 		 "pais": "paraguay",
 		 "tipo":["artista"],
@@ -24,6 +25,7 @@
 		 "web":["https://vimeo.com/user7170507"],
 		 "sexo":"m",
 		 "mostrar":true,
+		 "foto":"encina_paz.jpg",
 		 
 		 "pais": "paraguay",
 		 "tipo":["artista"],

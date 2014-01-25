@@ -8,6 +8,7 @@
 		 "web":["http://netart.org.uy/interfaces02/uy/aguerre_bio.html"],
 		 "sexo":"h",
 		 "mostrar":true,
+		 "foto":"aguerre_enrique.jpg",
 		 
 		 "pais": "uruguay",
 		 "tipo":["artista"],
@@ -24,6 +25,7 @@
 		 "web":["http://teresapuppo.com/"],
 		 "sexo":"m",
 		 "mostrar":true,
+		 "foto":"puppo_teresa.jpg",
 		 
 		 "pais": "uruguay",
 		 "tipo":["artista"],

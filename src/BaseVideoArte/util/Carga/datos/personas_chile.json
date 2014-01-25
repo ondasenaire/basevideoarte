@@ -2,12 +2,13 @@
 
 	"aravena_claudia":
 		{"nombre":"Claudia",
-		 "apellido":"Aravena",
+		 "apellido":"Aravena Abugosh",
 		 "data":"1968 nace en Santiago de Chile. Entre 1987 y 1992 estudia Diseño Gráfico en la Universidad Arcis, y se titula en Comunicación Audiovisual en el Instituto Arcos. Vive en Santiago de Chile.",
 		 "inicio":"1990",
 		 "web":["http://www.claudiaaravenaabughosh.cl/","http://www2.sescsp.org.br/sesc/videobrasil/site/dossier024/apresenta_en.asp"],
 		 "sexo":"m",
 		 "mostrar":true,
+		 "foto":"aravena_abugosh_claudia.jpg",
 		 
 		 "pais": "chile",
 		 "tipo":["artista"],
@@ -26,6 +27,7 @@
 		 "web":["http://revista.escaner.cl/node/192"],
 		 "sexo":"h",
 		 "mostrar":true,
+		 "foto":"cifuentes_guillermo.jpg",
 		 
 		 "pais": "chile",
 		 "tipo":["artista"],
@@ -41,6 +43,7 @@
 		 "web":["http://eendress.wordpress.com/"],
 		 "sexo":"h",
 		 "mostrar":true,
+		 "foto":"endress_edgar.jpg",
 		 
 		 "pais": "chile",
 		 "tipo":["artista"],
@@ -56,6 +59,7 @@
 		 "web":["http://www.enriqueramirez.net"],
 		 "sexo":"h",
 		 "mostrar":true,
+		 "foto":"ramirez_enrique.jpg",
 		 
 		 "pais": "chile",
 		 "tipo":["artista"],
@@ -71,11 +75,28 @@
 		 "web":["http://www.carolinasaquel.com/"],
 		 "sexo":"m",
 		 "mostrar":true,
+		 "foto":"saquel_carolina.jpg",
 		 
 		 "pais": "chile",
 		 "tipo":["artista"],
 		 "obras":[],
 		 "metadatos": []
-		 } 
+		 },
+		 
+		 "foschino_Gianfranco":
+		{"nombre":"Gianfranco",
+		 "apellido":"Foschino",
+		 "data":"Gianfranco Foschino nació en 1983 en Santiago de Chile. Se graduó en Estudios de Cine de la Universidad UNIACC y completó un curso de Diseño de Imagen y Sonido en la FADU, Universidad de Buenos Aires (2005). Foschino es uno de los artistas clave de una nueva generación en Chile, internacionalmente reconocido por sus vídeos y las instalaciones. En 2010, participó en una exposición de dos personas casi romántica comisariada por Christopher Eamon en la I-20 Gallery, Nueva York. En 2011, su trabajo fue presentado en el Pabellón LATINOAMERICANO de 54a Bienal de Venecia. En 2012, él hizo FAAP Programa Internacional de Residencia en Sao Paulo. Actualmente vive y trabaja en Santiago.",
+		 "inicio":"2000",
+		 "web":["http://www.gianfoschino.com/"],
+		 "sexo":"h",
+		 "mostrar":true,
+		 "foto":"foschino_gianfranco.jpg",
+		 
+		 "pais": "chile",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 }  
 		 
 }

@@ -8,6 +8,7 @@
 		 "sexo":"h",
 		 "mostrar":true,
 		 
+		 
 		 "pais": "brasil",
 		 "tipo":["artista"],
 		 "obras":[],
@@ -22,6 +23,7 @@
 		 "web":["http://www.caoguimaraes.com/"],
 		 "sexo":"h",
 		 "mostrar":true,
+		 "foto":"guimaraes_cao.jpg",
 		 
 		 "pais": "brasil",
 		 "tipo":["artista"],
@@ -37,6 +39,7 @@
 		 "web":["http://vimeo.com/user2595777","http://www2.sescsp.org.br/sesc/videobrasil/vbonline/bd/index.asp?cd_entidade=21274&cd_idioma=18531"],
 		 "sexo":"m",
 		 "mostrar":true,
+		 "foto":"cardoso_ines.jpg",
 		 
 		 "pais": "brasil",
 		 "tipo":["artista"],
@@ -53,6 +56,7 @@
 		 "web":["http://www.cesarmeneghetti.net/"],
 		 "sexo":"h",
 		 "mostrar":true,
+		 "foto":"meneghetti_cesar.jpg",
 		 
 		 "pais": "brasil",
 		 "tipo":["artista"],
@@ -68,6 +72,7 @@
 		 "web":["http://www.videobrasil.org.br/ffdossier/ffdossier002/eng/ind.htm/"],
 		 "sexo":"h",
 		 "mostrar":true,
+		 "foto":"morales_wagner.jpg",
 		 
 		 "pais": "brasil",
 		 "tipo":["artista"],
@@ -78,17 +83,52 @@
 		 "oliveira_farkas_solange":
 		{"nombre":"Solange",
 		 "apellido":"Oliveira Farkas",
-		 "data":"Wagner Morales is a film maker and a visual artist. He was born in Sao Paulo (1971) and lives and works in Paris. He went to France in 2004 for a residence at Le Fresnoy. For the following two of years he participated in the Programme Pavillion of the Palais de Tokyo. He has made several auteur films, documentaries, photographs and installations. His work is shown at the Galeria Transversal, in Sao Paulo and his films and videos, as well as his installations, are exhibited in important institutions in Brazil, France and many other countries. Graduated in Anthropology, he started to work with film just right after college. Since them, his practice has been concentrated on visual and sound media and he has done some projects on video, music, installation and photography. He never worked as an anthropologist. Morales participated of Bienal do Mercosul in 2010 and 2011 and curated the video lounge of 28ª Bienal Internacional de São Paulo. In 2005 he did release “Preto contra Branco”, doc awarded at DOCTV programme and the “Best International Documentary” at Festival ReelWord, em Toronto, Canadá.  In 2010, he was a resident artist at HIAP – Helsinki International Artist-in-residence Programme, em Helsink, Finland.",
+		 "data":"Solange Oliveira Farkas is an international curator and the president of Associação Cultural Videobrasil. She created the International Contemporary Art Festival SESC_Videobrasil, which has become a reference for artistic production from the geopolitical South of the world. In a career that spans twenty-five years, she has been at the helm of exhibitions such as the Pan-African Contemporary Art Exhibition (Salvador, 2005); La Mirada Discreta: Marcel Odenbach & Robert Cahen (Buenos Aires, 2006); Roteiro Amarrado (Tied-up script, CCBB Rio de Janeiro, 2010), and Suspensão e Fluidez (Suspension and fluidity, ARCO, Madrid, 2007), focusing on the work of Brazilian artist Eder Santos; Sophie Calle ­ Take Care of Yourself (São Paulo & Salvador, 2009); and Joseph Beuys ­ We Are The Revolution (São Paulo & Salvador, 2010). As the director and curator-in-chief of the Museum of Modern Art of Bahia from 2007 to 2010, she promoted exhibitions by artists such as Chelpa Ferro, Daniel Senise, Thomaz Farkas, and Mario Cravo Neto. Throughout 2011, she acts as co-curator of the Film Program of the 10th edition of the Sharjah Biennial (United Arab Emirates), guest curator at the 16th Cerveira Biennial (Portugal), and the 6th Videozone: International Video Art Biennial (Israel), and as curator-general of the 17th International Contemporary Art Festival SESC_Videobrasil, which will feature the Southern Panoramas show and the first solo exhibition in Brazil of the Danish-Icelandic artist Olafur Eliasson.",
 		 "inicio":"1980",
 		 "web":["http://universes-in-universe.org/eng/bien/sesc_videobrasil/2011/solange_farkas"],
 		 "sexo":"m",
 		 "mostrar":true,
+		 "foto": "farkas_solange.jpg",
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		"lobato_pablo":
+		{"nombre":"Pablo",
+		 "apellido":"Lobato",
+		 "data":"",
+		 "inicio":"-",
+		 "web":["http://universes-in-universe.org/esp/bien/sesc_videobrasil/2011/southern_panoramas_tour/part_1/11_pablo_lobato"],
+		 "sexo":"h",
+		 "mostrar":true,
+		 "foto":"lobato_pablo.jpg",
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		"Marcellvs_l":
+		{"nombre":"L.",
+		 "apellido":"Marcellvs",
+		 "data":"Tiempo trastocado y un ojo fotográfico afilado que altera nuestra percepción de lo común, son características frecuentes de la obra del artista en el vídeo y el sonido. Marcellvs L. ha exhibido internacionalmente desde mediados de la década de 2000, con espectáculos en el Centro Pompidou de París, y Today Art Museum, Pekín (ambos en 2010). Ha participado en las bienales de Sydney (2008), Lyon (2007) y São Paulo (2006), y en varias ediciones del Festival SESC_Videobrasil Arte Contemporáneo, São Paulo (2003-2011). Fue galardonado en el 51 º Festival Internacional de Cortometrajes de Oberhausen (2005).",
+		 "inicio":"2000",
+		 "web":["http://www.carliergebauer.com/artists/marcellvs_l/"],
+		 "sexo":"h",
+		 "mostrar":true,
+		 "foto":"marcellvs_l.jpg",
 		 
 		 "pais": "brasil",
 		 "tipo":["artista"],
 		 "obras":[],
 		 "metadatos": []
 		 }
+		 
+		 
 		
 	
 	

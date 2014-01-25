@@ -12,8 +12,8 @@
 		 "pais": "argentina",
 		 "tipo":["artista"],
 		 "obras":["III momentos","Instante Bony"],
-		 "metadatos": [{"metadato":"gatos","tipo":"nombre"},{"metadato":"gatos","tipo":"apellido"}],
-		 "enlaces": ["sda","sad"],
+		 "metadatos": [],
+		 "enlaces": [],
 		 "foto":"denegri_andres.jpg"
 		 },
 		
@@ -202,7 +202,7 @@
 		 "apellido":"Delgado",
 		 "data":" ",
 		 "inicio":"2000",
-		 "web":[" "],
+		 "web":["https://vimeo.com/user2670253"],
 		 "sexo":"h",
 		 "mostrar":true,
 		 
@@ -211,8 +211,88 @@
 		 "obras":[],
 		 "metadatos": [],
 		 "foto":"delgado_christian.jpg"
+		 },
+		 
+		  "El Halli Obeid_leticia":
+		{"nombre":"Leticia",
+		 "apellido":"El Halli Obeid",
+		 "data":" ",
+		 "inicio":"-",
+		 "web":[" "],
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": [],
+		 "foto":"el_halli_obeid_leticia.JPG"
+		 },
+		 
+		   "golder_gabriela":
+		{"nombre":"Gabriela",
+		 "apellido":"Golder",
+		 "data":"Artista, curadora independiente, profesora en diversas universidades de la Argentina y el exterior y co-directora de CONTINENTE, Centro de Investigación en Artes Audiovisuales, de la Universidad Nacional Tres de Febrero, Argentina y de la Bienal de la Imagen en Movimiento (BIM).",
+		 "inicio":"1990",
+		 "web":["http://www.gabrielagolder.com/"],
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": [],
+		 "foto":"golder_gabriela.jpg"
+		 },
+		 
+		   "olivera_javier":
+		{"nombre":"Javier",
+		 "apellido":"Olivera",
+		 "data":" ",
+		 "inicio":"-",
+		 "web":[" "],
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": [],
+		 "foto":"olivera_javier.jpg"
+		 },
+		 
+		 		 
+		   "plano_javier":
+		{"nombre":"Javier",
+		 "apellido":"Plano",
+		 "data":"Javier Plano es Realizador Sonovisual en Imagen Electrónica de la UNTREF, y se encuentra próximo a graduarse de Licenciado en Artes Electrónicas. Por sus trabajos en video ha recibido distinciones de parte de los jurados del Premio MAMba/Fundación Telefónica a las Artes y Nuevas Tecnologías 2010-2011, y del 101° Salón Nacional de Artes Visuales. Es el responsable tecnológico y media manager de Continente (centro de investigación en artes audiovisuales de la UNTREF), y el asistente de dirección de la Bienal de la Imagen en Movimiento (BIM). En 2013 su proyecto En Construcción, presentado junto a Gabriela Golder, resulta ganador del concurso Desarrollo de Proyectos de Cultura Digital 2013, del Instituto Cultural de la provincia de Buenos Aires. Fue seleccionado en el mismo año en el programa-beca Interactivos, de la Fundación Telefónica. Se encuentra actualmente desarrollando el proyecto audiovisual Videonic, el cual comprende la utilización y elaboración de tecnología de video analógico, articulada con los nuevos medios digitales. Este abarca la realización de visuales en vivo en colaboración con otros artistas de la imagen y el sonido, objetos electrónicos, instalaciones audiovisuales, obra monocanal, y talleres.",
+		 "inicio":"2000",
+		 "web":["http://jjplano.com.ar/"],
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": [],
+		 "foto":"plano_javier.jpg"
+		 },
+		 
+		 		 
+		   "Trilnick_carlos":
+		{"nombre":"Carlos",
+		 "apellido":"Trilnick",
+		 "data":"",
+		 "inicio":"-",
+		 "web":[""],
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": [],
+		 "foto":"trilnick_carlos.jpg"
 		 }
-		 
-		 
 		 
 }

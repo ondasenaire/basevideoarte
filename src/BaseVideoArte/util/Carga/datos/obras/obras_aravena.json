@@ -6,6 +6,7 @@
 	"anho":"2000", 
 	"duracion":"13m",
 	"mostrar": true,
+	"foto":"aravena_abugosh_claudia-berlin_been_there_to_be_here.jpg",
 	
 	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],
@@ -21,6 +22,7 @@
 	"duracion":"24m",
 	"mostrar": true,	
 		
+	"foto":"aravena_abugosh_claudia-lugar_comun_common_place_i.jpg",
 	"autores": ["aravena_claudia"],	
 	"genero": ["Experimental", "Documental"],
 	"palabras": ["inmigración","exilio"]
@@ -35,6 +37,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"foto":"aravena_abugosh_claudia-lugar_comun_common_place_ii.jpg",
 	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental", "Documental"],
@@ -51,6 +54,7 @@
 	"duracion":"5m30s",
 	"mostrar": true,	
 	
+	"foto":"aravena_abugosh_claudia-11_de_septiembre.jpg",
 	"autores": ["aravena_claudia"],
 	"formato":[],	
 	"genero": ["Experimental"],
@@ -66,6 +70,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"foto":"aravena_abugosh_claudia-beitjala.jpg",
 	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental","Documental"],
@@ -81,6 +86,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"foto":"aravena_abugosh_claudia-greetings_from_palestina.jpg",
 	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental","Documental"],
@@ -96,6 +102,7 @@
 	"duracion":"20m",
 	"mostrar": true,	
 	
+	"foto":"aravena_abugosh_claudia-out_of_place.jpg",
 	"autores": ["aravena_claudia"],
 	"formato":["Video"],	
 	"genero": ["Experimental","Documental"],
@@ -111,6 +118,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"foto":"aravena_abugosh_claudia-esto_no_es_loop_es_tiempo_real.jpg",
 	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental"],
@@ -126,6 +134,7 @@
 	"duracion":"-",
 	"mostrar": true,	
 	
+	"foto":"aravena_abugosh_claudia-miedo.jpg",
 	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Experimental"],
@@ -141,6 +150,7 @@
 	"duracion":"13m",
 	"mostrar": true,	
 	
+	"foto":"aravena_abugosh_claudia-in_continente.jpg",
 	"autores": ["aravena_claudia"],
 	"formato":["Instalacion"],	
 	"genero": ["Documental"],

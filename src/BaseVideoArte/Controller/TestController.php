@@ -72,7 +72,7 @@ class TestController{
 			 echo $genero->getGenero();
 		}		 
 				
-	//	$a->persistir($app);
+		$a->persistir($app);
 		return new Response( " ");
 	}
 	

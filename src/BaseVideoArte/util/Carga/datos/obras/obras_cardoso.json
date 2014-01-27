@@ -10,7 +10,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": [],
-	"palabras": []	
+	"palabras": [],
+	"foto":"cardoso_ines-diastole.jpg"	
 	},
 	
 	"Privacy Invasion, to forget a great love":
@@ -24,7 +25,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": [],
-	"palabras": ["mapa", "opresión","imposición cultural"]	
+	"palabras": ["mapa", "opresión","imposición cultural"],
+	"foto":"cardoso_ines-privacy_invasion_to_forget_a_great_love.jpg"	
 	},
 	
 	
@@ -39,7 +41,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": ["Experimental"],
-	"palabras": ["poesía", "música"]	
+	"palabras": ["poesía", "música"],
+	"foto":"cardoso_ines-desir_noir.jpg"	
 	},
 	
 	
@@ -54,7 +57,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": [],
-	"palabras": []	
+	"palabras": []
+		
 	},
 	
 	"A imagem Antes de ser um Ser":
@@ -96,7 +100,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": ["Experimental"],
-	"palabras": []	
+	"palabras": [],
+	"foto":"cardoso_ines-carta_a_minha_mae.jpg"		
 	},
 	
 	"Dormentes":
@@ -110,7 +115,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": ["Documental"],
-	"palabras": ["pueblo fantasma"]	
+	"palabras": ["pueblo fantasma"],
+	"foto":"cardoso_ines-dormentes.jpg"	
 	},
 	
 	"Pocilga":
@@ -180,7 +186,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": ["Experimental"],
-	"palabras": ["medea"]	
+	"palabras": ["medea"],
+	"foto":"cardoso_ines-medea_desconstructed.jpg"	
 	},
 	
 	"Transe Confiante/Confrontando a Vida":
@@ -208,7 +215,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": ["Documental"],
-	"palabras": ["manicomio", "asilo", "San Pablo"]	
+	"palabras": ["manicomio", "asilo", "San Pablo"],
+	"foto":"cardoso_ines-cocais_a_cidade_reinventada.jpg"	
 	},
 	
 	"Museu Dos Corações Partidos":
@@ -222,7 +230,8 @@
 	"autores": ["cardoso_ines"],
 	"formato":[],
 	"genero": ["Documental","Experimental"],
-	"palabras": ["museo", "skype"]	
+	"palabras": ["museo", "skype"],
+	"foto":"cardoso_ines-museu_dos_coraçoes_partidos.jpg"	
 	}
 	
 

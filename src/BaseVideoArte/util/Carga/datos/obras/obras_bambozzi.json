@@ -11,7 +11,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["16mm","Super8"],
 	"genero": ["Experimental"],
-	"palabras": ["amor", "pasión"]	
+	"palabras": ["amor", "pasión"],
+	"foto":"bambozzi_lucas-love_stories.jpg"	
 	},
 	
 	"Ali É Um Lugar Que Eu Nao Conheço":
@@ -25,7 +26,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":[],
 	"genero": ["Experimental"],
-	"palabras": []	
+	"palabras": [],
+	"foto":"bambozzi_lucas-ali_e_um_lugar_que_eu_nao_conheço.jpeg"	
 	},
 	
 	"Oiapoque, L'Oyapock":
@@ -39,7 +41,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["DV","Betacam SP"],
 	"genero": ["Documental"],
-	"palabras": []	
+	"palabras": [],
+	"foto":"bambozzi_lucas-oiapoque_loyapock.jpg"	
 	},
 	
 	"Otto, I am another":
@@ -53,7 +56,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["16mm","Super8"],
 	"genero": ["Ficcion"],
-	"palabras": []	
+	"palabras": []	,
+	"foto":"bambozzi_lucas-otto_i_am_another.jpg"	
 	},
 	
 	
@@ -68,7 +72,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV","Super8"],
 	"genero": ["Documental"],
-	"palabras": ["trilogía"]	
+	"palabras": ["trilogía"],
+	"foto":"bambozzi_lucas-cultura.jpg"		
 	},	
 	
 	"Aqui de novo":
@@ -82,7 +87,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV","Super8"],
 	"genero": ["Experimental"],
-	"palabras": []	
+	"palabras": []	,
+	"foto":"bambozzi_lucas-aqui_de_novo.jpg"
 	},
 	
 	"O Fim Do Sem Fim":
@@ -96,7 +102,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["16mm","DV","Super8"],
 	"genero": ["Documental"],
-	"palabras": ["trabajo", "oficio"]	
+	"palabras": ["trabajo", "oficio"],
+	"foto":"bambozzi_lucas-o_fim_do_sem_fim.jpg"	
 	},
 	
 	"What is erased – what is retained":
@@ -110,7 +117,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV","DVD"],
 	"genero": ["Experimental"],
-	"palabras": ["efímero", "permanente"]	
+	"palabras": ["efímero", "permanente"],
+	"foto":"bambozzi_lucas-what_is_erased_what_is_retained.jpg"	
 	},
 	
 	"Dois Ou Três Encontros":
@@ -124,7 +132,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV"],
 	"genero": ["Experimental"],
-	"palabras": []	
+	"palabras": [],
+	"foto":"bambozzi_lucas-2_ou_3_encontros.jpg"		
 	},
 	
 	"Do Outro Lado Do Rio":
@@ -138,7 +147,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["DVD","DigiBeta","DVCAM"],
 	"genero": ["Documental"],
-	"palabras": ["frontera", "amazonas"]	
+	"palabras": ["frontera", "amazonas"],
+	"foto":"bambozzi_lucas-do_outro_lado_do_rio.jpg"		
 	},
 	
 	"Desvios, derivas, contornos":
@@ -153,7 +163,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video Digital"],
 	"genero": ["Experimental"],
-	"palabras": []	
+	"palabras": [],
+	"foto":"bambozzi_lucas-desvios_derivas_contornos.jpg"	
 	}
 	
 

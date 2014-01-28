@@ -7,7 +7,7 @@
 	"duracion":"8m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": [],
@@ -24,7 +24,7 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": [],
@@ -41,7 +41,7 @@
 	"duracion":"12m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": [],
@@ -58,7 +58,7 @@
 	"duracion":"14m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": [],
@@ -76,7 +76,7 @@
 	"duracion":"10m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": [],
@@ -94,7 +94,7 @@
 	"duracion":"14m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": [],
@@ -111,7 +111,7 @@
 	"duracion":"12m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": ["Experimental", "Documental"],
@@ -128,7 +128,7 @@
 	"duracion":"26m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": [],
@@ -146,7 +146,7 @@
 	"duracion":"10m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"endress_edgar-undocumented.jpg",
 	"autores": ["endress_edgar"],
 	"formato":[],
 	"genero": [],

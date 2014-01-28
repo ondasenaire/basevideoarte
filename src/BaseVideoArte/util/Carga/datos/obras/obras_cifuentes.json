@@ -7,7 +7,7 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":"",
+	"foto":"cifuentes_guillermo-postal_de_lejos.jpg",
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -25,7 +25,7 @@
 	"duracion":"10m",
 	"mostrar": true,
 	
-	"foto":"",
+	"foto":"cifuentes_guillermo-beuys_vive.jpg",
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -43,7 +43,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":"",
+	
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Super8"],
 	"genero": [],
@@ -61,7 +61,7 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":"",
+	"foto":"cifuentes_guillermo-eclipse.jpg",
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -79,7 +79,7 @@
 	"duracion":"25m",
 	"mostrar": true,
 	
-	"foto":"",
+	
 	"autores": ["cifuentes_guillermo"],
 	"formato":["16mm"],
 	"genero": [],
@@ -97,7 +97,7 @@
 	"duracion":"8m",
 	"mostrar": true,
 	
-	"foto":"",
+	
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -107,9 +107,9 @@
 	"palabras":[]
 	},
 	
-	"Alguna vez imaginaste que el futuro sería como esto":
+	"Have you ever imagine the future would look like this?":
 	{
-	"titulo":"Alguna vez imaginaste que el futuro sería como esto",
+	"titulo":"cifuentes_guillermo-have_you_ever_imagine_the_future_would_look_like_this.jpg",
 	"sinopsis":"",
 	"anho":"1996", 
 	"duracion":"5m",
@@ -133,7 +133,7 @@
 	"duracion":"10m",
 	"mostrar": true,
 	
-	"foto":"",
+	"foto":"cifuentes_guillermo-naturaleza_muerta.jpg",
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -151,7 +151,7 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":"",
+	
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -161,15 +161,15 @@
 	"palabras":[]
 	},
 	
-	"Releave":
+	"Release":
 	{
-	"titulo":"Releave",
+	"titulo":"Release",
 	"sinopsis":"",
 	"anho":"1996", 
 	"duracion":"12m",
 	"mostrar": true,
 	
-	"foto":"",
+	"foto":"cifuentes_guillermo-release.jpg",
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -178,6 +178,25 @@
 	"enlaces":[],
 	"palabras":[]
 	},
+	
+	"Primera Lección":
+	{
+	"titulo":"Primera Lección",
+	"sinopsis":"",
+	"anho":"-", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":"cifuentes_guillermo-primera_leccion.jpg",
+	"autores": ["cifuentes_guillermo"],
+	"formato":[],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[],
+	"palabras":[]
+	},
+	
 
 	"Comunión":
 	{
@@ -187,7 +206,7 @@
 	"duracion":"14m",
 	"mostrar": true,
 	
-	"foto":"",
+	"foto":"cifuentes_guillermo-comunion.jpg",
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -205,7 +224,7 @@
 	"duracion":"4m",
 	"mostrar": true,
 	
-	"foto":"",
+	
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -223,7 +242,7 @@
 	"duracion":"12m",
 	"mostrar": true,
 	
-	"foto":"",
+	
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -241,7 +260,7 @@
 	"duracion":"10,20m",
 	"mostrar": true,
 	
-	"foto":"",
+	"foto":"cifuentes_guillermo-un_puente_que_cae.jpg",
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": [],
@@ -259,7 +278,7 @@
 	"duracion":"35m",
 	"mostrar": true,
 	
-	"foto":"",
+	
 	"autores": ["cifuentes_guillermo"],
 	"formato":["Video"],
 	"genero": ["Experimental", "Documental"],
@@ -277,7 +296,43 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":"",
+	
+	"autores": ["cifuentes_guillermo"],
+	"formato":[],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[],
+	"palabras":[]
+	},
+	
+	"Three corners: study for a circle 1":
+	{
+	"titulo":"Three corners: study for a circle 1",
+	"sinopsis":"",
+	"anho":"2004", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":"cifuentes_guillermo-three_corners_study_for_a_circle_1.jpg",
+	"autores": ["cifuentes_guillermo"],
+	"formato":[],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[],
+	"palabras":[]
+	},
+	
+		"Three corners: study for a circle 2":
+	{
+	"titulo":"Three corners: study for a circle 2",
+	"sinopsis":"",
+	"anho":"2004", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":"cifuentes_guillermo-three_corners_study_for_a_circle_2.jpg",
 	"autores": ["cifuentes_guillermo"],
 	"formato":[],
 	"genero": [],

@@ -8,7 +8,7 @@
 	"duracion":"56m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Digital","DVD"],
 	"genero": ["Ficcion"],
@@ -24,7 +24,7 @@
 	"duracion":"25m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Digital","Instalacion","Monocanal"],
 	"genero": ["Experimental","Documental"],
@@ -41,7 +41,7 @@
 	"duracion":"25m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Digital","DVD"],
 	"genero": ["Experimental","Documental"],
@@ -58,7 +58,7 @@
 	"duracion":"25m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Digital","DVD"],
 	"genero": ["Experimental","Documental"],
@@ -76,7 +76,7 @@
 	"duracion":"11m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Digital","DVD"],
 	"genero": ["Experimental","Documental"],
@@ -94,7 +94,7 @@
 	"duracion":"22m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Digital","DVD"],
 	"genero": ["Experimental","Documental"],
@@ -112,7 +112,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Instalacion"],
 	"genero": ["Experimental"],
@@ -130,7 +130,7 @@
 	"duracion":"8m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["DVD","Panel LCD"],
 	"genero": ["Experimental"],
@@ -143,12 +143,12 @@
 	"The Man with the Bag":
 	{
 	"titulo":"The Man with the Bag",
-	"sinopsis":" ",
+	"sinopsis":"You could ask yourself, who is that man? The man we hear about in, for example, 'The man who knew too much', 'The man who wasn't there' or the German one in 'Der Mann ohne Eigenschaften'? In this film by Sebastian Diaz Morales, it is 'The man with the bag' and, just as the men in those other stories, he is the man who is there so that we can identify with him. The man who embodies more than just himself, and who is usually the subject of the 'human condition'.",
 	"anho":"2004", 
 	"duracion":"39m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":[],
 	"genero": ["Experimental","Ficcion"],
@@ -161,12 +161,12 @@
 	"Dependencia":
 	{
 	"titulo":"Dependencia",
-	"sinopsis":" ",
+	"sinopsis":"Dependencia (Dependence). This installation, comprising five video projections, offers the viewers a reflection on the notion of dependence, be it social, political, or economic.",
 	"anho":"2005", 
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Instalacion"],
 	"genero": ["Experimental"],
@@ -183,7 +183,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Instalacion"],
 	"genero": ["Experimental"],
@@ -195,12 +195,12 @@
 	"Prototypes":
 	{
 	"titulo":"Prototypes",
-	"sinopsis":" ",
+	"sinopsis":"For his second solo exhibition at carlier | gebauer the artist has developed a series of Prototypes, installations that transcend the narrative framework of his film work to date, differentiate the idea into various spatiotemporal sequences and allow new options to interact for their elements, prototypes and protagonists, with the express intent of re-thinking the whole, of re-formulating the idea. Prototypes, installations that transcend the narrative framework of the artist's film work to date, differentiate the idea into various spatiotemporal sequences and allow new options to interact for their elements, prototypes and protagonists, with the express intent of re-thinking the whole, of re-formulating the idea.",
 	"anho":"2005", 
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Instalacion"],
 	"genero": ["Experimental"],
@@ -218,7 +218,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -230,12 +230,12 @@
 	"Simulacrum":
 	{
 	"titulo":"Simulacrum",
-	"sinopsis":"",
+	"sinopsis":"The simulacrum is never that which conceals the truth--it is the truth which conceals that there is none. The simulacrum is true.",
 	"anho":"2007", 
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Instalacion"],
 	"genero": ["Experimental"],
@@ -253,7 +253,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Instalacion","Monocanal","Video Digital"],
 	"genero": ["Experimental"],
@@ -270,7 +270,7 @@
 	"duracion":"11m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Instalacion","DVD","Video Digital"],
 	"genero": ["Experimental"],
@@ -287,7 +287,7 @@
 	"duracion":"18m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["HD","Multicanal"],
 	"genero": ["Experimental"],
@@ -305,7 +305,7 @@
 	"duracion":"81m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["HD"],
 	"genero": ["Experimental","Ficcion"],
@@ -322,7 +322,7 @@
 	"duracion":"23m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["HD","Video Instalacion"],
 	"genero": ["Experimental"],
@@ -335,12 +335,12 @@
 	"N o w h e r e":
 	{
 	"titulo":"N o w h e r e",
-	"sinopsis":"",
+	"sinopsis":"The man on the image, Ricardo Barrientos alias Pulgarcito of Argentinean nationality wrote these poems around the year 1996, time I met him, when living in the streets of Buenos Aires. In the year 1998 he exile to Europe with an idea of reaching Paris and living under one of the bridges of the Seine river. The reason of his sudden departure was because of the loss of all his writings through negligence of a mental institution. Those writings, which he had been working on since the 80', were his only belongings.",
 	"anho":"1997-2005", 
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Instalacion"],
 	"genero": ["Documental"],
@@ -352,12 +352,11 @@
 	"Ring, The Means of Illusion":
 	{
 	"titulo":"Ring, The Means of Illusion",
-	"sinopsis":"",
+	"sinopsis":"The video installation Ring is constructed by pictorial readings of violence and reality. Its images do not tend to show violence as such, but reflect a  search on the varied shapes of appearance, different shades and ambiguities. Ring is constituted by questions, questions for the perception of violence, reality  and its effect.",
 	"anho":"2006-2007", 
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["diaz_morales_sebastian"],
 	"formato":["Video Instalacion","Multicanal","DVD"],
 	"genero": ["Experimental"],
@@ -365,12 +364,5 @@
 	"palabras": [],
 	"medios": []
 	}
-	
-	
-	
-
-
-
-
-
+		
 }

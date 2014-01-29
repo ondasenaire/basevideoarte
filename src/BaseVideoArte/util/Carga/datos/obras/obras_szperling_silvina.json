@@ -8,7 +8,7 @@
 	"duracion":"6m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"szperling_silvina-temblor.jpg",
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -26,7 +26,7 @@
 	"duracion":"6m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"szperling_silvina-bilingual_duetto_for_screen_and_life.jpg",
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -43,7 +43,7 @@
 	"duracion":"1m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -60,7 +60,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -77,7 +77,7 @@
 	"duracion":"40m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -94,7 +94,7 @@
 	"duracion":"49m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -111,7 +111,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -123,12 +123,12 @@
 	"La inComodidad de los cuerpos":
 	{
 	"titulo":"La inComodidad de los cuerpos",
-	"sinopsis":" ",
+	"sinopsis":"",
 	"anho":"1996", 
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -145,7 +145,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -163,7 +163,7 @@
 	"duracion":"32m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -181,7 +181,7 @@
 	"duracion":"45m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -198,7 +198,7 @@
 	"duracion":"8m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -216,7 +216,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -233,7 +233,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -251,7 +251,7 @@
 	"duracion":"9m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"szperling_silvina-chamame.jpg",
 	"autores": ["szperling_silvina"],
 	"formato":[],
 	"genero": ["Experimental"],

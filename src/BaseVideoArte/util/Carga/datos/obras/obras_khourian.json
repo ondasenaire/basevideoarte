@@ -7,7 +7,7 @@
 	"duracion":"89m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["hernan_khourian"],
 	"formato":[],
 	"genero": ["Experimental","Documental"],
@@ -25,7 +25,6 @@
 	"duracion":"46m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["hernan_khourian"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -43,7 +42,7 @@
 	"duracion":"43m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["hernan_khourian"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -62,7 +61,7 @@
 	"duracion":"19m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["hernan_khourian"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -79,7 +78,7 @@
 	"duracion":"61m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["hernan_khourian"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -97,7 +96,7 @@
 	"duracion":"26m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["hernan_khourian"],
 	"formato":["TV"],
 	"genero": ["Documental"],
@@ -114,7 +113,7 @@
 	"duracion":"14m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["hernan_khourian"],
 	"formato":[],
 	"genero": ["Documental"],

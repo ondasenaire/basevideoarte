@@ -7,7 +7,7 @@
 	"duracion":"8m33s",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ivan_marino"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -25,7 +25,7 @@
 	"duracion":"17m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["ivan_marino"],
 	"formato":["DVD", "Betacam"],
 	"genero": ["Experimental"],
@@ -42,7 +42,7 @@
 	"duracion":"18m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"marino_ivan-sobre_la_colonia.jpg",
 	"autores": ["ivan_marino"],
 	"formato":["DVD", "Betacam"],
 	"genero": ["Experimental", "Documental"],
@@ -60,7 +60,7 @@
 	"duracion":"10m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"marino_ivan-siesta.jpg",
 	"autores": ["ivan_marino"],
 	"formato":[],
 	"genero": ["Experimental", "Documental"],
@@ -78,7 +78,7 @@
 	"duracion":"8m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"marino_ivan-letanias.jpg",
 	"autores": ["ivan_marino"],
 	"formato":["DVD", "Betacam"],
 	"genero": ["Experimental", "Documental"],
@@ -89,13 +89,13 @@
 			
 "Cinco Retratos de una Mujer Sentada":
 	{
-	"titulo":"Cinco Retratos de una Mujer Sentada",
+	"titulo":"marino_ivan-cinco_retratos_de_una_mujer_sentada.jpg",
 	"sinopsis":"Como ya hiciera en el trabajo Un Día Bravo, el realizador Iván Marino, vuelve a elaborar un ensayo visual centrando su mirada en torno a su tía Rosita Bravo, una mujer de avanzada edad que presenta síntomas de padecer algún tipo de demencia senil. En este caso Marino busca 5 localizaciones o situaciones diferentes en los que el sujeto en cuestión se presenta realizando una serie de actividades tales como comer, pasear o acariciar las cuentas de su rosario. En estas actividades presuntamente banales el autor logra encontrar y hacernos reflexionar sobre la locura, la precariedad física y los límites de la vida.",
 	"anho":"2005", 
 	"duracion":"13m50s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"marino_ivan-cinco_retratos_de_una_mujer_sentada.jpg",
 	"autores": ["ivan_marino"],
 	"formato":["DVD", "Betacam"],
 	"genero": ["Experimental", "Documental"],
@@ -113,11 +113,11 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"marino_ivan-pn=!.jpg",
 	"autores": ["ivan_marino"],
 	"formato":[ "Video Instalacion"],
 	"genero": ["Experimental"],
-	"metadatos":[],
+	"metadatos":[{"metadato":"Video Instalacón computarizada", "tipo":"formato"}],
 	"palabras": [],
 	"medios": []
 	},
@@ -130,7 +130,7 @@
 	"duracion":"23m25s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"marino_ivan-un_dia_bravo.jpg",
 	"autores": ["ivan_marino"],
 	"formato":[ "DVD", "Betacam"],
 	"genero": ["Experimental", "Documental"],

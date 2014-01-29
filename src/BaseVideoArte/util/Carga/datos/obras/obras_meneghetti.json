@@ -7,7 +7,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Ficcion"],
@@ -24,7 +24,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Ficcion"],
@@ -41,7 +41,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -59,7 +59,7 @@
 	"duracion":"13m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Ficcion"],
@@ -76,7 +76,7 @@
 	"duracion":"28m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -93,7 +93,7 @@
 	"duracion":"6m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -111,7 +111,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -129,7 +129,7 @@
 	"duracion":"54m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -148,7 +148,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Ficcion"],
@@ -166,7 +166,7 @@
 	"duracion":"77m",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -184,7 +184,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Ficcion"],
@@ -202,7 +202,6 @@
 	"duracion":"32m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -219,7 +218,7 @@
 	"duracion":"28m45s",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -236,7 +235,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],
@@ -248,12 +247,12 @@
 	"Rimet, l'incredibile storia della copa del mondo":
 	{
 	"titulo":"Rimet, l'incredibile storia della copa del mondo",
-	"sinopsis":" ",
+	"sinopsis":"",
 	"anho":"2010", 
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["meneghetti_cesar"],
 	"formato":[],
 	"genero": ["Documental"],

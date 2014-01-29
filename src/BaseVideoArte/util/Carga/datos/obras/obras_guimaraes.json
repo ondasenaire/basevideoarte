@@ -7,7 +7,7 @@
 	"duracion":"20m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-otto_eu_sou_um_outro.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["35mm"],
 	"genero": ["Documental"],
@@ -24,7 +24,7 @@
 	"duracion":"11m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-the_eyeland.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -42,7 +42,7 @@
 	"duracion":"10m45s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-between_inventario_de_pequenas_mortes.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -59,7 +59,7 @@
 	"duracion":"5m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-sopro.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -76,12 +76,12 @@
 	"duracion":"92m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-o_fim_do_sem_fim.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["35mm"],
 	"genero": ["Documental"],
 	"metadatos":[],
-	"palabras": [],
+	"palabras": ["trabajo","oficio"],
 	"medios": []
 	},
 	
@@ -93,7 +93,7 @@
 	"duracion":"7m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-hypnosis.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -110,7 +110,7 @@
 	"duracion":"8m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-word_world.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Documental"],
@@ -127,7 +127,7 @@
 	"duracion":"3m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-coletivo.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Documental"],
@@ -144,7 +144,7 @@
 	"duracion":"75m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-rua_de_mao_dupla.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Documental"],
@@ -161,7 +161,7 @@
 	"duracion":"15m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-volta_ao_mundo_em_algumas_paginas.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -179,7 +179,7 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-aula_de_anatomia.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -196,7 +196,7 @@
 	"duracion":"3m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-nanofania.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -213,7 +213,7 @@
 	"duracion":"74m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-a_alma_do_osso.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Documental"],
@@ -230,7 +230,7 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-da_janela_do_meu_quarto.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["35mm"],
 	"genero": ["Documental"],
@@ -247,7 +247,7 @@
 	"duracion":"7m25s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-concerto_para_clorofila.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -264,7 +264,7 @@
 	"duracion":"72m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-acidente.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Ficcion"],
@@ -281,7 +281,7 @@
 	"duracion":"80m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-andarilho.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["35mm"],
 	"genero": ["Ficcion"],
@@ -300,7 +300,7 @@
 	"duracion":"8m20s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-atras_dos_olhos_de_oaxaca.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Documental"],
@@ -335,7 +335,7 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"guimares_cao-sin_peso.jpg",
 	"autores": ["guimares_cao"],
 	"formato":["DV","Super8"],
 	"genero": ["Documental"],
@@ -408,6 +408,23 @@
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+		"Ex Isto":
+	{
+	"titulo":"Ex Isto",
+	"sinopsis":"Um filme livremente inspirado na obra Catatau, de Paulo Leminski. O poeta imaginou uma hipótese histórica: \"E se René Descartes tivesse vindo ao Brasil com Maurício de Nassau?\". Interpretado por João Miguel, o personagem envereda pelos trópicos, selvagem e contemporâneo, sob o efeito de ervas alucinógenas, investigando questões da geometria e da ótica diante de um mundo absolutamente estranho.",
+	"anho":"2010", 
+	"duracion":"86m",
+	"mostrar": true,
+	
+	"foto":"guimares_cao-ex_isto.jpg",
+	"autores": ["guimares_cao"],
+	"formato":["HDV"],
+	"genero": ["Ficcion"],
 	"metadatos":[],
 	"palabras": [],
 	"medios": []

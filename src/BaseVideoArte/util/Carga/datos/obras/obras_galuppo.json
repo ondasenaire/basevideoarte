@@ -9,7 +9,7 @@
 	"duracion":"20m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["gustavo_galuppo"],
 	"formato":["VHS"],
 	"genero": ["Ficcion"],
@@ -27,7 +27,6 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["VHS"],
 	"genero": ["Experimental"],
@@ -44,7 +43,6 @@
 	"duracion":"40m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["VHS"],
 	"genero": ["Experimental"],
@@ -62,7 +60,6 @@
 	"duracion":"8m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["VHS"],
 	"genero": ["Experimental"],
@@ -79,7 +76,6 @@
 	"duracion":"18m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Ficcion"],
@@ -96,7 +92,6 @@
 	"duracion":"60m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Ficcion"],
@@ -113,7 +108,6 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -130,7 +124,6 @@
 	"duracion":"8m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -148,7 +141,6 @@
 	"duracion":"65m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Ficcion"],
@@ -166,7 +158,6 @@
 	"duracion":"18m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -183,7 +174,6 @@
 	"duracion":"6m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -201,7 +191,6 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -219,7 +208,6 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -236,7 +224,6 @@
 	"duracion":"60m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -253,7 +240,6 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -270,7 +256,6 @@
 	"duracion":"15m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -287,7 +272,6 @@
 	"duracion":"69m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -305,7 +289,6 @@
 	"duracion":"36m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -324,7 +307,6 @@
 	"duracion":"22m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -341,7 +323,6 @@
 	"duracion":"65m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["DV"],
 	"genero": ["Experimental"],
@@ -358,7 +339,6 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["Video Digital"],
 	"genero": ["Experimental"],
@@ -376,7 +356,6 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["Video Digital"],
 	"genero": ["Experimental"],
@@ -393,7 +372,6 @@
 	"duracion":"42m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["Video Digital"],
 	"genero": ["Experimental"],
@@ -410,7 +388,6 @@
 	"duracion":"60m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["Video Digital"],
 	"genero": ["Documental"],
@@ -427,7 +404,6 @@
 	"duracion":"18m",
 	"mostrar": true,
 	
-	"foto":".png",
 	"autores": ["gustavo_galuppo"],
 	"formato":["Video Digital"],
 	"genero": ["Experimental"],
@@ -435,12 +411,5 @@
 	"palabras": [],
 	"medios": []
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+		
 }

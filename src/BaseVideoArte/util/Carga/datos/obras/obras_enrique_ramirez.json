@@ -7,7 +7,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["Video Instalacion"],
 	"genero": [],
@@ -25,7 +25,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["Video Instalacion"],
 	"genero": [],
@@ -43,7 +43,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["Video Instalacion"],
 	"genero": [],
@@ -61,7 +61,7 @@
 	"duracion":"9m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["DVCAM"],
 	"genero": ["Experimental"],
@@ -78,7 +78,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["Video Instalacion"],
 	"genero": [],
@@ -90,12 +90,12 @@
 "Paisaje ":
 	{
 	"titulo":"Paisaje",
-	"sinopsis":" ",
+	"sinopsis":"",
 	"anho":"2007", 
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":[],
 	"genero": [],
@@ -112,7 +112,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["Video Instalacion"],
 	"genero": [],
@@ -130,7 +130,7 @@
 	"duracion":"13m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["35mm"],
 	"genero": [],
@@ -147,7 +147,7 @@
 	"duracion":"20m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["Video Instalacion"],
 	"genero": [],
@@ -164,7 +164,7 @@
 	"duracion":"1m24s",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["HDV"],
 	"genero": [],
@@ -182,7 +182,7 @@
 	"duracion":"10m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["HDV"],
 	"genero": [],
@@ -199,7 +199,7 @@
 	"duracion":"5m45s",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["DVCAM"],
 	"genero": [],
@@ -217,7 +217,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["Video Instalacion"],
 	"genero": [],
@@ -234,7 +234,7 @@
 	"duracion":"41m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["HDV"],
 	"genero": [],
@@ -251,7 +251,7 @@
 	"duracion":"12m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["ramirez_enrique"],
 	"formato":["HDV"],
 	"genero": [],

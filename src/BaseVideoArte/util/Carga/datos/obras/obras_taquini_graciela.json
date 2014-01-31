@@ -8,7 +8,7 @@
 	"duracion":"3m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-roles.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["VHS"],
 	"genero": [],
@@ -25,7 +25,7 @@
 	"duracion":"1m",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-psycho_x_borges.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["Video"],
 	"genero": [],
@@ -44,7 +44,7 @@
 	"duracion":"12m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-lo_sublime_banal.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -62,7 +62,7 @@
 	"duracion":"3m20s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-cadaveres.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -80,7 +80,7 @@
 	"duracion":"6m10s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-granada.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -98,7 +98,7 @@
 	"duracion":"1m40s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-sisifa.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -115,7 +115,7 @@
 	"duracion":"4m40s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-quebrada.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -132,7 +132,7 @@
 	"duracion":"2m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-border_line.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["Video Instalacion"],
 	"genero": [],
@@ -150,7 +150,7 @@
 	"duracion":"5m50s",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["taquini_graciela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -168,7 +168,7 @@
 	"duracion":"1m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["taquini_graciela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -185,7 +185,7 @@
 	"duracion":"1m25s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-fin_del_mundo.jpg",
 	"autores": ["taquini_graciela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -196,11 +196,6 @@
 	},
 	
 	
-	
-	
-	
-	
-	
 	"Secretos":
 	{
 	"titulo":"Secretos",
@@ -209,7 +204,7 @@
 	"duracion":"5m20s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-secretos.jpg",
 	"autores": ["taquini_graciela","larranaga_gabriela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -227,7 +222,7 @@
 	"duracion":"2m40s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-vaiven.jpg",
 	"autores": ["taquini_graciela","larranaga_gabriela"],
 	"formato":["Video Digital"],
 	"genero": [],
@@ -245,7 +240,7 @@
 	"duracion":"20m30s",
 	"mostrar": true,
 	
-	"foto":".png",
+	"foto":"taquini_graciela-lugar_comun.jpg",
 	"autores": ["taquini_graciela","pons_ricardo"],
 	"formato":["Video Digital"],
 	"genero": [],

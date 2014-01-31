@@ -9,31 +9,33 @@
 	"duracion":"4m20s",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["testoni_nicolas"],
 	"formato":["VHS"],
 	"genero": ["Documental"],
 	"metadatos":[],
 	"palabras": [],
-	"medios": []
+	"medios": [],
+	"videos":["https://vimeo.com/31660778"]
 	},
 	
 	
 		"Buque tanque pasa cargando 50.000 toneladas de combustible":
 	{
 	"titulo":"Buque tanque pasa cargando 50.000 toneladas de combustible",
-	"sinopsis":" ",
+	"sinopsis":"Relato de Carlos Schamberger. En coincidencia con la llegada a puerto del primer buque regasificador, Ferrowhite recibe en sus salas al “Ingeniero White”, el barco que Roberto “Bocha” Conte, trabajador marítimo, contruyó a partir de materiales de descarte con la intención de documentar parte de la historia de este puerto. Mientras el Excelsior se dedica a convertir en gas su carga, una actividad cuyo riesgo para la población e impacto en la balanza comercial resultan difíciles de ponderar, el buque de Bocha Conte realiza la operación inversa: convierte algo tan intangible como la memoria de un pueblo en una sólida carga de contenedores.",
 	"anho":"2003", 
 	"duracion":"1m23s",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["testoni_nicolas","delgado_christian"],
 	"formato":["Video Digital"],
 	"genero": ["Documental"],
 	"metadatos":[],
 	"palabras": [],
-	"medios": []
+	"medios": [],
+	"videos":["https://vimeo.com/14882575"]
 	},
 	
 	
@@ -45,12 +47,313 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	"foto":".png",
+
 	"autores": ["testoni_nicolas"],
 	"formato":["Video Digital"],
 	"genero": ["Documental"],
 	"metadatos":[],
 	"palabras": [],
-	"medios": []
-	}			
+	"medios": [],
+	"videos":["https://vimeo.com/64679895"]
+	},
+	
+	"Desayuno sobre la hierba":
+	{
+	"titulo":"Desayuno sobre la hierba",
+	"sinopsis":"Chito Pereyra y sus compañeros desguazan un remolcador a soplete. Puerto Galván.",
+	"anho":"2005", 
+	"duracion":"1m49s",
+	"mostrar": true,
+	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"Canto de aves pampeanas":
+	{
+	"titulo":"Canto de aves pampeanas",
+	"sinopsis":"“Canto de aves pampeanas” es una suerte “found footage” al revés. Algo que tal vez podría darse en llamar un ‘lost footage’, género fílmico inexistente dedicado a dar cuenta de imágenes que ya no existen.",
+	"anho":"2006", 
+	"duracion":"7m50s",
+	"mostrar": true,
+	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+		
+	"El rebusque":
+	{
+	"titulo":"El rebusque",
+	"sinopsis":"El Rebusque es una serie de videos dedicada a los saberes de oficio en su adaptación a las situaciones de cambio o crisis que se proyectan, semana a semana, en las salas de Ferrowhite (museo taller).",
+	"anho":"2007", 
+	"duracion":"2m08s",
+	"mostrar": true,
+	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"A siete millones de milimetros de aca":
+	{
+	"titulo":"A siete millones de milimetros de aca",
+	"sinopsis":"Siete kilómetros separan el centro de la ciudad de Bahía Blanca de su puerto, Ingeniero White. Siete millones de milímetros, si utilizamos para expresar esa distancia, la unidad medida con la que han sido identificados a lo largo de la historia los distintos formatos de película cinematográfica.",
+	"anho":"2007", 
+	"duracion":"7m55s",
+	"mostrar": true,
+	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"El oscuro vientre de una ballena blanca":
+	{
+	"titulo":"El oscuro vientre de una ballena blanca",
+	"sinopsis":"Una noche, en el pueblo de pescadores más antiguo de Brasil, sucede algo por primera vez.",
+	"anho":"2008", 
+	"duracion":"5m54s",
+	"mostrar": true,
+	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	
+	"Pool":
+	{
+	"titulo":"Pool",
+	"sinopsis":"",
+	"anho":"2009", 
+	"duracion":"-",
+	"mostrar": true,
+	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"Con tormenta se duerme mejor":
+	{
+	"titulo":"Con tormenta se duerme mejor",
+	"sinopsis":"Junto a Natalia Martirena, Marcelo Díaz y el equipo de Ferrowhite (museo taller), del proyecto de teatro documental Archivo White, en el que trabajadores del ferrocarril y el puerto de Ingeniero White llevaron sus vidas a escena en las salas museo. “Con tormenta se duerme mejor” fue la tercera obra del proyecto, protagonizada por Marcelo Bustos, marinero en buques de pesca de altura.",
+	"anho":"2009", 
+	"duracion":"-",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"La habitación infinita, Darregueira":
+	{
+	"titulo":"La habitación infinita, Darregueira",
+	"sinopsis":"“La habitación infinita” es una serie de proyecciones realizadas en campos, criaderos y chacras del centro y sur de la Provincia de Buenos Aires.",
+	"anho":"2010", 
+	"duracion":"4m25s",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas", "delgado_christian"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"¡Vamos a la playa!":
+	{
+	"titulo":"¡Vamos a la playa!",
+	"sinopsis":"El 8 de enero de 2011, el diario La Nueva Provincia anunció la decisión del Consorcio de Gestión del Puerto de Bahía Blanca de realizar un nuevo dragado del canal principal de la ría y de utilizar el material extraído del fondo del estuario para rellenar, entre otros sectores, la franja de marisma y cangrejal que rodea al castillo, es decir, ese lugar que en Ferrowhite comenzamos a llamar la Rambla de Arrieta, pero quienes viven en Ingeniero White conocían, desde mucho antes, como “el balneario” o “la playita” de la usina.",
+	"anho":"2009-2012", 
+	"duracion":"-",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"La habitación infinita, Tandil":
+	{
+	"titulo":"La habitación infinita, Tandil",
+	"sinopsis":"“La habitación infinita” es una serie de proyecciones realizadas en campos, criaderos y chacras del centro y sur de la Provincia de Buenos Aires.",
+	"anho":"2010", 
+	"duracion":"-",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas", "delgado_christian"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"Flying fish":
+	{
+	"titulo":"Flying fish",
+	"sinopsis":"Junto a Natalia Martirena y Marcelo Díaz y el equipo de Ferrowhite (museo taller) del proyecto de teatro documental Archivo White en el que trabajadores del ferrocarril y el puerto de Ingeniero White llevaron sus vidas a escena en las salas del museo. “Flying fish. La vuelta al mundo con Roberto Orzali.” fue la cuarta obra del proyecto, e incluyó, además, la presentación de un libro en el que Roberto relata sus historias de viaje.",
+	"anho":"2010", 
+	"duracion":"-",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"La habitación infinita, Cabildo":
+	{
+	"titulo":"La habitación infinita, Cabildo",
+	"sinopsis":"“La habitación infinita” es una serie de proyecciones realizadas en campos, criaderos y chacras del centro y sur de la Provincia de Buenos Aires.",
+	"anho":"2010", 
+	"duracion":"-",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas", "delgado_christian"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"Historia de la pólvora":
+	{
+	"titulo":"Historia de la pólvora",
+	"sinopsis":"¿Cuál es la relación entre los sonidos y las imágenes de una época?",
+	"anho":"2011", 
+	"duracion":"11m11s",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"Las ruinas de Bahia Blanca":
+	{
+	"titulo":"Las ruinas de Bahia Blanca",
+	"sinopsis":"8 secuencias de archivo para la serie documental “La Escuelita. Historias del terrorismo de Estado en Bahía Blanca”.",
+	"anho":"2012", 
+	"duracion":"-",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"La cama de clavos":
+	{
+	"titulo":"La cama de clavos",
+	"sinopsis":"Dos hombres solos realizan en simultáneo el mismo quehacer doméstico en ciudades diferentes.",
+	"anho":"2012", 
+	"duracion":"3m48s",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas", "delgado_christian"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"El silencio":
+	{
+	"titulo":"El silencio",
+	"sinopsis":"Cinco microprogramas de televisión producidos junto a Christian Delgado para “Digo”, canal de la provincia de Buenos Aires.“Es necesario resistir a esas fuerzas que nos obligan a hablar cuando no tenemos nada que decir. ¡Es fundamental!”.",
+	"anho":"2013", 
+	"duracion":"-",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	},
+	
+	"La extensión":
+	{
+	"titulo":"La extensión",
+	"sinopsis":"“La extensión” es una película que, adecuando sus tiempos al espacio geográfico que retrata -la llanura sobre la línea imaginaria que separa a las provincias de Buenos Aires y La Pampa-, no puede terminar. Es decir, que existe y probablemente exista en forma de fragmento, como el avance de una película en perpetuo por venir. La pregunta que germina y crece entre estas imágenes del “campo” tiene tal vez la edad de nuestro país: ¿Cómo concebir un territorio casi inabarcable, inconmensurable en su dimensión física pero también social, como un espacio común?",
+	"anho":"2013", 
+	"duracion":"4m57s",
+	"mostrar": true,	
+
+	"autores": ["testoni_nicolas", "delgado_christian"],
+	"formato":["Video Digital"],
+	"genero": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": [],
+	"videos":[]
+	}
+									
+	
+				
 }

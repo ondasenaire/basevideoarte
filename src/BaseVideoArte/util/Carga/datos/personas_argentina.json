@@ -293,6 +293,42 @@
 		 "obras":[],
 		 "metadatos": [],
 		 "foto":"trilnick_carlos.jpg"
+		 },
+		 
+		"Maria_Victoria_Simón":
+		{"nombre":"Maria Victoria",
+		 "apellido":"Simón",
+		 "data":"",
+		 "inicio":"-",
+		 "web":[""],
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 
+		 },
+		 
+		"Silvina_Cafici":
+		{"nombre":"Silvina",
+		 "apellido":"Cafici",
+		 "data":"",
+		 "inicio":"-",
+		 "web":[""],
+		 "sexo":"m",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 
 		 }
+		 
+		 
+		 
+		 
 		 
 }

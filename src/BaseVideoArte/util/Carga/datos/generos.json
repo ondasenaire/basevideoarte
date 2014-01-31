@@ -1,5 +1,7 @@
 {
 	"Documental": {"genero":"Documental"},
 	"Experimental": {"genero":"Experimental"},
-	"Ficcion": {"genero":"Ficción"}
+	"Ficcion": {"genero":"Ficción"},
+	"Video Clip": {"genero":"Video Clip"},
+	"Video Danza": {"genero":"Video Danza"}
 }

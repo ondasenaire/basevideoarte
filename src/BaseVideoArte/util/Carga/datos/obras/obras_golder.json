@@ -1,0 +1,386 @@
+{
+"Tratado sobre una figura":
+	{
+	"titulo":"Tratado sobre una figura",
+	"sinopsis":"",
+	"anho":"1992", 
+	"duracion":"4m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":[],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"Tratado sobre una figura":
+	{
+	"titulo":"Tratado sobre una figura",
+	"sinopsis":"",
+	"anho":"1994", 
+	"duracion":"16m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela","Maria_Victoria_Simón"],
+	"formato":["16mm"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"El hombre de las manos gastada":
+	{
+	"titulo":"El hombre de las manos gastada",
+	"sinopsis":"De cuando la Pequeña Orquesta era sólo Reincidentes",
+	"anho":"1995", 
+	"duracion":"4m15s",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela","Maria_Victoria_Simón"],
+	"formato":["16mm"],
+	"genero": ["Video Clip"],
+	"videos": ["http://www.youtube.com/watch?v=4ZmQhVZTjI8"],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"Apuntes de vuelo":
+	{
+	"titulo":"Apuntes de vuelo",
+	"sinopsis":"",
+	"anho":"1995", 
+	"duracion":"14m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"La difuntita":
+	{
+	"titulo":"La difuntita",
+	"sinopsis":"",
+	"anho":"1996", 
+	"duracion":"28m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela","Maria_Victoria_Simón"],
+	"formato":[],
+	"genero": ["Documental"],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+		"Lettre 1":
+	{
+	"titulo":"Lettre 1",
+	"sinopsis":"Colección del Museo Nacional de Bellas Artes, Argentina.",
+	"anho":"1996", 
+	"duracion":"4m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"Mujer, pájaro y ojos en el paisaje":
+	{
+	"titulo":"Mujer, pájaro y ojos en el paisaje",
+	"sinopsis":"",
+	"anho":"1995", 
+	"duracion":"11m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["16mm"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"Es todo":
+	{
+	"titulo":"Es todo",
+	"sinopsis":"",
+	"anho":"1997", 
+	"duracion":"67m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["16mm","Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"Postal 1 (restituida)":
+	{
+	"titulo":"Postal 1 (restituida)",
+	"sinopsis":"",
+	"anho":"1998", 
+	"duracion":"4m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"Tras los ojos de las niñas serias":
+	{
+	"titulo":"Tras los ojos de las niñas serias",
+	"sinopsis":"Un recorrido a través del significado del \"ser nena\", protagonizado por mujeres de 8 a 88 años. Hay sueños que pueden encerrarnos a todos nosotros, a más de uno, un circulo, una línea recta hacia el infinito. Soy muñeca, soy niña seria.",
+	"anho":"1999", 
+	"duracion":"45s",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"Heroica":
+	{
+	"titulo":"Heroica",
+	"sinopsis":"Cuatro mujeres. Cuatro historias interconectadas en una coreografía silenciosa y privada, viven con sus memorias dentro de la vida diaria de un país extranjero. Sus relaciones son silenciosas pero, al mismo tiempo, profundamente expresivas. Hablan de la experiencia de ser inmigrantes, de sus intentos por establecer una nueva vida lejos de sus familias y de su país. Una pieza de antropología urbana.",
+	"anho":"1999", 
+	"duracion":"10m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela","Silvina_Cafici"],
+	"formato":["Video"],
+	"genero": ["Video Danza"],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"En memoria de los pájaros":
+	{
+	"titulo":"En memoria de los pájaros",
+	"sinopsis":"Llorar aun sin quererlo. No llorar, aunque quisiéramos. No poder detenerse en la búsqueda frenética por la identidad. Algunas imágenes lejanas, una lucha sórdida, una perdida total del sentido. Año 1976, la dictadura militar se instaura en Argentina y con ella el terrorismo de estado. Yo tenía 5 años. Intento recomponer minuciosamente algunas piezas del pasado. Es una cuestión de tiempo estoy sin identidad.",
+	"anho":"2000", 
+	"duracion":"17m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"Posible":
+	{
+	"titulo":"Posible",
+	"sinopsis":"Vas a irte enseguida? Te dije eso? Un intento de desplazamiento posible. Una mujer que se va. Se reitera: continuar, sin detenerse. Ella recorre un nuevo territorio Nadie grita. La indicación es de orden interior. Un momento en donde todo se transforma, y después la cosas no cambian más. ",
+	"anho":"2002", 
+	"duracion":"13m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"Vacas":
+	{
+	"titulo":"Vacas",
+	"sinopsis":"25 de marzo de 2002. Rosario. Argentina. Alrededor de 400 vecinos del barrio Las Flores carnean vacas vivas que minutos antes se habían desparramado sobre el asfalto cuando volcó el camión que las transportaba.",
+	"anho":"2002", 
+	"duracion":"4m30s",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"Bestias":
+	{
+	"titulo":"Bestias",
+	"sinopsis":"Los gestos de la desesperación. La acción para sobrevivir. Una mujer se escurre de las manos de un policía, un hombre resiste, se revuelca haciendo contorsiones para escapar de otros dos hombres que lo arrastran. Otro, en una postura casi inhumana, arrastrado de los pelos, intenta librar su cabeza de las garras de las bestias. Algunas imágenes vuelven insistentemente y quedan impregnadas en la memoria. Y como flujos del inconsciente, como chorros de color, en movimientos casi fisiológicos, se revelan. Imágenes y sonidos registrados durante las manifestaciones de los dias 19 y 20 de diciembre de 2001 en Buenos Aires. ", 
+	"anho":"2004", 
+	"duracion":"13m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"Vacio":
+	{
+	"titulo":"Vacio",
+	"sinopsis":"Un paisaje. Una ausencia reveladora. Una mirada altera la calma. La humanidad se desgarra. El fin es una explosión. Ese es el estado de las cosas ", 
+	"anho":"2005", 
+	"duracion":"24m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+		"Concierto diurno":
+	{
+	"titulo":"Concierto diurno",
+	"sinopsis":"Mujeres rompiendo platos, intentando generar el mayor ruido posible. Pedir la palabra, hacer ruido, decir basta. Hartazgo, sometimiento y liberación. El acto de romper platos propone la destrucción de pre-conceptos sobre la relación que puede establecerse entre la mujer y lo doméstico.", 
+	"anho":"2007", 
+	"duracion":"1m30s",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+		"La lógica de la supervivencia":
+	{
+	"titulo":"La lógica de la supervivencia",
+	"sinopsis":"O la ejecución de un proyecto de fracaso. Una multitud de gente se abalanza sobre comida, descontrolada. Un joven es brutalmente reprimido. Sólo tres escenas conforman este video. Todo es parte de lo mismo, el fracaso de todo proyecto de reconstrucción.", 
+	"anho":"2008", 
+	"duracion":"8m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	"Loucos de amor":
+	{
+	"titulo":"Loucos de amor",
+	"sinopsis":"El video muestra una puesta en escena en la que dos niñas leen, en voz alta, fragmentos de una adaptación de la pieza de teatro de Sam Shepard \"FOOL FOR LOVE\". Las dudas, la extrañeza ante la lectura del texto, los comentarios espontáneos en relación con el texto, algunas veces refuerzan, otras contrastan con la noción de amor desgarrado, duro, casi imposible, presente en la literatura del dramaturgo norteamericano.", 
+	"anho":"2009", 
+	"duracion":"14m30s",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"Pasajes":
+	{
+	"titulo":"Pasajes",
+	"sinopsis":"En Pasajes los planos de un hotel abandonado y en ruinas se suceden, estáticos, perturbadores, mientras subtítulos al pie de la imagen comentan, a través del diálogo literario y mudo de una pareja, historias inconclusas, o más bien apuntes de lo que quizás fue. En los espacios inhóspitos las palabras son más importantes que lo dicho. La historia se diluye en el peso de las sonoridades del texto que sostiene los cuerpos ausentes. El diálogo fantasmagórico envuelve un vacío, se mantiene al borde de lo que no está y que sin dudas constituye el nudo mismo del deseo, agujero negro repleto de palabras que nos envían al imaginario. Pasajes es una obra cargada de ausencia. A la ausencia visible de cuerpos se le suman las palabras que exponen la falta y que conducen a un abismo. Algo subyace, algo desbordante e incontrolable. La imagen desierta y repetitiva nos conduce en su cadencia hacia el olvido del texto en tanto historia. Otras veces puede suceder al revés. Ya no miramos, sólo hacemos débilmente equilibrio entre las líneas de un diálogo titubeante, siempre sostenidos por una tensión, incomodidad originaria. ",  
+	"anho":"2010", 
+	"duracion":"42m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"La conversación":
+	{
+	"titulo":"La conversación",
+	"sinopsis":"De la Serie Sobre la libertad, Parte 1 \"La conversación\". En Francia, invité a dialogar a un viejo militante sindicalista y comunista de 85 años, Jean, y a un joven trabajador senegalés “sans papiers”, Diop. Jean y Diop conversan, hablan del trabajo, de los trabajadores, de la memoria, de los \"sans papiers\", de África, de Francia, de la militancia, de la guerra, de las elecciones (es posible elegir?). Comparten ideas, aprendent el uno del otro. Están juntos. Sólo eso, su voz, sus ideas. Sobre la humanidad, sobre la libertad.",  
+	"anho":"2010", 
+	"duracion":"83m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+	"Las partículas elementales":
+	{
+	"titulo":"Las partículas elementales",
+	"sinopsis":"Fábricas, engranajes, cuerpos en movimiento, manos haciendo, miradas atentas. Un obrero se acerca a la máquina, que hierve, que echa fuego. Un trabajador rural, recoge los frutos de la siembra. Inclinado, su rostro casi a ras del piso. Otro obrero, otro. Mujeres obreras, la máquina en movimiento. Cómo entender la historia de un país a través de la historia del trabajo? \"Las partículas elementales\" es una película sobre el trabajo y los trabajadores construida a partir de imágenes del Archivo de Sucesos Argentinos, noticiero emitido en Argentina entre los años 30' y 70'.",  
+	"anho":"2011", 
+	"duracion":"14m30s",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["Video"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	}
+	
+	
+}

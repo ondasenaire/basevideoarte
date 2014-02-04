@@ -1,0 +1,52 @@
+{
+
+"Bronze revirado_lobato":
+	{
+	"titulo":"Bronze revirado",
+	"sinopsis":"El trabajo toma “una mirada detrás de las escena” con el sonido de un repique festivo de campanas en una iglesia de São João Del Rey, Minas Gerais. En una peligrosa coreografía, un grupo de campaneros repiquean una campana de una tonelada que se balancea al aumentar la velocidad. El trabajo se basa en la repetición y los recursos de la actuación. Movimientos, materiales, y sonidos-que, en el caso de la campana, son capaces de mezclarse en la paisaje sensorial de una ciudad para crear un colectivo inmaterial identidad.",  
+	"anho":"2011", 
+	"duracion":"4m25s",
+	"mostrar": true,
+	
+	
+	"autores": ["lobato_pablo"],
+	"formato":["Video Digital"],
+	"genero": ["Video Instalacion"],
+	"videos": [],
+	"palabras":["campanas", "ciudad"]
+	},
+	
+	
+	"Queda_lobato":
+	{
+	"titulo":"Queda",
+	"sinopsis":"",  
+	"anho":"2010", 
+	"duracion":"14m31s",
+	"mostrar": true,
+	
+	
+	"autores": ["lobato_pablo"],
+	"formato":["Video Digital"],
+	"genero": ["Video Arte"],
+	"videos": []
+	
+	},
+	
+	
+	"Beam drop inhotim_lobato":
+	{
+	"titulo":"Beam drop inhotim",
+	"sinopsis":"El video documenta el proceso de creación de la escultura del artista estadounidense Chris Burden, que tuvo lugar en CACI Instituto.",  
+	"anho":"2008", 
+	"duracion":"5m37s",
+	"mostrar": true,
+	
+	
+	"autores": ["lobato_pablo"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"videos": []
+	
+	}
+}

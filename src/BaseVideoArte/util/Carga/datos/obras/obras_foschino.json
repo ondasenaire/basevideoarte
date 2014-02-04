@@ -1,0 +1,152 @@
+{
+	"Fluxus_foschino":
+	{
+	"titulo":"Fluxus",
+	"sinopsis":"En esta obra salta del habitual formato \"pictórico\" de sus videos al soporte LED, propio de la publicidad, cambiando así la connotación del objeto, convirtiéndolo en una suerte de \"portal\" abordable. La monumentalidad de esta obra, que se exhibe hasta el 10 se septiembre en el Hall Central del Museo Nacional de Bellas Artes (MNBA) de Santiago, representa no sólo un cambio de formato y escala en el trabajo de Foschino, sino de la misma experiencia que busca generar en el espectador: su aproximación contemplativa transmuta en sensaciones de vértigo y encandilamiento.",  
+	"anho":"2010", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Video Escultura"],
+	"videos": []
+	},
+	
+	"La fenetre_foschino":
+	{
+	"titulo":"La fenetre",
+	"sinopsis":"",  
+	"anho":"2008", 
+	"duracion":"14m",
+	"mostrar": true,
+	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Video Arte"],
+	"videos": []
+	},
+	
+	"Lota_foschino":
+	{
+	"titulo":"Lota",
+	"sinopsis":"",  
+	"anho":"2010", 
+	"duracion":"34m",
+	"mostrar": true,
+	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Video Arte"],
+	"videos": []
+	},
+	
+	"Home_foschino":
+	{
+	"titulo":"Home",
+	"sinopsis":"En esta pieza de Gianfranco Foschino, la ruina del movimiento –en el supuesto de que la cámara fija arruina el cierre de una representación donde no ocurre nada- destaca entre dos zonas de referencia monumental: el patio de tierra y el techo de tejas chilenas.",  
+	"anho":"2009", 
+	"duracion":"5m",
+	"mostrar": true,	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Video Arte"],
+	"videos": []
+	},
+	
+	"Barbie_foschino":
+	{
+	"titulo":"Barbie",
+	"sinopsis":"",  
+	"anho":"2009", 
+	"duracion":"4m",
+	"mostrar": true,	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Video Arte"],
+	"videos": []
+	},
+	
+	"Q.E.P.D._foschino":
+	{
+	"titulo":"Q.E.P.D.",
+	"sinopsis":"",  
+	"anho":"2010", 
+	"duracion":"11m",
+	"mostrar": true,	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Video Arte"],
+	"videos": []
+	},
+	
+	"La_Espera_foschino":
+	{
+	"titulo":"La espera",
+	"sinopsis":"Hay una parada de autobús en algún lugar de una carretera. El signo en el fondo sugiere un pueblo rural en el sur de Chile. Las personas se reúnen, sentado y esperando el autobús para venir.",  
+	"anho":"2011", 
+	"duracion":"11m",
+	"mostrar": true,	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Video Arte"],
+	"videos": [],
+	"palabras":["rural", "autobus", "pueblo"]
+	},
+	
+		"1065591_foschino":
+	{
+	"titulo":"\"1065591\"",
+	"sinopsis":"",  
+	"anho":"2011", 
+	"duracion":"6m",
+	"mostrar": true,	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Video Arte"],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":[]
+	},
+	
+	
+		"Los Niños y El Hacha_foschino":
+	{
+	"titulo":"Los Niños y El Hacha",
+	"sinopsis":"Parte de una serie de vídeos en los que el autor trabaja con una poética similar a la de la tradición literaria chilena del siglo 20 conocida como Larica poesía, donde la relación del hombre con el paisaje se enfatiza a través de la contemplación de los acontecimientos cotidianos que pueden ser \"justo ahí\" delante de nosotros, sin embargo que nos permita ver \"algo más\" también. Tal lenguaje poético esta particularmente presente en el vídeo a través de la interpretación de juego de los niños, una situación que, a pesar de que ocurren inmerso dentro del paisaje, que está sucediendo en otro lugar: en el lugar de la fantasía, en una interna imposible mundo para ser capturado por las imágenes producidas por la cámara, pero un mundo que el video nos permite entrar a través de una experiencia personal.",  
+	"anho":"2013", 
+	"duracion":"10m25s",
+	"mostrar": true,	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Documental"],
+	"videos": [],
+	"palabras":["Larica" ,"poesía", "paisaje"]
+	},
+	
+	
+		"Mate amargo_foschino":
+	{
+	"titulo":"Mate amargo",
+	"sinopsis":"Una noche de tormenta. Un colectivo a Ciudad Universitaria. Personajes cómicos. Estudiantes. Un partido de la selección argentina de fútbol. Y un viaje que repentinamente cambia de destino.",  
+	"anho":"2006", 
+	"duracion":"12m",
+	"mostrar": true,	
+	
+	"autores": ["foschino_Gianfranco"],
+	"formato":["Video Digital"],
+	"genero": ["Ficcion"],
+	"videos": [],
+	"palabras":["tormenta", "universidad", "fútbol"]
+	}
+	
+}

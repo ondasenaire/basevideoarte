@@ -3,5 +3,8 @@
 	"Experimental": {"genero":"Experimental"},
 	"Ficcion": {"genero":"Ficción"},
 	"Video Clip": {"genero":"Video Clip"},
-	"Video Danza": {"genero":"Video Danza"}
+	"Video Danza": {"genero":"Video Danza"},
+	"Video Escultura": {"genero":"Video Escultura"},
+	"Video Instalacion": {"genero":"Video Instalación"},
+	"Video Arte": {"genero":"Video Arte"}
 }

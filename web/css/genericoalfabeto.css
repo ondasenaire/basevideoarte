@@ -1,0 +1,116 @@
+.ordenAlfabetico
+	{
+	text-align: center;
+	display: block;
+	float: left;
+	}
+
+.ordenAlfabetico li
+	{
+	margin-bottom: 1%;	
+	}
+	
+.ordenAlfabetico a
+	{
+	color: #000000;
+	font-size: 1.3em;
+	margin-right: 0.4%;
+	}
+
+.ordenAlfabetico a:hover 
+	{
+	color: #b00000;
+	}
+
+.ordenActual
+	{
+	color: #b00000 !important;	
+	}
+
+#artistaContainer
+	{
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+	display: block;
+	margin: 2% 0;
+	}
+	
+.separadorMenuMB {
+	margin-bottom: 1%;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	display: block;
+	float: left;
+	}
+
+.titulo
+	{
+	text-align: center;
+	font-size: 2em;
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+	display: block;
+	}
+	
+#containerArtistas
+	{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	display: block;
+	float: left;
+	}
+
+.filasArt
+	{
+	width: 22%;
+	height: auto;
+	padding-right: 3%;
+	display: block;
+	float: left;
+	font-weight: bold;
+	}
+	
+.filasObras
+	{
+	width: 30%;
+	height: auto;
+	padding-right: 3.3
+	%;
+	display: block;
+	float: left;
+	font-weight: bold;
+	}
+	
+.linkArt
+	{
+	font-size: 16px;
+	}
+	
+.linkArt a
+	{
+	color: #2e2e2e !important;
+	}
+	
+.linkArt a:hover
+	{
+	color:#b00000 !important;
+	}
+	
+.linkPais
+	{
+	font-size: 14px;
+	}
+	
+.linkPais a
+	{
+	color: #2e2e2e !important;	
+	}
+	
+.linkPais a:hover
+	{
+	color: #589738 !important;	
+	}

@@ -1,34 +1,44 @@
  {% extends 'layout.twig.html' %}
 {% block title %}Personas{% endblock %}
 
+{%block css%}
+<link rel="stylesheet" href="{{ esServer(path,uri) }}/css/genericoalfabeto.css" />
+{%endblock%}
+
+{% set abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'] %}
+
+{% block abecedario %}
+
+	<ul class="ordenAlfabetico">
+		{% for i in abc %}
+	<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}" {% if letra_activa == i %} class="ordenActual"{% endif%} class="ordenlinks" >{{ i }}</a>
+	{% endfor %}
+	<a href="{{ path('personas') }}" {% if letra_activa == 'todas' %} class="ordenActual"{% endif%}  >todas</a>
+	</ul>
+{% endblock %}
+
 {% block contenido %}
 
 {% set paisActual = "" %}
 {% set memPais = "" %}
 
-
-{% set abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'] %}
-
-	
-	<div id="anclasordenalfabetico">
-		{% for i in abc %}
-		<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}"  {% if letra_activa == i %} class="ordenlinksactual"{% endif%} class="ordenlinks" >{{ i }}</a>
-		{% endfor %}
-		<a href="{{ path('personas') }}" {% if letra_activa == 'todas' %} class="ordenlinksactual"{% endif%} class="ordenlinks" >todas</a>
-	</div>
-	
-	<div id="sep_try" style="margin-left: 22px !important;">
-	</div>
-	<div id="separador"> </div>
- 
- <div id="containerart">
  	{% for persona in lista_personas %}
-		<div id="filas">
-			<h3 id="persona_nombre"><a href="{{path('persona',{persona: persona.id}) }}" > {{ persona.apellido|e }} {{ persona.nombre|e }}</a> </h3>
-			<h2 id="persona_pais"><a href="{{ path('personas',{filtro: 'pais', valor : persona.pais.pais }) }}">{{persona.pais.pais}}</a></h2>
-		</div>
+ 		{%if (loop.index0 % 4 ) == 0 %}
+ 		
+ 		 <div id="containerArtistas">
+ 		{%endif%}
+ 	 
+ 			<div class="filasArt">
+ 				<p class="linkArt"><a href="{{path('persona',{persona: persona.id}) }}">{{ persona.apellido|e }} {{ persona.nombre|e }}</a></p>
+ 				<p class="linkPais"><a href="{{ path('personas',{filtro: 'pais', valor : persona.pais.pais }) }}">{{persona.pais.pais}}</a></p>
+ 			</div>
+					
+	  
+	  	{%if (loop.index0 % 4 ) == 3 %}
+ 			</div>
+ 		{%endif%}	
 	{% endfor %}	
-</div>
+
 		
 {% for mensaje in mensajes %}
  <p style="padding: 50px; color:red;">{{mensaje}}</p>

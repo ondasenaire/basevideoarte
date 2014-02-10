@@ -15,29 +15,27 @@
 
 	<body class="body">
 		<header class="mainHeader">
-		<img src="{{ esServer(path,uri) }}/medios/iconos/portadainicio.jpg" />
+		<img src="{{ esServer(path,uri) }}/medios/iconos/portadainicio.jpg"  alt="Base Video Arte"/>
 		
 		<div class="separadorMenu"></div>
 		
-		<nav><ul>
+		<nav><ul class="mainMenu">
 			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('inicio') }}" {% if pagina_actual == 'inicio' %} class="menuActual"{% endif%}>Inicio</a></li>
 			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('obras') }}" {% if pagina_actual == 'obras' %} class="menuActual"{% endif%}>Obras</a></li>
 			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('personas') }}" {% if pagina_actual == 'personas' %} class="menuActual"{% endif%}>Personas</a></li>
 			<li style="padding-right: 4.9%;"><a href="{{ app.url_generator.generate('busqueda') }}" {% if pagina_actual == 'busqueda' %} class="menuActual"{% endif%}>Búsqueda Avanzada</a></li>
 			<li><a href="{{ app.url_generator.generate('equipo') }}" {% if pagina_actual == 'equipo' %} class="menuActual"{% endif%}>Equipo</a></li>
-		</ul></nav>
+		</ul>
+		{% block abecedario %}{% endblock %}
 		
-		<div class="separadorMenu"></div>
-		
+		</nav>		
 		</header>
-		
+		<div class="separadorMenuMB"></div>
 		<div class="mainContent">
 
-			<div id="separador"></div>
-			<a name="arriba"></a>
-			<h2>{% block tituloSeccion %}{% endblock %}</h2>
-
-			<div id="contenido">
+			
+			
+						
 				<div class="content">
 					
 					<article class="inicio">
@@ -45,7 +43,7 @@
 						{% endblock %}
 					</article>
 				</div>
-			</div>
+			
 		</div>
 		
 		

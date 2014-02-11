@@ -18,6 +18,8 @@ use BaseVideoArte\Form\Buscador\BuscadorObrasType;
 class BuscadorController {
 
 	public function buscadoresAction(Application $app, Request $request ) {
+		$huboConsulta = false; // boolean para determinar si mostrar o no los resultadus	
+			
 		// facilitador de opciones	
 		$opciones = new OpcionesForm();
 		
@@ -58,9 +60,16 @@ class BuscadorController {
 		
 		
 		if ($request -> isMethod('GET')) {
+			
+			//si hubo algun tipo de consulta mediante formulario,  la variable $huboConsulta se vuelve true
+			$consultaGET = $request->query; // consulta del url
+			
+			
+			
 			//echo 'HOLA';
-			if ($request -> query -> has('buscador_general')) {
+			if ($consultaGET -> has('buscador_general')) {
 				//echo 'buscador general';
+				$huboConsulta = true;
 				$form_general->bind($request);
 				if ($form_general->isValid() ){
 					$consulta = $form_general->getData();
@@ -71,8 +80,9 @@ class BuscadorController {
 				
 			}
 // buscador personas
-			if ($request -> query -> has('buscador_personas')) {
-				//echo 'buscador personASA';		
+			if ($consultaGET -> has('buscador_personas')) {
+				//echo 'buscador personASA';	
+				$huboConsulta = true;	
 				$form_personas->bind($request);
 				if ($form_personas->isValid() ){
 					$consulta = $form_personas->getData();
@@ -85,8 +95,9 @@ class BuscadorController {
 							
 			}
 // buscador obras
-			if ($request -> query -> has('buscador_obras')) {
+			if ($consultaGET-> has('buscador_obras')) {
 				//echo 'buscador obras';
+				$huboConsulta = true;
 				$form_obras->bind($request);
 				if ($form_obras->isValid() ){
 					$consulta = $form_obras->getData();
@@ -120,7 +131,9 @@ class BuscadorController {
 																	'form_personas' => $form_personas -> createView(), 
 																	'form_obras' => $form_obras -> createView(), 
 																	'pagina_actual' => 'busqueda', 
-																	'respuesta' => $respuesta) );
+																	'respuesta' => $respuesta,
+																	'hubo_consulta'=> $huboConsulta 
+																	));
 
 	}
 

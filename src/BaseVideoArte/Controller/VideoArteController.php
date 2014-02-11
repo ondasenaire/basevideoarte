@@ -114,7 +114,7 @@ class VideoArteController {
 												BaseVideoArte\Entidades\Obra obra LEFT JOIN obra.artistas persona WHERE SUBSTRING(obra.titulo, 1, 1) LIKE '$valor%'");
 						$obras = $query->getResult();
 						$letra_activa = $valor;
-						echo $valor;
+						//echo $valor;
 					}	
 					
 				//echo ' por abecedario';			

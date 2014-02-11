@@ -2,72 +2,77 @@
 
 {% block title %}Personas{% endblock %}
 
-{% block contenido %}
-    {% set abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'] %}
 
-	
-	<div id="anclasordenalfabetico">
+{%block css%}
+<link rel="stylesheet" href="{{ esServer(path,uri) }}/css/artista.css" />
+{%endblock%}
+
+{% set abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'] %}
+
+{% block abecedario %}
+
+	<ul class="ordenAlfabetico">
 		{% for i in abc %}
-		<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}" class="ordenlinks" >{{ i }}</a>
-		{% endfor %}
-		<a href="{{ path('personas') }}" class="ordenlinks" >todos</a>
-	</div>
+	<a href="{{ path('personas',{filtro: 'abc', valor : i }) }}"  class="ordenlinks" >{{ i }}</a>
+	{% endfor %}
+	<a href="{{ path('personas') }}" >todas</a>
+	</ul>
+{% endblock %}
+
+
+{% block contenido %}
+  
 	
-	<div id="sep_try" style="margin-left: 22px !important;">
-	</div>
-	<div id="separador"></div>  
+
    {%if mensajes%}
    
     {% for mensaje in mensajes %}
- 	 <p style="padding: 50px; color:red;">{{mensaje}}</p>
+ 	 <p style="padding: 50px;margin:auto; color:red;">{{mensaje}}</p>
 	{%endfor%}
    
    
    {%else%}
-   <div id="container_artista">
-		<div id="header_artista">
-		  {{ persona.apellido }}, {{ persona.nombre }}
-		</div>
-		<div id="separador"> </div>
-		<div id="container_foto">
-			<div id="foto"><img src="{%if persona.getFoto != null %}{{ esServer(path,uri) }}/medios/img/artistas/{{persona.pais.pais|lower}}/{{persona.getFoto().archivo}} {%endif%}" alt="{%if persona.getFoto != null %}{{persona.getFoto().descripcion}}{%endif%}" />
+ 	  <div id="container_artista">
+	
+			<p class="titulo">{{ persona.apellido }}, {{ persona.nombre }}</p>
+		 
+			<div id="container_foto">
+				<div id="foto"><img src="{%if persona.getFoto != null %}{{ esServer(path,uri) }}/medios/img/artistas/{{persona.pais.pais|lower}}/{{persona.getFoto().archivo}} {%endif%}" alt="{%if persona.getFoto != null %}{{persona.getFoto().descripcion}}{%endif%}" />
 			
 			</div>
-			<div id="datosfoto">
-				<p><strong>País: </strong><a href="{{ path('personas',{filtro: 'pais', valor : persona.pais.pais }) }}"> {{persona.pais.pais}} </a></p>
+				<div id="datosfoto">
+					<p><strong>País: </strong><a href="{{ path('personas',{filtro: 'pais', valor : persona.pais.pais }) }}"> {{persona.pais.pais}} </a></p>
 				
+				</div>
 			</div>
-		</div>
-		<div id="descripcion">
-		{{persona.data}}
-		</div>
-		<div id="txts">
-		<p><strong>Sitio web: </strong>{%for web in persona.getMediosByTipo('web')%}<a href="{{web.archivo}}" target="_blank"> {{web.archivo}} </a>{%endfor%}</p>
-		</div>
-		<div id="separador"> </div>
-		<div id="separador"> </div>
 		
-		<div id="containerObrasEventos">
-			<div id="containerobras">
-				
-				<h5>Obras Realizadas</h5>
-				
-				<ul class="unstyled">
-					{% for obra in persona.obras %}
-				<li class="cadaobra"><a href="{{path('obra',{obra: obra.id}) }}" class="ObrasLinks">{{obra.titulo}}</a><small class="anioObraEvento">({{obra.anho}})</small></li>
-				{% endfor %}
-				</ul>
-				
+			<div id="descripcion">
+			{{persona.data}}
 			</div>
-		<div id="separador"> </div>
-		<div id="separador"> </div>
+			<br />
+			{%if persona.getMediosByTipo('web') |length > 0  %}
+				<div id="txts">
+				<p><strong>Sitio web: </strong>{%for web in persona.getMediosByTipo('web')%}<a href="{{web.archivo}}" target="_blank"> {{web.archivo}} </a>{%endfor%}</p>
+				</div>
+			{% endif %}
+			{%if persona.obras |length > 0%}
+			<div id="containerObrasEventos">
+				<div id="containerobras">
+				
+					<h5>Obras Realizadas</h5>
+				
+					<ul class="unstyled">
+						{% for obra in persona.obras %}
+					<li class="cadaobra"><a href="{{path('obra',{obra: obra.id}) }}" class="ObrasLinks">{{obra.titulo}}</a><small class="anioObraEvento">({{obra.anho}})</small></li>
+					{% endfor %}
+					</ul>
+				</div>		
+			</div>
+			{%endif%}
+		
 		
 		</div>
-		
-		
-		
-	</div>
-   {%endif%}
+ 	  {%endif%}
    
 
  

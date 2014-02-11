@@ -218,7 +218,7 @@
 		 "apellido":"El Halli Obeid",
 		 "data":" ",
 		 "inicio":"-",
-		 "web":[" "],
+		 "web":[],
 		 "sexo":"m",
 		 "mostrar":true,
 		 
@@ -250,7 +250,7 @@
 		 "apellido":"Olivera",
 		 "data":" ",
 		 "inicio":"-",
-		 "web":[" "],
+		 "web":[],
 		 "sexo":"h",
 		 "mostrar":true,
 		 
@@ -284,7 +284,7 @@
 		 "apellido":"Trilnick",
 		 "data":"",
 		 "inicio":"-",
-		 "web":[""],
+		 "web":[],
 		 "sexo":"h",
 		 "mostrar":true,
 		 
@@ -300,7 +300,7 @@
 		 "apellido":"Simón",
 		 "data":"",
 		 "inicio":"-",
-		 "web":[""],
+		 "web":[],
 		 "sexo":"m",
 		 "mostrar":true,
 		 
@@ -316,7 +316,7 @@
 		 "apellido":"Cafici",
 		 "data":"",
 		 "inicio":"-",
-		 "web":[""],
+		 "web":[],
 		 "sexo":"m",
 		 "mostrar":true,
 		 

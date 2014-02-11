@@ -1,0 +1,177 @@
+.ordenAlfabetico {
+	text-align: center;
+	display: block;
+	float: left;
+	}
+
+.ordenAlfabetico li {
+	margin-bottom: 1%;	
+	}
+	
+.ordenAlfabetico a {
+	color: #000000;
+	font-size: 1.3em;
+	margin-right: 0.4%;
+	}
+
+.ordenAlfabetico a:hover {
+	color: #b00000;
+	}
+
+#artistaContainer	{
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+	display: block;
+	margin: 2% 0;
+	}
+	
+.separadorMenuMB {
+	margin-bottom: 1%;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	display: block;
+	float: left;
+	}
+
+.titulo {
+	text-align: center;
+	font-size: 2em;
+	width: 100%;
+	height: auto;
+	display: block;
+	float: left;
+	margin-bottom: 1%;
+	}	
+
+#fotoContenedor {
+	height: 180px;
+	width: 170px;
+	float: right;
+	padding: 4px;
+	margin: 0px 0px 0px 13px;
+	}
+	
+#container_foto {
+	height: 180px;
+	width: 170px;
+	float: right;
+	padding: 4px;
+	margin: 0px 0px 0px 13px;
+	}
+			
+#foto {
+	height: 150px;
+	width: 150px;
+	margin: 0px 0px 0px 13px;
+	padding: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	display: block;
+	}
+		
+#datosfoto {
+	height: 25px;
+	width: 150px;
+	margin: 0px 0px 0px 4px;
+	padding: 4px 4px 4px 12px;
+	text-align: center;
+	display: block;
+	}
+	
+#descripcion {
+	width: 100%;
+	height: auto;
+	text-align: justify;
+	display: block;
+	}
+	
+#txts {
+	width: 1000px;
+	text-align: left;
+	}
+	
+#txts a
+	{
+	text-decoration: none;
+	color: #b00000;
+	}
+	
+#txts a:hover {
+	color:#589738;
+	}
+	
+#containerobras {
+	width: 100%;
+	height: auto;
+	display: block;
+	text-align: left;
+	background-color: rgb(245, 245, 245);
+	border: 1px solid rgb(227, 227, 227);
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+	margin: 1% 0;
+	padding-left: 2%;
+	}
+	
+	#obra	{
+	width: 100%;
+	height: auto;
+	text-align: left;
+	}
+	
+	.unstyled {
+	margin-top: 10px;
+	list-style: none;
+	}
+	
+	.cadaobra {
+	margin-bottom: 8px;
+	}
+	
+	.anioObraEvento {
+	margin-bottom: 10px;
+	padding-left: 10px;
+	color: rgb(140, 140, 140);
+	}
+	
+	.ObrasLinks	{
+	text-decoration: none;
+	color: #2e2e2e;
+	}
+	
+	.ObrasLinks:hover	{
+	text-decoration: none;
+	color: #b00000;
+	}
+	
+	small {
+	font-size: 80%;
+	}
+	
+#containereventosart	{
+	width: 100%;
+	height: auto;
+	margin-bottom: 1%;
+	display: block;
+	text-align: left;
+	background-color: rgb(245, 245, 245);
+	border: 1px solid rgb(227, 227, 227);
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+	padding-left: 2%;
+	}			
+	
+#containercurador	{
+	width: 100%;
+	height: auto;
+	margin-bottom: 1%;
+	display: block;
+	text-align: left;
+	background-color: rgb(245, 245, 245);
+	border: 1px solid rgb(227, 227, 227);
+	border-radius: 4px;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+	padding-left: 2%;
+	}

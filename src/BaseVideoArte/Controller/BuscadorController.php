@@ -62,10 +62,7 @@ class BuscadorController {
 		if ($request -> isMethod('GET')) {
 			
 			//si hubo algun tipo de consulta mediante formulario,  la variable $huboConsulta se vuelve true
-			$consultaGET = $request->query; // consulta del url
-			
-			
-			
+			$consultaGET = $request->query; // consulta del url			
 			//echo 'HOLA';
 			if ($consultaGET -> has('buscador_general')) {
 				//echo 'buscador general';
@@ -74,7 +71,7 @@ class BuscadorController {
 				if ($form_general->isValid() ){
 					$consulta = $form_general->getData();
 					$respuesta = $this -> busquedaGeneral($app, $consulta['consulta']);
-					$form_general = $app["form.factory"] -> create($buscadorGeneral,$receptor_general);
+				//	$form_general = $app["form.factory"] -> create($buscadorGeneral,$receptor_general);
 				
 				}		
 				

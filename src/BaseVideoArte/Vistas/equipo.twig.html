@@ -1,34 +1,34 @@
  {% extends 'layout.twig.html' %}
 
 {% block title %}Sobre el proyecto{% endblock %}
-
+{%block css%}
+<link rel="stylesheet" href="{{ esServer(path,uri) }}/css/equipo.css" />
+{%endblock%}
 {% block contenido %}
     <div id="separador"> </div>
 	<div id="equipo">
-		<p style="font-size: 2em;">Equipo</p>
-	<div id="separador"> </div>
-	<div id="separador"> </div>
-		<br />
-		<div class="filasequipo">
-			<p class="equiponombre"><strong>Gabriela Golder</strong></p><p>Directora</p><p>2012 - 2013</p>
-		</div>
-		<div class="filasequipo">
-			<p class="equiponombre"><strong>Javier Plano</strong></p><p>Investigación - Producción General</p><p>2012 - 2013</p>
-		</div>
-		<div class="filasequipo">
-			<p class="equiponombre"><strong>Natalia Rizzo</strong></p><p>Investigación</p><p>2012 - 2013</p>
-		</div>
-		<div class="filasequipo">
-			<p class="equiponombre"><strong>Juan Sebastian Faccio</strong></p><p>Diseñador</p><p>2013</p>
-		</div>
-		<div class="filasequipo">
-			<p class="equiponombre"><strong>José Casanova</strong></p><p>Programador</p><p>2013</p>
-		</div>
-		<div class="filasequipo">
-			<p class="equiponombre"><strong>Pablo Enrici</strong></p><p>Programador</p><p>2012</p>
-		</div>
-		<div class="filasequipo">
-			<p class="equiponombre"><strong>Juan Novelleto</strong></p><p>Programador</p><p>2012</p>
-		</div>
+				<p style="font-size: 2em;" id="centered">Equipo</p>
+				<br />
+				<div class="filasequipo">
+					<p class="equiponombre"><strong>Gabriela Golder</strong></p><p>Directora</p><p>2012 - 2013</p>
+				</div>
+				<div class="filasequipo">
+					<p class="equiponombre"><strong>Javier Plano</strong></p><p>Investigación - Producción General</p><p>2012 - 2013</p>
+				</div>
+				<div class="filasequipo">
+					<p class="equiponombre"><strong>Natalia Rizzo</strong></p><p>Investigación</p><p>2012 - 2013</p>
+				</div>
+				<div class="filasequipo">
+					<p class="equiponombre"><strong>Juan Sebastian Faccio</strong></p><p>Diseñador</p><p>2013</p>
+				</div>
+				<div class="filasequipo">
+					<p class="equiponombre"><strong>José Casanova</strong></p><p>Programador</p><p>2013</p>
+				</div>
+				<div class="filasequipo">
+					<p class="equiponombre"><strong>Pablo Enrici</strong></p><p>Programador</p><p>2012</p>
+				</div>
+				<div class="filasequipo">
+					<p class="equiponombre"><strong>Juan Novelleto</strong></p><p>Programador</p><p>2012</p>
+				</div>
 	</div>
 {% endblock %}

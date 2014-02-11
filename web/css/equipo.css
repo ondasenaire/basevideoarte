@@ -1,0 +1,39 @@
+#equipo
+	{
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+	display: block;
+	}
+	
+#centered
+	{
+	text-align: center;	
+	}
+	
+.filasequipo
+	{
+	width: 25%;
+	height: auto;
+	height: auto;
+	float: left;
+	display: block;
+	text-align: left;
+	margin-bottom: 2%;
+	}
+	
+.equiponombre
+	{
+	color: #b00000;
+	}
+	
+.equipotrabajo
+	{
+	color: #589738;	
+	}
+	
+.equipoanio
+	{
+	color: rgb(140, 140, 140);	
+	}
+			

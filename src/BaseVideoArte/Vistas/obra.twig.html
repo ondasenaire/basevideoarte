@@ -28,7 +28,13 @@
 		<div id="datos_ficha_obra">
 			<div id="datos_obras">
 				<p><strong>Artista: </strong>{% for artista in obra.artistas%}
-        	 								<a href="{{path('persona',{persona: artista.id}) }}" >{{artista.apellido}}, {{artista.nombre}} ({{artista.pais.pais}})</a>
+					{#no coloca enlace cuando la persona tiene atrib mostrar = false  #}
+												{%if artista.mostrar == true %}	
+        	 										<a href="{{path('persona',{persona: artista.id}) }}" >{{artista.apellido}}, {{artista.nombre}} ({{artista.pais.pais}})</a>
+        										{%else%}
+        											{{artista.apellido}}, {{artista.nombre}} ({{artista.pais.pais}})
+        										{%endif%}	
+        									
         									{% if loop.last != true %} , {%endif%}
         									{% endfor %}
         		</p>

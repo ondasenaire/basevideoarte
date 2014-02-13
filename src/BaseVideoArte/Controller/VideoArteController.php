@@ -27,7 +27,8 @@ class VideoArteController {
       				 ->from('BaseVideoArte\Entidades\Persona',' persona')
 					 ->leftJoin('persona.pais', 'pais')
         			 ->where("SUBSTRING(persona.apellido, 1, 1) = '$valor'")
-        			 ->orderBy('pais.pais', 'ASC')
+					 ->andWhere('persona.mostrar = true')
+        			->orderBy('pais.pais, persona.apellido', 'ASC')
 					 ;		
 					$consulta = $q->getQuery(); 					
 					$resultado = $consulta->getResult();
@@ -41,7 +42,8 @@ class VideoArteController {
 					->from('BaseVideoArte\Entidades\Persona', 'persona')
 					->leftJoin('persona.pais', 'pais')
 					->where("pais.pais = '$valor'")
-					
+					->andWhere('persona.mostrar = true')
+					->orderBy( 'persona.apellido', 'ASC')
 					; 
 				
 				$consulta = $qb -> getQuery();
@@ -50,11 +52,14 @@ class VideoArteController {
 			}
 
 		}else{
+				//personas sin aplicar filtros		
 				$qb = $app['db.orm.em'] -> createQueryBuilder();
 				$qb->select('persona', 'pais')
 					->from('BaseVideoArte\Entidades\Persona', 'persona')
 					->leftJoin('persona.pais', 'pais')
-					->orderBy('pais.pais', 'ASC')
+					->where('persona.mostrar = true')
+					->orderBy('pais.pais, persona.apellido', 'ASC')
+					//->orderBy('pais.pais', 'ASC')
 					; 
 				// $qb -> select('p.id', 'p.nombre', 'p.apellido','c')
 				 // ->from('BaseVideoArte\Entidades\Persona', 'p')

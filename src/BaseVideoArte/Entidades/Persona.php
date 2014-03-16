@@ -133,8 +133,35 @@ class Persona {
   		return end($f) ;
   	}
   
+  //ordenar obras cronologicamente
+  public function ordenarObras(){
+  	//utilizamos el iterator que provee ArrayCollection para ordenar las obras cronológicamente
+	
+	$iteradorObras = $this->obras->getIterator();
+	
+// definimos en el closure nuestra funcion para comparar com closure
+	$iteradorObras->uasort(function ($first, $second) {
+						if ($first === $second) {
+						return 0;
+						}
+ 
+						return  intval($first->getMayorAnho() ) >  intval( $second->getMayorAnho( )) ? -1 : 1;
+					});
+	
+	$this->obras = $iteradorObras;
+	
+	  // foreach ($iteradorObras as $obra ) {
+      // echo "<br> titulo ".$obra->getTitulo()." | anho ".$obra->getAnho();
+ 	 // }
   
-  //GET SET
+  }
+  
+  
+
+  
+
+  
+    //GET SET ----------------------------------------------------------------------------
 
     /**
      * Get id

@@ -173,7 +173,35 @@ class Obra {
         return $dur;
     }
 	
+	
+	
+	/* getMayorAnho()  devuelve el mayor anho en caso de ser un periodo de tiempo   
+	 * 
+  	*/
+  	
+  	
+  	  // obtengo el anho mas grande, para poder ordenar
+  public function getMayorAnho(){
+  			
+		if( strlen(trim ($this->anho) ) > 4  ){
+			$arr = explode('-',$this->anho);
+			if( intval(trim($arr[0])) > intval(trim($arr[1])) ){
+				return $arr[0];
+			}else{
+				return $arr[1];
+			}
+			
+			//return $arr[0];
+		}else{
+			return $this->anho ;
+		}
+	
+  	
+	
+	
+  }
   
+  	
 //------GET SET--------------
     /**
      * Get id

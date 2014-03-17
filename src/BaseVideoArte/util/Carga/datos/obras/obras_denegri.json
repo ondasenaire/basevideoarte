@@ -239,6 +239,85 @@
 	"metadatos":[],
 	"palabras": [],
 	"medios": []
+	},
+	
+	
+	
+	"Aula Magna_denegri":
+	{
+	"titulo":"Aula Magna",
+	"sinopsis":"Un poema estructural de despedida para un lugar amado. Las imágenes fueron realizadas fotograma a fotograma durante un año. El sonido es el resultado de mezclar y procesar pistas de grabaciones directas.",
+	"anho":"2013", 
+	"duracion":"6m",
+	"mostrar": true,
+	
+	"foto":"denegri_andres-  .jpg",
+	"autores": ["denegri_andres"],
+	"formato":["Video"],
+	"genero": ["Video Arte"],
+	"videos": [],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	
+	
+	"Eramos esperados (hierro y tierra)_denegri":
+	{
+	"titulo":"Eramos esperados (hierro y tierra)",
+	"sinopsis":"Dispositivo cinematográfico, técnica mixta (mesas de madera, proyectores de cine Super 8, película Super 8, soportes universales de laboratorio con nueces y pinzas, tela translúcida, carretes de película Super 8).",
+	"anho":"2013", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":"denegri_andres-  .jpg",
+	"autores": ["denegri_andres"],
+	"formato":["Super8"],
+	"genero": ["Video Instalacion"],
+	"videos": ["http://vimeo.com/73045750"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Eramos esperados (plomo y palo)_denegri":
+	{
+	"titulo":"Eramos esperados (plomo y palo)",
+	"sinopsis":"Lo que vemos como imagen proyectada es el resultado de lo que se desarrolla por debajo de esta, del fotograma físico y de la mecánica que lo arrastra.",
+	"anho":"2013", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":"denegri_andres-  .jpg",
+	"autores": ["denegri_andres"],
+	"formato":["16mm"],
+	"genero": ["Video Instalacion"],
+	"videos": ["http://vimeo.com/85049762"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
+	},
+	
+	
+	"Eramos esperados (Super 8)_denegri":
+	{
+	"titulo":"Eramos esperados (Super 8)",
+	"sinopsis":"",
+	"anho":"2013", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"foto":"denegri_andres-  .jpg",
+	"autores": ["denegri_andres"],
+	"formato":["Super8"],
+	"genero": ["Video Instalacion"],
+	"videos": ["http://vimeo.com/66459047"],
+	"metadatos":[],
+	"palabras": [],
+	"medios": []
 	}
 
 }

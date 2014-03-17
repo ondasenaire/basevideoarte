@@ -213,12 +213,12 @@
 		 "foto":"delgado_christian.jpg"
 		 },
 		 
-		  "El Halli Obeid_leticia":
+		  "El_Halli_Obeid_leticia":
 		{"nombre":"Leticia",
 		 "apellido":"El Halli Obeid",
-		 "data":" ",
-		 "inicio":"-",
-		 "web":[],
+		 "data":"Estudió en la Escuela de Artes de la Universidad Nacional de Córdoba (U.N.C.). Trabajó en el Museo Bellas Artes Caraffa, Córdoba investigando en la colección permanente entre los años 2000 y 2003. Beca de perfeccionamiento de la Fundación Antorchas:2003-2005. ",
+		 "inicio":"2000",
+		 "web":["http://www.leticiaelhalliobeid.com.ar/"],
 		 "sexo":"m",
 		 "mostrar":true,
 		 
@@ -248,9 +248,9 @@
 		   "olivera_javier":
 		{"nombre":"Javier",
 		 "apellido":"Olivera",
-		 "data":" ",
+		 "data":"Se forma inicialmente en la pintura con Jorge Simes, Angel Capano, Luis Felipe Noé y Eduardo Stupía. Más tarde estudia cine en la University of California, Los Angeles (UCLA) y literatura iberoamericana en la Fundación José Ortega y Gasset de España. Completa su formación trabajando como asistente de dirección en cine y televisión durante ocho años. Su trabajo lidia con la relación entre el hombre y la naturaleza, y cómo la identidad y la memoria construyen al ser. Borrando las fronteras entre una mirada documental y una búsqueda plástica, plantea un acercamiento poético –y a veces irónico- a cuestiones sociales e individuales sin perder una postura crítica.",
 		 "inicio":"-",
-		 "web":[],
+		 "web":["http://javierolivera.com.ar/"],
 		 "sexo":"h",
 		 "mostrar":true,
 		 
@@ -282,9 +282,9 @@
 		   "Trilnick_carlos":
 		{"nombre":"Carlos",
 		 "apellido":"Trilnick",
-		 "data":"",
+		 "data":"Su obra se ha caracterizado, desde sus inicios, por una búsqueda expresiva y un espíritu experimental. Es a través de la práctica artística asistida por estos entrecruzamientos de medios que propone una serie de señalamientos sobre diferentes temas de la realidad social y política, generando obras de compromiso con su entorno. La ha exhibido en numerosas muestras individuales y colectivas así como en bienales y festivales de video, cine y artes electrónicas de América y de Europa.",
 		 "inicio":"-",
-		 "web":[],
+		 "web":["http://carlostrilnick.com/"],
 		 "sexo":"h",
 		 "mostrar":true,
 		 

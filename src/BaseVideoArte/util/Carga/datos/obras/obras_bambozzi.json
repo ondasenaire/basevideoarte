@@ -79,7 +79,7 @@
 	"Aqui de novo":
 	{
 	"titulo":"Aqui de novo",
-	"sinopsis":" ",
+	"sinopsis":"O vídeo AQUI DE NOVO é um ensaio sobre algumas contradições contemporãneas: fala sobre a defasagem entre o que se quer fazer e o que se faz de fato, sobre a disparidade entre o que se diz e o que se quer dizer, sobre o convivio nos espaços públicos e os desejos privados. Elementos: o outro, as janelas, a privacidade, os espaços vazios, a intimidade mediada, voyerismo, situações invasivas, dúvidas…",
 	"anho":"2002", 
 	"duracion":"6m",
 	"mostrar": true,
@@ -123,7 +123,7 @@
 	
 	"Dois Ou Três Encontros":
 	{
-	"titulo":"Dois Ou Três Encontros",
+	"titulo":"2 Ou 3 Encontros",
 	"sinopsis":"Usando metáforas y jugando entre la ficción y la realidad, los expertos son presentados en diferentes formas de abordar. Algunos de ellos se introducen sin más interferencias, mientras que algunos se presentan en una forma muy elaborada.",
 	"anho":"2003", 
 	"duracion":"4m 30s",
@@ -165,7 +165,412 @@
 	"genero": ["Experimental"],
 	"palabras": [],
 	"foto":"bambozzi_lucas-desvios_derivas_contornos.jpg"	
-	}
+	},
 	
+	
+	"Memória Viva_bambozzi":
+	{
+	"titulo":"Memória Viva",
+	"sinopsis":"Al final, la obra hace un dibujo curioso acerca de varias herencias y tantas referencias diferentes que se supone que es un ser brasileño.",
+	"anho":"1991", 
+	"duracion":"1m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Hi-8"],
+	"genero": ["Experimental"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	"passa_bambozzi":
+	{
+	"titulo":"Passa",
+	"sinopsis":"videoclip Virna Lisi",
+	"anho":"1991", 
+	"duracion":"3m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["16mm","Betacam"],
+	"genero": ["Video Clip"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Just there: a place I did not know_bambozzi":
+	{
+	"titulo":"Just there: a place I did not know",
+	"sinopsis":"Ali é Um Lugar… fala do fascínio pelo desconhecido, pelo que ainda não se possui, algo aparentemente próximo mas que foge ao verdadeiro encontro. O vídeo busca nas paisagens, nos desencontros e na poesia o desejo pelo “outro lugar”, aquilo que está sempre além – e expõe os conflitos gerados na pessoa com quem se está próximo. O trabalho faz parte de um projeto dos videoartistas Eder Santos, Francisco de Paula, Lucas Bambozzi, Marcelo Braga e Marcus Nascimento constituído por uma série de videopoemas experimentais ligados à intimidade de cada um.",
+	"anho":"1996", 
+	"duracion":"6m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Super8","Betacam"],
+	"genero": [],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Como Corpo Cai_bambozzi":
+	{
+	"titulo":"Como Corpo Cai",
+	"sinopsis":"A consciência dolorosa sobre um trágico evento (feito com uma câmera descartável Fisher Price PXL).",
+	"anho":"1999", 
+	"duracion":"1m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": [],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	"Corrupted Poems_bambozzi":
+	{
+	"titulo":"Corrupted Poems",
+	"sinopsis":"serie of 7 web-videos – variations on Fernando Pessoa’s excerpts",
+	"anho":"1999", 
+	"duracion":"20s",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": [],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	"Eu Não Posso Imaginar_bambozzi":
+	{
+	"titulo":"Eu Não Posso Imaginar",
+	"sinopsis":"part of the Torments project. I Have No Words is an experimental piece which randomly covers situations that are either fiction or documentary. As we watch the video, we can see impressions and self-expressions tangled in a kind of game, suggesting several possibilities to create meanings. The video tries to frame in a picture sensations usually unlikely to be expressed in words. The video It has been in continuous process, showing the restlessness of the author and his search for images that can show different and altered states of human mood as well as the ups and downs of raw emotions and feelings. As one of the characters says: “ this is the idea of telling something which is so hard to understand, and at the same time, so simple.” I Have No Words is the first video of a trilogy project called Torments. It was shot in locations in Mexico, Cuba, city of São Paulo and interior of Brazil.",
+	"anho":"1999", 
+	"duracion":"22m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["DV","Super8"],
+	"genero": ["Experimental"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	"I have no words: Vestigios_bambozzi":
+	{
+	"titulo":"I have no words: Vestigios",
+	"sinopsis":"video experimental que compone la primera parte de una trilogía de vídeos relacionados con el proyecto Tormentos",
+	"anho":"1999", 
+	"duracion":"22m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["MiniDV","Super8"],
+	"genero": ["Experimental"],
+	"palabras": ["trilogía"],
+	"foto":"-----------------.jpg"	
+	},
+	
+	"vestigios_bambozzi":
+	{
+	"titulo":"Vestigios",
+	"sinopsis":"video experimental que compone la primera parte de una trilogía de vídeos relacionados con el proyecto Tormentos",
+	"anho":"1999", 
+	"duracion":"4m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["MiniDV","Super8"],
+	"genero": ["Experimental"],
+	"palabras": ["trilogía"],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Atópicos_bambozzi":
+	{
+	"titulo":"Atópicos",
+	"sinopsis":"Multichannel videoinstallation with objects, TV sets and projections",
+	"anho":"2000", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Postcards [Plymouth series]_bambozzi":
+	{
+	"titulo":"Postcards [Plymouth series]",
+	"sinopsis":"6 digital videos for the Internet",
+	"anho":"2000", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Arte"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"1 + 1 [taxidermia + outdoor]_bambozzi":
+	{
+	"titulo":"1 + 1 [taxidermia + outdoor]",
+	"sinopsis":"installation with 3 video channels + taxi and billboard",
+	"anho":"2001", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	
+	"Postcards_bambozzi":
+	{
+	"titulo":"Postcards",
+	"sinopsis":"15 small projections over 15 postcards. The Postcards series project comprises a collection of places, curious situations and memories. It is a project in endless progress: to visit touristic places and perform comparative shots using a video camera. Relating the actual postcard to the scene it portrays, the videos are usually a result of different resources, seeking for situations and moments where sounds and images can reveal layers other than the landscapes might suggest.",
+	"anho":"2001", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+		
+	"Road Video_bambozzi":
+	{
+	"titulo":"Road Video",
+	"sinopsis":"",
+	"anho":"2002", 
+	"duracion":"8m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["DV"],
+	"genero": ["Video Arte"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	}, 
+	
+	"Time shift_bambozzi":
+	{
+	"titulo":"Time shift",
+	"sinopsis":"Vídeos em loop projetados sobre relógios baratos ou promocionais encontrados em padarias e bares no Brasil",
+	"anho":"2003", 
+	"duracion":"6m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["DV","Super8"],
+	"genero": ["Video Arte"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	
+	"Multidão_bambozzi":
+	{
+	"titulo":"Multidão",
+	"sinopsis":"large-scale ‘site-specific’ videoprojection . Luz da Luz exhibition . SP",
+	"anho":"2006", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	
+	"Is Your Life Like a Film?_bambozzi":
+	{
+	"titulo":"Is Your Life Like a Film?",
+	"sinopsis":"Um vídeo sobre a vida de Maria em uma pequena ciadade alemã.",
+	"anho":"2007", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["DV"],
+	"genero": ["Video Arte"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	
+	"8 ou 80 BH Underground_bambozzi":
+	{
+	"titulo":"8 ou 80 BH Underground",
+	"sinopsis":"underground . poesia . performance . música",
+	"anho":"2009", 
+	"duracion":"52s",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Documental"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Presenças Insustentáveis_bambozzi":
+	{
+	"titulo":"Presenças Insustentáveis",
+	"sinopsis":"",
+	"anho":"2010", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	"Puxadinho II_bambozzi":
+	{
+	"titulo":"Puxadinho II",
+	"sinopsis":"",
+	"anho":"2010", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Wysiwig_bambozzi":
+	{
+	"titulo":"Wysiwig",
+	"sinopsis":"",
+	"anho":"2012", 
+	"duracion":"22s",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Arte"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Collective_bambozzi":
+	{
+	"titulo":"Collective",
+	"sinopsis":"video for container with windows",
+	"anho":"2013", 
+	"duracion":"10s",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+		
+	"Especulação_bambozzi":
+	{
+	"titulo":"Especulação",
+	"sinopsis":"video for demolished walls",
+	"anho":"2013", 
+	"duracion":"5s",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Morning Glory_bambozzi":
+	{
+	"titulo":"Morning Glory",
+	"sinopsis":"video for residential walls",
+	"anho":"2013", 
+	"duracion":"5s",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas"],
+	"formato":["Video"],
+	"genero": ["Video Instalacion"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	},
+	
+	
+	"Raíz de cinco_bambozzi":
+	{
+	"titulo":"Raíz de cinco",
+	"sinopsis":"cinco micro-estórias captadas no cotidiano em que a presença do acaso é determinante, definindo o decorrer de certos acidentes . Um jogo de possibilidades do azar estruturado numa montagem paralela e com rigor “matemático”.",
+	"anho":"1989", 
+	"duracion":"3m",
+	"mostrar": true,
+	
+	
+	"autores": ["bambozzi_lucas", "Tamietti_Vanessa"],
+	"formato":["U-matic"],
+	"genero": ["Experimental"],
+	"palabras": [],
+	"foto":"-----------------.jpg"	
+	}
 
 }

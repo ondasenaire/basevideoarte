@@ -126,10 +126,40 @@
 		 "tipo":["artista"],
 		 "obras":[],
 		 "metadatos": []
-		 }
+		 },
 		 
 		 
-		
+		 "Santos_Eder":
+		{"nombre":"Eder",
+		 "apellido":"Santos",
+		 "data":"Nació en Minas Gerais , Brasil, en 1960. Recibió una B.A. en Bellas Artes y Comunicación Visual de la Universidad Federal de Minas Gerais. Ha sido profesor en Newton Pava College de la Universidad Federal de Minas Gerais, y en la Universidad Católica de Minas Gerais, y es miembro fundador de Emvideo, una compañía de producción de video independiente. Su trabajo ha sido difundido a nivel internacional, y exhibido en Tucano Artes, Río de Janeiro; The Kitchen, Nueva York; FestRio, Brasil, Festival Internacional de Televisión y Video, Montbéliard, Francia; Berlin Festival de Cine y Video, World Wide Video Festival, y Bonn Videonale, entre otros festivales e instituciones. Santos vive en Belo Horizante, Brasil. Sus obras vibrantes y poéticas fusionan los motivos personales, la cultura y la tecnología para reinterpretar la herencia indígena y europea. Evocan los ritmos y las texturas de la memoria y la historia y la artesanía con un lenguaje visual mezclando las tecnologías high-end y low-end, con medios digitales y película Super- 8.",
+		 "inicio":"1980",
+		 "web":["http://vimeo.com/channels/edersantos/"],
+		 "sexo":"h",
+		 "mostrar":true,
+		 "foto":".jpg",
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 },
+		 
+		 "Tamietti_Vanessa":
+		{"nombre":"Vanessa",
+		 "apellido":"Tamietti",
+		 "data":"",
+		 "inicio":"",
+		 "web":[""],
+		 "sexo":"m",
+		 "mostrar":false,
+		 "foto":".jpg",
+		 
+		 "pais": "brasil",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 }		
 	
 	
 }

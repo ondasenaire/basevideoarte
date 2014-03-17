@@ -302,7 +302,7 @@
 		 "inicio":"-",
 		 "web":[],
 		 "sexo":"m",
-		 "mostrar":true,
+		 "mostrar":false,
 		 
 		 "pais":"argentina",
 		 "tipo":["artista"],
@@ -318,7 +318,7 @@
 		 "inicio":"-",
 		 "web":[],
 		 "sexo":"m",
-		 "mostrar":true,
+		 "mostrar":false,
 		 
 		 "pais":"argentina",
 		 "tipo":["artista"],

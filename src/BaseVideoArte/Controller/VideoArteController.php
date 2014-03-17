@@ -89,23 +89,15 @@ class VideoArteController {
 		$mensajes = array(); // mensajes de error y demas
 		$repoPersonas = $app['db.orm.em'] -> getRepository('BaseVideoArte\Entidades\Persona');
 		$persona = $repoPersonas -> findOneById($persona);
-		//ordenamos las obras cronologicamente
-		$persona->ordenarObras();
 		
-		//$data = array(2,3,5,3,45,7,21342,2131,23,12,54,436,7654,345,245,23245,2546,98,234,1);
-		//$data = $persona->mergesort($data);
-		
-		//print_r($data);
-		//$obras = $persona->getObras();
-		//echo "obra 2  ".$obras[2]->getTitulo();
-		
-		//$persona->getMayorAnho('2015-2009');
-		
-		
-		if ( $persona === null){
+		if ($persona === null){
 			$mensajes [] = 'No existe la persona buscada';
+		}else{
+			//ordenamos las obras cronologicamente
+			$persona->ordenarObras();
 		}
-		
+			
+			
 		return $app['twig'] -> render('/persona.twig.html', array('persona' => $persona, 'pagina_actual'=>'personas', 'mensajes' => $mensajes));
 	}
 

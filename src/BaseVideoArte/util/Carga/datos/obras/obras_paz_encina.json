@@ -1,0 +1,257 @@
+{
+"La siesta_encina_paz":
+	{
+	"titulo":"La siesta",
+	"sinopsis":"",
+	"anho":"1997", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":[],
+	"genero": [],
+	"videos": [],
+	"palabras": []
+	},
+	
+	
+	"Los encantos del Jazmín_encina_paz":
+	{
+	"titulo":"Los encantos del Jazmín",
+	"sinopsis":"Cortometraje",
+	"anho":"1998", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["16mm"],
+	"genero": [],
+	"videos": [],
+	"palabras": []
+	},
+	
+	
+"La hamaca paraguaya (corto)_encina_paz":
+	{
+	"titulo":"La hamaca paraguaya (corto)",
+	"sinopsis":"Cortometraje",
+	"anho":"2000", 
+	"duracion":"8m22s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/24424721"],
+	"palabras": []
+	},
+	
+	
+"Supe que estabas triste_encina_paz":
+	{
+	"titulo":"Supe que estabas triste",
+	"sinopsis":"Cortometraje",
+	"anho":"2000", 
+	"duracion":"4m44s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["16mm"],
+	"videos": ["http://vimeo.com/24460194"],
+	"palabras": []
+	},
+	
+	
+"La hamaca paraguaya (largo)_encina_paz":
+	{
+	"titulo":"La hamaca paraguaya (largo)",
+	"sinopsis":"14 de junio de 1935. Estamos en otoño, pero el calor, sigue apretando y no parece muy dispuesto a dar un respiro. En un lugar aislado en tierras de Paraguay, Cándida y Ramón, un matrimonio anciano de campesinos espera el regreso de su hijo, que partió al frente, para luchar en la guerra del Chaco. También esperan la llegada de la lluvia (que a pesar de los pronósticos no llega nunca), del viento (que no sopla), que el calor desaparezca (pero que sigue impertérrita a pesar de la estación), que la perra deje de ladrar (aunque nada consigue dejar que ladre) y por último, esperan que las cosas mejoren. Y ese instante de eternidad se sitúa entre el pasado y el futuro por llegar. Pero dentro de la pareja cada uno ve las cosas a su manera: Ramón, el padre, hace frente a la espera con optimismo, mientras que Cándida, la madre, está convencida que su hijo ha muerto y que es inútil esperar nada. Pero los papeles se invierten durante la espera: el padre y la madre reciben una señal del hijo que les va a hacer cambiar de actitud y de postura.",
+	"anho":"2006", 
+	"duracion":"78m",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["35mm"],
+	"videos": ["http://vimeo.com/72305295"],
+	"palabras": []
+	},
+	
+"Río Paraguay (1º movimiento)_encina_paz":
+	{
+	"titulo":"Río Paraguay (1º movimiento)",
+	"sinopsis":"De niños, siempre nos enseñaron que agua era la vida. El río Paraguay, históricamente, fue siempre un lugar de vida, pero también de muerte. Muchos ahogados, y desaparecidos, deben ser parte de éste río. A fines del año 1890, el antropólogo Guido Boggiani, toma una foto del río Paraguay con dos niños en el río. Luego, lleva la misma imagen que había tomado a la pintura, pero prescinde en éste formato de la presencia humana. Esto me entristeció por un buen tiempo, hasta que con el video, intenté devolver la vida. Intenté devolver el sueño.",
+	"anho":"2010", 
+	"duracion":"3m53",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/28813464"],
+	"palabras": []
+	},	
+		
+	
+	
+	
+"Los vivos - los muertos_encina_paz":
+	{
+	"titulo":"Los vivos - los muertos",
+	"sinopsis":"",
+	"anho":"2011", 
+	"duracion":"1m51",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/27332148"],
+	"palabras": []
+	},
+	
+"Plegaria_encina_paz":
+	{
+	"titulo":"Plegaria",
+	"sinopsis":"",
+	"anho":"2011", 
+	"duracion":"1m52",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/27553280"],
+	"palabras": []
+	},	
+	
+	
+	"Viento Sur_encina_paz":
+	{
+	"titulo":"Viento Sur",
+	"sinopsis":"La vida en los márgenes del río Paraguay está definida por el agua. Vemos imágenes del río; escuchamos el pensamiento y los recuerdos torrentosos de dos hermanos pescadores. Reflexionan sobre sus vidas, sobre el futuro; esperan el momento justo para escapar. Son los ‘70, los años más duros de la larga dictadura de Alfredo Stroessner. Pensado originalmente como un largometraje, el último trabajo de la directora de Hamaca paraguaya “es una historia de desapariciones, de hermanos desaparecidos y de imágenes desaparecidas; la recopilación de un recuerdo que casi no existe”.",
+	"anho":"2011", 
+	"duracion":"22m58s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["35mm"],
+	"videos": ["http://vimeo.com/24087462"]
+
+	}	,
+		
+"NM1_encina_paz":
+	{
+	"titulo":"NM 1",
+	"sinopsis":"",
+	"anho":"2012", 
+	"duracion":"2m9s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/77300930"]
+
+	},
+	
+"Notas de Memoria_encina_paz":
+	{
+	"titulo":"Notas de Memoria",
+	"sinopsis":"Notas de Memoria, es un proyecto que consta de 3 instalaciones de video. Éstas instalaciones fueron realizadas en el marco del cumplimiento de los 20 años del hallazgo del Archivo del Terror en Paraguay.",
+	"anho":"2012", 
+	"duracion":"14m11s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/78433887"]
+
+	}	,
+	
+"Nunca Mas_encina_paz":
+	{
+	"titulo":"Nunca Más",
+	"sinopsis":"",
+	"anho":"2012", 
+	"duracion":"40s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/52768699"]
+
+	},
+	
+	
+
+  
+"Feliz 2013_encina_paz":
+	{
+	"titulo":"Feliz 2013",
+	"sinopsis":"",
+	"anho":"2013", 
+	"duracion":"2m18s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/56529081"]
+
+	},
+	
+	
+	
+"Sol_encina_paz":
+	{
+	"titulo":"Sol",
+	"sinopsis":"",
+	"anho":"2013", 
+	"duracion":"19s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/66988738"]
+
+	},
+	
+"Todas las mujeres_encina_paz":
+	{
+	"titulo":"Todas las mujeres",
+	"sinopsis":"",
+	"anho":"2013", 
+	"duracion":"30m",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/77007943"]
+
+	},
+	
+"2014_encina_paz":
+	{
+	"titulo":"2014",
+	"sinopsis":"",
+	"anho":"2014", 
+	"duracion":"1m12s",
+	"mostrar": true,
+	
+	
+	"autores": ["encina_paz"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/82919711"]
+
+	}	
+	
+}

@@ -17,12 +17,12 @@
 	},
 	
 	
-	"Tratado sobre una figura":
+	"La invencion mínima_golder":
 	{
-	"titulo":"Tratado sobre una figura",
+	"titulo":"La invencion mínima",
 	"sinopsis":"",
 	"anho":"1994", 
-	"duracion":"16m",
+	"duracion":"17m",
 	"mostrar": true,
 	
 	
@@ -44,7 +44,7 @@
 	"mostrar": true,
 	
 	
-	"autores": ["golder_gabriela","Maria_Victoria_Simón"],
+	"autores": ["golder_gabriela"],
 	"formato":["16mm"],
 	"genero": ["Video Clip"],
 	"videos": ["http://www.youtube.com/watch?v=4ZmQhVZTjI8"],
@@ -380,6 +380,24 @@
 	"videos": [],
 	"metadatos":[],
 	"enlaces":[]
+	},
+	
+	
+	"Conversation piece_golder":
+	{
+	"titulo":"Conversation piece",
+	"sinopsis":"Videoinstalación de 3 canales. Dos niñas leen junto a su abuela el Manifiesto Comunista. Las niñas preguntan, hay muchos conceptos que no comprenden, palabras. Una escena familiar, un retrato de familia.",  
+	"anho":"2012", 
+	"duracion":"19m",
+	"mostrar": true,
+	
+	
+	"autores": ["golder_gabriela"],
+	"formato":["HD"],
+	"genero": [],
+	"videos": [],
+	"metadatos":[],
+	"enlaces":["http://www.gabrielagolder.com/conversation%20piece%20video.htm"]
 	}
 	
 	

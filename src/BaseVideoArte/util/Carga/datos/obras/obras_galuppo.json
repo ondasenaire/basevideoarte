@@ -396,7 +396,7 @@
 	"medios": []
 	},
 	
-	"Cinco putas en febrero":
+"Cinco putas en febrero":
 	{
 	"titulo":"Cinco putas en febrero",
 	"sinopsis":"El cine, las canciones populares y la TV como marco para una fuga anunciada hacia la violencia. Y en el centro, el grito persistente de una prostituta como único signo de entereza y resistencia en medio de la barbarie.",
@@ -410,6 +410,67 @@
 	"metadatos":[{"metadato":"video digital definición estándard", "tipo":"formato"}],
 	"palabras": [],
 	"medios": []
+	},
+	
+	
+"Llevate de mi_galuppo":
+	{
+	"titulo":"Llevate de mi",
+	"sinopsis":"Clip Sarmiento / Alaniz",
+	"anho":"2012", 
+	"duracion":"4m45s",
+	"mostrar": true,
+	
+	"autores": ["gustavo_galuppo"],
+	"formato":[],
+	"genero": ["Video Clip"],
+	"videos":["http://vimeo.com/34171574"]
+	},
+	
+
+
+"Alicia o el nombre secreto_galuppo":
+	{
+	"titulo":"Alicia o el nombre secreto",
+	"sinopsis":"Un diálogo entre los juegos liberadores de una niña y la racionalidad domesticadora del adulto. La búsqueda de un gesto capaz de extinguir las palabras y las imágenes para volver al territorio de lo inexpresable. Alicia más allá de las imágenes y las palabras, o el intento de construir una lengua secreta como salvoconducto a la felicidad.",
+	"anho":"2013", 
+	"duracion":"6m",
+	"mostrar": true,
+	
+	"autores": ["gustavo_galuppo"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"videos":["http://vimeo.com/78213739"]
+	},
+
+
+"Cenizas_galuppo":
+	{
+	"titulo":"Cenizas",
+	"sinopsis":"Imágenes de archivo y algunas propias para el tema \"Cenizas\", de Malyevados. Incluído en el disco \"Vuelta al mundo\" ",
+	"anho":"2013", 
+	"duracion":"2m42",
+	"mostrar": true,
+	
+	"autores": ["gustavo_galuppo"],
+	"formato":[],
+	"genero": ["Video Clip"],
+	"videos":["http://vimeo.com/44283873"]
+	},
+	
+	
+	"El ejercicio de la violencia_galuppo":
+	{
+	"titulo":"El ejercicio de la violencia",
+	"sinopsis":"\"También el mundo está naufragando,pero ellos parecen no darse cuenta\" (Antonio Tabucchi), de la serie \"Algunas mujeres fuertes\".",
+	"anho":"2013", 
+	"duracion":"12m",
+	"mostrar": true,
+	
+	"autores": ["gustavo_galuppo"],
+	"formato":[],
+	"genero": ["Experimental"],
+	"videos":["http://vimeo.com/75100680"]
 	}
 		
 }

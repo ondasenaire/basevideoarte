@@ -295,6 +295,23 @@
 		 "foto":"trilnick_carlos.jpg"
 		 },
 		 
+		 
+		   "lamas_federico":
+		{"nombre":"Federico",
+		 "apellido":"Lamas",
+		 "data":"Federico Lamas nació en Buenos Aires, Argentina en 1979. Es Artista Visual (eso es: diseñador, realizador videasta,ilustrador y VJ),En sus trabajos podemos encontrar, videoclips, video experimental, ilustración, VJ sets, pósters, artes de cd/música, y cortometrajes.",
+		 "inicio":"2000",
+		 "web":["http://www.federicolamas.com.ar/"],
+		 "sexo":"h",
+		 "mostrar":true,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": [],
+		 "foto":"--------------------------.jpg"
+		 },
+		 
 		"Maria_Victoria_Simón":
 		{"nombre":"Maria Victoria",
 		 "apellido":"Simón",

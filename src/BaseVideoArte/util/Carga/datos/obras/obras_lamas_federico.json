@@ -1,0 +1,245 @@
+{
+
+"Bienvenida a mi Mundo_lamas":
+	{
+	"titulo":"Bienvenida a mi Mundo",
+	"sinopsis":"Es uno de sus primeros cortos. Es una breve historia en dos actos. Un triángulo de amor bizarro, que se repite trágicamente, una y otra vez.",
+	"anho":"2001", 
+	"duracion":"10m5s",
+	"mostrar": true,
+	
+	
+	"autores": ["lamas_federico"],
+	"formato":["MiniDV"],
+	"videos": ["http://vimeo.com/10759550"]
+
+	},
+	
+	
+"Roger_lamas":
+	{
+	"titulo":"Roger",
+	"sinopsis":"En un escenario inﬁnito, una pareja discute y se separa. Ella no se arrepiente, él un poco sí.",
+	"anho":"2004", 
+	"duracion":"6m8s",
+	"mostrar": true,
+	
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/10710500"]
+
+	},
+	
+	
+	"Miss Sentimiento de otoño_lamas":
+	{
+	"titulo":"Miss Sentimiento de otoño",
+	"sinopsis":"Sebastián Volco se encierra en el cuerpo de un insecto volador, para experimentar el sentimiento que le contagia el nostálgico otoño.",
+	"anho":"2005", 
+	"duracion":"3m50s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/10746815"]
+
+	},
+	
+	
+"Vestida para Matar_lamas":
+	{
+	"titulo":"Vestida para Matar",
+	"sinopsis":"Video clip para \"Mataplantas\"",
+	"anho":"2005", 
+	"duracion":"3m27s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/10734004"]
+
+	},
+	
+	
+	"Hawaii_lamas":
+	{
+	"titulo":"Hawaii",
+	"sinopsis":"Video clip para \"Mataplantas\"",
+	"anho":"2006", 
+	"duracion":"4m8s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/10727511"]
+
+	},
+	
+	
+	
+"Con Sed de Carlos, Con C de campeón_lamas":
+	{
+	"titulo":"Con Sed de Carlos, Con C de campeón",
+	"sinopsis":"",
+	"anho":"2007", 
+	"duracion":"4m51s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/10707847"]
+
+	},
+	
+				
+"Fin de Semana_lamas":
+	{
+	"titulo":"Fin de Semana",
+	"sinopsis":"Este trabajo es un breve ensayo en video,en dos capítulos. \"Es sábado\"y \"Es domingo\". Breves momentos en la vida de este tipo. Pensando qué es más importante que que.",
+	"anho":"2007", 
+	"duracion":"6m18s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/10737102"]
+
+	},
+	
+	
+"Julia vive en una película_lamas":
+	{
+	"titulo":"Julia vive en una película",
+	"sinopsis":"Video clip para \"interama\"",
+	"anho":"2007", 
+	"duracion":"3m4s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/10739891"]
+
+	},
+	
+	
+"Dex Pionash_lamas":
+	{
+	"titulo":"Dex Pionash",
+	"sinopsis":"",
+	"anho":"2008", 
+	"duracion":"9m26s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/10739864"]
+
+	},
+	
+	
+	
+"Chutazo de Amor_lamas":
+	{
+	"titulo":"Chutazo de Amor",
+	"sinopsis":"El segundo corte de \"Escape del planeta viviente\", tercer disco de Mataplantas.",
+	"anho":"2009", 
+	"duracion":"4m54s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/5204386"]
+
+	},
+	
+"Sandra (robota)_lamas":
+	{
+	"titulo":"Sandra (robota)",
+	"sinopsis":"La instalación de Lamas, Sandra, narraba una trágica escena final de corte Sci-Fi, desencadenada por una robot nihilista y violenta: la caja de cartón que la había contenido, escombros, desorden, un cadáver semi oculto entre las cajas y una acertada proyección de video sobre el techo, en el cual un agujero nos mostraba el cielo plagado de autos en llamas, bombas y todo un clima amenazador acentuado por una música oscura, digna de Blade Runner.",
+	"anho":"2010", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"So Mad_lamas":
+	{
+	"titulo":"So Mad",
+	"sinopsis":"Videoclip del album \"Mompox & the Big Umbrella\" de MOMPOX",
+	"anho":"2010", 
+	"duracion":"2m37s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/18221313"]
+
+	},
+	
+	
+	"Perdiendo el Control_lamas":
+	{
+	"titulo":"Perdiendo el Control",
+	"sinopsis":"Video clip para \"Los Gongs\"",
+	"anho":"2012", 
+	"duracion":"3m46s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/50262615"]
+
+	},
+	
+	
+	"Super Tropa Trepa_lamas":
+	{
+	"titulo":"Super Tropa Trepa",
+	"sinopsis":"Realizado en KIOSKO galería, Santa Cruz de la Sierra, Bolivia.",
+	"anho":"2012", 
+	"duracion":"3m53s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+	"Juegos_lamas":
+	{
+	"titulo":"Juegos",
+	"sinopsis":"Video clip para \"Los Gongs\"",
+	"anho":"2013", 
+	"duracion":"4m20s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/75888735"]
+
+	},
+	
+	"Vete al Diablo_lamas":
+	{
+	"titulo":"Vete al Diablo",
+	"sinopsis":"Condemnation and self-condemnation are common within the human being. Different moral and religious values determine our thoughts and decisions. Those who sin or make mistakes in life are ready to go to hell. There are people who think they have the power to take you there.",
+	"anho":"-", 
+	"duracion":"5m27s",
+	"mostrar": true,
+	
+	"autores": ["lamas_federico"],
+	"formato":["Video"],
+	"videos": ["http://vimeo.com/19762473"]
+
+	}				
+				
+						
+}

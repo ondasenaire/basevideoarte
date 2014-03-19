@@ -342,7 +342,26 @@
 		 "obras":[],
 		 "metadatos": []
 		 
+		 },
+		 
+		 
+		 "leon_ferrari":
+		{"nombre":"León",
+		 "apellido":"Ferrari",
+		 "data":"",
+		 "inicio":"-",
+		 "web":[],
+		 "sexo":"m",
+		 "mostrar":false,
+		 
+		 "pais":"argentina",
+		 "tipo":["artista"],
+		 "obras":[],
+		 "metadatos": []
+		 
 		 }
+		 
+		 
 		 
 		 
 		 

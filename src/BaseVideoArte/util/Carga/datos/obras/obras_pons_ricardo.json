@@ -1,0 +1,242 @@
+{
+
+
+
+"Lajka_pons":
+	{
+	"titulo":"Lajka",
+	"sinopsis":"Video realizado en 1997 en ocasión de la muestra \"Tiempo Sideral\" junto con Eduardo Molinari y Silvina D'Alessandro en el Planetario de Buenos Aires. Se trata de un documental apócrifo del viaje orbital de la perra Laika.",
+	"anho":"1997", 
+	"duracion":"5m50s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/37463367"]
+
+	},
+	
+	
+"Metáfora de Un Crimen Perfecto_pons":
+	{
+	"titulo":"Metáfora de Un Crimen Perfecto",
+	"sinopsis":"Video inspirado en el libro \"El Crimen Perfecto\" de Jean Baudrillard, especulando visualmente sobre la relación del Hombre con la Tecnología y revalorizando la metáfora como forma de comunicación en tiempos en donde la virtualización y la mediatización ponen los hechos reales en un segundo plano. Fue presentado por primera vez como videoinstalación en una muestra con Eduardo Molinari wn 1997.",
+	"anho":"1997", 
+	"duracion":"5m26s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/37075409"]
+
+	},
+	
+"Transito_pons":
+	{
+	"titulo":"Transito",
+	"sinopsis":"Video realizado en ocasión de la muestra \"Inframundo\" con Diego Perrotta en 1998.",
+	"anho":"1998", 
+	"duracion":"6m10s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/37462798"]
+
+	},
+	
+	
+"La Tierra_pons":
+	{
+	"titulo":"La Tierra",
+	"sinopsis":"En ocasión de la muestra \"El Arbol\" de Gabriela Larrañaga, el autor realiza este video inspirado en Radiografía de la Pampa de Ezequiel Martínez Estrada, como continuación del trabajo realizado en el Festspiellhaus de Hellerau",
+	"anho":"2000", 
+	"duracion":"5m56s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/36659599"]
+
+	},
+	
+	
+	
+"REM (Hecho en Argentina)_pons":
+	{
+	"titulo":"REM (Hecho en Argentina)",
+	"sinopsis":"El video REM Hecho en Argentina fue reailzado por Ricardo Pons como parte de una Trilogía sobre los conceptos de Memoria, Identidad y Utopía que enmarcaba la obra del grupo Cimarrón del cual formaba parte en ese momento. Este video desarrolla el tema de la Memoria a través de la re-exposición de dos casos elegidos no al azar que vinculaban argentinos y alemanes en proyectos fallidos. El material subtitulado en alemán fue incluido en la muestra Tres Orillas que se realizó en Neuzelle, Alemania, para acercar a los espectadores de aquel país un costado insospechado de la colaboración entre ambos países. Uno de los temas desarrollados en este video sería luego especialmente profundizado en la obra posterior: El Pulqui 2.",
+	"anho":"2000", 
+	"duracion":"9m56s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/37004778"]
+
+	},
+	
+	
+"Sudtopia_pons":
+	{
+	"titulo":"Sudtopia",
+	"sinopsis":"Video realizado por Ricardo Pons como parte de la trilogía \"ADN(i)\", \"REM (Hecho en la Argentina)\" y \"Sudtopía\". En particular Sudtopía propone recorrer el tema de la Utopía visto a través de la vinculación hipotética de dos personajes finiseculares: un anarquista de principios de Siglo XX y un hacker a finales del mismo. Fue realizado en 2000 en ocasión de la muestra \"Drei Ufer\" realizada en Dresden, Alemania en el mismo año.",
+	"anho":"2000", 
+	"duracion":"5m16s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/37004437"]
+
+	},
+	
+"Animas_pons":
+	{
+	"titulo":"Animas",
+	"sinopsis":"Ricardo Pons realiza este video con el objetivo de ser proyectado sobre el ala de un avión, como alusión a los \"Vuelos de la Muerte\" realizados durante la útlima dictadura militar en Argentina. El río devolvió a sus costas lo que se pretendía esconder en su seno, devolviendo el agua la muerte como manifestación de vida: el agua es el lugar donde se gesta la vida. Este video fue presentado tanto como monocanal como formando parte de la instalación antedicha.",
+	"anho":"2004", 
+	"duracion":"4m43s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/36578961"]
+
+	},
+
+"Proyecto Pulqui 2_pons":
+	{
+	"titulo":"Proyecto Pulqui 2",
+	"sinopsis":"El Proyecto Pulqui 2 es una obra que se concreta en forma de libro multimedia (texto-cd-dvd) a través de un subsidio de la Fundación Antorchas. Los mecanismos de simulación virtual permiten recontextualizar en el presente proyectos o utopías del pasado y de esa forma tratar de entender su devenir y su valor intemporal. Esta obra fue concebida durante un período muy crítico de Argentina (2001-2004) en donde el proyecto país estaba en tela de juicio. Este video fue realizado reeditando todas las cámaras que registraron el vuelo inaugural del Pulqui 2 y agregándole material obtenido de un simulador de vuelo especialmente desarrollado. La música fue compuesta y ejecutada por Marcelo Torres.",
+	"anho":"2004", 
+	"duracion":"5m2s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/37077049"]
+
+	},
+	
+	
+	
+"Post imágenes_pons":
+	{
+	"titulo":"Post imágenes",
+	"sinopsis":"Monocanal realizado imaginando lo que pudiera haber visto la gente con los ojos vendados. El efecto fosfeno es el que permite que se puedan visualizar los estímulos recibidos por la luz luego de que los ojos sean vendados o en una habitación a oscuras. El video representa una metafora de la sociedad en los años de la dictadura la cual tenía los ojos vendados acerca de la realidad. Fue realizado en ocasión de la muestra Ejercicios de Memoria realizada en la UNTREF por Gabriela Golder y Andrés Denegri en ocasión de los 30 años de la dictadura militar.",
+	"anho":"2006", 
+	"duracion":"4m4s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/37076071"]
+
+	},
+	
+	
+"Monterrey_pons":
+	{
+	"titulo":"Monterrey",
+	"sinopsis":"Video realizado por Ricardo Pons basado en el poema visual de Yoko Ono \"Poema para ser leído con lupa\", con música original compuesta e interpretada por Ricardo Pons.",
+	"anho":"2012", 
+	"duracion":"1m26s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/54771382"]
+
+	},
+	
+	
+"Rosa de los vientos_pons":
+	{
+	"titulo":"Rosa de los vientos",
+	"sinopsis":"",
+	"anho":"2012", 
+	"duracion":"10s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/37848387"]
+
+	},
+	
+	
+"Desencuentro_pons":
+	{
+	"titulo":"Desencuentro",
+	"sinopsis":"A partir de una propuesta de la curadora Valeria González para una muestra colectiva del grupo Ostinato en el Correo Central de Buenos Aires, Ricardo Pons se pone a trabajar analizando material del documentalista argentino Valle, encontrando un pequeño fragmento que al desentonar con el resto del registro captura su atención, y que toma como base para una videoinstalación cuyo nombre fue \"Desencuentro\".",
+	"anho":"-", 
+	"duracion":"4m40s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/36637298"]
+
+	},
+	
+"Entusiasmo_pons":
+	{
+	"titulo":"Entusiasmo",
+	"sinopsis":"A partir de las tomas e inserts de \"Entusiasmo - Sinfonía Mombassa\" de Dziga Vertov, Ricardo Pons realizó una re edición de esta obra siguiendo los preceptos que el propio autor expresó en su Manifiesto del \"Cine Ojo\" de 1922. Este cineasta proponía como mecánica de trabajo utilizar material de archivo grabado en diferentes oportunidades para luego componer libremente en la mesa de edición. En esta película en particular, Dziga Vertov experimentó por primera vez en cine sonoro. Esta situación especial impulsó a Ricardo Pons a pedir a Magdalena Jitrik que tocaran en vivo durante la proyección del video. La música fue compuesta y ejecutada con espíritu de improvisación propios del jazz y del rock.",
+	"anho":"-", 
+	"duracion":"10m",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/72533091"]
+
+	},
+	
+"Lombrices_pons":
+	{
+	"titulo":"Lombrices",
+	"sinopsis":"Ricardo Pons conoce a León Ferrari (uno de los referentes artísticos más importantes del arte argentino contemporáneo) gracias a un trabajo de producción de un video documental encargado por la Universidad de Essex. A partir de esa experiencia, León Ferrari le propone a Ricardo Pons realizar un video a partir de una performance con lombrices cayendo sobre una tela en blanco.",
+	"anho":"2004", 
+	"duracion":"6m32s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo","leon_ferrari"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/36660875"]
+
+	},
+	
+	
+	"Casa Blanca_pons":
+	{
+	"titulo":"Casa Blanca",
+	"sinopsis":"Ricardo Pons conoce a León Ferrari (uno de los referentes artísticos más importantes del arte argentino contemporáneo) gracias a un trabajo de producción de un video documental encargado por la Universidad de Essex. A partir de esa experiencia, León Ferrari le propone a Ricardo Pons realizar un video a partir de una performance con lombrices cayendo sobre la Casa Blanca.",
+	"anho":"2005", 
+	"duracion":"3m13s",
+	"mostrar": true,
+	
+	
+	"autores": ["pons_ricardo","leon_ferrari"],
+	"formato":["Video Digital"],
+	"videos": ["http://vimeo.com/36579647"]
+
+	}
+	
+
+}

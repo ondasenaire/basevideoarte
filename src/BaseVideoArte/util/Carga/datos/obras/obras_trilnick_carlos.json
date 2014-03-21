@@ -1,0 +1,618 @@
+{
+
+"Five Seconds_trilnick":
+	{
+	"titulo":"Five Seconds",
+	"sinopsis":"",
+	"anho":"1982", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Elipsis_trilnick":
+	{
+	"titulo":"Elipsis",
+	"sinopsis":"",
+	"anho":"1983", 
+	"duracion":"3m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+"Subte Linea D_trilnick":
+	{
+	"titulo":"Subte Linea D",
+	"sinopsis":"",
+	"anho":"1983", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Realidad – ilusion_trilnick":
+	{
+	"titulo":"Realidad – ilusion",
+	"sinopsis":"video instalación para 1 monitor",
+	"anho":"1985", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Ciudad Satelite_trilnick":
+	{
+	"titulo":"Ciudad Satelite",
+	"sinopsis":"video instalación para 3 monitores",
+	"anho":"1986", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Stock du shok_trilnick":
+	{
+	"titulo":"Stock du shok",
+	"sinopsis":"",
+	"anho":"1986", 
+	"duracion":"3m50s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+
+
+"Celada_trilnick":
+	{
+	"titulo":"Celada",
+	"sinopsis":"Serie Museums",
+	"anho":"1990", 
+	"duracion":"6m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+	
+"Viajando por America_trilnick":
+	{
+	"titulo":"Viajando por America",
+	"sinopsis":"",
+	"anho":"1990", 
+	"duracion":"4m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Visperas_trilnick":
+	{
+	"titulo":"Visperas",
+	"sinopsis":"Serie Museums",
+	"anho":"1991", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Argumento_trilnick":
+	{
+	"titulo":"Argumento",
+	"sinopsis":"",
+	"anho":"1992", 
+	"duracion":"11m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Ciclos_trilnick":
+	{
+	"titulo":"Ciclos",
+	"sinopsis":"video instalación para 5 monitores",
+	"anho":"1992", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Enio Iommi, no perder la memoria_trilnick":
+	{
+	"titulo":"Enio Iommi, no perder la memoria",
+	"sinopsis":"Registro de la muestra del escultor Enio Iommi realizada en la Fundación banco Patricios de Buenos Aires",
+	"anho":"1993", 
+	"duracion":"12m45s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+"Jorge Macchi, pinturas, objetos, instalaciones,_trilnick":
+	{
+	"titulo":"Jorge Macchi, pinturas, objetos, instalaciones,",
+	"sinopsis":"Registro de la muestra de Jorge Macchi en la Fundación Banco Patricios de Buenos Aires",
+	"anho":"1993", 
+	"duracion":"7m30s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"videos": []
+
+	},
+	
+	
+	
+"Qosco – Cuzco_trilnick":
+	{
+	"titulo":"Qosco – Cuzco",
+	"sinopsis":"",
+	"anho":"1993", 
+	"duracion":"14m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/1993/07/qosco-2-canales-1993.mov"]
+
+	},
+	
+	
+	
+"Como un cuerpo ausente_trilnick":
+	{
+	"titulo":"Como un cuerpo ausente",
+	"sinopsis":"video instalación para 2 video proyectores",
+	"anho":"1994", 
+	"duracion":"5m22s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/1994/08/como-un-cuerpo-ausente-2-canales-1994.mov"]
+
+	},
+	
+	
+"Llanto de bandoneon_trilnick":
+	{
+	"titulo":"Llanto de bandoneon",
+	"sinopsis":"",
+	"anho":"1994", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"De niño_trilnick":
+	{
+	"titulo":"De niño",
+	"sinopsis":"",
+	"anho":"1995", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/1995/04/de-nino-1995.mov"]
+
+	},
+	
+	
+"Geometrias de turbulencia_trilnick":
+	{
+	"titulo":"Geometrias de turbulencia",
+	"sinopsis":"Anotaciones sobre fin de siglo",
+	"anho":"1999", 
+	"duracion":"11m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://www.carlostrilnick.com/Geometrias%20del%20turbulencia%20-%201999.mov"]
+
+	},
+	
+	
+"Una tarde_trilnick":
+	{
+	"titulo":"Una tarde",
+	"sinopsis":"",
+	"anho":"2000", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"Cheating muchachita_trilnick":
+	{
+	"titulo":"Cheating muchachita",
+	"sinopsis":"video instalación para 4 monitores",
+	"anho":"2004", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+	
+"h_trilnick":
+	{
+	"titulo":"h",
+	"sinopsis":"",
+	"anho":"2004", 
+	"duracion":"4m21s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"hh_trilnick":
+	{
+	"titulo":"hh",
+	"sinopsis":"",
+	"anho":"2004", 
+	"duracion":"2m36s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2004/02/hh-2004.mov"]
+
+	},
+	
+"hhh_trilnick":
+	{
+	"titulo":"hhh",
+	"sinopsis":"",
+	"anho":"2004", 
+	"duracion":"4m9s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2004/02/hhh-2004.mov"]
+
+	},
+	
+	
+"Una extension posible_trilnick":
+	{
+	"titulo":"Una extension posible",
+	"sinopsis":"video instalación para 3 video proyectores y 5 monitores",
+	"anho":"2004", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+	
+"Compañia_trilnick":
+	{
+	"titulo":"Compañia",
+	"sinopsis":"",
+	"anho":"2005", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2009/06/compania-3c2b411c2b4c2b4-2005.mov"]
+
+	},
+	
+	
+	
+"El hombre es una duda_trilnick":
+	{
+	"titulo":"El hombre es una duda",
+	"sinopsis":"",
+	"anho":"2005", 
+	"duracion":"2m30s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"Inmovil_trilnick":
+	{
+	"titulo":"Inmovil",
+	"sinopsis":"video instalación para 2 monitores de plasma",
+	"anho":"2005", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"Absbytes_trilnick":
+	{
+	"titulo":"Absbytes",
+	"sinopsis":"",
+	"anho":"2006", 
+	"duracion":"2m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"El ultimo grito de la moda_trilnick":
+	{
+	"titulo":"El ultimo grito de la moda",
+	"sinopsis":"video instalación para 3 video proyectores",
+	"anho":"2006", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"Usuahia Project_trilnick":
+	{
+	"titulo":"Usuahia Project",
+	"sinopsis":"video instalación para 2 video proyectores",
+	"anho":"2007", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"Echo Park_trilnick":
+	{
+	"titulo":"Echo Park",
+	"sinopsis":"video instalación para 2 monitores de plasma",
+	"anho":"2008", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+"No signal no bad_trilnick":
+	{
+	"titulo":"No signal no bad",
+	"sinopsis":"",
+	"anho":"2008", 
+	"duracion":"1m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2008/02/no-signal-no-bad.mov"]
+
+	},
+	
+	
+"Social less_trilnick":
+	{
+	"titulo":"Social less",
+	"sinopsis":"",
+	"anho":"2008", 
+	"duracion":"2m",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2008/01/social-less1.mov"]
+
+	},
+	
+	
+"Teot_trilnick":
+	{
+	"titulo":"Teot",
+	"sinopsis":"",
+	"anho":"2008", 
+	"duracion":"1m15s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2008/05/teot1.mov"]
+
+	},
+	
+	
+	
+"Dead Underground_trilnick":
+	{
+	"titulo":"Dead Underground",
+	"sinopsis":"videoinstalación que tematiza sobre las minas que hacen de la tierra un suelo intransitable. Dentro del absurdo mundo de la armas de guerra, las minas antipersonales son una categoría fértil para indagar en la irracionalidad de la tecnología aplicada a la muerte en el siglo veinte.",
+	"anho":"2009", 
+	"duracion":"varios",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+	
+"La Pietá_trilnick":
+	{
+	"titulo":"La Pietá",
+	"sinopsis":"Recreación de la escultura de Miguel Angel actuada por Gloria y Miguel, madre e hijo, inmigrantes peruanos en Argentina. El Abuelo, que observa la situación piadosa, es el escultor, autor de la intervención urbana, la catedral que le da marco a esta Pietá en las calles del Barrio de Once en la Ciudad de Buenos Aires.",
+	"anho":"2009", 
+	"duracion":"7m52s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+	
+"Todos somos iguales bajo la piel, video installation_trilnick":
+	{
+	"titulo":"Todos somos iguales bajo la piel, video installation",
+	"sinopsis":"",
+	"anho":"2010", 
+	"duracion":"-",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
+	
+	
+	"CHECKPOINT_trilnick":
+	{
+	"titulo":"CHECKPOINT",
+	"sinopsis":"El video es una sucesión de fotos de prensa bajadas de Internet con la sobreimpresión del cartel que utilizan las agencias de control de USA para censurar y prohibir sitios en Internet.",
+	"anho":"2012", 
+	"duracion":"4m25s",
+	"mostrar": true,
+	
+	
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	}
+
+}

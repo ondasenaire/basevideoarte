@@ -421,6 +421,7 @@
 	"duracion":"4m45s",
 	"mostrar": true,
 	
+	"foto": "galuppo_gustavo-llevate_de_mi.jpg",
 	"autores": ["gustavo_galuppo"],
 	"formato":[],
 	"genero": ["Video Clip"],
@@ -437,6 +438,7 @@
 	"duracion":"6m",
 	"mostrar": true,
 	
+	"foto":"galuppo_gustavo-alicia_o_el_nombre_secreto.jpg",
 	"autores": ["gustavo_galuppo"],
 	"formato":[],
 	"genero": ["Experimental"],
@@ -452,6 +454,7 @@
 	"duracion":"2m42",
 	"mostrar": true,
 	
+	"foto":"galuppo_gustavo-cenizas.jpg",
 	"autores": ["gustavo_galuppo"],
 	"formato":[],
 	"genero": ["Video Clip"],
@@ -467,6 +470,7 @@
 	"duracion":"12m",
 	"mostrar": true,
 	
+	"foto":"galuppo_gustavo-el_ejercicio_de_la_violencia.jpg",
 	"autores": ["gustavo_galuppo"],
 	"formato":[],
 	"genero": ["Experimental"],

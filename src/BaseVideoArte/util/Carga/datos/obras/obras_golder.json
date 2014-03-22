@@ -43,7 +43,7 @@
 	"duracion":"4m15s",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-el_hombre_de_las_manos_gastada.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["16mm"],
 	"genero": ["Video Clip"],
@@ -182,7 +182,7 @@
 	"duracion":"10m",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-heroica.jpg",
 	"autores": ["golder_gabriela","Silvina_Cafici"],
 	"formato":["Video"],
 	"genero": ["Video Danza"],
@@ -199,7 +199,7 @@
 	"duracion":"17m",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-el_hombre_de_las_manos_gastada.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -216,7 +216,7 @@
 	"duracion":"13m",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-posible.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -233,7 +233,7 @@
 	"duracion":"4m30s",
 	"mostrar": true,
 	
-	
+	"foto":"golder_gabriela-vacas.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -250,7 +250,7 @@
 	"duracion":"13m",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-bestias.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -268,7 +268,7 @@
 	"duracion":"24m",
 	"mostrar": true,
 	
-	
+	"foto":"golder_gabriela-vacio.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -285,7 +285,7 @@
 	"duracion":"1m30s",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-concierto_diurno.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -319,7 +319,7 @@
 	"duracion":"14m30s",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-loucos_de_amor.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -337,7 +337,7 @@
 	"duracion":"42m",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-pasajes.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -355,7 +355,7 @@
 	"duracion":"83m",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-la_conversation.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -373,7 +373,7 @@
 	"duracion":"14m30s",
 	"mostrar": true,
 	
-	
+	"foto": "golder_gabriela-las_particulas_elementales.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["Video"],
 	"genero": [],
@@ -391,7 +391,7 @@
 	"duracion":"19m",
 	"mostrar": true,
 	
-	
+	"foto":"golder_gabriela-conversation_piece.jpg",
 	"autores": ["golder_gabriela"],
 	"formato":["HD"],
 	"genero": [],

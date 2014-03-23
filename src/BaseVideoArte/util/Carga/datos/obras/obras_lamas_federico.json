@@ -8,7 +8,7 @@
 	"duracion":"10m5s",
 	"mostrar": true,
 	
-	
+	"foto":"lamas_federico-bienvenida_a_mi_mundo.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["MiniDV"],
 	"videos": ["http://vimeo.com/10759550"]
@@ -24,7 +24,7 @@
 	"duracion":"6m8s",
 	"mostrar": true,
 	
-	
+	"foto":"lamas_federico-roger.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/10710500"]
@@ -40,6 +40,7 @@
 	"duracion":"3m50s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-miss_sentimiento_de_otono.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/10746815"]
@@ -55,6 +56,7 @@
 	"duracion":"3m27s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-vestida_para_matar.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/10734004"]
@@ -70,6 +72,7 @@
 	"duracion":"4m8s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-hawaii.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/10727511"]
@@ -86,6 +89,7 @@
 	"duracion":"4m51s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-con_sed_de_carlos_con_c_de_campeon.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/10707847"]
@@ -101,6 +105,7 @@
 	"duracion":"6m18s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-fin_de_semana.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/10737102"]
@@ -116,6 +121,7 @@
 	"duracion":"3m4s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-julia_vive_en_una_pelicula.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/10739891"]
@@ -131,6 +137,7 @@
 	"duracion":"9m26s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-dex_pionash.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/10739864"]
@@ -147,6 +154,8 @@
 	"duracion":"4m54s",
 	"mostrar": true,
 	
+	
+	"foto":"lamas_federico-chutazo_de_amor.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/5204386"]
@@ -161,6 +170,8 @@
 	"duracion":"-",
 	"mostrar": true,
 	
+	
+	"foto":"lamas_federico-sandra_robota.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": []
@@ -176,6 +187,7 @@
 	"duracion":"2m37s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-so_mad.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/18221313"]
@@ -191,6 +203,7 @@
 	"duracion":"3m46s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-perdiendo_el_control.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/50262615"]
@@ -206,6 +219,8 @@
 	"duracion":"3m53s",
 	"mostrar": true,
 	
+	
+	"foto":"lamas_federico-super_tropa_trepa.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": []
@@ -221,6 +236,8 @@
 	"duracion":"4m20s",
 	"mostrar": true,
 	
+	
+	"foto":"lamas_federico-juegos.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/75888735"]
@@ -235,6 +252,7 @@
 	"duracion":"5m27s",
 	"mostrar": true,
 	
+	"foto":"lamas_federico-vete_al_diablo.jpg",
 	"autores": ["lamas_federico"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/19762473"]

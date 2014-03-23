@@ -8,7 +8,7 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-five_seconds.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -24,7 +24,7 @@
 	"duracion":"3m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-elipsis.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -39,7 +39,7 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-subte_linea_d.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -55,7 +55,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-realidad_-_ilusion.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -71,7 +71,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-ciudad_satelite.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -87,7 +87,7 @@
 	"duracion":"3m50s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-stock_du_shok.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -103,7 +103,7 @@
 	"duracion":"6m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-celada.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -120,7 +120,7 @@
 	"duracion":"4m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-viajando_por_america.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -136,7 +136,7 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-visperas.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -152,7 +152,7 @@
 	"duracion":"11m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-argumento.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -168,7 +168,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-ciclos.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -184,7 +184,7 @@
 	"duracion":"12m45s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-enio_iommi_no_perder_la_memoria.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -200,7 +200,7 @@
 	"duracion":"7m30s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-jorge_macchi_pinturas_objetos_instalaciones.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"videos": []
@@ -217,7 +217,7 @@
 	"duracion":"14m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-qosco_-_cuzco.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/1993/07/qosco-2-canales-1993.mov"]
@@ -234,7 +234,7 @@
 	"duracion":"5m22s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-como_un_cuerpo_ausente.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/1994/08/como-un-cuerpo-ausente-2-canales-1994.mov"]
@@ -250,7 +250,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-llanto_de_bandoneon.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -266,7 +266,7 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-de_nino.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/1995/04/de-nino-1995.mov"]
@@ -282,7 +282,7 @@
 	"duracion":"11m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-geometrias_de_turbulencia.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://www.carlostrilnick.com/Geometrias%20del%20turbulencia%20-%201999.mov"]
@@ -298,13 +298,45 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-una_tarde.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
 
 	},
 	
+	
+"Por que pintar un cuadro negro_trilnick":
+	{
+	"titulo":"Por que pintar un cuadro negro",
+	"sinopsis":"video instalación para 3 video proyectores",
+	"anho":"2002", 
+	"duracion":"7m44",
+	"mostrar": true,
+	
+	"foto":"trilnick_carlos-por_que_pintar_un_cuadro_negro.jpg",
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2002/03/cuadro-negro-7c2b445c2b4c2b4-2002.mov"]
+
+	},
+	
+	
+	
+	"1978-2003_trilnick":
+	{
+	"titulo":"1978-2003",
+	"sinopsis":"video instalación para 3 video proyectores",
+	"anho":"2003", 
+	"duracion":"7m",
+	"mostrar": true,
+	
+	"foto":"trilnick_carlos-1978-2003.jpg",
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2009/06/1987-2003-2003.mov"]
+
+	},
 	
 "Cheating muchachita_trilnick":
 	{
@@ -314,7 +346,7 @@
 	"duracion":"7m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-cheating_muchachita.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -331,7 +363,7 @@
 	"duracion":"4m21s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-h.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -347,7 +379,7 @@
 	"duracion":"2m36s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-hh.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2004/02/hh-2004.mov"]
@@ -362,7 +394,7 @@
 	"duracion":"4m9s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-hhh.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2004/02/hhh-2004.mov"]
@@ -378,7 +410,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-una_extension_posible.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -395,7 +427,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-compania.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2009/06/compania-3c2b411c2b4c2b4-2005.mov"]
@@ -412,7 +444,7 @@
 	"duracion":"2m30s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-el_hombre_es_una_duda.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -428,7 +460,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-inmovil.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -460,12 +492,29 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-el_ultimo_grito_de_la_moda.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
 
 	},
+	
+	
+	"Proyecto memoria_trilnick":
+	{
+	"titulo":"Proyecto memoria",
+	"sinopsis":"",
+	"anho":"2006", 
+	"duracion":"3m",
+	"mostrar": true,
+	
+	"foto":"trilnick_carlos-proyecto_memoria.jpg",
+	"autores": ["Trilnick_carlos"],
+	"formato":["Video"],
+	"enlaces": []
+
+	},
+	
 	
 	
 "Usuahia Project_trilnick":
@@ -476,7 +525,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-usuahia_project.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -492,7 +541,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-echo_park.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -508,7 +557,7 @@
 	"duracion":"1m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-no_signal_no_bad.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2008/02/no-signal-no-bad.mov"]
@@ -524,7 +573,7 @@
 	"duracion":"2m",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-social_less.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2008/01/social-less1.mov"]
@@ -540,7 +589,7 @@
 	"duracion":"1m15s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-teot.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": ["http://carlostrilnick.com/wp-content/uploads/2008/05/teot1.mov"]
@@ -557,7 +606,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-dead_underground.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -574,7 +623,7 @@
 	"duracion":"7m52s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-la-pieta.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []
@@ -608,7 +657,7 @@
 	"duracion":"4m25s",
 	"mostrar": true,
 	
-	
+	"foto":"trilnick_carlos-checkpoint.jpg",
 	"autores": ["Trilnick_carlos"],
 	"formato":["Video"],
 	"enlaces": []

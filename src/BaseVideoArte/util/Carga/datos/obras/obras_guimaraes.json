@@ -352,7 +352,7 @@
 	"duracion":"4m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["guimares_cao"],
 	"formato":["DVD"],
 	"genero": ["Documental"],
@@ -369,7 +369,7 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["guimares_cao"],
 	"formato":["HDV"],
 	"genero": ["Experimental"],
@@ -387,7 +387,7 @@
 	"duracion":"5m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["guimares_cao"],
 	"formato":["HDV"],
 	"genero": ["Documental"],
@@ -404,7 +404,7 @@
 	"duracion":"30m",
 	"mostrar": true,
 	
-	"foto":".png",
+	
 	"autores": ["guimares_cao"],
 	"formato":["DV"],
 	"genero": ["Documental"],

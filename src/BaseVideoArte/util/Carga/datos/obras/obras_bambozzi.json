@@ -180,8 +180,8 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Hi-8"],
 	"genero": ["Experimental"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
+	
 	},
 	
 	"passa_bambozzi":
@@ -197,7 +197,7 @@
 	"formato":["16mm","Betacam"],
 	"genero": ["Video Clip"],
 	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-passa.jpg"	
 	},
 	
 	
@@ -214,7 +214,7 @@
 	"formato":["Super8","Betacam"],
 	"genero": [],
 	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-just_there_a_place_i_did_not_know.jpg"	
 	},
 	
 	
@@ -231,7 +231,7 @@
 	"formato":["Video"],
 	"genero": [],
 	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-como_corpo_cai.jpg"	
 	},
 	
 	"Corrupted Poems_bambozzi":
@@ -246,8 +246,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": [],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	"Eu Não Posso Imaginar_bambozzi":
@@ -263,7 +262,7 @@
 	"formato":["DV","Super8"],
 	"genero": ["Experimental"],
 	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-eu_nao_posso_imaginar.jpg"	
 	},
 	
 	"I have no words: Vestigios_bambozzi":
@@ -279,7 +278,7 @@
 	"formato":["MiniDV","Super8"],
 	"genero": ["Experimental"],
 	"palabras": ["trilogía"],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-i_have_no_words_vestigios.jpg"	
 	},
 	
 	"vestigios_bambozzi":
@@ -294,8 +293,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["MiniDV","Super8"],
 	"genero": ["Experimental"],
-	"palabras": ["trilogía"],
-	"foto":"-----------------.jpg"	
+	"palabras": ["trilogía"]
 	},
 	
 	
@@ -311,8 +309,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	
@@ -328,8 +325,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Arte"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	
@@ -345,8 +341,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	
@@ -364,7 +359,7 @@
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
 	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-postcard.jpg"	
 	},
 	
 	
@@ -381,8 +376,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["DV"],
 	"genero": ["Video Arte"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	}, 
 	
 	"Time shift_bambozzi":
@@ -398,7 +392,7 @@
 	"formato":["DV","Super8"],
 	"genero": ["Video Arte"],
 	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-time shift.jpg"	
 	},
 	
 	
@@ -415,8 +409,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	
@@ -434,7 +427,7 @@
 	"formato":["DV"],
 	"genero": ["Video Arte"],
 	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-is_your_life_like_a_film.jpg"	
 	},
 	
 	
@@ -452,7 +445,7 @@
 	"formato":["Video"],
 	"genero": ["Documental"],
 	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"foto":"bambozzi_lucas-8_ou_80_bh_underground.jpg"	
 	},
 	
 	
@@ -468,8 +461,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	"Puxadinho II_bambozzi":
@@ -484,8 +476,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	
@@ -501,8 +492,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Arte"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	
@@ -518,8 +508,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 		
@@ -535,8 +524,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	
@@ -552,8 +540,7 @@
 	"autores": ["bambozzi_lucas"],
 	"formato":["Video"],
 	"genero": ["Video Instalacion"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	},
 	
 	
@@ -569,8 +556,7 @@
 	"autores": ["bambozzi_lucas", "Tamietti_Vanessa"],
 	"formato":["U-matic"],
 	"genero": ["Experimental"],
-	"palabras": [],
-	"foto":"-----------------.jpg"	
+	"palabras": []
 	}
 
 }

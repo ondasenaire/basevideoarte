@@ -8,7 +8,7 @@
 	"duracion":"6m",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-interferencia.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["VHS"],
 	"videos": []
@@ -25,7 +25,7 @@
 	"duracion":"13m57s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-a_europa_em_5_minutos.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Super8"],
 	"videos": []
@@ -41,7 +41,7 @@
 	"duracion":"6m47s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-uakti.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"videos": []
@@ -58,7 +58,7 @@
 	"duracion":"3m54s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-mentiras_e_humilhacoes.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Super8"],
 	"videos": ["http://vimeo.com/channels/edersantos/23278986"]
@@ -74,7 +74,7 @@
 	"duracion":"8m13s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-rito_e_expressao.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"videos": []
@@ -90,7 +90,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-oremos.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"videos": []
@@ -106,7 +106,7 @@
 	"duracion":"7m57s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-nao_vou_africa_porque_tenho_plantao.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"videos": []
@@ -138,7 +138,7 @@
 	"duracion":"15m26s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-essa_coisa_nervosa.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"videos": []
@@ -155,7 +155,7 @@
 	"duracion":"1m",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-in(dig)nacao.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": []
@@ -172,7 +172,7 @@
 	"duracion":"-",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-the_desert_in_my_mind.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"videos": []
@@ -189,7 +189,7 @@
 	"duracion":"17m40s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-janauba.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"videos": []
@@ -199,13 +199,13 @@
 	
 "Poscatidevenum_santos":
 	{
-	"titulo":"Janaúba",
+	"titulo":"Poscatidevenum",
 	"sinopsis":"Documentário poético sobre o evento multimídia de mesmo nome, apresentado em Belo Horizonte, em 1993, de concepção de Eder Santos e do músico Paulo Santos.",
 	"anho":"1993", 
 	"duracion":"18m",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-poscatidevenum.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"enlaces": ["http://site.videobrasil.org.br/en/canalvb/video/1713027/Poscatidevenum_Eder_Santos_10o_Festival"]
@@ -239,7 +239,7 @@
 	"duracion":"70m",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-enredando_as_pessoas.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["35mm"],
 	"enlaces": []
@@ -272,7 +272,7 @@
 	"duracion":"4m15s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-tumitinhas.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"enlaces": []
@@ -288,7 +288,7 @@
 	"duracion":"11m19s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-framed_by_curtains.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"enlaces": []
@@ -304,7 +304,7 @@
 	"duracion":"4m",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-projeto_apollo.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"enlaces": []
@@ -321,7 +321,7 @@
 	"duracion":"15m22s",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-neptune's_choice.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"enlaces": []
@@ -338,7 +338,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-low_pressure_revezamento_3x1.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video Digital"],
 	"enlaces": []
@@ -356,7 +356,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-call_waiting.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/channels/edersantos/23269692"]
@@ -372,7 +372,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-galeria_das_almas.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/channels/edersantos/23271541"]
@@ -388,7 +388,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-atras_do_porto_tem_uma_cidade.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/channels/edersantos/23282304"]
@@ -404,7 +404,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-double_de_corpo.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": []
@@ -420,7 +420,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-embaixadas.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/channels/edersantos/23278036"]
@@ -428,21 +428,7 @@
 	},
 	
 	
-	
-	"Embaixadas_santos":
-	{
-	"titulo":"Embaixadas",
-	"sinopsis":"Video-instalação de Eder Santos realizada no Centro Cultural Banco do Brasil | Brasília-DF | 2010 ",
-	"anho":"2010", 
-	"duracion":"varios",
-	"mostrar": true,
-	
-	
-	"autores": ["Santos_Eder"],
-	"formato":["Video"],
-	"videos": ["http://vimeo.com/channels/edersantos/23278036"]
 
-	},
 	
 	
 "Julgamento de Paris 3D_santos":
@@ -453,7 +439,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-julgamento_de_paris_3d.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/channels/edersantos/23279922"]
@@ -469,7 +455,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-maquina_de_reflexao_6.8_com_ir_5.0_m.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": []
@@ -485,7 +471,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-memoria_-_para_refletir_o_inatingivel.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": []
@@ -501,7 +487,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-planetarium.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": []
@@ -517,7 +503,7 @@
 	"duracion":"varios",
 	"mostrar": true,
 	
-	
+	"foto":"eder_santos-roteiro_amarrado.jpg",
 	"autores": ["Santos_Eder"],
 	"formato":["Video"],
 	"videos": ["http://vimeo.com/channels/edersantos/23275317"]
